@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.291f2a6b.js",
-    "static/js/453.a6a97343.chunk.js": "/static/js/453.a6a97343.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.8eeba472.css",
+    "main.js": "/static/js/main.cfefa90d.js",
+    "static/media/main.png": "/static/media/main.a1e3c6b92a8d2de6ed28.png",
+    "static/media/cover_low.png": "/static/media/cover_low.5d0c299bac32cb3f5297.png",
+    "static/media/gds.png": "/static/media/gds.cd265fcae49a5a6470f0.png",
+    "static/media/sciencegallery.png": "/static/media/sciencegallery.8ad85adbd4000631c9dd.png",
+    "static/media/camden.png": "/static/media/camden.336a96a24a9c6e2947e6.png",
+    "static/media/itic.png": "/static/media/itic.ec3dd22deca1b77d6e3c.png",
+    "static/media/braincharity.png": "/static/media/braincharity.167f74f91e47dc1ee113.png",
+    "static/media/advantech.png": "/static/media/advantech.1bc47b110f34b39572de.png",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.291f2a6b.js.map": "/static/js/main.291f2a6b.js.map",
-    "453.a6a97343.chunk.js.map": "/static/js/453.a6a97343.chunk.js.map"
+    "main.8eeba472.css.map": "/static/css/main.8eeba472.css.map",
+    "main.cfefa90d.js.map": "/static/js/main.cfefa90d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.291f2a6b.js"
+    "static/css/main.8eeba472.css",
+    "static/js/main.cfefa90d.js"
   ]
 }
