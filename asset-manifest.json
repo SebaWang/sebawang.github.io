@@ -1,9 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8eeba472.css",
-    "main.js": "/static/js/main.cfefa90d.js",
+    "main.css": "/static/css/main.61eee18f.css",
+    "main.js": "/static/js/main.ed38af23.js",
+    "static/media/2.jpg": "/static/media/2.75bed71e53e71ab9ec8a.jpg",
+    "static/media/4.jpg": "/static/media/4.34bf6c485cf085ac779e.jpg",
+    "static/media/1.jpg": "/static/media/1.6ee267afbc5e369ac668.jpg",
     "static/media/main.png": "/static/media/main.a1e3c6b92a8d2de6ed28.png",
+    "static/media/cover.jpg": "/static/media/cover.ee4b1f1fc77c883ce315.jpg",
+    "static/media/3.jpg": "/static/media/3.73cb0fd7ba976010c023.jpg",
+    "static/media/cover2.jpeg": "/static/media/cover2.cc67dffd68c889674645.jpeg",
+    "static/media/0_0.webp": "/static/media/0_0.14368cd7bdbf656965c1.webp",
+    "static/media/0_3.webp": "/static/media/0_3.8000bfbc3a525327e1a4.webp",
+    "static/media/0_2.webp": "/static/media/0_2.ecf1ec7423ae83bcb494.webp",
     "static/media/cover_low.png": "/static/media/cover_low.5d0c299bac32cb3f5297.png",
+    "static/media/bubble3_for_gray_background_leftandright.svg": "/static/media/bubble3_for_gray_background_leftandright.9ba1727d4bf573db500daed93c922fa2.svg",
+    "static/media/bubble2_for_social_proof.svg": "/static/media/bubble2_for_social_proof.ab2cc2ade8817e5e39ba11dde604ec9e.svg",
     "static/media/gds.png": "/static/media/gds.cd265fcae49a5a6470f0.png",
     "static/media/sciencegallery.png": "/static/media/sciencegallery.8ad85adbd4000631c9dd.png",
     "static/media/camden.png": "/static/media/camden.336a96a24a9c6e2947e6.png",
@@ -11,11 +22,11 @@
     "static/media/braincharity.png": "/static/media/braincharity.167f74f91e47dc1ee113.png",
     "static/media/advantech.png": "/static/media/advantech.1bc47b110f34b39572de.png",
     "index.html": "/index.html",
-    "main.8eeba472.css.map": "/static/css/main.8eeba472.css.map",
-    "main.cfefa90d.js.map": "/static/js/main.cfefa90d.js.map"
+    "main.61eee18f.css.map": "/static/css/main.61eee18f.css.map",
+    "main.ed38af23.js.map": "/static/js/main.ed38af23.js.map"
   },
   "entrypoints": [
-    "static/css/main.8eeba472.css",
-    "static/js/main.cfefa90d.js"
+    "static/css/main.61eee18f.css",
+    "static/js/main.ed38af23.js"
   ]
 }
