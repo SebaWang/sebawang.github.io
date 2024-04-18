@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
+import ProjectPage from "./pages/ProjectPage";
+import ProjectMBPage from "./pages/ProjectMBPage";
+import ProjectFinancePage from "./pages/ProjectFinancePage";
+import ProjectEPQPage from "./pages/ProjectEPQPage"
+import ProjectMedicyPage from "./pages/ProjectMedicyPage"
+import ProjectAdvantechPage from "./pages/ProjectAdvantechPage"
+import ProjectUTechPage from "./pages/ProjectUTechPage"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path="" element={<LandingPage />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/project/mob" element={<ProjectMBPage />} />
+        <Route path="/project/finance" element={<ProjectFinancePage />} />
+        <Route path="/project/epq" element={<ProjectEPQPage />} />
+        <Route path="/project/medicy" element={<ProjectMedicyPage />} />
+        <Route path="/project/advantech" element={<ProjectAdvantechPage />} />
+        <Route path="/project/utech" element={<ProjectUTechPage />} />
+      </Routes>
   );
 }
 

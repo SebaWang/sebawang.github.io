@@ -1,13 +1,248 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-family: "Open Sans" !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swiper-button-prev{
+  color: white !important;
+}
+.swiper-button-next{
+  color: white !important;
+}
+.container{
+  max-width: 1280px !important;
+  color: #404040 !important;
+}
+.text-subtitle{
+  font-size: 24px;
+}
+.text-content{
+  font-size: 20px;
+}
+
+.hover-border-fix {
+  box-sizing: border-box;
+  border:10px dotted #0db;
+  border-radius:50%;
+  width:53px;
+  height:53px;
+  -webkit-transition: border .4s ease-in;
+  -moz-transition: border .4s ease-in;
+  -o-transition: border .4s ease-in;
+  transition: border .4s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-75%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(75%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(75%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-75%);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(4px);
+    opacity: 0.5;
+  }
+  25% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  75% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(4px);
+    opacity: 0.5;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.card:hover .mask{
+  opacity: 80;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-back {
+  transform: rotateX(180deg);
+}
+
+/* Customizes the appearance of the pagination bullets */
+.swiper-pagination-bullet {
+  background: white; /* Change the color if needed */
+  opacity: 1; /* Make non-active bullets fully visible */
+  width: 2rem !important; /* Square shape size */
+  height: 5px !important; /* Square shape size */
+  border-radius: 10px !important; /* Removes the rounding to create a square */
+}
+
+
+/* Customizes the active pagination bullet */
+.swiper-pagination-bullet-active {
+  background: #EA5514 !important;  /* Highlight color for the active bullet */
+}
+
+.bt-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: fit-content;
+  padding: 20px 0;
+}
+.bt {
+  padding: 10px 20px;
+  background: rgb(82, 113, 131);
+  color: #fff;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.con {
+  width: 90%;
+  height: 380px;
+  transform-style: preserve-3d;
+  perspective: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+.swiperr {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  transform-origin: center center 0;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s;
+}
+.swiper-1 {
+  transform: translate3d(40%, 0, -10vw);
+}
+.swiper-2 {
+  transform: translate3d(-40%, 0, -10vw);
+}
+.swiper-3 {
+  transform: translate3d(0, 0, 0);
+}
+.swiper-4 {
+  transform: translate3d(20vw, 0, -10vw);
+}
+.swiper-5 {
+  transform: translate3d(40vw, 0, -20vw);
+}
+.s1 {
+  background-color: white;
+}
+.s2 {
+  background-color: white;
+}
+.s3 {
+  background-color: white;
+}
+.s4 {
+  background-color: yellow;
+}
+.s5 {
+  background-color: purple;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 100px 180px 0 0;
+  border-color: #D9D9D9 transparent transparent transparent;
+  transform: rotate(0deg);
 }
