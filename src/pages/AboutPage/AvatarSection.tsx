@@ -1,5 +1,5 @@
-import img_avatar from "../../assets/img/img_about_avatar.jpg";
-import ButtonNext from "../../Components/Component/ButtonNext";
+import img_avatar from "../../assets/img/img_about_avatar.png";
+import ButtonDownload from "../../Components/Component/ButtonDownload";
 
 export default function AvatarSection() {
   return (
@@ -18,15 +18,17 @@ export default function AvatarSection() {
             </p>
             <p className="mt-6 text-[24px] font-light text-black">
               A London-based strategy and service designer who expert with
-              extensive skills in design, research and communication.
+              extensive skills in inclusive and human-centric design and
+              communication.
             </p>
             <p className="mt-3 text-[16px] font-light text-[#6F6F6F] mb-12">
               A firm believer that telling a compelling story is as essential as
               conducting thorough design research. Specializing in harnessing
-              the spirit of service design research to foster impactful service
-              journeys, with a keen focus on accessibility and inclusivity.
+              the spirit of service design to drive innovation within
+              regulations and foster cohesive cross-disciplinary collaboration
+              and visionary leadership.
             </p>
-            <ButtonNext text='Curriculum Vitae' />
+            <ButtonDownload text="Curriculum Vitae" />
           </div>
         </div>
       </div>

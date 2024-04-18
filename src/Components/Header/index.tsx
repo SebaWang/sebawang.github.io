@@ -53,7 +53,8 @@ interface LogoProps{
 
 const Logo: React.FC<LogoProps> = ({ color = "black", scrolled }) => {
   return (
-    <div className="items-center gap-2">
+    <Link to="/">
+    <div className="items-center gap-2 cursor-pointer">
       <p className="text-xl font-bold" style={{ color }}>
         Sebastian Wang
       </p>
@@ -73,6 +74,7 @@ const Logo: React.FC<LogoProps> = ({ color = "black", scrolled }) => {
       )}
       
     </div>
+    </Link>
   );
 };
 

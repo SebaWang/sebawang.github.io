@@ -12,12 +12,12 @@ export default function HeroFooter() {
             <div className='container mx-auto py-8 text-center w-2/3'>
                 <p className='text-[#6F6F6F] font-light text-xs'>Multidisciplinary Collaborations With</p>
                 <div className='flex justify-between gap-12 mt-6'>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.youtube.com/watch?v=8PE_UwfUsUc'><img src={img_logo_advantech} width='80%' /></a></div>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://itic.com.tw/'><img src={img_logo_itic} width='80%' /></a></div>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.gov.uk/government/organisations/government-digital-service'><img src={img_logo_gds} width='80%' /></a></div>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.camden.gov.uk/'><img src={img_logo_camden} width='80%' /></a></div>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://london.sciencegallery.com/'><img src={img_logo_sciencegallery} width='80%' /></a></div>
-                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.thebraincharity.org.uk/'><img src={img_logo_braincharity} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.youtube.com/watch?v=8PE_UwfUsUc'  target="_blank" rel="noreferrer"><img src={img_logo_advantech} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://itic.com.tw/'  target="_blank" rel="noreferrer"><img src={img_logo_itic} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.gov.uk/government/organisations/government-digital-service'  target="_blank" rel="noreferrer"><img src={img_logo_gds} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.camden.gov.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_camden} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://london.sciencegallery.com/'  target="_blank" rel="noreferrer"><img src={img_logo_sciencegallery} width='80%' /></a></div>
+                    <div className='opacity-50 hover:opacity-100 cursor-pointer flex items-center justify-center duration-300'><a href='https://www.thebraincharity.org.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_braincharity} width='80%' /></a></div>
                 </div>
             </div>
         </div>

@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
 
+                
 *{
   font-family: "Open Sans" !important;
 }
@@ -26,14 +28,15 @@
 
 .hover-border-fix {
   box-sizing: border-box;
-  border:10px dotted #0db;
+  border-width: 2px;
+  border-style: solid;
   border-radius:50%;
   width:53px;
   height:53px;
-  -webkit-transition: border .4s ease-in;
-  -moz-transition: border .4s ease-in;
-  -o-transition: border .4s ease-in;
-  transition: border .4s ease-in;
+  -webkit-transition: border .3s ease-in;
+  -moz-transition: border .3s ease-in;
+  -o-transition: border .3s ease-in;
+  transition: border .3s ease-in;
 }
 
 @keyframes fade {
