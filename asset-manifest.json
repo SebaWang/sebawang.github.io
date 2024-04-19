@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8013c530.css",
-    "main.js": "/static/js/main.5eca37d7.js",
+    "main.css": "/static/css/main.8c35e204.css",
+    "main.js": "/static/js/main.80beaa13.js",
     "static/media/img_landing_about_04.jpg": "/static/media/img_landing_about_04.8d3ffc161126a98ae1f4.jpg",
     "static/media/img_landing_project_02.jpg": "/static/media/img_landing_project_02.baa5582648ffee50b580.jpg",
     "static/media/img_life_03.jpg": "/static/media/img_life_03.98aa2e691ccb3ffd40c3.jpg",
@@ -106,6 +106,7 @@
     "static/media/02.png": "/static/media/02.aa2c115a7f8e9d2e499e.png",
     "static/media/img_project_mob_swiper_103.jpg": "/static/media/img_project_mob_swiper_103.9a18f35a76b242e9c5aa.jpg",
     "static/media/img_design_finance_research_06.png": "/static/media/img_design_finance_research_06.2101fdadd59fe0c04602.png",
+    "static/media/img_deco_bubble.svg": "/static/media/img_deco_bubble.2d0cfe3adb499c49f3b8a240ca918a1b.svg",
     "static/media/img_design_finance_research_02.jpg": "/static/media/img_design_finance_research_02.93447501ffdd477525a5.jpg",
     "static/media/img_landing_project_01.jpeg": "/static/media/img_landing_project_01.cc67dffd68c889674645.jpeg",
     "static/media/img_project_mob_process_08.jpg": "/static/media/img_project_mob_process_08.cc67dffd68c889674645.jpg",
@@ -173,11 +174,11 @@
     "static/media/img_project_finance_designT_03.svg": "/static/media/img_project_finance_designT_03.9ce78ec8ebc1e50a5ecc2ba34c35d58b.svg",
     "index.html": "/index.html",
     "static/media/icon_scrollUp.svg": "/static/media/icon_scrollUp.a372f10ced5968144faaa9c14c9dddf1.svg",
-    "main.8013c530.css.map": "/static/css/main.8013c530.css.map",
-    "main.5eca37d7.js.map": "/static/js/main.5eca37d7.js.map"
+    "main.8c35e204.css.map": "/static/css/main.8c35e204.css.map",
+    "main.80beaa13.js.map": "/static/js/main.80beaa13.js.map"
   },
   "entrypoints": [
-    "static/css/main.8013c530.css",
-    "static/js/main.5eca37d7.js"
+    "static/css/main.8c35e204.css",
+    "static/js/main.80beaa13.js"
   ]
 }
