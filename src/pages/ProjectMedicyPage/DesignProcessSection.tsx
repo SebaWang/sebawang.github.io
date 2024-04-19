@@ -18,7 +18,7 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-bold text-[24px]">
           Service design thinking facilitates the formulation of the roadmap.
         </p>
-        <p className="font-light text-[18px] mt-6">
+        <p className="font-light text-[16px] mt-6">
           I employed various service design tools and methods, including{" "}
           <span className="font-bold">
             customer behavior analysis, workshops, and journey maps,
@@ -31,14 +31,14 @@ export default function DesignProcessSection(): ReactElement {
         </p>
 
 
-        <p className="font-bold text-[18px] mt-12 mb-4">
+        <p className="font-bold text-[16px] mt-12 mb-4">
         Customer Behavior Analysis & Overall Strategy Formulation
         </p>
         <ModalImageFree imgURL={img_behavior} />
 
         
 
-        <p className="font-bold text-[18px] mt-12 mb-4">
+        <p className="font-bold text-[16px] mt-12 mb-4">
         Customer Behavior Analysis & Overall Strategy Formulation
         </p>
         <div className='grid grid-cols-2 gap-4'>

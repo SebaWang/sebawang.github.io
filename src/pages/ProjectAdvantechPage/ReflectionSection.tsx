@@ -20,13 +20,13 @@ export default function ReflectionSection(): ReactElement {
           <div className="col-span-2 ">
             <Reflection className="h-[90%]" />
 
-            <p className="text-[18px] font-light mt-4">
+            <p className="text-[16px] font-light mt-4">
               Designers should shift various perspectives to adjust their
               problem-solving approach.
             </p>
           </div>
           <div className="col-span-3 flex flex-col justify-center">
-            <p className="text-[18px] font-light">
+            <p className="text-[16px] font-light">
               Genuine innovation requires the integration of design thinking and
               business management knowledge. Throughout my year-long project,
               I've come to realize that designers must not only focus on
@@ -43,7 +43,7 @@ export default function ReflectionSection(): ReactElement {
         </div>
         <div className="mx-auto text-center mt-4 pb-16">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[18px] font-semibold">
+            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
               Back To Projects
             </button>
           </Link>

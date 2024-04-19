@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {ReactComponent as Bubble} from "../../assets/img/img_deco_bubble.svg"
 
 interface ProjectCardProps {
   imgURL: string;
@@ -20,7 +21,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
   return (
     <>
       <div
-        className="w-full cursor-pointer card bg-white rounded-md shadow"
+        className="w-full cursor-pointer card bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -31,11 +32,12 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
         <div
-          className={`flex flex-col justify-center px-6 py-4 text-center transform transition-all duration-500`}
+          className={`flex flex-col justify-center px-6 py-4 text-center transform transition-all duration-50 relative overflow-hidden`}
         >
-          <div className="font-bold text-md mb-1 text-[20px]">{title}</div>
-          <p className="font-light text-[14px] mb-1">{subTitle}</p>
-          <p className="font-light text-[#6F6F6F] text-[12px]">{concept}</p>
+          <Bubble className="absolute bottom-0 left-0" />
+          <div className="font-bold text-md mb-1 text-[20px] z-10">{title}</div>
+          <p className="font-light text-[14px] mb-1 z-10">{subTitle}</p>
+          <p className="font-light text-[#6F6F6F] text-[12px] z-10">{concept}</p>
         </div>
       </div>
     </>

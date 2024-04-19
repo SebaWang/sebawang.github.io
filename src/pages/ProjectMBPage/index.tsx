@@ -1,4 +1,4 @@
-import Header from "../../Components/HeaderWhite"
+import Header from "../../Components/HeaderWhite";
 import { ReactElement } from "react";
 import LandingSection from "./LandingSection";
 import DetailSection from "./DetailSection";
@@ -11,29 +11,29 @@ import ReflectionSection from "./ReflectionSection";
 import SideNav from "../../Components/Component/SideNav";
 
 export default function ProjectMBPage(): ReactElement {
+  const sections = {
+    "Background & Problem": "background",
+    "Design Deliver": "design_deliver",
+    "Process & Challenges": "process_challenges",
+    Evaluation: "evaluation",
+    Reflection: "reflection",
+  };
+  return (
+    <>
+      <SideNav sections={sections} />
+      <Header />
+      <LandingSection />
+      <DetailSection />
+      <OverviewSection />
+      <div id="content_section">
+        <BackgroundSection />
+        <DesignSection />
+        <ChallengeSection />
+        <EvaluationSection />
+        <ReflectionSection />
+      </div>
 
-    const sections = {
-        "Overview": "overview",
-        "Background & Problem": "background",
-        "Design Deliver": "design_deliver",
-        "Process & Challenges": "process_challenges",
-        "Evaluation": "evaluation",
-        "Reflection": "reflection"
-      };
-    return (
-        <>
-            <SideNav sections={sections} />
-            <Header />
-            <LandingSection />
-            <DetailSection />
-            <OverviewSection />
-            <BackgroundSection />
-            <DesignSection />
-            <ChallengeSection />
-            <EvaluationSection />
-            <ReflectionSection />
-            <div className='bg-[#202020] h-[60px]'></div>
-        </>
-    );
-  }
-  
+      <div className="bg-[#202020] h-[60px]"></div>
+    </>
+  );
+}

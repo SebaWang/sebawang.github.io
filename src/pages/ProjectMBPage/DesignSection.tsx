@@ -36,7 +36,7 @@ export default function DesignSection(): ReactElement {
         Design serves not only as an outcome but also as a medium for further
         exploration.
       </p>
-      <p className="mt-2 text-[18px]">
+      <p className="mt-2 text-[16px]">
         In our journey of crafting future scenarios, my team and I developed
         various artifacts to engage people,{" "}
         <span className="font-bold">
@@ -47,17 +47,17 @@ export default function DesignSection(): ReactElement {
         Biodiversity.
       </p>
       <div className="grid grid-cols-3 gap-4 mt-4">
-        <ModalImage imgURL={img_design_01} />
-        <ModalImage imgURL={img_design_02} />
-        <ModalImage imgURL={img_design_03} />
-        <ModalImage imgURL={img_design_04} />
-        <ModalImage imgURL={img_design_05} />
-        <ModalImage imgURL={img_design_06} />
+        <ModalImage imgURL={img_design_01} description="Utilizing simple materials to swiftly generate future artifacts for interaction." />
+        <ModalImage imgURL={img_design_02} description="Future Artifact: Informational mail from the Ministry of Biodiversity." />
+        <ModalImage imgURL={img_design_03} description="Utilizing present-day elements (e.g., Instagram) to bridge connections with future scenarios." />
+        <ModalImage imgURL={img_design_04} description="Creating tangible artifacts to illustrate future scenarios." />
+        <ModalImage imgURL={img_design_05} description="Future Artifact: The Microbe National Park and Preserve." />
+        <ModalImage imgURL={img_design_06} description="Exhibiting and interacting at the GDS." />
       </div>
       <p className="text-[24px] font-bold mt-12">
         The Ministry of Biodiversity and three pilot policies are compelling.
       </p>
-      <p className="mt-2 text-[18px]">
+      <p className="mt-2 text-[16px]">
         After a series of storytelling sessions about future worldviews, I found
         that using the fictional government entity, the Ministry of
         Biodiversity, helped participants quickly grasp the futuristic context.
@@ -72,10 +72,10 @@ export default function DesignSection(): ReactElement {
       </div>
       <div className="grid grid-cols-12 gap-8 mt-16 pb-24">
         <div className="col-span-7 content-center">
-          <p className="text-[18px] font-bold">
+          <p className="text-[16px] font-bold">
             Policy 01 - Nature Recovery Season
           </p>
-          <p className="text-[18px] mt-1 font-light">
+          <p className="text-[16px] mt-1 font-light">
             What if public spaces like parks and riversides are closed for
             natural restoration?
           </p>
@@ -109,10 +109,10 @@ export default function DesignSection(): ReactElement {
           />
         </div>
         <div className="col-span-6 content-center">
-          <p className="text-[18px] font-bold">
+          <p className="text-[16px] font-bold">
             Policy 02 - Biodiversity Conservation Certificate
           </p>
-          <p className="text-[18px] mt-1 font-light">
+          <p className="text-[16px] mt-1 font-light">
             What if knowledge and awareness of environmental protection become a
             requirement for higher education?
           </p>
@@ -125,10 +125,10 @@ export default function DesignSection(): ReactElement {
           </p>
         </div>
         <div className="col-span-7 content-center">
-          <p className="text-[18px] font-bold">
+          <p className="text-[16px] font-bold">
             Policy 03 - The Bill of Multi-species Rights
           </p>
-          <p className="text-[18px] mt-1 font-light">
+          <p className="text-[16px] mt-1 font-light">
             What if non-human species have legal rights?
           </p>
           <p className="text-[16px] mt-2 font-[#6F6F6F]">
@@ -145,7 +145,7 @@ export default function DesignSection(): ReactElement {
       <p className="font-bold text-[24px]">
         Backcast and formulate new communication strategies.
       </p>
-      <p className="text-[18px] mt-2">
+      <p className="text-[16px] mt-2">
         Through iterative feedback collection and analysis, I was able to
         backcast to the present reality, creating a concise stakeholder action
         chart and a report for future policy communication strategies. These
@@ -158,13 +158,13 @@ export default function DesignSection(): ReactElement {
         and the potential for interdepartmental collaboration to address
         environmental and agricultural challenges.
       </p>
-      <p className="text-[18px] mt-4 font-bold">
+      <p className="text-[16px] mt-4 font-bold">
         Forecast and Backcast In this Project
       </p>
       <ModalImageFree imgURL={img_backcase} />
-      <p className="text-[18px] mt-4 font-bold">The Stakeholder Action Chart</p>
+      <p className="text-[16px] mt-4 font-bold">The Stakeholder Action Chart</p>
       <ModalImageFree imgURL={img_chart} />
-      <p className="text-[18px] mt-8 font-bold">Exhibition Within GDS</p>
+      <p className="text-[16px] mt-8 font-bold">Exhibition Within GDS</p>
       <div className="grid grid-cols-3 gap-4 mt-4 mb-16">
         <ModalImage imgURL={img_gds_01} />
         <ModalImage imgURL={img_gds_02} />

@@ -15,13 +15,13 @@ export default function ReflectionSection(): ReactElement {
           <p className="font-bold text-[24px]">
             Building anti-fragile systems through speculative design.
           </p>
-          <p className="text-[18px] font-light mt-4 px-6 border-l-[2px] border-black">
+          <p className="text-[16px] font-light mt-4 px-6 border-l-[2px] border-black">
             “Antifragility helps build a systematic guide in any situation in
             which there is randomness, unpredictability, opacity, or incomplete
             understanding of things.”
             <br />— Taleb, 2016
           </p>
-          <p className="text-[18px] mt-4 font-light">
+          <p className="text-[16px] mt-4 font-light">
             I believe speculative design can make designers and stakeholders
             "anti-fragile." It involves exploring the potential future
             trajectories of societies and organizations, allowing us{" "}
@@ -42,7 +42,7 @@ export default function ReflectionSection(): ReactElement {
           <p className="font-bold text-[24px] mt-12">
             Collaborating with scientists will make the project more powerful.
           </p>
-          <p className="text-[18px] mt-2 font-light">
+          <p className="text-[16px] mt-2 font-light">
             In terms of the project limitations, I believe that collaboration
             with biologists and scientists can enrich policy design by
             incorporating realistic details. This includes considerations of
@@ -58,7 +58,7 @@ export default function ReflectionSection(): ReactElement {
           <div className="w-[254px] mx-auto text-center mt-4 mb-12">
             <img src={img_crown} />
             <Link to="/project">
-              <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-12 rounded-md text-[18px] font-semibold">
+              <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-12 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
                 Back To Projects
               </button>
             </Link>

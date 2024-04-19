@@ -24,9 +24,9 @@ export default function OverviewSection(): ReactElement {
             <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
               &nbsp;
             </div>
-            <p className="text-[18px] font-light mt-8 mb-8">
+            <p className="text-[16px] font-light mt-8 mb-8">
               A+ in Finance focuses on designing{" "}
-              <span className="font-bold">financial inclusion strategies</span>
+              <span className="font-bold">financial inclusion strategies{" "}</span>
               for ADHD. Through research and design involving 14 people with
               ADHD across various age groups, a common financial learning
               journey emerged. It was observed that those with longer diagnoses
@@ -43,14 +43,14 @@ export default function OverviewSection(): ReactElement {
               Financial Learning Courses to provide practical guidance, which
               currently support over 150 individuals.
             </p>
-            <div className='flex gap-2 text-[18px] font-light flex-wrap'>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+            <div className='flex gap-2 text-[16px] font-light flex-wrap'>
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Inclusive Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300]">
               Co-design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Research Through Design
               </div>
             </div>
@@ -71,14 +71,14 @@ export default function OverviewSection(): ReactElement {
       </div>
       <div className='w-full relative mt-6'>
         <img src={img_ovewview_bg} />
-        <HoverImage width="10.5%" height="21.5%" position="left" distance="7.2%" top="15.5%" hoverLeft="24%" hoverTop="10%" imageUrl={img_ovewview_01} />
-        <HoverImage width="9%" height="21.5%" position="left" distance="18.8%" top="15.5%" hoverLeft="29.8%" hoverTop="10%" imageUrl={img_ovewview_02} />
-        <HoverImage width="10.5%" height="21.5%" position="left" distance="28.9%" top="15.5%" hoverLeft="41.4%" hoverTop="10%" imageUrl={img_ovewview_03} />
-        <HoverImage width="10.5%" height="21.5%" position="left" distance="40.2%" top="15.5%" hoverLeft="52.7%" hoverTop="10%" imageUrl={img_ovewview_04} />
-        <HoverImage width="9.5%" height="21.5%" position="right" distance="36.8%" top="15.5%" hoverLeft="48.3%" hoverTop="10%" imageUrl={img_ovewview_05} />
-        <HoverImage width="9.5%" height="21.5%" position="right" distance="26.25%" top="15.5%" hoverLeft="38%" hoverTop="10%" imageUrl={img_ovewview_06} />
-        <HoverImage width="9.5%" height="21.5%" position="right" distance="15.6%" top="15.5%" hoverLeft="28%" hoverTop="10%" imageUrl={img_ovewview_07} />
-        <HoverImage width="9.5%" height="21.5%" position="right" distance="5%" top="15.5%" hoverLeft="18%" hoverTop="10%" imageUrl={img_ovewview_08} />
+        <HoverImage width="10.5%" height="21.5%" position="left" distance="7.2%" top="15.5%" hoverLeft="24%" hoverTop="10%" imageUrl={img_ovewview_01} description="Interview and language check with the expert at the Brain Charity." />
+        <HoverImage width="9%" height="21.5%" position="left" distance="18.8%" top="15.5%" hoverLeft="29.8%" hoverTop="10%" imageUrl={img_ovewview_02}description="Online survey about the financial management methods and attitudes of individuals with ADHD." />
+        <HoverImage width="10.5%" height="21.5%" position="left" distance="28.9%" top="15.5%" hoverLeft="41.4%" hoverTop="10%" imageUrl={img_ovewview_03} description="Interview with an adult with ADHD." />
+        <HoverImage width="10.5%" height="21.5%" position="left" distance="40.2%" top="15.5%" hoverLeft="52.7%" hoverTop="10%" imageUrl={img_ovewview_04} description="ADHD Financial Learning Journey: Insights gathered from interviewing 14 individuals with ADHD across different age groups and financial coaches." />
+        <HoverImage width="9.5%" height="21.5%" position="right" distance="36.8%" top="15.5%" hoverLeft="48.3%" hoverTop="10%" imageUrl={img_ovewview_05} description="Workshop Poster: Using a visual style that attract individuals with ADHD." />
+        <HoverImage width="9.5%" height="21.5%" position="right" distance="26.25%" top="15.5%" hoverLeft="38%" hoverTop="10%" imageUrl={img_ovewview_06} description="Research through Design Workshop: Using design artifacts to interact with participants with ADHD." />
+        <HoverImage width="9.5%" height="21.5%" position="right" distance="15.6%" top="15.5%" hoverLeft="28%" hoverTop="10%" imageUrl={img_ovewview_07} description="Co-design Workshops: Involving individuals with ADHD to share their ideas about financial management." />
+        <HoverImage width="9.5%" height="21.5%" position="right" distance="5%" top="15.5%" hoverLeft="18%" hoverTop="10%" imageUrl={img_ovewview_08} description="Prototype Testing: Functions and User Interface Improvement." />
       </div>
     </div>
   );

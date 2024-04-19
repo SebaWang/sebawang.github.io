@@ -83,18 +83,22 @@ export default function SkillSection(): ReactElement {
               <p className="text-[16px] text-black font-bold mt-6">
                 Design & Research
               </p>
-              <p className="text-[14px] mt-2">Inclusive Design</p>
-              <p className="text-[14px]">Sustainable Design</p>
-              <p className="text-[14px]">Speculative Design</p>
+              
+              <p className="text-[14px] mt-2">User-centred Design</p>
+              <p className="text-[14px]">Inlusive Design</p>
+              <p className="text-[14px]">Participatory Design</p>
               <p className="text-[14px]">Co-design</p>
+              <p className="text-[14px]">Speculative Design</p>
               <p className="text-[14px]">Policy Communication Design</p>
               <p className="text-[14px]">Design Thinking</p>
               <p className="text-[14px]">Quantitative Survey</p>
+              <p className="text-[14px]">Qualitative Interview</p>
               <p className="text-[14px]">Customer Behavior Analysis</p>
               <p className="text-[14px]">Persona</p>
               <p className="text-[14px]">Journey Map</p>
               <p className="text-[14px]">Service Blueprint</p>
               <p className="text-[14px]">Workshop</p>
+              <p className="text-[14px]">Lean / Agile Development</p>
             </div>
             <div>
               <p className="text-[16px] text-black font-bold mt-6">
@@ -102,9 +106,13 @@ export default function SkillSection(): ReactElement {
               </p>
               <p className="text-[14px] mt-2">Storytelling</p>
               <p className="text-[14px]">Project Management</p>
+              <p className="text-[14px]">Stakeholder Management</p>
               <p className="text-[14px]">Innovative Diffusion Strategy</p>
+              <p className="text-[14px]">Inbound Marketing Strategy</p>
+              <p className="text-[14px]">ERP Strategy</p>
               <p className="text-[14px]">CSR Strategy</p>
-              <p className="text-[14px]">Six Thinking Hats</p>
+              <p className="text-[14px]">MECE</p>
+              <p className="text-[14px]">Hypothesis Thinking</p>
             </div>
             <div>
               <p className="text-[16px] text-black font-bold mt-6">
@@ -114,6 +122,7 @@ export default function SkillSection(): ReactElement {
               <p className="text-[14px]">Framer</p>
               <p className="text-[14px]">CSS3 + HTML5</p>
               <p className="text-[14px]">Figma</p>
+              <p className="text-[14px]">Sketch</p>
               <p className="text-[14px]">Miro</p>
               <p className="text-[14px]">Adobe Creative</p>
               <p className="text-[14px]">Microsoft Office</p>

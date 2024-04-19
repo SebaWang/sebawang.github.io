@@ -23,9 +23,9 @@ import {
                 Let's spin impactful services together!
               </span>
             </p>
-            <div className="flex gap-4 justify-center mt-8 ">
+            <div className="flex gap-4 justify-center mt-8 h-[200px]">
               <a href="mailto:sebaswang.design@gmail.com">
-                <div className="p-4 hover:border-4 hover-border-fix cursor-pointer relative text-white text-[24px]">
+                <div className=" border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -37,7 +37,7 @@ import {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/sebastian-wang-26369a222/"
               >
-                <div className="p-4 hover:border-4 hover-border-fix cursor-pointer relative text-white text-[24px]">
+                <div className="border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -49,7 +49,7 @@ import {
                 rel="noreferrer"
                 href="https://medium.com/@SBSTN_WANG"
               >
-                <div className="p-4 hover:border-4 hover-border-fix cursor-pointer relative text-white text-[24px]">
+                <div className="border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                   <FontAwesomeIcon
                     icon={faMedium}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -61,7 +61,7 @@ import {
                 rel="noreferrer"
                 href="https://www.instagram.com/haoooo2playhard/"
               >
-                <div className="p-4 hover:border-4 hover-border-fix cursor-pointer relative text-white text-[24px]">
+                <div className="border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"

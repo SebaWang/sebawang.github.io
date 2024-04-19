@@ -3,7 +3,7 @@ import img_bg_cover from "../../assets/img/Project_EPQ Learning Journey/cover.jp
 
 export default function LandingSection(): ReactElement {
   return (
-    <>
+    <div id='landing'>
       <div
         className="w-full relative overflow-hidden aspect-[16/9] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
@@ -17,6 +17,6 @@ export default function LandingSection(): ReactElement {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

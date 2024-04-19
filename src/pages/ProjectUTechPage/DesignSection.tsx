@@ -15,7 +15,7 @@ export default function DesignSection(): ReactElement {
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-[18px] font-light mt-12 mb-6">
+        <p className="text-[16px] font-light mt-12 mb-6">
           Replacing the traditional multi-button controller with a new
           touch-screen controller is essential to simplify the complex operation
           of the Washlet. This innovative approach provides a clear operation
@@ -30,13 +30,13 @@ export default function DesignSection(): ReactElement {
           <p className="text-center">New Touch-Screen Remote & Application</p>
         </div>
 
-        <p className="text-[18px] font-bold mt-16 mb-4">The Using Scenario</p>
+        <p className="text-[16px] font-bold mt-16 mb-4">The Using Scenario</p>
         <Scenario />
 
-        <p className="text-[18px] font-bold mt-16 mb-4">
+        <p className="text-[16px] font-bold mt-16 mb-4">
           The Health Management Application
         </p>
-        <p className="text-[18px] font-light mt-6">
+        <p className="text-[16px] font-light mt-6">
           Alongside leading the design and development of a new touch-screen
           controller, I guided the team in creating an application for users to
           access their historical urine data. This innovative tool can also

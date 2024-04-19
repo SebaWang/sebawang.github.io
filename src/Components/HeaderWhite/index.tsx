@@ -27,18 +27,18 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full px-6 text-white text-sm
+      className={`fixed top-0 z-50 w-full px-6 text-sm
       transition-all duration-300 ease-out lg:px-12
       ${
         scrolled
-          ? "backdrop-blur-sm py-3 shadow-xl  bg-[#262626] bg-opacity-50 "
-          : "backdrop-blur-sm py-4 shadow-none"
+          ? "backdrop-blur-sm py-3 shadow-xl bg-[#e8e8e8] bg-opacity-80 "
+          : "backdrop-blur-sm py-4 shadow-none "
       }`}
     >
       <div className="mx-auto flex container items-center justify-between">
         <Logo scrolled={scrolled} />
         <div className="hidden gap-6 lg:flex">
-          <Links />
+          <Links scrolled={scrolled} />
         </div>
         <MobileMenu />
       </div>
@@ -46,43 +46,45 @@ const FlyoutNav = () => {
   );
 };
 
-interface LogoProps{
-  color?: string,
-  scrolled: boolean
+interface LogoProps {
+  color?: string;
+  scrolled: boolean;
 }
 
 const Logo: React.FC<LogoProps> = ({ color = "white", scrolled }) => {
   return (
     <Link to="/">
-    <div className="items-center gap-2 cursor-pointer">
-      <p className="text-xl font-bold" style={{ color }}>
-        Sebastian Wang
-      </p>
-    
-      {!scrolled && (
-        <TextSwap
-          strings={[
-            "Service Designer",
-            "Storyteller",
-            "Inclusive Designer",
-            "Innovation Strategist"
-          ]}
-          animationType="fade"
-          animationDuration="5s"
-          interval={3000}
-        />
-      )}
-      
-    </div>
+      <div className="items-center gap-2 cursor-pointer">
+        <p
+          className={`text-xl font-bold
+      ${scrolled ? "text-black " : "text-white"}`}
+        >
+          Sebastian Wang
+        </p>
+
+        {!scrolled && (
+          <TextSwap
+            strings={[
+              "Service Designer",
+              "Storyteller",
+              "Inclusive Designer",
+              "Innovation Strategist",
+            ]}
+            animationType="fade"
+            animationDuration="5s"
+            interval={3000}
+          />
+        )}
+      </div>
     </Link>
   );
 };
 
-const Links = () => {
+const Links: React.FC<LogoProps> = ({ color = "white", scrolled }) => {
   return (
     <div className="flex items-center gap-6">
       {LINKS.map((l) => (
-        <NavLink key={l.text} href={l.href} FlyoutContent={l.component}>
+        <NavLink key={l.text} href={l.href} FlyoutContent={l.component} scrolled={scrolled}>
           {l.text}
         </NavLink>
       ))}
@@ -93,10 +95,16 @@ const Links = () => {
 interface NavLinkProps {
   children: React.ReactNode;
   href: string;
-  FlyoutContent?: React.ComponentType; 
+  FlyoutContent?: React.ComponentType;
+  scrolled: boolean;
 }
 
-const NavLink: React.FC<NavLinkProps>  = ({ children, href, FlyoutContent }) => {
+const NavLink: React.FC<NavLinkProps> = ({
+  children,
+  href,
+  FlyoutContent,
+  scrolled,
+}) => {
   const [open, setOpen] = useState(false);
 
   const showFlyout = FlyoutContent && open;
@@ -107,7 +115,11 @@ const NavLink: React.FC<NavLinkProps>  = ({ children, href, FlyoutContent }) => 
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <Link to={href} className="relative hover:border-b-[3px] pb-1 hover:box-border border-[#DD663C] duration-300 text-white">
+      <Link
+        to={href}
+        className={`relative hover:border-b-[3px] pb-1 hover:box-border border-[#DD663C] duration-300
+    ${scrolled ? "text-black " : "text-white"}`}
+      >
         {children}
         <span
           style={{
@@ -124,7 +136,7 @@ const NavLink: React.FC<NavLinkProps>  = ({ children, href, FlyoutContent }) => 
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: "-50%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="absolute left-1/2 top-12 bg-white text-white"
+            className="absolute left-1/2 top-12 bg-white"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
             <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
@@ -139,12 +151,16 @@ const NavLink: React.FC<NavLinkProps>  = ({ children, href, FlyoutContent }) => 
 interface MobileMenuLinkProps {
   children: React.ReactNode;
   href: string;
-  FoldContent?: React.ComponentType; 
-  setMenuOpen: (isOpen: boolean) => void; 
+  FoldContent?: React.ComponentType;
+  setMenuOpen: (isOpen: boolean) => void;
 }
 
-
-const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({ children, href, FoldContent, setMenuOpen }) => {
+const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({
+  children,
+  href,
+  FoldContent,
+  setMenuOpen,
+}) => {
   const [open, setOpen] = useState(false);
 
   return (

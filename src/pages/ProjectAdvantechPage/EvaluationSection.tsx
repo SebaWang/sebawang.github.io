@@ -4,7 +4,7 @@ import { ReactComponent as Road } from "../../assets/img/icon_road.svg";
 
 export default function EvaluationSection(): ReactElement {
   return (
-    <div className="container mx-auto mt-12 w-[1100px] pb-24" id="evaluation">
+    <div className="container mx-auto mt-12 w-[1100px] pb-12" id="evaluation">
       <div className="text-center pt-12 mb-8">
         <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
           [ &nbsp; EVALUATION &nbsp; ]

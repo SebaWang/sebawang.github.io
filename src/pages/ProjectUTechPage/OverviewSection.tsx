@@ -11,7 +11,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-8 mt-6">
           <div className="flex flex-col justify-center">
-            <p className="text-[18px] font-light">
+            <p className="text-[16px] font-light">
               In leading the UX team, one of my focus was to ensure a smooth
               user experience with our innovative urine analysis toilet. We
               meticulously considered diverse user physical conditions and
@@ -33,14 +33,14 @@ export default function OverviewSection(): ReactElement {
           </div>
 
           <div>
-            <div className="flex gap-2 text-[18px] font-light flex-wrap">
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+            <div className="flex gap-2 text-[16px] font-light flex-wrap">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               UI / UX Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Strategy Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Universal Design
               </div>
             </div>

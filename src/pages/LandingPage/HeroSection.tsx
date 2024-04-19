@@ -19,7 +19,7 @@ export default function HeroSection() {
             >
                 <div className='container grid grid-cols-4 gap-4 pt-48 mx-auto relative'>
                 <img src={img_selfie} className='w-[500px] absolute -bottom-24 left-[46%] 2xl:left-[45%] z-10' />
-                    <div className='col-span-4 text-white text-[96px] mb-24'>
+                    <div className='col-span-4 text-white text-[96px] mb-24 font-serif'>
                         <TextSpaceBetween text='SEBASTIAN   WANG' />
                     </div>
                     <div className='col-span-2 mb-24 relative z-20'>
@@ -29,7 +29,7 @@ export default function HeroSection() {
                     </div>
                     <div className='col-span-2 text-right flex flex-col-reverse mb-24 gap-4 font-light'>
                         <Link to='/project'><div><button className='border border-[#595757] py-2 text-[#595757] w-[180px] duration-300 hover:text-white hover:bg-[#595757]'>View Projects</button></div></Link>
-                        <a href='#ContactSection'><div><button className='bg-[#EA5514] py-2 text-white w-[180px] border-[1px] border-[#EA5514] duration-300 hover:text-[#EA5514] hover:bg-transparent'>Contact Me</button></div></a>
+                        <a href='#ContactSection'><div><button className='bg-[#EA5514] py-2 text-white w-[180px] border-[1px] border-[#EA5514] duration-300 hover:bg-[#c44c1a]'>Contact Me</button></div></a>
                     </div>
                 </div>
                 <HeroFooter />

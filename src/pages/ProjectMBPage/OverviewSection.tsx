@@ -27,7 +27,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-4 pb-24">
           <div>
-            <p className="mt-6 text-[18px] font-light">
+            <p className="mt-6 text-[16px] font-light">
               The Ministry of Biodiversity operates as a fictional government
               department, stimulating and inspiring robust discussions
               surrounding policies concerning nature and agriculture. Its goal
@@ -44,17 +44,17 @@ export default function OverviewSection(): ReactElement {
               the merits and drawbacks of these "future" policies and prompting
               discussions on "current" environmental policies.
             </p>
-            <div className="gap-4 mt-6 text-[18px]">
-              <button className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C]">
+            <div className="gap-4 mt-6 text-[16px]">
+              <button className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Speculative Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C]">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Participatory Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C]">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Research Through Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C]">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Sustainable Design
               </button>
             </div>
@@ -76,17 +76,17 @@ export default function OverviewSection(): ReactElement {
 
       <div className='relative w-full mt-12 '>
             <img src={img_process_bg} />
-            <HoverImage width="8%" height="14%" position="left" distance="14%" top="40%" hoverLeft="24%" hoverTop="40%" imageUrl={img_process_01} />
-            <HoverImage width="8%" height="14%" position="left" distance="14%" top="55%" hoverLeft="24%" hoverTop="40%" imageUrl={img_process_02} />
-            <HoverImage width="8%" height="18%" position="left" distance="33.5%" top="40%" hoverLeft="43.5%" hoverTop="40%" imageUrl={img_process_03} />
-            <HoverImage width="8%" height="18%" position="left" distance="33.5%" top="60%" hoverLeft="43.5%" hoverTop="40%" imageUrl={img_process_04} />
+            <HoverImage width="8%" height="14%" position="left" distance="14%" top="40%" hoverLeft="24%" hoverTop="40%" imageUrl={img_process_01} description="Utilizing simple materials to swiftly generate future artifacts for interaction." />
+            <HoverImage width="8%" height="14%" position="left" distance="14%" top="55%" hoverLeft="24%" hoverTop="40%" imageUrl={img_process_02} description="Future Scenario: Humans cohabiting with animals." />
+            <HoverImage width="8%" height="18%" position="left" distance="33.5%" top="40%" hoverLeft="43.5%" hoverTop="40%" imageUrl={img_process_03} description="Future Artifact: Informational mail distributed by the Ministry of Biodiversity." />
+            <HoverImage width="8%" height="18%" position="left" distance="33.5%" top="60%" hoverLeft="43.5%" hoverTop="40%" imageUrl={img_process_04} description="Using future artifacts to engage with people." />
             <img src={img_process_logo} className="absolute left-[45%] top-[37%] w-[8%]" />
-            <HoverImage width="8%" height="24%" position="right" distance="36.8%" top="40%" hoverLeft="46.8%" hoverTop="20%" imageUrl={img_process_05} />
-            <HoverImage width="8%" height="18%" position="right" distance="27%" top="40%" hoverLeft="37%" hoverTop="40%" imageUrl={img_process_06} />
-            <HoverImage width="8%" height="18%" position="right" distance="27%" top="60%" hoverLeft="37%" hoverTop="40%" imageUrl={img_process_07} />
-            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="28%" hoverLeft="26.5%" hoverTop="40%" imageUrl={img_process_08} />
-            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="49%" hoverLeft="26.5%" hoverTop="40%" imageUrl={img_process_09} />
-            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="70%" hoverLeft="26.5%" hoverTop="10%" imageUrl={img_process_10} />
+            <HoverImage width="8%" height="24%" position="right" distance="36.8%" top="40%" hoverLeft="46.8%" hoverTop="20%" imageUrl={img_process_05} description="Crazy 8: Generating 8 ideas in 8 minutes." />
+            <HoverImage width="8%" height="18%" position="right" distance="27%" top="40%" hoverLeft="37%" hoverTop="40%" imageUrl={img_process_06} description="Using future newspapers to engage with people." />
+            <HoverImage width="8%" height="18%" position="right" distance="27%" top="60%" hoverLeft="37%" hoverTop="40%" imageUrl={img_process_07} description="Engaging with people at Kew Gardens." />
+            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="28%" hoverLeft="26.5%" hoverTop="40%" imageUrl={img_process_08} description="Policy 01 - Nature Recovery Season" />
+            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="49%" hoverLeft="26.5%" hoverTop="40%" imageUrl={img_process_09} description="Policy 02 - Biodiversity Conservation Certificate"/>
+            <HoverImage width="7%" height="15%" position="right" distance="17.5%" top="70%" hoverLeft="26.5%" hoverTop="10%" imageUrl={img_process_10} description="Policy 03 - The Bill of Multi-species Rights" />
             <HoverImage width="8%" height="20%" position="right" distance="3.8%" top="20%" hoverLeft="13.8%" hoverTop="40%" imageUrl={img_process_11} />
             <HoverImage width="8%" height="20%" position="right" distance="3.8%" top="42%" hoverLeft="13.8%" hoverTop="10%" imageUrl={img_process_12} />
           </div>

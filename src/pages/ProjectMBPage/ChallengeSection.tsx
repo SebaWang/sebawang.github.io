@@ -22,7 +22,7 @@ export default function ChallengeSection(): ReactElement {
             Crafting Compelling Futures: Balancing Science and Emotion in
             Storytelling
           </p>
-          <p className="text-[18px] mt-2">
+          <p className="text-[16px] mt-2">
             In this project, I came to appreciate the delicate balance needed
             when crafting future scenarios. These narratives must{" "}
             <span className="font-bold">
@@ -40,12 +40,12 @@ export default function ChallengeSection(): ReactElement {
             </span>{" "}
             ensuring coherence and engagement in the storytelling process.
           </p>
-          <p className="text-[18px] mt-4 font-bold">Causal Layered Analysis</p>
+          <p className="text-[16px] mt-4 font-bold">Causal Layered Analysis</p>
           <ModalImageFree imgURL={img_challenges_01} />
           <p className="font-bold text-[24px] mt-12">
             Friction fosters deeper conversation.
           </p>
-          <p className="text-[18px] mt-2">
+          <p className="text-[16px] mt-2">
             Storytelling in the speculative design is not just about envisioning
             future scenarios; it's about fostering meaningful dialogue. Crafting
             such narratives demands nuance. A lacklustre story yields shallow
@@ -70,14 +70,14 @@ export default function ChallengeSection(): ReactElement {
             </div>
 
             <div className="row-span-2">
-              <ModalImage aspectRatio="125/178" imgURL={img_challenges_06} />
+              <ModalImage aspectRatio="125/178" imgURL={img_challenges_06} description="Future Newspaper Artifact: A Voice Supporting the Policies of the Ministry of Biodiversity" />
             </div>
 
             <div className="row-span-2">
-              <ModalImage aspectRatio="125/178" imgURL={img_challenges_07} />
+              <ModalImage aspectRatio="125/178" imgURL={img_challenges_07}  description="Future Newspaper Artifact: A Voice Against the Policies of the Ministry of Biodiversity" />
             </div>
             <div>
-              <ModalImage aspectRatio="63/43" imgURL={img_challenges_04} />
+              <ModalImage aspectRatio="63/43" imgURL={img_challenges_04}  />
             </div>
 
             <div>

@@ -9,6 +9,7 @@ interface HoverImageProps {
   top: string;
   hoverLeft: string;
   hoverTop: string;
+  description?: string;
 }
 
 const HoverImage: React.FC<HoverImageProps> = ({
@@ -20,6 +21,7 @@ const HoverImage: React.FC<HoverImageProps> = ({
   top,
   hoverLeft,
   hoverTop,
+  description="None",
 }) => {
   const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -59,8 +61,7 @@ const HoverImage: React.FC<HoverImageProps> = ({
         >
           <img src={imageUrl} className="w-full bg-white" />
           <p className="text-[14px] pt-2 text-[#2e2e2e]">
-            picture description picture description picture description picture
-            description picture description
+           {description}
           </p>
         </div>
       )}

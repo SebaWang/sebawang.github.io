@@ -5,7 +5,7 @@ import { ReactComponent as IconLeaf } from "../../assets/img/icon_leaf.svg";
 export default function EvaluationSection(): ReactElement {
   return (
     <div id='evaluation'>
-      <div className="container mx-auto pt-12 w-[1100px] mb-24">
+      <div className="container mx-auto pt-12 w-[1100px] mb-12">
         <div className="text-center mb-12">
           <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; EVALUATION &nbsp; ]
@@ -15,10 +15,10 @@ export default function EvaluationSection(): ReactElement {
           <IconDiscuss />
           <IconLeaf />
           <div>
-            <p className="text-[18px] font-bold mt-4">
+            <p className="text-[16px] font-bold mt-4">
               Successfully Engaging the Public for Policy Discussions
             </p>
-            <p className="text-[18px] mt-4 font-light">
+            <p className="text-[16px] mt-4 font-light">
               At the exhibition, our project sparked substantial feedback and
               discussions among interviewees and industry professionals. This
               revealed that public disinterest in environmental policy isn't
@@ -30,10 +30,10 @@ export default function EvaluationSection(): ReactElement {
             </p>
           </div>
           <div>
-            <p className="text-[18px] font-bold mt-4">
+            <p className="text-[16px] font-bold mt-4">
               An Inspiration for Agricultural Policy Research
             </p>
-            <p className="text-[18px] mt-4 font-light">
+            <p className="text-[16px] mt-4 font-light">
               Inspired by the nature recovery policy and its newspaper coverage,
               DEFRA researchers explore novel approaches to interact with rural
               farmers. They aim to foster casual yet engaging discussions on

@@ -35,7 +35,7 @@ export default function AboutSection() {
               </p>
               <div className="flex gap-4 justify-start mt-8 ">
               <a href="mailto:sebaswang.design@gmail.com">
-                <div className="p-4 hover:border-4 hover-border-fix duration-300 hover:border-[#DD663C] hover:text-[#DD663C]  cursor-pointer relative text-[#2E2E2E] border-[#2E2E2E] text-[24px]">
+                <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -47,7 +47,7 @@ export default function AboutSection() {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/sebastian-wang-26369a222/"
               >
-                <div className="p-4 hover:border-4 hover-border-fix duration-300 hover:border-[#DD663C] hover:text-[#DD663C]  cursor-pointer relative text-[#2E2E2E]  border-[#2E2E2E] text-[24px]">
+                <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -59,7 +59,7 @@ export default function AboutSection() {
                 rel="noreferrer"
                 href="https://medium.com/@SBSTN_WANG"
               >
-                <div className="p-4 hover:border-4 hover-border-fix duration-300 hover:border-[#DD663C] hover:text-[#DD663C]  cursor-pointer relative text-[#2E2E2E]  border-[#2E2E2E] text-[24px]">
+                <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
                   <FontAwesomeIcon
                     icon={faMedium}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -71,7 +71,7 @@ export default function AboutSection() {
                 rel="noreferrer"
                 href="https://www.instagram.com/haoooo2playhard/"
               >
-                <div className="p-4 hover:border-4 duration-300 hover:border-[#DD663C] hover:text-[#DD663C] hover-border-fix cursor-pointer relative text-[#2E2E2E] border-[#2E2E2E] text-[24px]">
+                <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"

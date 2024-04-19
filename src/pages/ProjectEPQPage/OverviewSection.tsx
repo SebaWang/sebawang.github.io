@@ -21,7 +21,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-8">
           <div className='flex flex-col justify-center'>
-            <p className="text-[18px] font-light">
+            <p className="text-[16px] font-light">
               This collaborative project with Open Book at Goldsmiths University
               seeks to address the learning hurdles faced by individuals with
               non-traditional backgrounds, including those who have battled
@@ -45,14 +45,14 @@ export default function OverviewSection(): ReactElement {
           </div>
 
           <div>
-            <div className="flex gap-2 text-[18px] font-light flex-wrap">
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+            <div className="flex gap-2 text-[16px] font-light flex-wrap">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Inclusive Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Participatory Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Social Design
               </div>
             </div>
@@ -79,6 +79,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="29.5%"
           hoverTop="10%"
           imageUrl={img_ovewview_01}
+          description="Using images to initiate discussions and engage with learners."
         />
         <HoverImage
           width="9.5%"
@@ -109,6 +110,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="45%"
           hoverTop="10%"
           imageUrl={img_ovewview_04}
+          description="Utilizing the learning journal to identify their interests and EPQ project topics."
         />
         <HoverImage
           width="11%"
@@ -119,6 +121,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="45%"
           hoverTop="10%"
           imageUrl={img_ovewview_05}
+          description="An idea that learners have provided to us."
         />
         <HoverImage
           width="11%"

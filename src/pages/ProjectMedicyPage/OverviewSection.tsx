@@ -18,7 +18,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
-            <p className="text-[18px] font-light">
+            <p className="text-[16px] font-light">
               As a strategy designer, I've supported Rug Pull Frens (RPF), a
               prominent Asian Non-Fungible Token (NFT) project, in formulating
               its roadmap. A pivotal element of this ambitious plan is Medicy,
@@ -42,14 +42,14 @@ export default function OverviewSection(): ReactElement {
           </div>
 
           <div>
-            <div className="flex gap-2 text-[18px] font-light flex-wrap">
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+            <div className="flex gap-2 text-[16px] font-light flex-wrap">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Strategy Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Website Design
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C]">
+              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               UI / UX Design
               </div>
             </div>
@@ -76,6 +76,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="29.5%"
           hoverTop="10%"
           imageUrl={img_ovewview_01}
+          description="General NFT Evaluation Journey"
         />
         <HoverImage
           width="18%"
@@ -86,6 +87,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="29.5%"
           hoverTop="10%"
           imageUrl={img_ovewview_02}
+          description="Customer Behavior Analysis & Overall Strategy Formulation"
         />
         <HoverImage
           width="17%"
@@ -96,6 +98,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="29.5%"
           hoverTop="10%"
           imageUrl={img_ovewview_03}
+          description="Offline Community Workshops for Blockchain Learning"
         />
       </div>
     </div>

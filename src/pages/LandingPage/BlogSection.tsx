@@ -30,7 +30,7 @@ export default function BlogSection() {
                 innovations. Thus, I practice, write, and share how I implement
                 design in my life.
               </p>
-              <button className=" mt-6 border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C]">
+              <button className=" mt-6 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:bg-[#DD663C] hover:text-white duration-300">
                 READ ON MEDIUM
               </button>
             </div>

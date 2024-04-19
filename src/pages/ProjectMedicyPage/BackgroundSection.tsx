@@ -14,7 +14,7 @@ export default function BackgroundSection(): ReactElement {
             [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
           </p>
         </div>
-        <p className="text-[18px] font-light mt-8">
+        <p className="text-[16px] font-light mt-8">
           The burgeoning NFT art market has garnered significant attention
           amidst the ascent of blockchain technology. In 2021, NFT transactions
           soared to an impressive £19.2 billion in trading volume, drawing
@@ -25,7 +25,7 @@ export default function BackgroundSection(): ReactElement {
         </p>
         <div className="mt-6 grid grid-cols-5">
           <div className="col-span-3">
-            <p className="text-[18px] font-light mt-1 mb-8">
+            <p className="text-[16px] font-light mt-1 mb-8 gap-4">
               Navigating the current NFT trading journey proves arduous for
               many. Traders must scour multiple websites to gather essential
               information such as project roadmaps, historical prices, minting
@@ -39,7 +39,7 @@ export default function BackgroundSection(): ReactElement {
             <ModalImage imgURL={img_chat} aspectRatio="398/174" />
           </div>
         </div>
-        <p className="text-[18px] font-light mt-4 mb-12">
+        <p className="text-[16px] font-light mt-4 mb-12">
           The user journey analysis reveals that, on average,{" "}
           <span className="font-bold">
             traders must visit at least 4 websites to obtain approximately 15
@@ -49,12 +49,12 @@ export default function BackgroundSection(): ReactElement {
           This convoluted process underscores the need for a more streamlined
           and user-friendly approach to NFT trading.
         </p>
-        <p className="text-[18px] font-bold mb-4">
+        <p className="text-[16px] font-bold mb-4">
           General NFT Evaluation Journey
         </p>
         <ModalImageFree imgURL={img_cof} />
 
-        <p className="text-[18px] font-light mt-4 mb-12">
+        <p className="text-[16px] font-light mt-4 mb-12">
           Given the decentralized nature of blockchain technology, which
           promotes transparency and openness, the design question arises:{" "}
           <span className="font-bold text-[#DD663C]">

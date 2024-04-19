@@ -23,7 +23,7 @@ export default function BackgroundSection(): ReactElement {
           </p>
         </div>
       </div>
-      <p className="mt-12 text-[18px]">
+      <p className="mt-12 text-[16px]">
         In discussions with the Government Digital Service (GDS), I considered
         whether the public's lack of interest in environmental policy was due to
         the need for more resonance. This makes it challenging for the
@@ -39,22 +39,22 @@ export default function BackgroundSection(): ReactElement {
       <p className="mt-6 text-[24px] font-bold">
         Storytelling is an essential element of policy communication.
       </p>
-      <p className="mt-2 text-[18px]">
+      <p className="mt-2 text-[16px]">
         In the quest to enhance public engagement and foster captivating
         discussions on policy matters for GDS and DEFRA, my team recognized the
         potential of speculative design methodology. It could serve as an
         effective approach to engaging people and informing near-future
         strategies. Our journey began with two creative and powerful questions:{" "}
       </p>
-      <p className="font-bold text-[18px]">
+      <p className="font-bold text-[16px]">
         1. What if societies must transition from being "egotistical" to
         "ecotistical" in response to declining biodiversity?
       </p>
-      <p className="font-bold text-[18px]">
+      <p className="font-bold text-[16px]">
         2. What if the UK government takes a proactive strategy towards
         environmental conservation?
       </p>
-      <p className="text-[18px]">
+      <p className="text-[16px]">
         With this in mind, I led my team to construct a compelling narrative
         that would capture the imagination and provoke thought on environmental
         policies.

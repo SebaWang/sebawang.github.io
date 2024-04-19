@@ -46,7 +46,7 @@ export default function DesignSection(): ReactElement {
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-[18px] font-light mt-12">
+        <p className="text-[16px] font-light mt-12">
           To mitigate the prolonged financial learning journey, it is imperative
           to identify activities that genuinely captivate their interest and
           promptly remind them when dopamine levels dip. The project developed a
@@ -113,7 +113,7 @@ export default function DesignSection(): ReactElement {
             </div>
           </div>
         </div>
-        <p className="font-bold text-[18px]">Using Scenario Storyboard</p>
+        <p className="font-bold text-[16px]">Using Scenario Storyboard</p>
         <ScenarioBoard className="w-full scale-[1.04]" />
         <div className="grid grid-cols-4 gap-3 mt-4">
           <p className="text-[14px] font-light">
@@ -131,10 +131,10 @@ export default function DesignSection(): ReactElement {
             dopamine through alternative activities.
           </p>
         </div>
-        <p className='text-[18px] font-bold mt-12 mb-4'>Service Blueprint <span className='font-light'>(Online Shopping on Amazon as an Example)</span></p>
+        <p className='text-[16px] font-bold mt-12 mb-4'>Service Blueprint <span className='font-light'>(Online Shopping on Amazon as an Example)</span></p>
         <ModalImageFree imgURL={img_service_blueprint} />
-        <p className='text-[18px] font-bold mt-8 mb-4'>Marketing Pirate Funnel & Service System Map</p>
-        <ModalImageFree imgURL={img_system_map} />
+        <p className='text-[16px] font-bold mt-8 mb-4'>Marketing Pirate Funnel & Service System Map</p>
+        <ModalImageFree imgURL={img_system_map} description="I applied the marketing method, the Pirate Funnel, to enhance the promotion and customer engagement of ADHD Financial Courses." />
       </div>
     </div>
   );

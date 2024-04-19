@@ -5,7 +5,7 @@ import { ReactComponent as Paper } from "../../assets/img/icon_paper.svg";
 
 export default function EvaluationSection(): ReactElement {
   return (
-    <div className="container mx-auto mt-12 w-[1100px] pb-24" id='evaluation'>
+    <div className="container mx-auto mt-12 w-[1100px] pb-12" id='evaluation'>
       <div className="text-center pt-12 mb-8">
         <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
           [ &nbsp; EVALUATION &nbsp; ]
@@ -20,7 +20,7 @@ export default function EvaluationSection(): ReactElement {
             <br />
             For Young Adults with ADHD
           </p>
-          <p className="text-[18px]">
+          <p className="text-[16px]">
             This project successfully delineated the financial learning journey
             and developed a service tool tailored for individuals with ADHD. The
             A+ Shopper was piloted by{" "}
@@ -35,7 +35,7 @@ export default function EvaluationSection(): ReactElement {
             <br />
             Inspired By The Project
           </p>
-          <p className="text-[18px]">
+          <p className="text-[16px]">
             With the insights gained from this research and design, The Brain
             Charity launched new financial management courses. These courses
             <span className="font-bold">
@@ -53,7 +53,7 @@ export default function EvaluationSection(): ReactElement {
             <br />
             For Financial Inclusion
           </p>
-          <p className="text-[18px]">
+          <p className="text-[16px]">
             I view this project as a compelling design case that can inspire
             companies to explore methods of integrating financial inclusion into
             their services, ensuring that everyone achieves an A+ in finance. I

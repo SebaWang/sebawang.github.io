@@ -12,7 +12,7 @@ export default function BackgroundSection(): ReactElement {
             [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
           </p>
         </div>
-        <p className="text-[18px] font-light mt-8">
+        <p className="text-[16px] font-light mt-8">
           In the global pandemic era, remote healthcare has emerged as a
           cornerstone in the evolution of the medical field. As a leading figure
           in the medical IoT sector, Advantech stands at the vanguard of this
@@ -21,7 +21,7 @@ export default function BackgroundSection(): ReactElement {
           challenges of introducing telemedicine initiatives in Taiwan. One
           notable obstacle is the absence of systematic integration.
         </p>
-        <p className="text-[18px] font-bold mt-8">
+        <p className="text-[16px] font-bold mt-8">
           The Advantech's iHealthcare Architecture
         </p>
 
@@ -31,7 +31,7 @@ export default function BackgroundSection(): ReactElement {
           Integrating telemedical hardware and software is necessary.
         </p>
 
-        <p className="text-[18px] font-light mt-4 mb-12">
+        <p className="text-[16px] font-light mt-4 mb-12">
           After conducting interviews with medical professionals and
           administrators, the marketing specialist and I uncovered a significant
           disconnect.{" "}

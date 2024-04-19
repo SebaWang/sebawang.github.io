@@ -3,9 +3,10 @@ import React from 'react';
 interface ModalProps {
   imgURL: string;
   aspectRatio?: string;
+  description?: string;
 }
 
-const ModalImage: React.FC<ModalProps> = ({ imgURL, aspectRatio = "16/9" }) => {
+const ModalImage: React.FC<ModalProps> = ({ imgURL, aspectRatio = "16/9", description="" }) => {
   const openModal = () => {
     const modalElement = document.getElementById(`my_modal_${imgURL}`);
     if (modalElement) {
@@ -28,7 +29,7 @@ const ModalImage: React.FC<ModalProps> = ({ imgURL, aspectRatio = "16/9" }) => {
       <dialog id={`my_modal_${imgURL}`} className="modal">
         <div className="modal-box max-w-[800px] p-0 bg-[#3d3d3d]">
             <img src={imgURL} className='w-full' alt="imgAlt" />
-          <p className="py-4 text-center text-white">description</p>
+          <p className="py-4 text-center text-white">{description}</p>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button onClick={() => {
