@@ -2,6 +2,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SwiperCard from "../../Components/Component/Swiper";
 import ButtonNext from "../../Components/Component/ButtonNext";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -35,7 +36,9 @@ export default function AboutSection() {
                 Fintech Enthusiast
               </p>
               <div className="mt-16">
-                <ButtonNext text="Learn more" />
+                <Link to="/about">
+                  <ButtonNext text="Learn more" />
+                </Link>
               </div>
             </div>
             <div className="text-center">
