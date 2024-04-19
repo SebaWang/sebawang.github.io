@@ -117,6 +117,12 @@ export default function ContactPage(): ReactElement {
                   required
                   className="w-full bg-white p-2 font-light bg-opacity-70"
                 />
+                <input
+                  name="user_subject"
+                  placeholder="Subject"
+                  required
+                  className="w-full bg-white p-2 font-light bg-opacity-70"
+                />
                 <textarea
                   name="user_message"
                   placeholder="Write message..."

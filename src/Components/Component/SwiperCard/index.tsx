@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import img_blog_01 from "../../../assets/img/img_landing_blog_01.webp";
-import img_blog_02 from "../../../assets/img/img_landing_blog_02.webp";
-import img_blog_03 from "../../../assets/img/img_landing_blog_03.webp";
+import img_blog_01 from "../../../assets/img/blog01.png";
+import img_blog_02 from "../../../assets/img/blog02.png";
+import img_blog_03 from "../../../assets/img/blog03.png";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -122,50 +122,26 @@ export default function SwiperBlogCard() {
         <div className="absolute right-0 top-1/2 text-white text-3xl cursor-pointer" onClick={rightCb}>
         <FontAwesomeIcon icon={faChevronRight} />
         </div>
-        <div className="swiperr s1 rounded-md shadow-md !text-[#333333] !text-left">
-          <div className="max-h-[250px]  overflow-hidden relative rounded-t-md">
-            <div className="absolute top-0 left-0 bottom-0 right-0 bg-yellow-800 bg-opacity-30 flex justify-center items-center text-white text-[26px] px-10">
-              What Financial Vulnerability Is
-            </div>
-            <img className="w-full object-cover" src={img_blog_02} />
+        <div className="swiperr s1 !bg-transparent">
+          <a href='https://medium.com/@SBSTN_WANG/what-financial-vulnerability-is-bd48d90b6ad6' target="_blank" rel="noreferrer" >
+          <div className="relative rounded-t-md">
+            <img className="w-full object-cover" src={img_blog_02} alt='blog02' />
           </div>
-          <div className="p-6 text-[16px] font-bold">
-            Design for Financial Vulnerability #1
-            <p className="text-xs font-light text-gray-700 mt-2">
-              What is financial vulnerability? Why does it matter? How does it
-              happen? Can service design help improve the issue?
-            </p>
-          </div>
+          </a>
         </div>
-        <div className="swiperr s2 rounded-md shadow-md !text-[#333333] !text-left">
-          <div className="max-h-[250px]  overflow-hidden relative rounded-t-md">
-            <div className="absolute top-0 left-0 bottom-0 right-0 bg-yellow-800 bg-opacity-30 flex justify-center items-center text-white text-[26px] px-10">
-              Research through Design: The Spirit of Iteration
-            </div>
-            <img className="w-full object-cover" src={img_blog_01} />
+        <div className="swiperr s2 !bg-transparent">
+          <a href='https://medium.com/design-bootcamp/inclusive-design-de-label-blur-the-boundary-cc2b06253644' target="_blank" rel="noreferrer">
+          <div className="relative rounded-t-md">
+            <img className="w-full object-cover" src={img_blog_01} alt='blog01' />
           </div>
-          <div className="p-6 text-[16px] font-bold">
-            Design for Futures #3
-            <p className="text-xs font-light text-gray-700 mt-2">
-              What is Research through Design? What is its value? How did I
-              conduct it in my design?
-            </p>
-          </div>
+          </a>
         </div>
-        <div className="swiperr s3 rounded-md shadow-md !text-[#333333] !text-left">
-          <div className="max-h-[250px]  overflow-hidden relative rounded-t-md">
-            <div className="absolute top-0 left-0 bottom-0 right-0 bg-yellow-800 bg-opacity-30 flex justify-center items-center text-white text-[26px] px-10">
-              5 Tips to Tell A Good Story
-            </div>
-            <img className="w-full object-cover" src={img_blog_03} />
+        <div className="swiperr s3 !bg-transparent">
+          <a href='https://medium.com/design-bootcamp/research-through-design-the-spirit-of-iteration-7af98ee546b7' target="_blank" rel="noreferrer">
+          <div className="relative rounded-t-md">
+            <img className="w-full object-cover" src={img_blog_03} alt='blog03' />
           </div>
-          <div className="p-6 text-[16px] font-bold">
-            Design for Futures #4
-            <p className="text-xs font-light text-gray-700 mt-2">
-              Good storytelling should provoke various interactions and opinions
-              beyond ranking the idea as good or bad.
-            </p>
-          </div>
+          </a>
         </div>
       </div>
     </>

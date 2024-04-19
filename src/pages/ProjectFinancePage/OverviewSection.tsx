@@ -4,7 +4,7 @@ import img_ovewview_bg from "../../assets/img/img_project_finance_overview_bg.jp
 import img_ovewview_01 from "../../assets/img/img_project_finance_overview_01.jpg"
 import img_ovewview_02 from "../../assets/img/img_project_finance_overview_02.jpg"
 import img_ovewview_03 from "../../assets/img/img_project_finance_overview_03.png"
-import img_ovewview_04 from "../../assets/img/img_project_finance_overview_04.png"
+import img_ovewview_04 from "../../assets/img/img_project_finance_overview_04.jpg"
 import img_ovewview_05 from "../../assets/img/img_project_finance_overview_05.png"
 import img_ovewview_06 from "../../assets/img/img_project_finance_overview_06.png"
 import img_ovewview_07 from "../../assets/img/img_project_finance_overview_07.jpg"

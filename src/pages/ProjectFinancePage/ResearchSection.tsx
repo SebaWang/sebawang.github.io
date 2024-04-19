@@ -4,7 +4,7 @@ import img_research_02 from "../../assets/img/img_design_finance_research_02.jpg
 import img_research_03 from "../../assets/img/img_design_finance_research_03.png";
 import img_research_04 from "../../assets/img/img_design_finance_research_04.png";
 import img_research_05 from "../../assets/img/img_design_finance_research_05.png";
-import img_research_06 from "../../assets/img/img_design_finance_research_06.png";
+import img_research_06 from "../../assets/img/img_design_finance_research_06.jpg";
 
 import ModalImage from "../../Components/Component/ModalImage";
 import ModalImageFree from "../../Components/Component/ModalImageFree";
@@ -72,7 +72,7 @@ export default function ResearchSection(): ReactElement {
           Using a consultancy approach in service design helps manage project
           development.
         </p>
-        <div className="grid grid-cols-5 gap-6">
+        <div className="grid grid-cols-5 gap-6 mt-6 pb-4">
           <div className="col-span-3">
             <ModalImageFree imgURL={img_research_06} />
           </div>

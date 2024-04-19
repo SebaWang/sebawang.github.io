@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import { ReactComponent as Quote } from "../../assets/img/img_project_finance_quote.svg";
 import { ReactComponent as Monsters } from "../../assets/img/img_project_finance_monster.svg";
 import ModalImageFree from "../../Components/Component/ModalImageFree";
-import img_cof from "../../assets/img/img_project_finance_overview_04.png";
+import img_cof from "../../assets/img/img_project_finance_overview_04.jpg";
 
 export default function BackgroundSection(): ReactElement {
   return (

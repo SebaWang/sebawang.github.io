@@ -117,7 +117,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
           className={`fixed right-[1%] bottom-[30%] flex flex-col font-light w-[250px] z-50  py-4 pl-4 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 ${
             isVisible ? "block" : "hidden"
           }`}
-          style={{ transform: `translateY(${positionY}%)`}}
+         
           initial="hidden"
           animate="visible"
           exit="hidden"
