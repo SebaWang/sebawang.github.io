@@ -29,7 +29,7 @@ export default function HeroSection() {
                     </div>
                     <div className='col-span-2 text-right flex flex-col-reverse mb-24 gap-4 font-light'>
                         <Link to='/project'><div><button className='border border-[#595757] py-2 text-[#595757] w-[180px] duration-300 hover:text-white hover:bg-[#595757]'>View Projects</button></div></Link>
-                        <a href='#ContactSection'><div><button className='bg-[#EA5514] py-2 text-white w-[180px] border-[1px] border-[#EA5514] duration-300 hover:bg-[#c44c1a]'>Contact Me</button></div></a>
+                       <Link to='/contact'><div><button className='bg-[#EA5514] py-2 text-white w-[180px] border-[1px] border-[#EA5514] duration-300 hover:bg-[#c44c1a]'>Contact Me</button></div></Link>
                     </div>
                 </div>
                 <HeroFooter />

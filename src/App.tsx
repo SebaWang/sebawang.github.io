@@ -8,6 +8,7 @@ import ProjectEPQPage from "./pages/ProjectEPQPage"
 import ProjectMedicyPage from "./pages/ProjectMedicyPage"
 import ProjectAdvantechPage from "./pages/ProjectAdvantechPage"
 import ProjectUTechPage from "./pages/ProjectUTechPage"
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="" element={<LandingPage />} />
         <Route path="/home" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/project" element={<ProjectPage />} />
         <Route path="/project/mob" element={<ProjectMBPage />} />
         <Route path="/project/finance" element={<ProjectFinancePage />} />

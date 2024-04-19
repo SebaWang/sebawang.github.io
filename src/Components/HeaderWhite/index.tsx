@@ -280,7 +280,7 @@ const LINKS = [
   },
   {
     text: "Contact",
-    href: "#",
+    href: "/contact",
     component: undefined,
   },
 ];

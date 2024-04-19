@@ -264,7 +264,7 @@ const LINKS = [
   },
   {
     text: "Contact",
-    href: "/#ContactSection",
+    href: "/contact",
     component: undefined,
   },
 ];
