@@ -33,7 +33,10 @@ export default function DetailSection(): ReactElement {
                 </nav>
                 <nav className='text-black'>
                     <p className="tracking-[4px] text-[16px] font-bold">ORGANIZATION</p>
-                    <p className="text-[16px] font-bold">
+                    <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
+                        &nbsp;
+                    </div>
+                    <p className="text-[16px] font-bold mt-8">
                     Corporate
                     </p>
                     <p className="text-[16px] ">
