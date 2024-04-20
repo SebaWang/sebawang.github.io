@@ -14,7 +14,7 @@ export default function ReflectionSection(): ReactElement {
         <p className="text-[24px] font-bold mt-12">
           Rational Design for Emotional Experience.
         </p>
-        <p className="text-[16px] font-light mt-4">
+        <p className="text-content font-light mt-4">
           In the rapidly evolving services of Web3 and NFTs, there remain
           abundant opportunities for exploration and optimization. While the NFT
           market is undeniably competitive, I believe sustained success hinges
@@ -34,7 +34,7 @@ export default function ReflectionSection(): ReactElement {
 
         <div className="mx-auto text-center mt-4 pb-16">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
+            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
               Back To Projects
             </button>
           </Link>

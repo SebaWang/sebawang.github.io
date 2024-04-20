@@ -21,7 +21,7 @@ export default function AvatarSection() {
               extensive skills in inclusive and human-centric design and
               communication.
             </p>
-            <p className="mt-3 text-[16px] font-light text-[#6F6F6F] mb-12">
+            <p className="mt-3 text-content font-light text-[#6F6F6F] mb-12">
               A firm believer that telling a compelling story is as essential as
               conducting thorough design research. Specializing in harnessing
               the spirit of service design to drive innovation within

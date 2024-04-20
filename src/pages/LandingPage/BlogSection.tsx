@@ -17,7 +17,7 @@ export default function BlogSection() {
           <div className="grid md:grid-cols-12 gap-x-8 pb-48">
             <div className="col-span-5">
               <p className="text-xs flex items-center">
-                <FontAwesomeIcon icon={faMedium} className="mr-1 text-[16px]" />
+                <FontAwesomeIcon icon={faMedium} className="mr-1 text-content" />
                 BLOG
               </p>
               <p className="text-subtitle font-bold mt-2">

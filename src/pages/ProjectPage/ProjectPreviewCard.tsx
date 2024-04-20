@@ -28,7 +28,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
         <div className="max-h-80 overflow-hidden relative rounded-t-md">
           <img className="w-full object-cover aspect-[396/297]" src={imgURL} alt="Project" />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 mask duration-300">
-            <p className="text-white text-center px-16 font-light text-[16px]">{content}</p>
+            <p className="text-white text-center px-16 font-light text-content">{content}</p>
           </div>
         </div>
         <div

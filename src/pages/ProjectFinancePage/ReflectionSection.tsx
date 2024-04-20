@@ -16,7 +16,7 @@ export default function ReflectionSection(): ReactElement {
           Problem solving begins by transcending the concept of being a problem
           solver.
         </p>
-        <p className="text-[16px] font-light mt-4">
+        <p className="text-content font-light mt-4">
           Throughout the project, I noted a potential drawback of the Design
           Thinking framework:{" "}
           <span className="font-bold">
@@ -35,7 +35,7 @@ export default function ReflectionSection(): ReactElement {
         <p className="text-[24px] font-bold mt-8">
           Overall, is inclusive design inclusive?
         </p>
-        <p className="text-[16px] font-light mt-4">
+        <p className="text-content font-light mt-4">
           Despite immersing myself in various inclusive design mindsets and
           tools during the project, I pondered whether the term "inclusive
           design" genuinely indicates inclusivity if designers must rely on it
@@ -68,7 +68,7 @@ export default function ReflectionSection(): ReactElement {
 
       <div className="mx-auto text-center mt-4 pb-16">
         <Link to="/project">
-          <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
+          <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
             Back To Projects
           </button>
         </Link>

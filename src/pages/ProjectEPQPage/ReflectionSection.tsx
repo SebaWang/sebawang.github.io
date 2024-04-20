@@ -16,7 +16,7 @@ export default function ReflectionSection(): ReactElement {
           Seeing an educational service that helps learners discover themselves
           is inspiring.
         </p>
-        <p className="text-[16px] font-light mt-4">
+        <p className="text-content font-light mt-4">
           In this project, my team and I addressed a common educational issue:
           the tendency towards standardised learning. Through design, we
           injected diversity into the unified service system, valuing the
@@ -34,7 +34,7 @@ export default function ReflectionSection(): ReactElement {
 
         <div className="mx-auto text-center mt-4 pb-16">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
+            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
               Back To Projects
             </button>
           </Link>

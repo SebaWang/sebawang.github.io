@@ -15,12 +15,12 @@ export default function EvaluationSection(): ReactElement {
       <div className="grid grid-cols-3 gap-12 mt-4">
         <div className="flex flex-col gap-4">
           <Star className="h-[102px]" />
-          <p className="text-[16px] font-bold">
+          <p className="text-content font-bold">
             A Popular Service Tool
             <br />
             For Young Adults with ADHD
           </p>
-          <p className="text-[16px] font-light">
+          <p className="text-content font-light">
             This project successfully delineated the financial learning journey
             and developed a service tool tailored for individuals with ADHD. The
             A+ Shopper was piloted by{" "}
@@ -30,12 +30,12 @@ export default function EvaluationSection(): ReactElement {
         </div>
         <div className="flex flex-col gap-4">
           <Bulb className="h-[102px]" />
-          <p className="text-[16px] font-bold">
+          <p className="text-content font-bold">
             The Financial Course
             <br />
             Inspired By The Project
           </p>
-          <p className="text-[16px] font-light">
+          <p className="text-content font-light">
             With the insights gained from this research and design, The Brain
             Charity launched new financial management courses. These courses
             <span className="font-bold">
@@ -48,12 +48,12 @@ export default function EvaluationSection(): ReactElement {
         </div>
         <div className="flex flex-col gap-4">
           <Paper className="h-[102px]" />
-          <p className="text-[16px] font-bold">
+          <p className="text-content font-bold">
             An Excellent Design Case
             <br />
             For Financial Inclusion
           </p>
-          <p className="text-[16px] font-light">
+          <p className="text-content font-light">
             I view this project as a compelling design case that can inspire
             companies to explore methods of integrating financial inclusion into
             their services, ensuring that everyone achieves an A+ in finance. I

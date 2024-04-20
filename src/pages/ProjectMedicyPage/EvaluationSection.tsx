@@ -17,7 +17,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-[20px] font-bold">
             A Huge Milestone for the NFT Roadmap
           </p>
-          <p className="text-[16px]">
+          <p className="text-content">
             Following the execution of learning workshops and the implementation
             of the Medicy website, RPF achieved significant milestones on the
             Gen 2 roadmap. The project garnered attention from{" "}
@@ -33,7 +33,7 @@ export default function EvaluationSection(): ReactElement {
         <div className="flex flex-col gap-4">
           <Good className="h-[102px]" />
           <p className="text-[20px] font-bold">Trader-friendly Features</p>
-          <p className="text-[16px]">
+          <p className="text-content">
             Regarding the Medicy website, the current beta version has received
             numerous positive feedback from traders. Users appreciate the
             visualized and simplified access to trading information. In terms of

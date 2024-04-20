@@ -57,7 +57,7 @@ export default function DesignSection(): ReactElement {
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-[16px] font-light mt-12 mb-6">
+        <p className="text-content font-light mt-12 mb-6">
           The revamped EPQ learning journey features a design-led teaching
           structure, which can be divided into pre-curriculum and formal
           curriculum stages, alongside a crafted physical learning journal. This
@@ -75,11 +75,11 @@ export default function DesignSection(): ReactElement {
         </p>
         <ModalImageFree imgURL={img_service_blueprint} />
 
-        <p className="text-[16px] font-bold my-8">
+        <p className="text-content font-bold my-8">
           A Glimpse of the Learning Journal{" "}
         </p>
 
-        <div className="flex gap-2 text-[16px] font-light flex-wrap">
+        <div className="flex gap-2 text-content font-light flex-wrap">
           <div
             className={`border-[1px] p-1 px-4 rounded-full cursor-pointer duration-300 hover:scale-[1.03] ${
               currentImg === "01"
@@ -114,14 +114,14 @@ export default function DesignSection(): ReactElement {
 
         <div className="relative">{renderContent()}</div>
 
-        <p className="text-[16px] font-bold mt-12 mb-4">
+        <p className="text-content font-bold mt-12 mb-4">
           New EPQ Learning Journey
         </p>
         <ModalImageFree imgURL={img_journey} />
 
-        <p className="text-[16px] font-bold mt-12 mb-4">Pre Curriculum</p>
+        <p className="text-content font-bold mt-12 mb-4">Pre Curriculum</p>
 
-        <p className="text-[16px] font-light ">
+        <p className="text-content font-light ">
           Before delving into an EPQ project, learners must first discover their
           true passion and topic of interest to avoid feelings of anxiety and
           uncertainty. The pre-curriculum stage acts as a buffer, offering
@@ -138,7 +138,7 @@ export default function DesignSection(): ReactElement {
 
 
         
-        <p className="text-[16px] font-bold mt-12 mb-4">Formal Curriculum</p>
+        <p className="text-content font-bold mt-12 mb-4">Formal Curriculum</p>
         <div className='grid grid-cols-2 gap-4 mt-4'>
           <ModalImage imgURL={img_design_03} />
           <ModalImage imgURL={img_design_04} />

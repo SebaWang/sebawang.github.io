@@ -14,7 +14,7 @@ export default function DesignSection(): ReactElement {
       case "01":
         return (
           <>
-            <p className="text-[16px] font-bold mt-8 mb-4">
+            <p className="text-content font-bold mt-8 mb-4">
               Outpatient Diagnosis Journey & Introduction
             </p>
             <ModalImageFree imgURL={img_page_01T} />
@@ -23,7 +23,7 @@ export default function DesignSection(): ReactElement {
       case "02":
         return (
           <>
-            <p className="text-[16px] font-bold mt-8 mb-4">
+            <p className="text-content font-bold mt-8 mb-4">
               Inpatient Diagnosis Journey & Introduction (From Ambulance to ICU
               )
             </p>
@@ -33,7 +33,7 @@ export default function DesignSection(): ReactElement {
       default:
         return (
           <>
-            <p className="text-[16px] font-bold mt-8 mb-4">
+            <p className="text-content font-bold mt-8 mb-4">
               Outpatient Diagnosis Journey & Introduction
             </p>
             <ModalImageFree imgURL={img_page_01T} />
@@ -50,7 +50,7 @@ export default function DesignSection(): ReactElement {
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-[16px] font-light mt-12 mb-6">
+        <p className="text-content font-light mt-12 mb-6">
           Recognizing the varying consultation frequencies and service
           procedures across medical specialties, I recommended to my team that
           we divide the service solutions into two distinct categories:
@@ -74,7 +74,7 @@ export default function DesignSection(): ReactElement {
             >
               Outpatient Solution
             </div>
-            <div className="flex gap-2 text-[16px] font-light flex-wrap justify-center my-6">
+            <div className="flex gap-2 text-content font-light flex-wrap justify-center my-6">
               <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
                 ENT
               </div>
@@ -93,7 +93,7 @@ export default function DesignSection(): ReactElement {
                 currentImg === "01" ? "bg-[#F6F9FD]" : "bg-[#F7F7F7]"
               }`}
             >
-              <div className="flex flex-col justify-center gap-2 font-light text-[16px] mx-auto w-fit py-6">
+              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-6">
                 <p>・ Different Divisions Operation UI</p>
                 <p>・ Digitalized Medical Education Materials</p>
               </div>
@@ -112,7 +112,7 @@ export default function DesignSection(): ReactElement {
             >
               Outpatient Solution
             </div>
-            <div className="flex gap-2 text-[16px] font-light flex-wrap justify-center my-6">
+            <div className="flex gap-2 text-content font-light flex-wrap justify-center my-6">
               <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
                 ENT
               </div>
@@ -131,7 +131,7 @@ export default function DesignSection(): ReactElement {
                 currentImg === "02" ? "bg-[#F6F9FD]" : "bg-[#F7F7F7]"
               }`}
             >
-              <div className="flex flex-col justify-center gap-2 font-light text-[16px] mx-auto w-fit py-6">
+              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-6">
                 <p>・ Different Divisions Operation UI</p>
                 <p>・ Digitalized Medical Education Materials</p>
               </div>
@@ -140,11 +140,11 @@ export default function DesignSection(): ReactElement {
         </div>
         {renderContent()}
 
-        <p className="text-[16px] font-bold mt-12 mb-4">
+        <p className="text-content font-bold mt-12 mb-4">
           E-commerce Configurator & Inbound Marketing Strategy of Telehealth
           Service
         </p>
-        <p className="text-[16px] font-light mb-4">
+        <p className="text-content font-light mb-4">
           The marketing specialist and I categorized customers and implemented
           targeted promotion strategies to drive service adoption. Given the
           different medical divisions and hospital operation strategies, I

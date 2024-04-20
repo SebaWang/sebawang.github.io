@@ -22,7 +22,7 @@ export default function ChallengeSection(): ReactElement {
             Crafting Compelling Futures: Balancing Science and Emotion in
             Storytelling
           </p>
-          <p className="text-[16px] mt-2">
+          <p className="text-content mt-2">
             In this project, I came to appreciate the delicate balance needed
             when crafting future scenarios. These narratives must{" "}
             <span className="font-bold">
@@ -40,12 +40,12 @@ export default function ChallengeSection(): ReactElement {
             </span>{" "}
             ensuring coherence and engagement in the storytelling process.
           </p>
-          <p className="text-[16px] mt-4 font-bold">Causal Layered Analysis</p>
+          <p className="text-content mt-4 font-bold">Causal Layered Analysis</p>
           <ModalImageFree imgURL={img_challenges_01} />
           <p className="font-bold text-[24px] mt-12">
             Friction fosters deeper conversation.
           </p>
-          <p className="text-[16px] mt-2">
+          <p className="text-content mt-2">
             Storytelling in the speculative design is not just about envisioning
             future scenarios; it's about fostering meaningful dialogue. Crafting
             such narratives demands nuance. A lacklustre story yields shallow

@@ -9,7 +9,7 @@ export default function SkillSection(): ReactElement {
           <div className="w-[18px] border-b-[6px] border-[#EA5514] h-[12px]">
             &nbsp;
           </div>
-          <p className="text-[16px] text-black font-bold mt-6">
+          <p className="text-content text-black font-bold mt-6">
             MA Service Design
           </p>
           <p className="text-[14px]">
@@ -20,7 +20,7 @@ export default function SkillSection(): ReactElement {
             2022 - 2024 / Distinction
           </p>
 
-          <p className="text-[16px] text-black font-bold mt-4">
+          <p className="text-content text-black font-bold mt-4">
             MBA Business Management
           </p>
           <p className="text-[14px]">
@@ -31,7 +31,7 @@ export default function SkillSection(): ReactElement {
             2020 - 2022
           </p>
 
-          <p className="text-[16px] text-black font-bold mt-4">
+          <p className="text-content text-black font-bold mt-4">
             BA Industrial Design
           </p>
           <p className="text-[14px]">
@@ -49,7 +49,7 @@ export default function SkillSection(): ReactElement {
           <div className="w-[18px] border-b-[6px] border-[#EA5514] h-[12px]">
             &nbsp;
           </div>
-          <p className="text-[16px] text-black font-bold mt-6">
+          <p className="text-content text-black font-bold mt-6">
             Service Designer
           </p>
           <p className="text-[14px]">Advantech, Taiwan</p>
@@ -57,7 +57,7 @@ export default function SkillSection(): ReactElement {
             2020 - 2022
           </p>
 
-          <p className="text-[16px] text-black font-bold mt-6">
+          <p className="text-content text-black font-bold mt-6">
             Web3 Strategy Designer
           </p>
           <p className="text-[14px]">Freelance</p>
@@ -65,7 +65,7 @@ export default function SkillSection(): ReactElement {
             2019 - 2021
           </p>
 
-          <p className="text-[16px] text-black font-bold mt-6">
+          <p className="text-content text-black font-bold mt-6">
             UX Design Team Lead
           </p>
           <p className="text-[14px]">HCG, Taiwan</p>
@@ -80,7 +80,7 @@ export default function SkillSection(): ReactElement {
           </div>
           <div className="flex gap-8 font-light">
             <div>
-              <p className="text-[16px] text-black font-bold mt-6">
+              <p className="text-content text-black font-bold mt-6">
                 Design & Research
               </p>
               
@@ -101,7 +101,7 @@ export default function SkillSection(): ReactElement {
               <p className="text-[14px]">Lean / Agile Development</p>
             </div>
             <div>
-              <p className="text-[16px] text-black font-bold mt-6">
+              <p className="text-content text-black font-bold mt-6">
               Corporate Communication
               </p>
               <p className="text-[14px] mt-2">Storytelling</p>
@@ -115,7 +115,7 @@ export default function SkillSection(): ReactElement {
               <p className="text-[14px]">Hypothesis Thinking</p>
             </div>
             <div>
-              <p className="text-[16px] text-black font-bold mt-6">
+              <p className="text-content text-black font-bold mt-6">
               Technical
               </p>
               <p className="text-[14px] mt-2">Webflow</p>

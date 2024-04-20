@@ -17,7 +17,7 @@ export default function BackgroundSection(): ReactElement {
           What is ADHD? Why is it relevant to financial vulnerability?
         </p>
         <Quote className="w-full scale-[1.1]" />
-        <p className="text-[16px] font-light mt-1">
+        <p className="text-content font-light mt-1">
           ADHD (Attention Deficit Hyperactivity Disorder) is a condition
           characterized by a mix of contradictory traits. People with ADHD may
           frequently experience shifts between concentration and distraction.
@@ -32,7 +32,7 @@ export default function BackgroundSection(): ReactElement {
           dopamine-boosting activities.
         </p>
         <div className="grid grid-cols-2 gap-4 mt-6">
-          <p className="text-[16px] font-light mt-1">
+          <p className="text-content font-light mt-1">
             Through interviews with{" "}
             <span className="font-bold">14 individuals</span> with ADHD across
             different age groups, I unearthed a notable phenomenon: older

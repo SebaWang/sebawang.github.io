@@ -16,7 +16,7 @@ export default function DesignSection(): ReactElement {
         <p className="text-[24px] font-bold mt-12">
           An integrated website for NFT trading and evaluating.
         </p>
-        <p className="text-[16px] font-light mt-4 mb-6">
+        <p className="text-content font-light mt-4 mb-6">
           Medicy serves as a hub for traders to access NFT information for value
           assessment and interaction. The platform offers a comprehensive view
           of the latest project news, categorized by different NFT project
@@ -32,7 +32,7 @@ export default function DesignSection(): ReactElement {
             type="radio"
             name="my_tabs_2"
             role="tab"
-            className={`tab text-[16px] text-nowrap ${
+            className={`tab text-content text-nowrap ${
               currentImg === "01" ? "text-[#D76565]" : ""
             }`}
             aria-label="Information Overview"
@@ -48,7 +48,7 @@ export default function DesignSection(): ReactElement {
                 <div className="col-span-7">
                   <img src={img_page_01} alt="PageImage01" className="w-full" />
                 </div>
-                <div className="col-span-3 h-full grid grid-cols-12 font-light text-[16px]">
+                <div className="col-span-3 h-full grid grid-cols-12 font-light text-content">
                   <div className="col-span-1 h-[90%] w-[60%] border-t-[1px] border-r-[1px] border-b-[1px] border-[#8C8C8C]">
                     &nbsp;
                   </div>
@@ -95,7 +95,7 @@ export default function DesignSection(): ReactElement {
             type="radio"
             name="my_tabs_2"
             role="tab"
-            className={`tab  text-[16px] text-nowrap  ${
+            className={`tab  text-content text-nowrap  ${
               currentImg === "02" ? "text-[#D76565]" : ""
             }`}
             aria-label="Project Introduction"
@@ -110,7 +110,7 @@ export default function DesignSection(): ReactElement {
                 <div className="col-span-7">
                   <img src={img_page_02} alt="PageImage01" className="w-full" />
                 </div>
-                <div className="col-span-3 h-full font-light text-[16px] flex flex-col justify-center pl-4">
+                <div className="col-span-3 h-full font-light text-content flex flex-col justify-center pl-4">
                   <p className="font-bold text-[#EB7979] mb-4 ">
                     Project Introduction
                   </p>

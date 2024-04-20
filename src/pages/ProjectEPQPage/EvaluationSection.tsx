@@ -15,7 +15,7 @@ export default function EvaluationSection(): ReactElement {
         <div className="flex flex-col gap-4">
           <Good className="h-[102px]" />
           <p className="text-[20px] font-bold">A Proved Engaging Service</p>
-          <p className="text-[16px]">
+          <p className="text-content">
             After one year of implementation (completed in 2022, evaluated in
             2023), 39 learners participated, resulting in a{" "}
             <span className="font-bold">15% increase in average sign-ups.</span>
@@ -29,7 +29,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-[20px] font-bold">
             A Smooth Teaching and Learning Journey
           </p>
-          <p className="text-[16px]">
+          <p className="text-content">
             Course instructors have observed that incorporating a design-led
             curriculum alongside the physical support toolkit (the learning
             journal) significantly enhances engagement during the teaching

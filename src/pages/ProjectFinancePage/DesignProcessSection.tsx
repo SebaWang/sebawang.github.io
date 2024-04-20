@@ -23,7 +23,7 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-bold text-[24px]">
           Nothing about ADHD without ADHD.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           I prioritize designing "with" people with ADHD rather than designing
           "for" them. I recognized these individuals as integral partners in the
           development of services and avoiding making decisions on their behalf.
@@ -38,11 +38,11 @@ export default function DesignProcessSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-4 mt-12">
           <div>
-            <p className="text-[16px] font-bold mb-4">The Concepts Iteration</p>
+            <p className="text-content font-bold mb-4">The Concepts Iteration</p>
             <ModalImage imgURL={img_research_04} aspectRatio="547/228" description="Iterating concepts through numerous discussions and workshops with individuals with ADHD." />
           </div>
           <div>
-            <p className="text-[16px] font-bold mb-4">
+            <p className="text-content font-bold mb-4">
               Impact-Feasibility Matrix
             </p>
             <ModalImageCustom imgURL={img_research_05} aspectRatio="522/285" />
@@ -53,7 +53,7 @@ export default function DesignProcessSection(): ReactElement {
           The service designer’s role in workshops is to encourage, not to steer
           the conversation.
         </p>
-        <p className="font-light text-[16px] mt-6 mb-8">
+        <p className="font-light text-content mt-6 mb-8">
           When conducting workshops, I wanted to ensure that both individuals
           with ADHD and professionals from ADHD charities have opportunities to
           share ideas and contribute to design decisions. <span className='font-bold'>I consciously take on

@@ -23,7 +23,7 @@ export default function ResearchSection(): ReactElement {
           It was not an easy task to engage people with ADHD in discussions
           about finance.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           Conversations about ADHD can be sensitive, especially when discussing
           finance.{" "}
           <span className="font-bold">
@@ -47,7 +47,7 @@ export default function ResearchSection(): ReactElement {
           Using case studies instead of personas helps maintain the complexity
           of ADHD.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           The intricacy of ADHD lies in the diversity of symptoms and their
           different personalized strategies.{" "}
           <span className="font-bold">
@@ -77,7 +77,7 @@ export default function ResearchSection(): ReactElement {
             <ModalImageFree imgURL={img_research_06} />
           </div>
           <div className="col-span-2 flex flex-col justify-center">
-            <p className="font-light text-[16px] mt-6">
+            <p className="font-light text-content mt-6">
               I also learned to use{" "}
               <span className="font-bold">hypothesis thinking</span> to ensure
               clarity in my interview objectives and research questions. This

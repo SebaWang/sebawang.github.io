@@ -21,7 +21,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-2 gap-8">
           <div className='flex flex-col justify-center'>
-            <p className="text-[16px] font-light">
+            <p className="text-content font-light">
               This collaborative project with Open Book at Goldsmiths University
               seeks to address the learning hurdles faced by individuals with
               non-traditional backgrounds, including those who have battled
@@ -45,7 +45,7 @@ export default function OverviewSection(): ReactElement {
           </div>
 
           <div>
-            <div className="flex gap-2 text-[16px] font-light flex-wrap">
+            <div className="flex gap-2 text-content font-light flex-wrap">
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Inclusive Design
               </div>

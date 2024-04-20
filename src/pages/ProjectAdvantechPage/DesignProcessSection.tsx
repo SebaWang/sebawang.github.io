@@ -21,11 +21,11 @@ export default function DesignProcessSection(): ReactElement {
           Utilizing visual storytelling is essential in cross-disciplinary team
           collaboration.
         </p>
-        <p className="mt-6 font-light text-[16px] border-l-[2px] border-[#333333] pl-4">
+        <p className="mt-6 font-light text-content border-l-[2px] border-[#333333] pl-4">
           “If all you have is a hammer, everything looks like a nail.” — Abraham
           Maslow
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           In teams with diverse professional backgrounds, there's sometimes a
           tendency towards{" "}
           <span className="font-bold">

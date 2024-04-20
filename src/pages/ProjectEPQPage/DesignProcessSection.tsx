@@ -18,7 +18,7 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-bold text-[24px]">
           Devleoping workshops to create a psychological safety environment.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           During the initial participation in their courses, I noticed that
           learners maintained a significant distance from us, often remaining
           silent and hesitant to share their thoughts and opinions. To{" "}
@@ -33,7 +33,7 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-bold text-[24px] mt-12">
           It is essential to be conscious of language.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           Given that stakeholders may have backgrounds in addiction, mental
           health issues, or the criminal justice system, I recognised the
           importance of being mindful of our language during interactions to

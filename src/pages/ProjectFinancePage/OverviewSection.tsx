@@ -24,7 +24,7 @@ export default function OverviewSection(): ReactElement {
             <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
               &nbsp;
             </div>
-            <p className="text-[16px] font-light mt-8 mb-8">
+            <p className="text-content font-light mt-8 mb-8">
               A+ in Finance focuses on designing{" "}
               <span className="font-bold">financial inclusion strategies{" "}</span>
               for ADHD. Through research and design involving 14 people with
@@ -43,7 +43,7 @@ export default function OverviewSection(): ReactElement {
               Financial Learning Courses to provide practical guidance, which
               currently support over 150 individuals.
             </p>
-            <div className='flex gap-2 text-[16px] font-light flex-wrap'>
+            <div className='flex gap-2 text-content font-light flex-wrap'>
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Inclusive Design
               </div>

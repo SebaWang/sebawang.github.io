@@ -12,7 +12,7 @@ export default function BackgroundSection(): ReactElement {
             [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
           </p>
         </div>
-        <p className="text-[16px] font-light mt-8 mb-4">
+        <p className="text-content font-light mt-8 mb-4">
           In collaboration with the Industrial Technology Research Institute
           (ITRI), HCG embarked on the development of UTech Toilet, an innovative
           urine analysis solution aimed at facilitating early detection of
@@ -28,7 +28,7 @@ export default function BackgroundSection(): ReactElement {
           How to design an inclusive using experience?
         </p>
 
-        <p className="text-[16px] font-light mt-4 mb-12">
+        <p className="text-content font-light mt-4 mb-12">
           Toilets, as universally designed products, must accommodate the needs
           of diverse users, including children, the elderly, and individuals
           with disabilities. Simplicity is key, particularly for everyday tasks

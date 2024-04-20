@@ -16,7 +16,7 @@ export default function EvaluationSection(): ReactElement {
         <div className="flex flex-col gap-4">
           <Magnifier className="h-[102px]" />
           <p className="text-[20px] font-bold">Remarkable Prevention Effect</p>
-          <p className="text-[16px]">
+          <p className="text-content">
             The urine analysis toilets have finally been deployed in three
             teaching hospitals, i
             <span className="font-bold">
@@ -32,7 +32,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-[20px] font-bold">
             Attracting New Consumer Generations
           </p>
-          <p className="text-[16px]">
+          <p className="text-content">
             I also recommended the application of the new touch-screen
             controller to other toilet product lines. Despite a 5% increase in
             manufacturing costs, the high-tech appearance and clean user
@@ -48,7 +48,7 @@ export default function EvaluationSection(): ReactElement {
       </div>
       <div className="mx-auto text-center mt-4 pb-16">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-[16px] font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
+            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
               Back To Projects
             </button>
           </Link>

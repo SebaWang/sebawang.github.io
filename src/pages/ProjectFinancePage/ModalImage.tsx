@@ -30,7 +30,7 @@ const ModalImageCustom: React.FC<ModalProps> = ({
       ></div>
       <dialog id={`my_modal_${imgURL}`} className="modal">
         <div className="modal-box max-w-[90%] p-0 bg-white grid grid-cols-3 gap-8">
-          <div className="p-8 text-[16px] flex flex-col justify-center gap-6">
+          <div className="p-8 text-content flex flex-col justify-center gap-6">
             <div>
               <p className="font-bold text-[#93C860]">
                 Short-term Design Strategy

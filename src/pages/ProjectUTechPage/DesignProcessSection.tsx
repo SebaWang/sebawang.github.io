@@ -23,7 +23,7 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-bold text-[24px]">
           Testing various options before making the decision.
         </p>
-        <p className="font-light text-[16px] mt-6">
+        <p className="font-light text-content mt-6">
           In the transition from a traditional remote control to a new control
           panel, numerous considerations come into play. Alongside assessing
           technology and development costs, our design journey involved
@@ -43,7 +43,7 @@ export default function DesignProcessSection(): ReactElement {
           Different User Interface Options
         </p>
 
-        <p className="text-[16px] font-light mt-12">
+        <p className="text-content font-light mt-12">
           To address the challenge of enabling users to swiftly complete button
           operations and access urine test results within ten seconds, I led the
           UX team in a detailed analysis of the urine toilet usage process. We

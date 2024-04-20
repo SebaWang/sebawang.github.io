@@ -45,7 +45,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_01} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Financial Vulnerability #1
+                        <div className='p-6 text-content font-bold'>Design for Financial Vulnerability #1
                         <p className='text-xs font-light text-gray-700 mt-2'>What is financial vulnerability? Why does it matter? How does it happen? Can service design help improve the issue?</p></div>
                     </div>
                 </SwiperSlide>
@@ -58,7 +58,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_02} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Futures #3
+                        <div className='p-6 text-content font-bold'>Design for Futures #3
                         <p className='text-xs font-light text-gray-700 mt-2'>What is Research through Design? What is its value? How did I conduct it in my design?</p></div>
                     </div>
                 </SwiperSlide>
@@ -71,7 +71,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_03} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Futures #4
+                        <div className='p-6 text-content font-bold'>Design for Futures #4
                         <p className='text-xs font-light text-gray-700 mt-2'>Good storytelling should provoke various interactions and opinions beyond ranking the idea as good or bad.</p></div>
                     </div>
                 </SwiperSlide>
@@ -84,7 +84,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_01} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Financial Vulnerability #1
+                        <div className='p-6 text-content font-bold'>Design for Financial Vulnerability #1
                         <p className='text-xs font-light text-gray-700 mt-2'>What is financial vulnerability? Why does it matter? How does it happen? Can service design help improve the issue?</p></div>
                     </div>
                 </SwiperSlide>
@@ -97,7 +97,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_02} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Futures #3
+                        <div className='p-6 text-content font-bold'>Design for Futures #3
                         <p className='text-xs font-light text-gray-700 mt-2'>What is Research through Design? What is its value? How did I conduct it in my design?</p></div>
                     </div>
                 </SwiperSlide>
@@ -110,7 +110,7 @@ export default function SwiperBlogCard() {
                         </div>
                             <img className="w-full object-cover" src={img_blog_03} />
                         </div>
-                        <div className='p-6 text-[16px] font-bold'>Design for Futures #4
+                        <div className='p-6 text-content font-bold'>Design for Futures #4
                         <p className='text-xs font-light text-gray-700 mt-2'>Good storytelling should provoke various interactions and opinions beyond ranking the idea as good or bad.</p></div>
                     </div>
                 </SwiperSlide>
