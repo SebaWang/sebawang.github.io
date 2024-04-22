@@ -37,11 +37,11 @@ export default function EvaluationSection(): ReactElement {
           </p>
           <p className="text-content font-light">
             With the insights gained from this research and design, The Brain
-            Charity launched new financial management courses. These courses
+            Charity launched new financial management courses. These courses{" "}
             <span className="font-bold">
               attracted over 30 participants
             </span>{" "}
-            and aimed to help young adults develop alternative dopamine
+            and aimed to help adults develop alternative dopamine
             activities and awareness within{" "}
             <span className="font-bold">1 years.</span>
           </p>

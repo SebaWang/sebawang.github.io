@@ -38,9 +38,9 @@ export default function DesignSection(): ReactElement {
         </p>
         <p className="text-content font-light mt-6">
           Alongside leading the design and development of a new touch-screen
-          controller, I guided the team in creating an application for users to
-          access their historical urine data. This innovative tool can also
-          assist hospitals in diagnosis with the user's consent, enabling users
+          controller, I led the team in creating an application for users to
+          access their historical urine data. This innovative tool
+          assists hospitals in diagnosis with the user's consent, enabling users
           to effectively track their health status.
         </p>
         <ModalImageFree imgURL={img_03} />

@@ -23,7 +23,7 @@ export default function HeroSection() {
                         <TextSpaceBetween text='SEBASTIAN   WANG' />
                     </div>
                     <div className='col-span-2 mb-24 relative z-20'>
-                        <p className='text-[#DD663C] mb-3 text-xl font-light'>Service Designer</p>
+                        <p className='text-[#DD663C] mb-3 text-xl font-light'>UX & Service Designer</p>
                         <p className='text-black mb-3 text-3xl font-light'>A Strategy Weaver Who Spins</p>
                         <p className='text-black mb-3 text-3xl font-bold'>Smooth Services For The Next Era.</p>
                     </div>

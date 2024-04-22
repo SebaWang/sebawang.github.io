@@ -16,11 +16,11 @@ export default function BackgroundSection(): ReactElement {
           The Challenge of Career Development and Lack of Confidence in Learning
         </p>
         <Quote className="w-full" />
-        <p className="text-[18px] font-light mt-1">
+        <p className="text-content font-light mt-1">
           People with non-traditional learning backgrounds, including those who
           have battled addiction, mental issues, and ex-offenders, often
           encounter a familiar obstacle: the necessity for A-level
-          qualifications in the job market.
+          qualifications in the job market.{" "}
           <span className="font-bold">
             This requirement creates a hurdle to stable employment and career
             advancement and undermines their confidence in re-entering the
@@ -30,24 +30,23 @@ export default function BackgroundSection(): ReactElement {
           obtaining these qualifications, Open Book at Goldsmiths University
           provides Extended Project Qualification (EPQ) courses. These
           initiatives aim to dismantle the barriers that discourage people from
-          pursuing higher education, helping them regain confidence and
-          enthusiasm for learning.
+          pursuing higher education, helping them regain confidence for learning.
         </p>
         <p className="text-[24px] font-bold mt-8">
           However, the current EPQ teaching structure still leans towards
           traditional academia.
         </p>
-        <p className="text-[18px] font-light mt-1 mb-8">
+        <p className="text-content font-light mt-1 mb-8">
           While Open Book's EPQ course caters to individuals from
           non-traditional backgrounds, its current structure leans towards
           traditional teaching methods. Learners are required to navigate
           various research methodologies and complete literature reviewing
           forms. This approach might be perceived as tedious for non-traditional
           learners, resulting in a{" "}
-          <span className="font-bold">dropout rate of up to 15%</span>
-          As service designers, can we reimagine the course to be more engaging?
+          <span className="font-bold">dropout rate of up to 15%.</span>{" "}
+          As service designers, can we reimagine the course to be more engaging?{" "}
           <span className="font-bold text-[#DD663C]">
-            How might we infuse the spirit of design thinking to foster a more
+            How might we infuse design thinking to foster a more
             motivating and enjoyable learning journey for these non-traditional
             learners?
           </span>

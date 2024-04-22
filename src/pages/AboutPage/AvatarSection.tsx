@@ -13,15 +13,15 @@ export default function AvatarSection() {
             />
           </div>
           <div className="col-span-3">
-            <p className="text-[48px] text-[#DD663C] font-black">
+            <p className="text-[48px] text-[#DD663C] font-black" >
               Sebastian Wang
             </p>
             <p className="mt-6 text-[24px] font-light text-black">
-              A London-based strategy and service designer who expert with
+              A London-based UX and service designer who expert with
               extensive skills in inclusive and human-centric design and
               communication.
             </p>
-            <p className="mt-3 text-content font-light text-[#6F6F6F] mb-12">
+            <p className="mt-4 text-[16px] font-light text-[#6F6F6F] mb-10">
               A firm believer that telling a compelling story is as essential as
               conducting thorough design research. Specializing in harnessing
               the spirit of service design to drive innovation within

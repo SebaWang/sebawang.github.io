@@ -17,7 +17,7 @@ export default function ReflectionSection(): ReactElement {
           </p>
           <p className="text-content font-light mt-4 px-6 border-l-[2px] border-black">
             “Antifragility helps build a systematic guide in any situation in
-            which there is randomness, unpredictability, opacity, or incomplete
+            which there is randomness, unpredictability, or incomplete
             understanding of things.”
             <br />— Taleb, 2016
           </p>

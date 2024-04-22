@@ -17,7 +17,7 @@ export default function ReflectionSection(): ReactElement {
           is inspiring.
         </p>
         <p className="text-content font-light mt-4">
-          In this project, my team and I addressed a common educational issue:
+          In this project, my team and I addressed a educational issue:
           the tendency towards standardised learning. Through design, we
           injected diversity into the unified service system, valuing the
           potential of individuals and creating a motivating learning

@@ -15,7 +15,7 @@ import {
             <p className="text-[36px] font-bold text-[#DD663C] tracking-[16px]">
               CONTACT
             </p>
-            <p className="text-left max-w-[569px] mx-auto text-[#D9D9D9] mt-4 text-[20px] mb-4">
+            <p className="text-left max-w-[569px] mx-auto font-light text-[#D9D9D9] mt-5 text-[18px] mb-4">
               For inquiries or opportunities, feel free to reach out to me! I'm
               always open to connecting with fellow professionals and discussing
               design.{" "}
@@ -23,7 +23,7 @@ import {
                 Let's spin impactful services together!
               </span>
             </p>
-            <div className="flex gap-4 justify-center mt-8 h-[200px]">
+            <div className="flex gap-4 justify-center mt-8 h-[100px]">
               <a href="mailto:sebaswang.design@gmail.com">
                 <div className=" border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                   <FontAwesomeIcon

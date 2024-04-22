@@ -17,7 +17,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-[20px] font-bold">
             The Genuine Innovation Diffusion
           </p>
-          <p className="text-content">
+          <p className="text-content font-light">
             As of November 2021, the integrated telemedicine service solution
             has been adopted by 6 hospitals across Taiwan, encompassing a total
             of <span className="font-bold"> 1,300 isolation wards, </span>
@@ -28,9 +28,9 @@ export default function EvaluationSection(): ReactElement {
         <div className="flex flex-col gap-4">
           <Road className="h-[102px]" />
           <p className="text-[20px] font-bold">
-            Successful Using Experience and Marketing Strategies
+            Successful UX and Marketing Strategies
           </p>
-          <p className="text-content">
+          <p className="text-content font-light">
             In addition to the seamless integration service solution,
             enhancements to the Telemedicine Platform as a Service (PaaS) and
             the launch of the E-commerce configurator website have led to a{" "}

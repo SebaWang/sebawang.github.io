@@ -30,7 +30,7 @@ export default function OverviewSection(): ReactElement {
                 {" "}
                 By consolidating trading information into a trader-friendly
                 platform, it streamlines the NFT value evaluation process,
-                eliminating the need to navigate multiple sources.
+                eliminating the need to navigate multiple sources. {" "}
               </span>
               Through this strategic input, Medicy has emerged as a dynamic
               tool, enhancing attention and investment for the development of

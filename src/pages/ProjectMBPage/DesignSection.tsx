@@ -76,8 +76,8 @@ export default function DesignSection(): ReactElement {
             Policy 01 - Nature Recovery Season
           </p>
           <p className="text-content mt-1 font-light">
-            What if public spaces like parks and riversides are closed for
-            natural restoration?
+            ( What if public spaces like parks and riversides are closed for
+            natural restoration? )
           </p>
           <p className="text-content mt-2 font-[#6F6F6F]">
             In response to pressing environmental concerns, the Ministry of
@@ -113,8 +113,8 @@ export default function DesignSection(): ReactElement {
             Policy 02 - Biodiversity Conservation Certificate
           </p>
           <p className="text-content mt-1 font-light">
-            What if knowledge and awareness of environmental protection become a
-            requirement for higher education?
+            ( What if knowledge and awareness of environmental protection become a
+            requirement for higher education? )
           </p>
           <p className="text-content mt-2 font-[#6F6F6F]">
             Partnering with the Department of Education, the Ministry of
@@ -129,7 +129,7 @@ export default function DesignSection(): ReactElement {
             Policy 03 - The Bill of Multi-species Rights
           </p>
           <p className="text-content mt-1 font-light">
-            What if non-human species have legal rights?
+            ( What if non-human species have legal rights? )
           </p>
           <p className="text-content mt-2 font-[#6F6F6F]">
             The Bill of Multi-species Rights grants legal protection to

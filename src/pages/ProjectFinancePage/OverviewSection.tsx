@@ -38,7 +38,7 @@ export default function OverviewSection(): ReactElement {
               <span className="font-bold">
                 How might young adults with ADHD manage symptoms and curb
                 impulsive shopping behavior without years of learning?
-              </span>
+              </span>{" "}
               This project developed a Google Chrome Extension and ADHD
               Financial Learning Courses to provide practical guidance, which
               currently support over 150 individuals.

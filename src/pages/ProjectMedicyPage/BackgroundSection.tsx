@@ -58,7 +58,7 @@ export default function BackgroundSection(): ReactElement {
           Given the decentralized nature of blockchain technology, which
           promotes transparency and openness, the design question arises:{" "}
           <span className="font-bold text-[#DD663C]">
-            How might we streamline the process of evaluating NFT values without
+            How might we streamline the NFT evaluating process without
             the need to navigate multiple platforms and piece together
             fragmented information?
           </span>{" "}

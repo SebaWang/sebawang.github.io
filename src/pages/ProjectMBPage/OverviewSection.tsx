@@ -40,9 +40,8 @@ export default function OverviewSection(): ReactElement {
               project created numerous diegetic prototypes that physically
               represented the touchpoints of future services, paving the way for
               a net-zero London. The project engaged with over 30 individuals
-              through these fictional policies, sparking lively debates about
-              the merits and drawbacks of these "future" policies and prompting
-              discussions on "current" environmental policies.
+              through these fictional policies, sparking lively discussions about
+              the merits and drawbacks of these "future" service touchpoints and "current" environmental policies.
             </p>
             <div className="gap-4 mt-6 text-content">
               <button className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">

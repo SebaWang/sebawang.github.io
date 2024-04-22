@@ -29,7 +29,7 @@ export default function ResearchSection(): ReactElement {
           <span className="font-bold">
             Individuals with ADHD might find it challenging to open up about
             experiences that could evoke feelings of shame or stigma,
-          </span>
+          </span>{" "}
           particularly with someone they do not know well, like myself. To
           foster a psychologically safe environment and promote open sharing, I
           implemented{" "}

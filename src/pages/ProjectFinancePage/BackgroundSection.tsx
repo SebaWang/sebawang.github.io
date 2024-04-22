@@ -52,8 +52,7 @@ export default function BackgroundSection(): ReactElement {
             scattered notes, resorting to online shopping or substances instead.{" "}
             <span className="font-bold text-[#DD663C]">
               How might young adults with ADHD explore and practice their
-              alternative dopamine activities without a decade of trial and
-              frustrating?
+              alternative dopamine activities without a decade of trial?
             </span>
           </p>
           <ModalImageFree imgURL={img_cof} description="ADHD Financial Learning Journey: Insights gathered from interviewing 14 individuals with ADHD across different age groups and financial coaches." />

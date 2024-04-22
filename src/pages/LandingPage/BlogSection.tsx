@@ -14,7 +14,7 @@ export default function BlogSection() {
           <DecoBubble />
         </div>
         <div className="container mx-auto pt-24 relative z-10">
-          <div className="grid md:grid-cols-12 gap-x-8 pb-48">
+          <div className="grid md:grid-cols-12 gap-x-8 pb-32">
             <div className="col-span-5">
               <p className="text-xs flex items-center">
                 <FontAwesomeIcon icon={faMedium} className="mr-1 text-content" />

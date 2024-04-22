@@ -57,7 +57,7 @@ export default function DesignSection(): ReactElement {
             dopamine-boosting activities by identifying online shopping checkout
             behaviors and offering a suite of personalized features.
           </span>{" "}
-          with ADHD across Moreover, it is integrated into The Brain Charity’s
+          Moreover, it is integrated into The Brain Charity’s
           ADHD Financial Learning Course.
         </p>
         <div className="grid grid-cols-3 gap-6">

@@ -67,7 +67,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-8">
-                    CArtifacts of future scenarios,
+                    Artifacts of future scenarios,
                     </p>
                     <p className="text-content ">
                     A Stakeholder Action Chart,

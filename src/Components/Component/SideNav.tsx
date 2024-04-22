@@ -43,7 +43,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
       }
       const newTimer = setTimeout(() => {
         setPositionY(0);
-      }, 100); 
+      }, 50); 
 
       setTimer(newTimer);
       setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); 
@@ -114,23 +114,22 @@ const SideNav: React.FC<Props> = ({ sections }) => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className={`fixed right-[1%] bottom-[30%] flex flex-col font-light w-[250px] z-50  py-4 pl-4 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 ${
+          className={`fixed right-[1%] bottom-[30%] flex flex-col text-[#5A5A5A] font-light w-[250px] z-50 py-4 pl-10 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 ${
             isVisible ? "block" : "hidden"
           }`}
-         
+          style={{ fontSize: "90%"}}
           initial="hidden"
           animate="visible"
           exit="hidden"
           variants={sidebarVariants}
           transition={{ duration: 0.5 }}
-
         >
           {Object.entries(sections).map(([name, id]) => (
             <button
               key={id}
-              className={`p-2 text-left box-border duration-300 hover:scale-[1.05] ${
+              className={`p-2 text-left box-[border] duration-300 hover:scale-[1.05] ${
                 activeSection === id
-                  ? "font-bold border-l-[4px] border-l-black"
+                  ? "font-bold border-l-[3.5px] border-l-[#5A5A5A]"
                   : ""
               }`}
               onClick={() => handleScroll(id)}

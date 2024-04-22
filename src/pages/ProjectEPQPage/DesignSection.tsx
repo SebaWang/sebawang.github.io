@@ -69,7 +69,7 @@ export default function DesignSection(): ReactElement {
           and
           <span className="font-bold">
             {" "}
-            systematically integrate progress and evidence
+            integrate progress and evidence
           </span>{" "}
           to enhance project presentations and reflections.
         </p>
