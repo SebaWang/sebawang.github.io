@@ -44,16 +44,16 @@ export default function OverviewSection(): ReactElement {
               the merits and drawbacks of these "future" service touchpoints and "current" environmental policies.
             </p>
             <div className="gap-4 mt-6 text-content">
-              <button className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+              <button className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Speculative Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Participatory Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Research Through Design
               </button>
-              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-xl text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+              <button className="mr-4  border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Sustainable Design
               </button>
             </div>

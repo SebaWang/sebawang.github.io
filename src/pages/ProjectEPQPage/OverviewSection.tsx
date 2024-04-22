@@ -19,8 +19,8 @@ export default function OverviewSection(): ReactElement {
         <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
           &nbsp;
         </div>
-        <div className="grid grid-cols-2 gap-8">
-          <div className='flex flex-col justify-center'>
+        <div className="grid grid-cols-2 gap-8 mt-6">
+          <div className='flex flex-col'>
             <p className="text-content font-light">
               This collaborative project with Open Book at Goldsmiths University
               seeks to address the learning hurdles faced by individuals with
@@ -39,13 +39,8 @@ export default function OverviewSection(): ReactElement {
                 progress in their careers
               </span>
             </p>
-          </div>
-          <div className="flex flex-col justify-center ">
-            <img src={img_outcome} alt="OutcomeImage" />
-          </div>
-
-          <div>
-            <div className="flex gap-2 text-content font-light flex-wrap">
+            <div>
+            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
                 Inclusive Design
               </div>
@@ -60,6 +55,12 @@ export default function OverviewSection(): ReactElement {
               * Participants have consented to the use of photos.
             </p>
           </div>
+          </div>
+          <div className="flex flex-col ">
+            <img src={img_outcome} alt="OutcomeImage" />
+          </div>
+
+       
         </div>
 
         <div className="text-center mt-12">

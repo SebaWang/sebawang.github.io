@@ -1,6 +1,6 @@
 import React from 'react';
 import img_bg from '../../assets/img/img_bg_cover.jpg';
-import img_selfie from '../../assets/img/img_deco_selfie.png'
+import img_selfie from '../../assets/img/img_deco_selfie_low.png'
 import TextSpaceBetween from '../../Components/Component/TextSpaceBetween';
 import HeroFooter from './HeroFooter';
 import { Link } from 'react-router-dom';

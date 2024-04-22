@@ -11,8 +11,8 @@ export default function OverviewSection(): ReactElement {
         <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
           &nbsp;
         </div>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center">
+        <div className="grid grid-cols-2 gap-8 mt-6">
+          <div className="flex flex-col ">
             <p className="text-content font-light">
               Amidst the global pandemic, remote healthcare has emerged as a
               transformative factor in the medical industry's evolution. Yet,
@@ -30,22 +30,8 @@ export default function OverviewSection(): ReactElement {
               <span className="font-bold"> 1,300 isolation </span> wards across
               Taiwan, propelling the advancement of remote healthcare.
             </p>
-          </div>
-          <div className="flex flex-col justify-center ">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/8PE_UwfUsUc?si=9U1ZEhM6mBJNokVS"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div>
-            <div className="flex gap-2 text-content font-light flex-wrap">
+            <div>
+            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Service Design
               </div>
@@ -60,6 +46,21 @@ export default function OverviewSection(): ReactElement {
               * Participants have consented to the use of photos.
             </p>
           </div>
+          </div>
+          <div className="flex flex-col ">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8PE_UwfUsUc?si=9U1ZEhM6mBJNokVS"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+        
         </div>
       </div>
     </div>

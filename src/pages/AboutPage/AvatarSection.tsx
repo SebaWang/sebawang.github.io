@@ -13,7 +13,7 @@ export default function AvatarSection() {
             />
           </div>
           <div className="col-span-3">
-            <p className="text-[48px] text-[#DD663C] font-black" >
+            <p className="text-[48px] text-[#DD663C] font-black inter" >
               Sebastian Wang
             </p>
             <p className="mt-6 text-[24px] font-light text-black">

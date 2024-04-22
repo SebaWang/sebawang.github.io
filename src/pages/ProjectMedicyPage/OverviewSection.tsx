@@ -16,8 +16,8 @@ export default function OverviewSection(): ReactElement {
         <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
           &nbsp;
         </div>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center">
+        <div className="grid grid-cols-2 gap-8 mt-6">
+          <div className="flex flex-col">
             <p className="text-content font-light">
               As a strategy designer, I've supported Rug Pull Frens (RPF), a
               prominent Asian Non-Fungible Token (NFT) project, in formulating
@@ -36,13 +36,8 @@ export default function OverviewSection(): ReactElement {
               tool, enhancing attention and investment for the development of
               RPF’s Generation 2 NFT.
             </p>
-          </div>
-          <div className="flex flex-col justify-center ">
-            <img src={img_outcome} alt="OutcomeImage" className='scale-[1.1]' />
-          </div>
-
-          <div>
-            <div className="flex gap-2 text-content font-light flex-wrap">
+            <div>
+            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               Strategy Design
               </div>
@@ -57,6 +52,12 @@ export default function OverviewSection(): ReactElement {
               * Participants have consented to the use of photos.
             </p>
           </div>
+          </div>
+          <div className="flex flex-col  ">
+            <img src={img_outcome} alt="OutcomeImage" className='w-full' />
+          </div>
+
+        
         </div>
 
         <div className="text-center mt-12">

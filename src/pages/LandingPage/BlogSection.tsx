@@ -17,7 +17,10 @@ export default function BlogSection() {
           <div className="grid md:grid-cols-12 gap-x-8 pb-32">
             <div className="col-span-5">
               <p className="text-xs flex items-center">
-                <FontAwesomeIcon icon={faMedium} className="mr-1 text-content" />
+                <FontAwesomeIcon
+                  icon={faMedium}
+                  className="mr-1 text-content"
+                />
                 BLOG
               </p>
               <p className="text-subtitle font-bold mt-2">
@@ -30,9 +33,11 @@ export default function BlogSection() {
                 innovations. Thus, I practice, write, and share how I implement
                 design in my life.
               </p>
-              <button className=" mt-6 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:bg-[#DD663C] hover:text-white duration-300">
-                READ ON MEDIUM
-              </button>
+              <a href="https://medium.com/@SBSTN_WANG" target="_blank">
+                <button className=" mt-6 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:bg-[#DD663C] hover:text-white duration-300">
+                  READ ON MEDIUM
+                </button>
+              </a>
             </div>
             <div className="col-span-7">
               <SwiperBlogCard />

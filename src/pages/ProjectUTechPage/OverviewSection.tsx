@@ -10,7 +10,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <div className="grid grid-cols-2 gap-8 mt-6">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col">
             <p className="text-content font-light">
               In leading the UX team, one of my focus was to ensure a smooth
               user experience with our innovative urine analysis toilet. We
@@ -27,13 +27,9 @@ export default function OverviewSection(): ReactElement {
               our efforts led to a
               <span className="font-bold"> 16% increase in early detection of urinary tract infections and kidney stones. </span>
             </p>
-          </div>
-          <div className="flex flex-col justify-center ">
-            <img src={img_outcome} alt='outcome'className='w-full' />
-          </div>
 
           <div>
-            <div className="flex gap-2 text-content font-light flex-wrap">
+            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
               <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
               UI / UX Design
               </div>
@@ -45,6 +41,11 @@ export default function OverviewSection(): ReactElement {
               </div>
             </div>
           </div>
+          </div>
+          <div className="flex flex-col">
+            <img src={img_outcome} alt='outcome'className='w-[100%]' />
+          </div>
+
         </div>
       </div>
     </div>

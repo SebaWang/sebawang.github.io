@@ -11,7 +11,7 @@ import {
       <div id="ContactSection">
         <div className="bg-[#6c6c6c] relative">
           <div className="triangle absolute left-0 top-0"></div>
-          <div className="container mx-auto py-12 text-center">
+          <div className="container mx-auto pt-12 text-center">
             <p className="text-[36px] font-bold text-[#DD663C] tracking-[16px]">
               CONTACT
             </p>
