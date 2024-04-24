@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1355da73.css",
-    "main.js": "/static/js/main.dd59485b.js",
+    "main.css": "/static/css/main.dc2670cc.css",
+    "main.js": "/static/js/main.b8bb59c6.js",
     "static/media/img_landing_about_04.jpg": "/static/media/img_landing_about_04.8d3ffc161126a98ae1f4.jpg",
     "static/media/img_landing_project_02.jpg": "/static/media/img_landing_project_02.baa5582648ffee50b580.jpg",
     "static/media/img_life_03.jpg": "/static/media/img_life_03.98aa2e691ccb3ffd40c3.jpg",
@@ -107,7 +107,6 @@
     "static/media/img_project_finance_overview_08.jpg": "/static/media/img_project_finance_overview_08.4d3d96ff588ba45c189c.jpg",
     "static/media/img_project_mob_process_01.jpg": "/static/media/img_project_mob_process_01.a980677fcebb98df663b.jpg",
     "static/media/img_project_mob_challenge_01.png": "/static/media/img_project_mob_challenge_01.3fce9614767202036516.png",
-    "static/media/02.png": "/static/media/02.aa2c115a7f8e9d2e499e.png",
     "static/media/img_project_mob_swiper_103.jpg": "/static/media/img_project_mob_swiper_103.9a18f35a76b242e9c5aa.jpg",
     "static/media/img_deco_bubble.svg": "/static/media/img_deco_bubble.2d0cfe3adb499c49f3b8a240ca918a1b.svg",
     "static/media/img_design_finance_research_02.jpg": "/static/media/img_design_finance_research_02.93447501ffdd477525a5.jpg",
@@ -125,13 +124,13 @@
     "static/media/img_project_finance_overview_bg.jpg": "/static/media/img_project_finance_overview_bg.7f99d7a7b30b2a73bada.jpg",
     "static/media/img_project_mob_process_bg.jpg": "/static/media/img_project_mob_process_bg.078ea108c0e187d4fcb5.jpg",
     "static/media/4.png": "/static/media/4.fd953da0a8bbecbbc14a.png",
-    "static/media/01.png": "/static/media/01.80d0aeb82b20c3d61f07.png",
     "static/media/img_project_mob_design_02.png": "/static/media/img_project_mob_design_02.7565b0cd9f462e2f3650.png",
     "static/media/img_project_finance_designP_01.png": "/static/media/img_project_finance_designP_01.0b4dd4aa5fef9c5e9657.png",
     "static/media/1.jpeg": "/static/media/1.62fbb5b23f445a26ff64.jpeg",
     "static/media/img_project_finance_designP_06.png": "/static/media/img_project_finance_designP_06.64533c75a2b2ca1f1459.png",
     "static/media/page3.png": "/static/media/page3.6776d0f4a87604881228.png",
     "static/media/process.jpg": "/static/media/process.11b4a29e592d62cdda08.jpg",
+    "static/media/advantech2.png": "/static/media/advantech2.e131a3a2486d150344a9.png",
     "static/media/img_project_mob_process_09.jpg": "/static/media/img_project_mob_process_09.ebc48b0358fdd19489a4.jpg",
     "static/media/img_project_mob_swiper_203.jpg": "/static/media/img_project_mob_swiper_203.ebc48b0358fdd19489a4.jpg",
     "static/media/page2.png": "/static/media/page2.6876c07c1952b0c3b94a.png",
@@ -139,6 +138,7 @@
     "static/media/img_project_cover_06.jpg": "/static/media/img_project_cover_06.7cc70acfefc3d2a2e895.jpg",
     "static/media/img_deco_bubble_gray.svg": "/static/media/img_deco_bubble_gray.9ba1727d4bf573db500daed93c922fa2.svg",
     "static/media/img_deco_bubble_social.svg": "/static/media/img_deco_bubble_social.ab2cc2ade8817e5e39ba11dde604ec9e.svg",
+    "static/media/advantech1.png": "/static/media/advantech1.c26a29cfd35551c854f2.png",
     "static/media/quote.svg": "/static/media/quote.ba57a31036dbb26aa0aaa9f8035150f5.svg",
     "static/media/bg.png": "/static/media/bg.9c8a8a1927014b16cb32.png",
     "static/media/img_project_mob_quote.svg": "/static/media/img_project_mob_quote.32fc330281e722bd9cbf603906538791.svg",
@@ -164,8 +164,10 @@
     "static/media/icon_paper.svg": "/static/media/icon_paper.a4f1d470a7082871c02a98f360386d9b.svg",
     "static/media/icon_flag.svg": "/static/media/icon_flag.85477fa5dc12e3bab0de6f0d59346ae9.svg",
     "static/media/0-3.svg": "/static/media/0-3.9efd2e7923e4e2dd23404bd79e85c6c3.svg",
+    "static/media/img_logo_megabank.png": "/static/media/img_logo_megabank.aac4051086ea1dcea445.png",
     "static/media/img_button_download.svg": "/static/media/img_button_download.57f642dec7b8edc68f9ba8213b092b56.svg",
     "static/media/0-2.svg": "/static/media/0-2.cdb234fb4e615dba581a80a204f493ce.svg",
+    "static/media/img_logo_taishinbank.png": "/static/media/img_logo_taishinbank.f6ee9c7945f7a1559f75.png",
     "static/media/img_logo_braincharity.png": "/static/media/img_logo_braincharity.167f74f91e47dc1ee113.png",
     "static/media/img_logo_advantech.png": "/static/media/img_logo_advantech.1bc47b110f34b39572de.png",
     "static/media/0-1.svg": "/static/media/0-1.cf0ffc3a8cfcd65d80dcc35b6e15ad33.svg",
@@ -175,11 +177,11 @@
     "static/media/img_project_finance_designT_03.svg": "/static/media/img_project_finance_designT_03.9ce78ec8ebc1e50a5ecc2ba34c35d58b.svg",
     "index.html": "/index.html",
     "static/media/icon_scrollUp.svg": "/static/media/icon_scrollUp.a372f10ced5968144faaa9c14c9dddf1.svg",
-    "main.1355da73.css.map": "/static/css/main.1355da73.css.map",
-    "main.dd59485b.js.map": "/static/js/main.dd59485b.js.map"
+    "main.dc2670cc.css.map": "/static/css/main.dc2670cc.css.map",
+    "main.b8bb59c6.js.map": "/static/js/main.b8bb59c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1355da73.css",
-    "static/js/main.dd59485b.js"
+    "static/css/main.dc2670cc.css",
+    "static/js/main.b8bb59c6.js"
   ]
 }
