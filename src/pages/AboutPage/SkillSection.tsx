@@ -120,7 +120,7 @@ export default function SkillSection(): ReactElement {
               </p>
               <p className="text-[14px] mt-2">Webflow</p>
               <p className="text-[14px]">Framer</p>
-              <p className="text-[14px]">CSS3 + HTML5</p>
+              <p className="text-[14px]">CSS/HTML</p>
               <p className="text-[14px]">Figma</p>
               <p className="text-[14px]">Sketch</p>
               <p className="text-[14px]">Miro</p>

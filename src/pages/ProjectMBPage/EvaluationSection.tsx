@@ -16,7 +16,7 @@ export default function EvaluationSection(): ReactElement {
           <IconLeaf />
           <div>
             <p className="text-content font-bold mt-4">
-              Successfully Engaging the Public for Policy Discussions
+               Successfully Engaging the Public for Policy Discussions
             </p>
             <p className="text-content mt-4 font-light">
               At the exhibition, our project sparked substantial feedback and

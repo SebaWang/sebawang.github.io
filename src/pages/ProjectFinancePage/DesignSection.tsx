@@ -67,7 +67,7 @@ export default function DesignSection(): ReactElement {
           </div>
           <div className="col-span-1 flex flex-col gap-8 justify-center">
             <div
-              className="flex flex-col cursor-pointer hover:scale-[1.1]  duration-300 w-fit px-2 ml-8"
+              className="flex flex-col hover:scale-[1.1] hover:cursor-default duration-300 w-fit px-2 ml-8"
               onMouseEnter={() => setCurrentImg("01")}
             >
               <div className="flex gap-2 items-center">
@@ -80,7 +80,7 @@ export default function DesignSection(): ReactElement {
               </div>
             </div>
             <div
-              className="flex flex-col cursor-pointer  hover:scale-[1.1] duration-300 w-fit px-2 ml-8"
+              className="flex flex-col hover:scale-[1.1] hover:cursor-default duration-300 w-fit px-2 ml-8"
               onMouseEnter={() => setCurrentImg("02")}
             >
               <div className="flex gap-2 items-center">
@@ -93,7 +93,7 @@ export default function DesignSection(): ReactElement {
               </div>
             </div>
             <div
-              className="flex flex-col cursor-pointer  hover:scale-[1.1] duration-300 w-fit px-2 ml-8"
+              className="flex flex-col hover:scale-[1.1] hover:cursor-default duration-300 w-fit px-2 ml-8"
               onMouseEnter={() => setCurrentImg("03")}
             >
               <div className="flex gap-2 items-center">

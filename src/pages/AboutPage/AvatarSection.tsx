@@ -16,9 +16,8 @@ export default function AvatarSection() {
             <p className="text-[48px] text-[#DD663C] font-black inter" >
               Sebastian Wang
             </p>
-            <p className="mt-6 text-[24px] font-light text-black">
-              A London-based UX and service designer who expert with
-              extensive skills in inclusive and human-centric design and
+            <p className="mt-6 text-[25px]  text-black">
+              A London-based UX and service designer specialising in inclusive and human-centric design and
               communication.
             </p>
             <p className="mt-4 text-[16px] font-light text-[#6F6F6F] mb-10">

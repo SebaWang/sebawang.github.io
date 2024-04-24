@@ -31,7 +31,7 @@ export default function AboutSection() {
                   </span>
                 </p>
               </div>
-              <p className="mt-4 text-gray-400 text-md">
+              <p className="mt-4 text-[#929292] text-md">
                 Storyteller | Inclusive Designer | Innovation Strategist |
                 Fintech Enthusiast
               </p>

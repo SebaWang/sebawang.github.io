@@ -32,7 +32,7 @@ const FlyoutNav = () => {
       ${
         scrolled
           ? "backdrop-blur-sm py-3 shadow-xl bg-[#e8e8e8] bg-opacity-80 "
-          : "backdrop-blur-sm py-4 shadow-none "
+          : "backdrop-blur-sm py-4 shadow-none bg-[#212121] bg-opacity-40 "
       }`}
     >
       <div className="mx-auto flex container items-center justify-between">
@@ -57,7 +57,7 @@ const Logo: React.FC<LogoProps> = ({ color = "white", scrolled }) => {
       <div className="items-center gap-2 cursor-pointer">
         <p
           className={`text-xl font-bold
-      ${scrolled ? "text-black " : "text-white"}`}
+      ${scrolled ? "text-[#4A4A4A] " : "text-white"}`}
         >
           Sebastian Wang
         </p>

@@ -51,7 +51,7 @@ interface LogoProps{
   scrolled: boolean
 }
 
-const Logo: React.FC<LogoProps> = ({ color = "black", scrolled }) => {
+const Logo: React.FC<LogoProps> = ({ color = "#4A4A4A", scrolled }) => {
   return (
     <Link to="/">
     <div className="items-center gap-2 cursor-pointer">

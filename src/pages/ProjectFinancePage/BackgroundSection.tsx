@@ -33,7 +33,8 @@ export default function BackgroundSection(): ReactElement {
         </p>
         <div className="grid grid-cols-2 gap-4 mt-6">
           <p className="text-content font-light mt-1">
-            Through interviews with{" "}
+            
+            Through qulitative interviews with{" "}
             <span className="font-bold">14 individuals</span> with ADHD across
             different age groups, I unearthed a notable phenomenon: older
             individuals or those with longer diagnoses exhibit stronger
@@ -42,7 +43,7 @@ export default function BackgroundSection(): ReactElement {
             <span className="font-bold">
               Alternative Dopamine-boosting Activities
             </span>
-            " such as jogging, reading, gardening, or even brewing tea, which
+            " such as jogging, reading, gardening, or brewing tea, which
             engage their interests and dopamine. In contrast, young adults with
             ADHD may take years to explore and adopt these alternatives, often{" "}
             <span className="font-bold">

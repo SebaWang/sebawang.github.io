@@ -51,13 +51,13 @@ export default function ContactPage(): ReactElement {
           <div className="grid grid-cols-2 gap-16 my-12 min-h-[72vh]">
             <div className="flex flex-col justify-center">
               <p className="text-[24px] text-[#DD663C] font-bold">Contact Me</p>
-              <p className="text-[18px] tracking-wide mt-8">
+              <p className="text-[18px] font-light tracking-wide mt-8">
                 Thank you for visiting my website. Whether you're seeking a
                 seasoned service designer, have comments, or simply want to say
-                hello, I'd be delighted to hear from you. <br />
+                hello, I'd be delighted to hear from you.
                 Feel free to reach out to me!
               </p>
-              <div className="flex gap-8 justify-start mt-8 ">
+              <div className="flex gap-8 justify-start mt-10 ">
                 <a
                   target="_blank"
                   rel="noreferrer"

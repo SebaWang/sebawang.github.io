@@ -34,7 +34,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
         <div
           className={`flex flex-col justify-center px-6 py-4 text-center transform transition-all duration-50 relative overflow-hidden`}
         >
-          <Bubble className="absolute bottom-0 left-0" />
+          <Bubble className="absolute bottom-2 left-1 opacity-60" />
           <div className="font-bold text-md mb-1 text-[20px] z-10">{title}</div>
           <p className="font-light text-[14px] mb-1 z-10">{subTitle}</p>
           <p className="font-light text-[#6F6F6F] text-[12px] z-10">{concept}</p>
