@@ -1,6 +1,6 @@
 import { ReactElement, useState } from "react";
-import img_page_01 from "../../assets/img/Project_Telehealth/Design Deliver/01.png";
-import img_page_02 from "../../assets/img/Project_Telehealth/Design Deliver/02.png";
+import img_page_01 from "../../assets/img/Project_Telehealth/Design Deliver/advantech1.png";
+import img_page_02 from "../../assets/img/Project_Telehealth/Design Deliver/advantech2.png";
 import img_page_01T from "../../assets/img/Project_Telehealth/Design Deliver/outpatient_journey.png";
 import img_page_02T from "../../assets/img/Project_Telehealth/Design Deliver/inpatient_journey.png";
 import img_page_03 from "../../assets/img/Project_Telehealth/Design Deliver/marketing.png";
@@ -74,19 +74,25 @@ export default function DesignSection(): ReactElement {
             >
               Outpatient Solution
             </div>
-            <div className="flex gap-2 text-content font-light flex-wrap justify-center my-6">
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                ENT
+            <div className="grid grid-cols-3 flex flex-col justify-center  min-h-[400px] max-h-[500px] gap-6">
+              <div className=" px-6 py-6 flex flex-col justify-center col-span-2">
+                <img
+                  src={img_page_01}
+                  alt="OutpatientImage"
+                  className="w-full"
+                />
               </div>
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                Optometrists
+              <div className="flex flex-col justify-center gap-6">
+                <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full w-fit text-[#3870C1]">
+                  ENT
+                </div>
+                <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full w-fit text-[#3870C1]">
+                  Optometrists
+                </div>
+                <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full w-fit text-[#3870C1]">
+                  Dermatologists
+                </div>
               </div>
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                Dermatologists
-              </div>
-            </div>
-            <div className="px-12 py-4">
-              <img src={img_page_01} alt="OutpatientImage" className="w-full" />
             </div>
             <div
               className={` ${
@@ -112,19 +118,20 @@ export default function DesignSection(): ReactElement {
             >
               Outpatient Solution
             </div>
-            <div className="flex gap-2 text-content font-light flex-wrap justify-center my-6">
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                ENT
+
+            <div className="grid grid-cols-3 flex flex-col justify-center min-h-[400px] max-h-[500px]  gap-6">
+              <div className=" px-6 py-6 col-span-2 flex flex-col justify-center ">
+                <img
+                  src={img_page_02}
+                  alt="OutpatientImage"
+                  className="w-full"
+                />
               </div>
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                Optometrists
+              <div className="flex flex-col justify-center gap-6">
+                <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1] w-fit">
+                  Ward
+                </div>
               </div>
-              <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1]">
-                Dermatologists
-              </div>
-            </div>
-            <div className="px-12 py-4">
-              <img src={img_page_02} alt="OutpatientImage" className="w-full" />
             </div>
             <div
               className={` absolute bottom-0 left-0 w-full ${
