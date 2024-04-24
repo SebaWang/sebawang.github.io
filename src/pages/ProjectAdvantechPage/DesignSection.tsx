@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import img_page_01 from "../../assets/img/Project_Telehealth/Design Deliver/advantech1.png";
 import img_page_02 from "../../assets/img/Project_Telehealth/Design Deliver/advantech2.png";
 import img_page_01T from "../../assets/img/Project_Telehealth/Design Deliver/outpatient_journey.png";
@@ -8,6 +8,22 @@ import ModalImageFree from "../../Components/Component/ModalImageFree";
 
 export default function DesignSection(): ReactElement {
   const [currentImg, setCurrentImg] = useState("01");
+
+  
+  const values = ["01", "02"];
+
+  useEffect(() => {
+    // 設定計時器，每3秒更新 currentImg
+    const interval = setInterval(() => {
+        setCurrentImg(prevImg => {
+            const currentIndex = values.indexOf(prevImg);
+            const nextIndex = (currentIndex + 1) % values.length;
+            return values[nextIndex];
+        });
+    }, 3000); 
+
+    return () => clearInterval(interval);
+}, [values]);
 
   const renderContent = () => {
     switch (currentImg) {
@@ -130,6 +146,9 @@ export default function DesignSection(): ReactElement {
               <div className="flex flex-col justify-center gap-6">
                 <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1] w-fit">
                   Ward
+                </div>
+                <div className="border-[1px] border-[#3870C1] p-1 px-4 rounded-full text-[#3870C1] w-fit">
+                  ICU
                 </div>
               </div>
             </div>

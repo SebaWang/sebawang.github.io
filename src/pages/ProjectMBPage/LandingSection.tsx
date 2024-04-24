@@ -5,11 +5,11 @@ export default function LandingSection(): ReactElement {
   return (
     <>
       <div
-        className="w-full relative overflow-hidden aspect-[16/9] bg-cover bg-center"
+        className="w-full relative overflow-hidden    h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
         id='overview'
       >
-        <div className="w-full absolute bottom-0 text-center pb-16">
+        <div className="w-full absolute bottom-0 text-center pb-[10%]">
           <p className="text-[70px] font-black text-white">
             Ministry of Biodiversity
           </p>

@@ -145,7 +145,9 @@ export default function ContactPage(): ReactElement {
             </div>
           </div>
         </div>
-        <div className="bg-[#202020] h-[60px] "></div>
+        <div className='bg-[#202020] h-[60px]'>
+                <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">Copyright © 2024 Sebastian Wang</div>
+            </div>
       </div>
     </>
   );

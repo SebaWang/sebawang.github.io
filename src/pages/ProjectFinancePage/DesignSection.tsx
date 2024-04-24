@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import img_outcome2 from "../../assets/img/img_project_finance_outcome2.png";
 import { ReactComponent as ComputerReminderT } from "../../assets/img/img_project_finance_designT_01.svg";
 import { ReactComponent as ComputerStimulusT } from "../../assets/img/img_project_finance_designT_02.svg";
@@ -10,10 +10,10 @@ import img_service_blueprint from "../../assets/img/img_project_finance_designD_
 import img_system_map from "../../assets/img/img_project_finance_designD_02.png"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function DesignSection(): ReactElement {
-  const [currentImg, setCurrentImg] = useState("01");
+  const [currentImg, setCurrentImg] = useState<string>("01");
 
+  const values = ["01", "02", "03"];
   const renderContent = () => {
     switch (currentImg) {
       case "01":
@@ -37,6 +37,19 @@ export default function DesignSection(): ReactElement {
         );
     }
   };
+
+  useEffect(() => {
+    // 設定計時器，每3秒更新 currentImg
+    const interval = setInterval(() => {
+        setCurrentImg(prevImg => {
+            const currentIndex = values.indexOf(prevImg);
+            const nextIndex = (currentIndex + 1) % values.length;
+            return values[nextIndex];
+        });
+    }, 3000); 
+
+    return () => clearInterval(interval);
+}, [values]);
 
   return (
     <div id='design_deliver'>

@@ -5,7 +5,7 @@ export default function LandingSection(): ReactElement {
   return (
     <>
       <div
-        className="w-full relative overflow-hidden  aspect-[16/9] bg-cover bg-center"
+        className="w-full relative overflow-hidden bg-cover bg-center   h-[100vh]"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
         <div className="container mx-auto flex-col justify-center h-full  grid grid-cols-3">

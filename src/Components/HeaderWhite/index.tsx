@@ -20,9 +20,10 @@ const Example = () => {
 const FlyoutNav = () => {
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
+  const viewportHeight = window.innerHeight;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setScrolled(latest > 250 ? true : false);
+    setScrolled(latest > viewportHeight ? true : false);
   });
 
   return (

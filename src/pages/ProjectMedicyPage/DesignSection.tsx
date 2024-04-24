@@ -1,9 +1,11 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import img_page_01 from "../../assets/img/Project_Medicy/Design Deliver/page1.jpg";
 import img_page_02 from "../../assets/img/Project_Medicy/Design Deliver/page2.jpg";
 
 export default function DesignSection(): ReactElement {
-  const [currentImg, setCurrentImg] = useState("01");
+  const [currentImg, setCurrentImg] = useState<string>("01");
+
+
 
   return (
     <div id="design_deliver">
@@ -33,7 +35,7 @@ export default function DesignSection(): ReactElement {
             name="my_tabs_2"
             role="tab"
             className={`tab text-content text-nowrap ${
-              currentImg === "01" ? "text-[#D76565]" : ""
+              currentImg === "01" ? "text-[#D76565]" : "animate-bounce"
             }`}
             aria-label="Information Overview"
             checked
@@ -96,7 +98,7 @@ export default function DesignSection(): ReactElement {
             name="my_tabs_2"
             role="tab"
             className={`tab  text-content text-nowrap  ${
-              currentImg === "02" ? "text-[#D76565]" : ""
+              currentImg === "02" ? "text-[#D76565]" : "animate-bounce !border-[0px]"
             }`}
             aria-label="Project Introduction"
             onMouseDown={() => setCurrentImg("02")}
