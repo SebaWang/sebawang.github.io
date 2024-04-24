@@ -54,7 +54,7 @@ export default function ReflectionSection(): ReactElement {
       </div>
       <div className="relative">
         <div className="absolute w-full flex justify-center left-0 top-[10%]">
-          <p className="text-[24px] text-[#D2683A] font-light text-center !font-serif">
+          <p className="text-[22px] text-[#D2683A] font-light text-center !font-serif">
             No brain is the same. No brain is the best.
             <br /> Each brain finds its own unique way. <br /> Each brain finds
             its{" "}

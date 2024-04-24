@@ -13,7 +13,7 @@ export default function ProjectFinancePage(): ReactElement {
   const sections = {
     "Background & Problem": "background",
     "Design Deliver": "design_deliver",
-    "Design & Challenges": "design_challenges",
+    "Process & Challenges": "design_challenges",
     "Evaluation": "evaluation",
   };
   return (

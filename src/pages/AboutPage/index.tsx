@@ -4,7 +4,6 @@ import AvatarSection from "./AvatarSection";
 import SkillSection from "./SkillSection";
 import AboutSection from "./AboutSection";
 import SocialSection from "../LandingPage/SocialSection";
-import Head from "next/head";
 
 export default function AboutPage(): ReactElement {
   return (

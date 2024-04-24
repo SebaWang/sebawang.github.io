@@ -9,22 +9,6 @@ import ModalImageFree from "../../Components/Component/ModalImageFree";
 export default function DesignSection(): ReactElement {
   const [currentImg, setCurrentImg] = useState("01");
 
-  
-  const values = ["01", "02"];
-
-  useEffect(() => {
-    // 設定計時器，每3秒更新 currentImg
-    const interval = setInterval(() => {
-        setCurrentImg(prevImg => {
-            const currentIndex = values.indexOf(prevImg);
-            const nextIndex = (currentIndex + 1) % values.length;
-            return values[nextIndex];
-        });
-    }, 3000); 
-
-    return () => clearInterval(interval);
-}, [values]);
-
   const renderContent = () => {
     switch (currentImg) {
       case "01":
@@ -90,12 +74,12 @@ export default function DesignSection(): ReactElement {
             >
               Outpatient Solution
             </div>
-            <div className="grid grid-cols-3 flex flex-col justify-center  min-h-[400px] max-h-[500px] gap-6">
-              <div className=" px-6 py-6 flex flex-col justify-center col-span-2">
+            <div className="grid grid-cols-3 flex flex-col justify-center  min-h-[400px] max-h-[500px] gap-2">
+              <div className=" px-12 py-6 flex flex-col justify-center col-span-2">
                 <img
                   src={img_page_01}
                   alt="OutpatientImage"
-                  className="w-full"
+                  className="w-full pl-2"
                 />
               </div>
               <div className="flex flex-col justify-center gap-6">
@@ -115,7 +99,7 @@ export default function DesignSection(): ReactElement {
                 currentImg === "01" ? "bg-[#F6F9FD]" : "bg-[#F7F7F7]"
               }`}
             >
-              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-6">
+              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-4">
                 <p>・ Different Divisions Operation UI</p>
                 <p>・ Digitalized Medical Education Materials</p>
               </div>
@@ -132,15 +116,15 @@ export default function DesignSection(): ReactElement {
                 currentImg === "02" ? "bg-[#3870C1]" : "bg-[#7A7A7A]"
               }`}
             >
-              Outpatient Solution
+              Inpatient Solution
             </div>
 
-            <div className="grid grid-cols-3 flex flex-col justify-center min-h-[400px] max-h-[500px]  gap-6">
+            <div className="grid grid-cols-3 flex flex-col justify-center min-h-[400px] max-h-[500px]  gap-4">
               <div className=" px-6 py-6 col-span-2 flex flex-col justify-center ">
                 <img
                   src={img_page_02}
                   alt="OutpatientImage"
-                  className="w-full"
+                  className="w-full pl-2"
                 />
               </div>
               <div className="flex flex-col justify-center gap-6">
@@ -157,9 +141,10 @@ export default function DesignSection(): ReactElement {
                 currentImg === "02" ? "bg-[#F6F9FD]" : "bg-[#F7F7F7]"
               }`}
             >
-              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-6">
-                <p>・ Different Divisions Operation UI</p>
-                <p>・ Digitalized Medical Education Materials</p>
+              <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-4">
+                <p>・ Long-term monitoring</p>
+                <p>・ Unstable conditions controlling</p>
+                <p>・ Facilitate remote doctors consulting</p>
               </div>
             </div>
           </div>

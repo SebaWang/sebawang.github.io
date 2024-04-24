@@ -31,7 +31,7 @@ export default function DesignProcessSection(): ReactElement {
         </p>
 
 
-        <p className="font-bold text-content mt-12 mb-4">
+        <p className="font-bold text-content mt-12 mb-1">
         Customer Behavior Analysis & Overall Strategy Formulation
         </p>
         <ModalImageFree imgURL={img_behavior} />

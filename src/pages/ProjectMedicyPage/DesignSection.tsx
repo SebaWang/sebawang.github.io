@@ -35,7 +35,7 @@ export default function DesignSection(): ReactElement {
             name="my_tabs_2"
             role="tab"
             className={`tab text-content text-nowrap ${
-              currentImg === "01" ? "text-[#D76565]" : "animate-bounce"
+              currentImg === "01" ? "text-[#D76565]" : ""
             }`}
             aria-label="Information Overview"
             checked
@@ -98,7 +98,7 @@ export default function DesignSection(): ReactElement {
             name="my_tabs_2"
             role="tab"
             className={`tab  text-content text-nowrap  ${
-              currentImg === "02" ? "text-[#D76565]" : "animate-bounce !border-[0px]"
+              currentImg === "02" ? "text-[#D76565]" : ""
             }`}
             aria-label="Project Introduction"
             onMouseDown={() => setCurrentImg("02")}
