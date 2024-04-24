@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.3fc7d853.css",
-    "main.js": "/static/js/main.9fd5c263.js",
+    "main.js": "/static/js/main.96a3920b.js",
     "static/media/img_landing_about_04.jpg": "/static/media/img_landing_about_04.8d3ffc161126a98ae1f4.jpg",
     "static/media/img_landing_project_02.jpg": "/static/media/img_landing_project_02.baa5582648ffee50b580.jpg",
     "static/media/img_life_03.jpg": "/static/media/img_life_03.98aa2e691ccb3ffd40c3.jpg",
     "static/media/img_project_finance_overview_06.png": "/static/media/img_project_finance_overview_06.aa3cf9da719b2b085f6c.png",
     "static/media/img_project_finance_monster.svg": "/static/media/img_project_finance_monster.7300732cab191dfe609f739b63ed4d5f.svg",
-    "static/media/outcome.png": "/static/media/outcome.57b5c49234e8d6b43aef.png",
     "static/media/blog01.png": "/static/media/blog01.bb59b83f592714fb8f2d.png",
     "static/media/img_design_finance_research_04.png": "/static/media/img_design_finance_research_04.2711d0628d166edfeea9.png",
     "static/media/img_project_finance_overview_05.png": "/static/media/img_project_finance_overview_05.c3dbf382d8bb963a5a93.png",
@@ -15,12 +14,13 @@
     "static/media/img_design_finance_research_05.png": "/static/media/img_design_finance_research_05.135d981f59470d194445.png",
     "static/media/img_project_finance_scenario.svg": "/static/media/img_project_finance_scenario.7fba17fef1c62a6ca05694a74787c78d.svg",
     "static/media/img_project_finance_quote.svg": "/static/media/img_project_finance_quote.3d4b7c7b09401a7df04aad268c349050.svg",
+    "static/media/outcome.png": "/static/media/outcome.99713cd3ce5af749cb2a.png",
     "static/media/blog03.png": "/static/media/blog03.5263bc66bdc2e5961f26.png",
     "static/media/img_project_mob_challenge_04.jpg": "/static/media/img_project_mob_challenge_04.18179a5b28a2c8ca3736.jpg",
     "static/media/img_project_mob_process_07.jpg": "/static/media/img_project_mob_process_07.18179a5b28a2c8ca3736.jpg",
     "static/media/img_project_finance_footer.png": "/static/media/img_project_finance_footer.b584c4ff546add64aec5.png",
     "static/media/outpatient_journey.png": "/static/media/outpatient_journey.ec4ae368f7239971b518.png",
-    "static/media/2.jpg": "/static/media/2.cd55174e88713e29fbe9.jpg",
+    "static/media/2.jpg": "/static/media/2.e911c0824cf99a024145.jpg",
     "static/media/img_landing_about_02.jpg": "/static/media/img_landing_about_02.75bed71e53e71ab9ec8a.jpg",
     "static/media/img_project_cover_04.png": "/static/media/img_project_cover_04.faca20bc701932c648dd.png",
     "static/media/2-1.jpg": "/static/media/2-1.25cd81abcb2bebb77043.jpg",
@@ -44,6 +44,7 @@
     "static/media/img_project_mob_challenge_03.jpg": "/static/media/img_project_mob_challenge_03.342f927c587d10323d8f.jpg",
     "static/media/img_landing_about_01.jpg": "/static/media/img_landing_about_01.6ee267afbc5e369ac668.jpg",
     "static/media/img_project_mob_challenge_05.jpg": "/static/media/img_project_mob_challenge_05.96961f2ad729ac2e5e03.jpg",
+    "static/media/3.png": "/static/media/3.3ff6943f97d75b90410b.png",
     "static/media/cover.png": "/static/media/cover.a67a28c4d11bc056654f.png",
     "static/media/img_project_mob_process_06.jpg": "/static/media/img_project_mob_process_06.026d2931fbb6b832d497.jpg",
     "static/media/ws1.png": "/static/media/ws1.c0ceb34db8f3548ba9cc.png",
@@ -53,7 +54,6 @@
     "static/media/inpatient_journey.png": "/static/media/inpatient_journey.67c9e105154b3f34252d.png",
     "static/media/intro.png": "/static/media/intro.1854c5c8599df77cff85.png",
     "static/media/img_deco_selfie_low.png": "/static/media/img_deco_selfie_low.1b1b7d935f78da81aefb.png",
-    "static/media/3.png": "/static/media/3.3ff6943f97d75b90410b.png",
     "static/media/img_project_mob_gds_03.jpg": "/static/media/img_project_mob_gds_03.4737559312437c1c2c23.jpg",
     "static/media/img_project_mob_gds_01.jpg": "/static/media/img_project_mob_gds_01.1fffe4ad2771b4c22b05.jpg",
     "static/media/cover.jpg": "/static/media/cover.0eea86beed7f0f05e8f7.jpg",
@@ -103,7 +103,7 @@
     "static/media/img_project_mob_swiper_202.jpg": "/static/media/img_project_mob_swiper_202.8213f30c0b240ed04fd5.jpg",
     "static/media/3-2.jpg": "/static/media/3-2.66fad8f00aca5e420233.jpg",
     "static/media/img_project_mob_crown.png": "/static/media/img_project_mob_crown.6ef4c264e7fbe3ab185d.png",
-    "static/media/2.png": "/static/media/2.2d9a643042fd028feea9.png",
+    "static/media/2.png": "/static/media/2.b37745b4e4c6c0a7cd05.png",
     "static/media/4medicy_bg.png": "/static/media/4medicy_bg.a096740b65f54a74227f.png",
     "static/media/curriculum.png": "/static/media/curriculum.930b4d4094c03bda4c03.png",
     "static/media/img_project_finance_overview_08.jpg": "/static/media/img_project_finance_overview_08.4d3d96ff588ba45c189c.jpg",
@@ -180,10 +180,10 @@
     "index.html": "/index.html",
     "static/media/icon_scrollUp.svg": "/static/media/icon_scrollUp.8fe06a33a1f76fdd29ae8a35df100601.svg",
     "main.3fc7d853.css.map": "/static/css/main.3fc7d853.css.map",
-    "main.9fd5c263.js.map": "/static/js/main.9fd5c263.js.map"
+    "main.96a3920b.js.map": "/static/js/main.96a3920b.js.map"
   },
   "entrypoints": [
     "static/css/main.3fc7d853.css",
-    "static/js/main.9fd5c263.js"
+    "static/js/main.96a3920b.js"
   ]
 }
