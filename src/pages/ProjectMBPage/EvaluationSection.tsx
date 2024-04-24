@@ -11,9 +11,11 @@ export default function EvaluationSection(): ReactElement {
             [ &nbsp; EVALUATION &nbsp; ]
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-x-8">
-          <IconDiscuss />
-          <IconLeaf />
+        <div className="mt-12 grid grid-cols-2 gap-x-8 ">
+          <div className="flex flex-col justify-center"><IconDiscuss  /></div>
+          <div className="flex flex-col justify-center"> <IconLeaf /></div>
+          
+        
           <div>
             <p className="text-content font-bold mt-4">
                Successfully Engaging the Public for Policy Discussions

@@ -55,7 +55,7 @@ export default function ReflectionSection(): ReactElement {
             contributions. This enriching experience in policy design and
             communication has been a tremendous learning opportunity for me.
           </p>
-          <div className="w-[254px] mx-auto text-center mt-4 mb-12">
+          <div className="w-[254px] mx-auto text-center mt-4 pb-12">
             <img src={img_crown} />
             <Link to="/project">
               <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-12 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">

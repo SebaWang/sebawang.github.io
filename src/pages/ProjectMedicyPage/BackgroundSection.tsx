@@ -23,7 +23,7 @@ export default function BackgroundSection(): ReactElement {
         <p className="text-[24px] font-bold mt-8">
           The journey of NFT trading and evaluating is convoluted.
         </p>
-        <div className="mt-6 grid grid-cols-5">
+        <div className="mt-6 grid grid-cols-5 gap-4">
           <div className="col-span-3">
             <p className="text-content font-light mt-1 mb-8 gap-4">
               Navigating the current NFT trading journey proves arduous for
@@ -34,33 +34,34 @@ export default function BackgroundSection(): ReactElement {
               necessitates prolonged engagement in Discord groups associated
               with NFT projects.
             </p>
+            <p className="text-content font-light mt-4 mb-12">
+              The user journey analysis reveals that, on average,{" "}
+              <span className="font-bold">
+                traders must visit at least 4 websites to obtain approximately
+                15 disparate pieces of information to assess the true value and
+                price of an NFT project.
+              </span>{" "}
+              This convoluted process underscores the need for a more
+              streamlined and user-friendly approach to NFT trading.
+            </p>
+            <p className="text-content font-bold mb-4">
+              General NFT Evaluation Journey
+            </p>
           </div>
           <div className="col-span-2">
             <ModalImage imgURL={img_chat} aspectRatio="398/174" />
           </div>
         </div>
-        <p className="text-content font-light mt-4 mb-12">
-          The user journey analysis reveals that, on average,{" "}
-          <span className="font-bold">
-            traders must visit at least 4 websites to obtain approximately 15
-            disparate pieces of information to assess the true value and price
-            of an NFT project.
-          </span>{" "}
-          This convoluted process underscores the need for a more streamlined
-          and user-friendly approach to NFT trading.
-        </p>
-        <p className="text-content font-bold mb-4">
-          General NFT Evaluation Journey
-        </p>
+
         <ModalImageFree imgURL={img_cof} />
 
         <p className="text-content font-light mt-4 mb-12">
           Given the decentralized nature of blockchain technology, which
           promotes transparency and openness, the design question arises:{" "}
           <span className="font-bold text-[#DD663C]">
-            How might we streamline the NFT evaluating process without
-            the need to navigate multiple platforms and piece together
-            fragmented information?
+            How might we streamline the NFT evaluating process without the need
+            to navigate multiple platforms and piece together fragmented
+            information?
           </span>{" "}
         </p>
       </div>
