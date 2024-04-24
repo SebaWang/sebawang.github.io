@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import img_swiper_01 from "../../assets/img/Project_EPQ Learning Journey/Process & Challenges/ws1.png";
 import img_swiper_02 from "../../assets/img/Project_EPQ Learning Journey/Process & Challenges/ws2.png";
 import img_swiper_03 from "../../assets/img/Project_EPQ Learning Journey/Process & Challenges/ws3.png";
-import img_language from "../../assets/img/Project_EPQ Learning Journey/Process & Challenges/2.png"
+import img_language from "../../assets/img/Project_EPQ Learning Journey/Process & Challenges/2.jpg"
 import PolicySwiper from "./Swiper";
 
 export default function DesignProcessSection(): ReactElement {
