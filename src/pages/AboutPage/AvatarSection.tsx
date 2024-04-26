@@ -27,7 +27,7 @@ export default function AvatarSection() {
               regulations and foster cohesive cross-disciplinary collaboration
               and visionary leadership.
             </p>
-            <a href='https://sebawang.github.io/Sebastian%20Wang_UX%20%26%20Service%20Design_CV.pdf' target="_blank" rel="noreferrer">
+            <a href='https://sebawang.github.io/Sebastian%20Wang_%20UX%20%26%20Service%20Design_CV.pdf' target="_blank" rel="noreferrer">
             <ButtonDownload text="Curriculum Vitae" />
             </a>
           </div>
