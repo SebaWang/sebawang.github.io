@@ -10,7 +10,14 @@ import EvaluationSection from "../ProjectMBPage/EvaluationSection";
 import ReflectionSection from "./ReflectionSection";
 import SideNav from "../../Components/Component/SideNav";
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function ProjectMBPage(): ReactElement {
+  useEffect(() => {
+    // 傳送頁面檢視
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   const sections = {
     "Background & Problem": "background",
     "Design Deliver": "design_deliver",

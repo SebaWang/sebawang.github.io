@@ -5,7 +5,14 @@ import SkillSection from "./SkillSection";
 import AboutSection from "./AboutSection";
 import SocialSection from "../LandingPage/SocialSection";
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function AboutPage(): ReactElement {
+  useEffect(() => {
+    // 傳送頁面檢視
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <Header />

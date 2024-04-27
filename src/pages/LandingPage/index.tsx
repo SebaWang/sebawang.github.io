@@ -7,7 +7,14 @@ import BlogSection from "./BlogSection";
 import ContactSection from "./ContactSection";
 import { ReactElement } from "react";
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function LandingPage(): ReactElement{
+    useEffect(() => {
+    // 傳送頁面檢視
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      }, []);
     return (
         <>
             <Header />

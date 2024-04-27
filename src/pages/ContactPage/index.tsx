@@ -9,7 +9,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
+
 export default function ContactPage(): ReactElement {
+  useEffect(() => {
+    // 傳送頁面檢視
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   const form = useRef<HTMLFormElement>(null);
   const [state, setState] = useState("");
 

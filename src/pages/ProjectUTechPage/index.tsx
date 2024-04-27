@@ -9,7 +9,14 @@ import DesignSection from "./DesignSection";
 import DesignProcessSection from "./DesignProcessSection";
 import EvaluationSection from "./EvaluationSection";
 
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
 export default function ProjectFinancePage(): ReactElement {
+  useEffect(() => {
+    // 傳送頁面檢視
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   const sections = {
     "Background & Problem": "background",
     "Design Deliver": "design_deliver",
