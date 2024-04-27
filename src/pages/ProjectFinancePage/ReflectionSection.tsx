@@ -50,6 +50,11 @@ export default function ReflectionSection(): ReactElement {
           strides in embracing and implementing inclusive design principles,
           there's always room for growth. Moving forward, I am committed to
           carrying this spirit into future design endeavors.
+          {" "} <br /> <br />For more inspiring details on the research and design process, please read my {" "}
+    <a className="font-bold text-[#D2683A] underline" href="https://sebawang.github.io/Sebastian%20Wang_ADHD%20Financial%20Management.pdf" target="_blank">
+      complete project report.
+    </a>
+    {" "}    {" "}(Dual-page viewing recommended.)
         </p>
       </div>
       <div className="relative">
