@@ -52,20 +52,27 @@ export default function SkillSection(): ReactElement {
           <p className="text-content text-black font-bold mt-6">
             Service Designer
           </p>
+          <p className="text-[14px]">Mega Bank, Taiwan</p>
+          <p className="text-[14px] text-[#6F6F6F] font-light tracking-[2px]">
+            2021 - 2022
+          </p>
+          <p className="text-content text-black font-bold mt-3">
+            UX & Service Designer
+          </p>
           <p className="text-[14px]">Advantech, Taiwan</p>
           <p className="text-[14px] text-[#6F6F6F] font-light tracking-[2px]">
             2020 - 2022
           </p>
 
-          <p className="text-content text-black font-bold mt-6">
-            Web3 Strategy Designer
+          <p className="text-content text-black font-bold mt-3">
+            Web3 Strategy Consultant
           </p>
           <p className="text-[14px]">Freelance</p>
           <p className="text-[14px] text-[#6F6F6F] font-light tracking-[2px]">
             2019 - 2021
           </p>
 
-          <p className="text-content text-black font-bold mt-6">
+          <p className="text-content text-black font-bold mt-3">
             UX Design Team Lead
           </p>
           <p className="text-[14px]">HCG, Taiwan</p>
