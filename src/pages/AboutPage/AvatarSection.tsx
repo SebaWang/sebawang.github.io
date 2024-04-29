@@ -1,5 +1,7 @@
 import img_avatar from "../../assets/img/img_about_avatar.png";
 import ButtonDownload from "../../Components/Component/ButtonDownload";
+import ButtonNext from "../../Components/Component/ButtonNext";
+import { Link } from "react-router-dom";
 
 export default function AvatarSection() {
   return (
@@ -27,9 +29,14 @@ export default function AvatarSection() {
               regulations and foster cohesive cross-disciplinary collaboration
               and visionary leadership.
             </p>
-            <a href='https://sebawang.github.io/Sebastian%20Wang_%20UX%20%26%20Service%20Designer_CV.pdf' target="_blank" rel="noreferrer">
+            <div className="flex mt-10 w-full mx-auto">
+            <Link to="/contact">
+              <ButtonNext text="Contact Me" />
+            </Link>
+          </div>
+            {/* <a href='https://sebawang.github.io/Sebastian%20Wang_%20UX%20%26%20Service%20Designer_CV.pdf' target="_blank" rel="noreferrer">
             <ButtonDownload text="Curriculum Vitae" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
