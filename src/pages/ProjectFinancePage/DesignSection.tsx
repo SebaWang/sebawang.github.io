@@ -8,6 +8,8 @@ import { ReactComponent as ScenarioBoard } from "../../assets/img/img_project_fi
 import ModalImageFree from "../../Components/Component/ModalImageFree";
 import img_service_blueprint from "../../assets/img/img_project_finance_designD_01.png"
 import img_system_map from "../../assets/img/img_project_finance_designD_02.png"
+import img_outcome from "../../assets/img/fin_outcome_m.png"
+import img_monster from "../../assets/img/img_fin_monster_m.png"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function DesignSection(): ReactElement {
@@ -52,14 +54,15 @@ export default function DesignSection(): ReactElement {
 }, [values]);
 
   return (
-    <div id='design_deliver'>
-      <div className="container mx-auto mt-16 w-[1100px] pb-16">
+    <div id='design_deliver' className=" ">
+      <div className="container mx-auto mt-16 md:w-[1100px] md:pb-16">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-content font-light mt-12">
+        <img src={img_outcome} alt='outcome' className="w-full block md:hidden" />
+        <p className="text-content md:font-light mt-2 md:mt-12">
           To mitigate the prolonged financial learning journey, it is imperative
           to identify activities that genuinely captivate their interest and
           promptly remind them when dopamine levels dip. The project developed a
@@ -73,7 +76,9 @@ export default function DesignSection(): ReactElement {
           Moreover, it is integrated into The Brain Charity’s
           ADHD Financial Learning Course.
         </p>
-        <div className="grid grid-cols-3 gap-6">
+        <img src={img_monster} alt='outcome' className="w-full block md:hidden mt-4" />
+
+        <div className="grid grid-cols-3 gap-6 hidden md:block">
           <div className="col-span-2 relative">
             <img src={img_outcome2} alt="outcome2" />
             {renderContent()}
@@ -126,9 +131,9 @@ export default function DesignSection(): ReactElement {
             </div>
           </div>
         </div>
-        <p className="font-bold text-content">Using Scenario Storyboard</p>
-        <ScenarioBoard className="w-full scale-[1.04]" />
-        <div className="grid grid-cols-4 gap-3 mt-4">
+        <p className="font-bold text-content hidden md:block">Using Scenario Storyboard</p>
+        <ScenarioBoard className="w-full scale-[1.04] hidden md:block" />
+        <div className="grid grid-cols-4 gap-3 mt-4 hidden md:block">
           <p className="text-[14px] font-light">
             The user feel low dopamine, being bored and powerless.
           </p>
@@ -144,10 +149,10 @@ export default function DesignSection(): ReactElement {
             dopamine through alternative activities.
           </p>
         </div>
-        <p className='text-content font-bold mt-12 mb-4'>Service Blueprint <span className='font-light'>(Online Shopping on Amazon as an Example)</span></p>
-        <ModalImageFree imgURL={img_service_blueprint} />
-        <p className='text-content font-bold mt-8 mb-4'>Marketing Pirate Funnel & Service System Map</p>
-        <ModalImageFree imgURL={img_system_map} description="I applied the marketing method, the Pirate Funnel, to enhance the promotion and customer engagement of ADHD Financial Courses." />
+        <p className='text-content font-bold mt-12 mb-4 hidden md:block'>Service Blueprint <span className='font-light'>(Online Shopping on Amazon as an Example)</span></p>
+        <div className="hidden md:block"><ModalImageFree imgURL={img_service_blueprint} /></div>
+        <p className='text-content font-bold mt-8 mb-4 hidden md:block'>Marketing Pirate Funnel & Service System Map</p>
+        <div className="hidden md:block"><ModalImageFree imgURL={img_system_map} description="I applied the marketing method, the Pirate Funnel, to enhance the promotion and customer engagement of ADHD Financial Courses." /></div>
       </div>
     </div>
   );

@@ -114,8 +114,8 @@ const SideNav: React.FC<Props> = ({ sections }) => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className={`fixed right-[1%] bottom-[30%] flex flex-col text-[#5A5A5A] font-light w-[250px] z-50 py-4 pl-10 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 ${
-            isVisible ? "block" : "hidden"
+          className={`fixed right-[1%] bottom-[30%] flex flex-col text-[#5A5A5A] font-light w-[250px] z-50 py-4 pl-10 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 hidden ${
+            isVisible ? "md:block" : "hidden"
           }`}
           style={{ fontSize: "90%"}}
           initial="hidden"

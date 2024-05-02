@@ -179,7 +179,7 @@ const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({ children, href, FoldCon
             e.stopPropagation();
             setMenuOpen(false);
           }}
-          href="#"
+          href={href}
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
         >
           <span>{children}</span>
@@ -226,16 +226,30 @@ const MobileMenu = () => {
               </button>
             </div>
             <div className="h-screen overflow-y-scroll bg-neutral-100 p-6">
-              {LINKS.map((l) => (
                 <MobileMenuLink
-                  key={l.text}
-                  href={l.href}
-                  FoldContent={l.component}
+                  key={"ABOUT"}
+                  href={"#aboutSection"}
+                  FoldContent={undefined}
                   setMenuOpen={setOpen}
                 >
-                  {l.text}
+                  {"ABOUT"}
                 </MobileMenuLink>
-              ))}
+                <MobileMenuLink
+                  key={"PROJECTS"}
+                  href={"#projectSection"}
+                  FoldContent={undefined}
+                  setMenuOpen={setOpen}
+                >
+                  {"PROJECTS"}
+                </MobileMenuLink>
+                <MobileMenuLink
+                  key={"CONTACT"}
+                  href={"#contactSection"}
+                  FoldContent={undefined}
+                  setMenuOpen={setOpen}
+                >
+                  {"CONTACT"}
+                </MobileMenuLink>
             </div>
           </motion.nav>
         )}

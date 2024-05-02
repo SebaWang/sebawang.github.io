@@ -5,10 +5,10 @@ export default function LandingSection(): ReactElement {
   return (
     <>
       <div
-        className="w-full relative overflow-hidden    h-[100vh] bg-cover bg-center"
+        className="w-full relative overflow-hidden h-[60svh]   md:h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="container mx-auto flex-col justify-center h-full flex justify-center flex-col">
+        <div className="container mx-auto flex-col justify-center h-full flex justify-center flex-col hidden md:block">
           <p className="text-[70px] font-bold text-white">A+ In Finance</p>
           <p className="text-[26px] font-semibold text-white">
             Financial Management Journey and

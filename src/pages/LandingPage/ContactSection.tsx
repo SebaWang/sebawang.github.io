@@ -47,7 +47,7 @@ export default function ContactSection() {
     }
   };
   return (
-    <div id="ContactSection">
+    <div id="contactSection">
       <div className="bg-[#6c6c6c] relative">
         <div className="triangle absolute left-0 top-0 hidden md:block"></div>
         <div className="container mx-auto pt-12 text-center">

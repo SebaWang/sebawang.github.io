@@ -11,8 +11,8 @@ import ModalImageFree from "../../Components/Component/ModalImageFree";
 
 export default function ResearchSection(): ReactElement {
   return (
-    <div className="bg-[#F8F8F8]" id="process_challenges">
-      <div className="container mx-auto mt-12 w-[1100px]">
+    <div className="bg-[#F8F8F8] hidden md:block" id="process_challenges">
+      <div className="container mx-auto mt-12 md:w-[1100px]">
         <div className="text-center pt-12 mb-8">
           <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; RESEARCH PROCESS & CHALLENGES &nbsp; ]

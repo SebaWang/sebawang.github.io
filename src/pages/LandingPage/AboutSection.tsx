@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 export default function AboutSection() {
   return (
     <>
-      <div className="md:bg-[#e8e8e8] bg-white">
+      <div className="md:bg-[#e8e8e8] bg-white" id='aboutSection'>
         <div className="container mx-auto pt-24">
           <div className="grid md:grid-cols-2 gap-x-24">
             <div className="text-left">
