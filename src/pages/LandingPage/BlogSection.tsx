@@ -6,7 +6,7 @@ import { ReactComponent as DecoBubble } from "../../assets/img/img_deco_bubble_g
 export default function BlogSection() {
   return (
     <>
-      <div className="bg-[#D9D9D9] relative">
+      <div className="bg-[#D9D9D9] relative hidden md:block">
         <div className="absolute left-0 top-0">
           <DecoBubble />
         </div>

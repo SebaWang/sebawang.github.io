@@ -1,6 +1,5 @@
 import Header from "../../Components/Header";
 import { ReactElement, useRef, useState } from "react";
-import ContactSection from "../LandingPage/ContactSection";
 import emailjs from "@emailjs/browser";
 import {
   faLinkedin,
@@ -143,7 +142,7 @@ export default function ContactPage(): ReactElement {
                     type="submit"
                     className="text-white bg-[#DD663C] px-8 py-1 hover:scale-[1.05] duration-300 hover:shadow-xl"
                   >
-                    Sumit
+                    Submit
                   </button>
                   {state == "success" ? <span className='ml-2 font-light text-[#DD663C]'>Email Sending Success !</span> : <></>}
                 </div>

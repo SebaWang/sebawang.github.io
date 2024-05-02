@@ -3,6 +3,7 @@ import img_bg from '../../assets/img/img_bg_cover.jpg';
 import img_selfie from '../../assets/img/img_deco_selfie_low.png'
 import TextSpaceBetween from '../../Components/Component/TextSpaceBetween';
 import HeroFooter from './HeroFooter';
+import img_bg_m from "../../assets/img/img_bg_cover_m.jpg";
 import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
@@ -10,7 +11,7 @@ export default function HeroSection() {
     return (
         <>
             <div
-                className='relative'
+                className='relative hidden md:block'
                 style={{
                     backgroundImage: `url(${img_bg})`,
                     backgroundSize: 'cover',
@@ -34,6 +35,23 @@ export default function HeroSection() {
                 </div>
                 <HeroFooter />
             </div>
+
+            <div
+        className="relative block md:hidden h-[100svh]"
+        style={{
+          backgroundImage: `url(${img_bg_m})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+       <div className="h-full w-full px-6 flex items-center justify-end text-center flex-col">
+        <p className="text-[45px] font-semibold text-[#FFD1B7] !font-serif tracking-[3px]">SEBASTIAN<br />WANG</p>
+        <p className="mt-12 text-white text-[15px]">A Strategy Weaver Who Spins</p>
+        <p className="mt-2 text-white font-bold text-[15px]">Smooth Services For The Next Era.</p>
+        <p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px]">ABOUT</p>
+        <p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px] mb-24">PROJECTS</p>
+       </div>
+      </div>
         </>
     );
 }

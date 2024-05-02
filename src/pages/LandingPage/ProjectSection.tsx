@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function ProjectSection() {
   return (
     <>
-      <div className="bg-[#e8e8e8]">
+      <div className="bg-[#e8e8e8]  hidden md:block">
         <div className="container mx-auto pt-24">
           <div className="grid md:grid-cols-2 gap-x-24">
             <div className="text-left">
