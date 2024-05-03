@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.37200be1.css",
-    "main.js": "/static/js/main.04d4bbe2.js",
+    "main.css": "/static/css/main.6c785838.css",
+    "main.js": "/static/js/main.2611f292.js",
     "static/media/img_landing_about_04.jpg": "/static/media/img_landing_about_04.8d3ffc161126a98ae1f4.jpg",
     "static/media/img_landing_project_02.jpg": "/static/media/img_landing_project_02.baa5582648ffee50b580.jpg",
     "static/media/img_life_03.jpg": "/static/media/img_life_03.98aa2e691ccb3ffd40c3.jpg",
@@ -41,6 +41,7 @@
     "static/media/img_life_02.jpg": "/static/media/img_life_02.15e0927e6cf1d51e85ab.jpg",
     "static/media/img_life_01.jpg": "/static/media/img_life_01.0e31faea372df8f92b94.jpg",
     "static/media/page2.jpg": "/static/media/page2.a3fb6c060a44f1e83f2d.jpg",
+    "static/media/combine.png": "/static/media/combine.8d414a690526e8e86774.png",
     "static/media/img_project_mob_challenge_03.jpg": "/static/media/img_project_mob_challenge_03.342f927c587d10323d8f.jpg",
     "static/media/img_landing_about_01.jpg": "/static/media/img_landing_about_01.6ee267afbc5e369ac668.jpg",
     "static/media/img_project_mob_challenge_05.jpg": "/static/media/img_project_mob_challenge_05.96961f2ad729ac2e5e03.jpg",
@@ -51,6 +52,7 @@
     "static/media/img_project_cover_05.png": "/static/media/img_project_cover_05.92f2382fd15b949eccb4.png",
     "static/media/ws2.png": "/static/media/ws2.8109ae220be003fb15b2.png",
     "static/media/behavior_analysis.jpg": "/static/media/behavior_analysis.1aaf45df38fab8936a53.jpg",
+    "static/media/img_bg_cover_m.jpg": "/static/media/img_bg_cover_m.5691aeca85daabe700bb.jpg",
     "static/media/inpatient_journey.png": "/static/media/inpatient_journey.67c9e105154b3f34252d.png",
     "static/media/intro.png": "/static/media/intro.1854c5c8599df77cff85.png",
     "static/media/img_deco_selfie_low.png": "/static/media/img_deco_selfie_low.1b1b7d935f78da81aefb.png",
@@ -90,11 +92,13 @@
     "static/media/img_project_mob_process_11.jpg": "/static/media/img_project_mob_process_11.08e56b3d977bee3fbe43.jpg",
     "static/media/f2.jpg": "/static/media/f2.7eadf1d42325838d64db.jpg",
     "static/media/img_project_mob_process_02.jpg": "/static/media/img_project_mob_process_02.6551253e91aa37a45f2b.jpg",
+    "static/media/design_m.png": "/static/media/design_m.bf1a6c7fe89cc99a944e.png",
     "static/media/img_project_mob_backcast.jpg": "/static/media/img_project_mob_backcast.f770cdc9b0c7fd0c14a2.jpg",
     "static/media/page1.png": "/static/media/page1.9d97ed8de5f584caede6.png",
     "static/media/img_bg_cover.jpg": "/static/media/img_bg_cover.82c5e5c6aca2ad6e2065.jpg",
     "static/media/img_project_mob_gds_02.jpg": "/static/media/img_project_mob_gds_02.27f6f4ded6bd41574b3d.jpg",
     "static/media/ihealthcare.png": "/static/media/ihealthcare.6b49270b0fdd1e37d0d7.png",
+    "static/media/cover_m.jpg": "/static/media/cover_m.f5489bf899dde1821e79.jpg",
     "static/media/img_project_finance_designD_02.png": "/static/media/img_project_finance_designD_02.b688fb11bae09da653dd.png",
     "static/media/4.svg": "/static/media/4.d5f9cde41f3708a9e23abf85d9851dce.svg",
     "static/media/marketing.png": "/static/media/marketing.b8ef0803ac0517ca9cca.png",
@@ -126,6 +130,8 @@
     "static/media/img_project_finance_overview_bg.jpg": "/static/media/img_project_finance_overview_bg.7f99d7a7b30b2a73bada.jpg",
     "static/media/img_project_mob_process_bg.jpg": "/static/media/img_project_mob_process_bg.078ea108c0e187d4fcb5.jpg",
     "static/media/4.png": "/static/media/4.fd953da0a8bbecbbc14a.png",
+    "static/media/img_fin_monster_m.png": "/static/media/img_fin_monster_m.ed41c3a65fc2ebc07c5d.png",
+    "static/media/monster_m.png": "/static/media/monster_m.6717c3e454107ba98aea.png",
     "static/media/img_project_mob_design_02.png": "/static/media/img_project_mob_design_02.7565b0cd9f462e2f3650.png",
     "static/media/img_project_finance_designP_01.png": "/static/media/img_project_finance_designP_01.0b4dd4aa5fef9c5e9657.png",
     "static/media/1.jpeg": "/static/media/1.62fbb5b23f445a26ff64.jpeg",
@@ -140,8 +146,11 @@
     "static/media/img_project_cover_06.jpg": "/static/media/img_project_cover_06.7cc70acfefc3d2a2e895.jpg",
     "static/media/img_deco_bubble_gray.svg": "/static/media/img_deco_bubble_gray.a3d3127b5f3ea57b04ded4c85bcfa8d2.svg",
     "static/media/img_deco_bubble_social.svg": "/static/media/img_deco_bubble_social.f1335b5b1add00d2eed7e901f4d8cae5.svg",
+    "static/media/fin_outcome_m.png": "/static/media/fin_outcome_m.c5e7a55b3d5b6bb32542.png",
     "static/media/advantech1.png": "/static/media/advantech1.c26a29cfd35551c854f2.png",
+    "static/media/t-1.jpg": "/static/media/t-1.c39397426519529095f2.jpg",
     "static/media/quote.svg": "/static/media/quote.af6b619ef6879bdfb6b6b44b545e9ce5.svg",
+    "static/media/t-2.jpg": "/static/media/t-2.39b7270ba2e81c38ac9e.jpg",
     "static/media/bg.png": "/static/media/bg.9c8a8a1927014b16cb32.png",
     "static/media/img_project_mob_quote.svg": "/static/media/img_project_mob_quote.c02012755b2ad98439580138da6c0c27.svg",
     "static/media/users.svg": "/static/media/users.d7374431570c9bd274852c42c39aa6cf.svg",
@@ -178,11 +187,11 @@
     "static/media/img_project_finance_designT_03.svg": "/static/media/img_project_finance_designT_03.332a70470d123ebac9daca92b051d6ef.svg",
     "index.html": "/index.html",
     "static/media/icon_scrollUp.svg": "/static/media/icon_scrollUp.8fe06a33a1f76fdd29ae8a35df100601.svg",
-    "main.37200be1.css.map": "/static/css/main.37200be1.css.map",
-    "main.04d4bbe2.js.map": "/static/js/main.04d4bbe2.js.map"
+    "main.6c785838.css.map": "/static/css/main.6c785838.css.map",
+    "main.2611f292.js.map": "/static/js/main.2611f292.js.map"
   },
   "entrypoints": [
-    "static/css/main.37200be1.css",
-    "static/js/main.04d4bbe2.js"
+    "static/css/main.6c785838.css",
+    "static/js/main.2611f292.js"
   ]
 }
