@@ -13,7 +13,7 @@ export default function LandingSection(): ReactElement {
           <div className="col-span-2 flex flex-col justify-center">
             <img src={img_bg_screen} alt='bgscreen' />
           </div>
-          <div className='flex flex-col justify-center md:block hidden'>
+          <div className='flex flex-col justify-center md:flex hidden'>
             <p className="text-[70px] font-bold text-white">
               MEDICY: NFT News Fantasy
             </p>

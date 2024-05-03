@@ -9,7 +9,7 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden  h-[60svh] md:h-[100vh] bg-cover bg-center hidden md:block "
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="hidden md:block container mx-auto flex-col justify-center h-full flex justify-center flex-col text-center">
+        <div className="hidden md:flex container mx-auto flex-col justify-center h-full flex text-center">
           <p className="text-[70px] font-bold text-white">
             EPQ Learning Journey
           </p>

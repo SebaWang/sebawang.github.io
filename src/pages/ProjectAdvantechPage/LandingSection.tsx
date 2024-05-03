@@ -8,7 +8,7 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden h-[60svh]   md:h-[100vh] bg-cover bg-left md:bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="container mx-auto flex-col justify-center h-full  grid grid-cols-3 hidden md:block">
+        <div className="container mx-auto flex-col justify-center h-full  grid grid-cols-3 hidden md:grid">
           <div className="col-span-2">&nbsp;</div>
           <div className="flex flex-col justify-center">
             <p className="text-[70px] font-bold text-white">

@@ -9,7 +9,7 @@ export default function LandingSection(): ReactElement {
         style={{ backgroundImage: `url(${img_bg_cover})` }}
         id="overview"
       >
-        <div className="w-full absolute bottom-0 text-center pb-[5%] hidden md:block">
+        <div className="w-full absolute bottom-0 text-center pb-[5%] hidden md:flex">
           <p className="text-[64px] font-black text-white">
             Ministry of Biodiversity
           </p>
