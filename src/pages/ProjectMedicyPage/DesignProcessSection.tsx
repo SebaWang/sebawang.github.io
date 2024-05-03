@@ -7,8 +7,8 @@ import ModalImage from "../../Components/Component/ModalImage";
 
 export default function DesignProcessSection(): ReactElement {
   return (
-    <div className="bg-[#F8F8F8] pb-16" id="design_challenges">
-      <div className="container mx-auto mt-12 w-[1100px]">
+    <div className="bg-[#F8F8F8] pb-16 hidden md:block" id="design_challenges">
+      <div className="container mx-auto mt-12 md:w-[1100px]">
         <div className="text-center pt-12 mb-8">
           <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; PROCESS & CHALLENGES &nbsp; ]

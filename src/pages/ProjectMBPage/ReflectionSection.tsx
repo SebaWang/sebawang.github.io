@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactMobile from "../../Components/Component/ContactMobile";
 import ProjectPreviewCard from "../ProjectPage/ProjectPreviewCard";
-import img_project_01 from "../../assets/img/img_landing_project_02.jpg";
+import img_project_03 from "../../assets/img/img_project_cover_03.jpg";
 
 export default function ReflectionSection(): ReactElement {
   return (
@@ -20,7 +20,7 @@ export default function ReflectionSection(): ReactElement {
           <p className="font-bold text-[20px] md:text-[24px]">
             Building anti-fragile systems through speculative design.
           </p>
-          <p className="text-[14px] md:text-content font-light mt-4 px-6 border-l-[2px] border-black hidden md:block">
+          <p className="text-content font-light mt-4 px-6 border-l-[2px] border-black hidden md:block">
             “Antifragility helps build a systematic guide in any situation in
             which there is randomness, unpredictability, or incomplete
             understanding of things.”
@@ -77,15 +77,15 @@ export default function ReflectionSection(): ReactElement {
             <FontAwesomeIcon icon={faArrowRight} className="ml-4" />
           </p>
 
-          <Link to="/project/finance">
-              <ProjectPreviewCard
-                imgURL={img_project_01}
-                title="A+ In Finance"
-                subTitle="Inclusive Design for ADHD Financial Management"
-                concept="Financial Inclusion"
-                content="How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without years of learning?"
-              />
-            </Link>
+          <Link to="/project/epq">
+            <ProjectPreviewCard
+              imgURL={img_project_03}
+              title="EPQ Learning Journey"
+              subTitle="Social Design for Non-traditional Education"
+              concept="Social Action for A-level Qualifications"
+              content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
+            />
+          </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">
             For a better reading experience and details about the research and
             design process, please visit my website using a laptop or larger

@@ -4,6 +4,9 @@ import img_page_02 from "../../assets/img/Project_Telehealth/Design Deliver/adva
 import img_page_01T from "../../assets/img/Project_Telehealth/Design Deliver/outpatient_journey.png";
 import img_page_02T from "../../assets/img/Project_Telehealth/Design Deliver/inpatient_journey.png";
 import img_page_03 from "../../assets/img/Project_Telehealth/Design Deliver/marketing.png";
+import img_m01 from "../../assets/img/Project_Telehealth/Design Deliver/t-1.jpg";
+import img_m02 from "../../assets/img/Project_Telehealth/Design Deliver/t-2.jpg";
+import img_combine from "../../assets/img/Project_Telehealth/Design Deliver/combine.png";
 import ModalImageFree from "../../Components/Component/ModalImageFree";
 
 export default function DesignSection(): ReactElement {
@@ -44,12 +47,16 @@ export default function DesignSection(): ReactElement {
 
   return (
     <div id="design_deliver">
-      <div className="container mx-auto mt-16 w-[1100px] pb-16">
+      <div className="container mx-auto mt-16 md:w-[1100px] pb-4 md:pb-16">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
+
+        <img src={img_m01} className="block md:hidden w-full mt-8" alt="m01" />
+        <img src={img_m02} className="block md:hidden w-full mt-4" alt="m02" />
+
         <p className="text-content font-light mt-12 mb-6">
           Recognizing the varying consultation frequencies and service
           procedures across medical specialties, I recommended to my team that
@@ -60,7 +67,9 @@ export default function DesignSection(): ReactElement {
           targeted at isolation wards and ICU settings.
         </p>
 
-        <div className="grid grid-cols-2 gap-8">
+        <img src={img_combine} className="block md:hidden w-full mt-4" alt="combine" />
+
+        <div className="grid grid-cols-2 gap-8 hidden md:grid">
           <div
             className={`border-[1px]  cursor-pointer hover:scale-[1.03] duration-300 ${
               currentImg === "01" ? "border-[#3870C1]" : "border-[#7A7A7A]"
@@ -149,21 +158,24 @@ export default function DesignSection(): ReactElement {
             </div>
           </div>
         </div>
-        {renderContent()}
 
-        <p className="text-content font-bold mt-12 mb-4">
-          E-commerce Configurator & Inbound Marketing Strategy of Telehealth
-          Service
-        </p>
-        <p className="text-content font-light mb-4">
-          The marketing specialist and I categorized customers and implemented
-          targeted promotion strategies to drive service adoption. Given the
-          different medical divisions and hospital operation strategies, I
-          developed an e-commerce website showcasing modular medical-cart
-          products, empowering hospital executives to customize their
-          telemedical solutions.
-        </p>
-        <ModalImageFree imgURL={img_page_03} />
+        <div className="hidden md:block">
+          {renderContent()}
+
+          <p className="text-content font-bold mt-12 mb-4">
+            E-commerce Configurator & Inbound Marketing Strategy of Telehealth
+            Service
+          </p>
+          <p className="text-content font-light mb-4">
+            The marketing specialist and I categorized customers and implemented
+            targeted promotion strategies to drive service adoption. Given the
+            different medical divisions and hospital operation strategies, I
+            developed an e-commerce website showcasing modular medical-cart
+            products, empowering hospital executives to customize their
+            telemedical solutions.
+          </p>
+          <ModalImageFree imgURL={img_page_03} />
+        </div>
       </div>
     </div>
   );

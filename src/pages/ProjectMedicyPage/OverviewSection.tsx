@@ -9,7 +9,7 @@ import HoverImage from "../../Components/Component/HoverImage";
 export default function OverviewSection(): ReactElement {
   return (
     <div id="overview">
-      <div className="container mx-auto mt-12 w-[1100px]">
+      <div className="container mx-auto mt-12 hidden md:block md:w-[1100px]">
         <p className="font-bold text-[40px] text-[#DD663C]">
           MEDICY: NFT News Fantasy
         </p>
@@ -30,34 +30,41 @@ export default function OverviewSection(): ReactElement {
                 {" "}
                 By consolidating trading information into a trader-friendly
                 platform, it streamlines the NFT value evaluation process,
-                eliminating the need to navigate multiple sources. {" "}
+                eliminating the need to navigate multiple sources.{" "}
               </span>
               Through this strategic input, Medicy has emerged as a dynamic
               tool, enhancing attention and investment for the development of
               RPF’s Generation 2 NFT.
             </p>
             <div>
-            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"style={{ cursor: 'default' }}>
-              Strategy Design
+              <div className="flex gap-2 text-content font-light flex-wrap mt-8">
+                <div
+                  className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"
+                  style={{ cursor: "default" }}
+                >
+                  Strategy Design
+                </div>
+                <div
+                  className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"
+                  style={{ cursor: "default" }}
+                >
+                  Website Design
+                </div>
+                <div
+                  className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"
+                  style={{ cursor: "default" }}
+                >
+                  UI / UX Design
+                </div>
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"style={{ cursor: 'default' }}>
-              Website Design
-              </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"style={{ cursor: 'default' }}>
-              UI / UX Design
-              </div>
+              <p className="text-[14px] font-light mt-10">
+                * Participants have consented to the use of photos.
+              </p>
             </div>
-            <p className="text-[14px] font-light mt-10">
-              * Participants have consented to the use of photos.
-            </p>
-          </div>
           </div>
           <div className="flex flex-col  ">
-            <img src={img_outcome} alt="OutcomeImage" className='w-full' />
+            <img src={img_outcome} alt="OutcomeImage" className="w-full" />
           </div>
-
-        
         </div>
 
         <div className="text-center mt-12">
@@ -66,8 +73,8 @@ export default function OverviewSection(): ReactElement {
           </p>
         </div>
       </div>
-      <div className="w-full relative mt-6">
-        <img src={img_ovewview_bg} alt="overviewBgImg" className='w-full' />
+      <div className="w-full relative mt-6 hidden md:block">
+        <img src={img_ovewview_bg} alt="overviewBgImg" className="w-full" />
         <HoverImage
           width="18%"
           height="28%"
@@ -101,6 +108,38 @@ export default function OverviewSection(): ReactElement {
           imageUrl={img_ovewview_03}
           description="Offline Community Workshops for Blockchain Learning"
         />
+      </div>
+      <div
+        id="project_info"
+        className="block md:hidden container mx-auto bg-[#F3EEEE] pb-24"
+      >
+        <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold pt-24">
+          Research Question
+        </p>
+        <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
+          &nbsp;
+        </div>
+        <p className="text-[16px] mt-4">
+          How might NFT traders simplify the process of evaluating the values of
+          NFTs without navigating multiple platforms and piecing together
+          fragmented information?
+        </p>
+        <img src={img_outcome} alt="outcome" className="w-full  mt-8" />
+
+        <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold mt-12">
+          Outcome
+        </p>
+        <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
+          &nbsp;
+        </div>
+        <p className="text-[16px] mt-4">
+          NFT Roadmap,
+          <br />
+          NFT Trading Website,
+          <br />
+          Web3 Learning Workshops
+          <br />
+        </p>
       </div>
     </div>
   );

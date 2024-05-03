@@ -12,7 +12,7 @@ export default function ChallengeSection(): ReactElement {
   return (
     <>
       <div className="bg-[#F8F8F8] mx-auto pt-12 hidden md:block" id='process_challenges'>
-        <div className="container mx-auto w-[1100px] font-light">
+        <div className="container mx-auto md:w-[1100px] font-light">
           <div className="text-center mb-12">
             <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
               [ &nbsp; PROCESS & CHALLENGES &nbsp; ]

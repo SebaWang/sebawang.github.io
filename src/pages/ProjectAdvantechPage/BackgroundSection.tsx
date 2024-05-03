@@ -1,18 +1,17 @@
 import { ReactElement } from "react";
 import ModalImageFree from "../../Components/Component/ModalImageFree";
 import img_health from "../../assets/img/Project_Telehealth/Background & Problem/ihealthcare.png";
-import img_cof from "../../assets/img/Project_Medicy/Background & Problem/nft evaluation journey.jpg";
 
 export default function BackgroundSection(): ReactElement {
   return (
     <div id="background">
-      <div className="container mx-auto mt-16 w-[1100px]">
+      <div className="container mx-auto mt-16 md:w-[1100px]">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
-            [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+            [ BACKGROUND & PROBLEM ]
           </p>
         </div>
-        <p className="text-content font-light mt-8">
+        <p className="text-content font-light mt-8 hidden md:block">
           In the global pandemic era, remote healthcare has emerged as a
           cornerstone in the evolution of the medical field. As a leading figure
           in the medical IoT sector, Advantech stands at the vanguard of this
@@ -21,13 +20,14 @@ export default function BackgroundSection(): ReactElement {
           challenges of introducing telemedicine initiatives in Taiwan. One
           notable obstacle is the absence of systematic integration.
         </p>
-        <p className="text-content font-bold mt-8">
+        <p className="text-content font-bold mt-8 hidden md:block">
           The Advantech's iHealthcare Architecture
         </p>
+        <div className=" hidden md:block">
+          <ModalImageFree imgURL={img_health} />
+        </div>
 
-        <ModalImageFree imgURL={img_health} />
-
-        <p className="text-[24px] font-bold mt-8">
+        <p className="text-[20px] md:text-[24px] font-bold mt-8">
           Integrating telemedical hardware and software is necessary.
         </p>
 

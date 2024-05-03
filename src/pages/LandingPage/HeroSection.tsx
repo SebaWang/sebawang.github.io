@@ -48,8 +48,8 @@ export default function HeroSection() {
         <p className="text-[45px] font-semibold text-[#FFD1B7] !font-serif tracking-[3px]">SEBASTIAN<br />WANG</p>
         <p className="mt-12 text-white text-[15px]">A Strategy Weaver Who Spins</p>
         <p className="mt-2 text-white font-bold text-[15px]">Smooth Services For The Next Era.</p>
-        <p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px]">ABOUT</p>
-        <p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px] mb-24">PROJECTS</p>
+        <a href='#aboutSection'><p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px]">ABOUT</p></a>
+        <a href='#projectSection'><p className="mt-12 text-[#FF6731] font-semibold text-[16px] tracking-[4px] mb-24">PROJECTS</p></a>
        </div>
       </div>
         </>

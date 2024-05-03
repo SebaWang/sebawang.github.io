@@ -17,7 +17,7 @@ export default function BackgroundSection(): ReactElement {
           The Challenge of Career Development and Lack of Confidence in Learning
         </p>
         <Quote className="w-full hidden md:block" />
-        <p className="text-[14px] md:text-content font-light mt-4 md:mt-1">
+        <p className=":text-content font-light mt-4 md:mt-1">
           People with non-traditional learning backgrounds, including those who
           have battled addiction, mental issues, and ex-offenders, often
           encounter a familiar obstacle: the necessity for A-level
@@ -38,7 +38,7 @@ export default function BackgroundSection(): ReactElement {
           However, the current EPQ teaching structure still leans towards
           traditional academia.
         </p>
-        <p className="text-[14px] md:text-content font-light mt-4 md:mt-1 mb-8">
+        <p className="text-content font-light mt-4 md:mt-1 mb-8">
           While Open Book's EPQ course caters to individuals from
           non-traditional backgrounds, its current structure leans towards
           traditional teaching methods. Learners are required to navigate

@@ -1,11 +1,12 @@
 import { ReactElement } from "react";
 import img_bg_cover from "../../assets/img/Project_UTech/cover.png";
+import img_bg_coverm from "../../assets/img/Project_UTech/cover_m.jpg";
 
 export default function LandingSection(): ReactElement {
   return (
     <>
       <div
-        className="w-full relative overflow-hidden    h-[100vh] bg-cover bg-center"
+        className="w-full relative overflow-hidden hidden md:block   h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
         <div className="container mx-auto flex flex-col justify-center  grid grid-cols-5 h-full">
@@ -18,6 +19,25 @@ export default function LandingSection(): ReactElement {
             </p>
           </div>
         </div>
+      </div>
+
+      <div
+        className="w-full relative overflow-hidden h-[60svh]  bg-cover bg-center block md:hidden"
+        style={{ backgroundImage: `url(${img_bg_coverm})` }}
+      ></div>
+      <div className="h-[40svh] bg-[#1E1E1E] text-center px-4  block md:hidden">
+        <div>
+          <h1 className="text-white text-[45px] font-bold pt-[20%] leading-[48px]">
+            UTech
+          </h1>
+          <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
+            Universal Design for <br />
+            Urine Analysis Toilet
+          </p>
+        </div>
+        <p className="text-[#DD663C] font-light text-[13px] mt-12">
+          Team Lead | Product Strategy | UI / UX
+        </p>
       </div>
     </>
   );

@@ -15,7 +15,7 @@ export default function OverviewSection(): ReactElement {
   return (
     <>
       <div id="overview" className="hidden md:block">
-        <div className="container mx-auto mt-12 w-[1100px]">
+        <div className="container mx-auto mt-12 md:w-[1100px]">
           <div className="grid grid-cols-2">
             <div>
               <p className="font-bold text-[40px] text-[#DD663C]">

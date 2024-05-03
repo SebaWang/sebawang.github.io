@@ -39,7 +39,7 @@ export default function DesignSection(): ReactElement {
         Design serves not only as an outcome but also as a medium for further
         exploration.
       </p>
-      <p className="mt-2 text-[14px] md:text-content hidden md:block">
+      <p className="mt-2 text-content hidden md:block">
         In our journey of crafting future scenarios, my team and I developed
         various artifacts to engage people,{" "}
         <span className="font-bold">
@@ -80,7 +80,7 @@ export default function DesignSection(): ReactElement {
       <p className="text-[20px] md:text-[24px]  font-bold mt-12">
         The Ministry of Biodiversity and three pilot policies are compelling.
       </p>
-      <p className="mt-6 md:mt-2 text-[14px] md:text-content">
+      <p className="mt-6 md:mt-2 text-content">
         After a series of storytelling sessions about future worldviews, I found
         that using the fictional government entity, the Ministry of
         Biodiversity, helped participants quickly grasp the futuristic context.

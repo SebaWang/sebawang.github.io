@@ -9,13 +9,15 @@ export default function DesignSection(): ReactElement {
 
   return (
     <div id="design_deliver">
-      <div className="container mx-auto mt-16 w-[1100px] pb-16">
+      <div className="container mx-auto mt-16 md:w-[1100px] md:pb-16">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+        <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-[24px] font-bold mt-12">
+        <img src={img_page_01} alt="PageImage01" className="w-full block md:hidden mt-8" />
+        <img src={img_page_02} alt="PageImage01" className="w-full block md:hidden mt-4" />
+        <p className="text-[20px] md:text-[24px] font-bold mt-12 md:mt-24 ">
           An integrated website for NFT trading and evaluating.
         </p>
         <p className="text-content font-light mt-4 mb-6">
@@ -29,7 +31,7 @@ export default function DesignSection(): ReactElement {
           real-time price tracking, and advanced value analysis tools.
         </p>
 
-        <div role="tablist" className="tabs tabs-lifted ">
+        <div role="tablist" className="tabs tabs-lifted hidden md:block">
           <input
             type="radio"
             name="my_tabs_2"

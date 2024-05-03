@@ -1,18 +1,18 @@
 import { ReactElement } from "react";
 import ModalImageFree from "../../Components/Component/ModalImageFree";
 import img_intro from "../../assets/img/Project_UTech/Background & Problem/intro.png";
-import {ReactComponent as Users} from "../../assets/img/Project_UTech/Background & Problem/users.svg";
+import { ReactComponent as Users } from "../../assets/img/Project_UTech/Background & Problem/users.svg";
 
 export default function BackgroundSection(): ReactElement {
   return (
     <div id="background">
-      <div className="container mx-auto mt-16 w-[1100px]">
+      <div className="container mx-auto mt-16 md:w-[1100px]">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
-            [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+            [ BACKGROUND & PROBLEM ]
           </p>
         </div>
-        <p className="text-content font-light mt-8 mb-4">
+        <p className="text-content font-light mt-8 mb-4 hidden md:block">
           In collaboration with the Industrial Technology Research Institute
           (ITRI), HCG embarked on the development of UTech Toilet, an innovative
           urine analysis solution aimed at facilitating early detection of
@@ -21,10 +21,11 @@ export default function BackgroundSection(): ReactElement {
           capabilities, necessitating a revolution of the user experience
           journey and interface system.
         </p>
+        <div className=" hidden md:block">
+          <ModalImageFree imgURL={img_intro} />
+        </div>
 
-        <ModalImageFree imgURL={img_intro} />
-
-        <p className="text-[24px] font-bold mt-8">
+        <p className="text-[20px] md:text-[24px] font-bold mt-8">
           How to design an inclusive using experience?
         </p>
 
@@ -40,7 +41,9 @@ export default function BackgroundSection(): ReactElement {
             10-second toileting time?
           </span>{" "}
         </p>
-        <Users className='w-full' />
+        <div className=" hidden md:block">
+          <Users className="w-full" />
+        </div>
       </div>
     </div>
   );

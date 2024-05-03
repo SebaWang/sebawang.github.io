@@ -8,23 +8,26 @@ import img_cof from "../../assets/img/Project_Medicy/Background & Problem/nft ev
 export default function BackgroundSection(): ReactElement {
   return (
     <div id="background">
-      <div className="container mx-auto mt-16 w-[1100px]">
+      <div className="container mx-auto mt-16 md:w-[1100px]">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
-            [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+            [ BACKGROUND & PROBLEM ]
           </p>
         </div>
-        <p className="text-content font-light mt-8">
+        <p className="text-content font-light mt-8 hidden md:block">
           The burgeoning NFT art market has garnered significant attention
           amidst the ascent of blockchain technology. In 2021, NFT transactions
           soared to an impressive £19.2 billion in trading volume, drawing
           participation from approximately 28.6 million active accounts.
         </p>
-        <p className="text-[24px] font-bold mt-8">
+        <p className="text-[24px] font-bold mt-8 hidden md:block">
           The journey of NFT trading and evaluating is convoluted.
         </p>
-        <div className="mt-6 grid grid-cols-5 gap-4">
-          <div className="col-span-3">
+        <p className="text-[20px] font-bold mt-8">
+          The Challenge of Career Development and Lack of Confidence in Learning
+        </p>
+        <div className="mt-6 grid md:grid-cols-5 gap-4">
+          <div className="md:col-span-3">
             <p className="text-content font-light mt-1 mb-8 gap-4">
               Navigating the current NFT trading journey proves arduous for
               many. Traders must scour multiple websites to gather essential
@@ -44,18 +47,20 @@ export default function BackgroundSection(): ReactElement {
               This convoluted process underscores the need for a more
               streamlined and user-friendly approach to NFT trading.
             </p>
-            <p className="text-content font-bold mb-4">
+            <p className="text-content font-bold mb-4  hidden md:block">
               General NFT Evaluation Journey
             </p>
           </div>
-          <div className="col-span-2">
+          <div className="md:col-span-2 hidden md:block">
             <ModalImage imgURL={img_chat} aspectRatio="398/174" />
           </div>
         </div>
 
-        <ModalImageFree imgURL={img_cof} />
+        <div className="hidden md:block">
+          <ModalImageFree imgURL={img_cof} />
+        </div>
 
-        <p className="text-content font-light mt-4 mb-12">
+        <p className="text-content font-light md:mt-4 mb-12">
           Given the decentralized nature of blockchain technology, which
           promotes transparency and openness, the design question arises:{" "}
           <span className="font-bold text-[#DD663C]">

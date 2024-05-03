@@ -32,8 +32,8 @@ const FlyoutNav = () => {
       transition-all duration-300 ease-out lg:px-12
       ${
         scrolled
-          ? "backdrop-blur-sm py-3 shadow-xl bg-[#e8e8e8] bg-opacity-80 "
-          : "backdrop-blur-sm py-4 shadow-none bg-[#212121] bg-opacity-40 "
+          ? "md:backdrop-blur-sm py-3 shadow-xl bg-[#1E1E1E] md:bg-[#e8e8e8] md:bg-opacity-80 "
+          : "md:backdrop-blur-sm py-4 shadow-none bg-[#1E1E1E] md:bg-[#212121] md:bg-opacity-40 "
       }`}
     >
       <div className="mx-auto flex container items-center justify-between">
@@ -58,23 +58,25 @@ const Logo: React.FC<LogoProps> = ({ color = "white", scrolled }) => {
       <div className="items-center gap-2 cursor-pointer">
         <p
           className={`text-xl font-bold
-      ${scrolled ? "text-[#4A4A4A] " : "text-white"}`}
+      ${scrolled ? "md:text-[#4A4A4A] text-white " : "text-white"}`}
         >
           Sebastian Wang
         </p>
 
         {!scrolled && (
-          <TextSwap
-            strings={[
-              "Service Designer",
-              "Storyteller",
-              "Inclusive Designer",
-              "Innovation Strategist",
-            ]}
-            animationType="fade"
-            animationDuration="5s"
-            interval={3000}
-          />
+          <div className="hidden md:block">
+            <TextSwap
+              strings={[
+                "Service Designer",
+                "Storyteller",
+                "Inclusive Designer",
+                "Innovation Strategist",
+              ]}
+              animationType="fade"
+              animationDuration="5s"
+              interval={3000}
+            />
+          </div>
         )}
       </div>
     </Link>
@@ -229,7 +231,7 @@ const MobileMenu = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="block lg:hidden">
-      <button onClick={() => setOpen(true)} className="block text-3xl">
+      <button onClick={() => setOpen(true)} className="block text-3xl text-white">
         <FiMenu />
       </button>
       <AnimatePresence>

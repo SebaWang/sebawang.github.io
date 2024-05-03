@@ -59,7 +59,7 @@ export default function DesignSection(): ReactElement {
           </p>
         </div>
         <img src={img_combine} className="w-full block md:hidden mt-8" />
-        <p className="text-[14px] md:text-content font-light mt-12 mb-6">
+        <p className="text-content font-light mt-12 mb-6">
           The revamped EPQ learning journey features a design-led teaching
           structure, which can be divided into pre-curriculum and formal
           curriculum stages, alongside a crafted physical learning journal. This

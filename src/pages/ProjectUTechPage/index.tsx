@@ -9,8 +9,8 @@ import DesignSection from "./DesignSection";
 import DesignProcessSection from "./DesignProcessSection";
 import EvaluationSection from "./EvaluationSection";
 
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export default function ProjectFinancePage(): ReactElement {
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function ProjectFinancePage(): ReactElement {
     "Background & Problem": "background",
     "Design Deliver": "design_deliver",
     "Process & Challenges": "design_challenges",
-    "Evaluation": "evaluation",
+    Evaluation: "evaluation",
   };
   return (
     <>
@@ -36,9 +36,11 @@ export default function ProjectFinancePage(): ReactElement {
         <DesignProcessSection />
         <EvaluationSection />
       </div>
-      <div className='bg-[#202020] h-[60px]'>
-                <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">Copyright © 2024 Sebastian Wang</div>
-            </div>
+      <div className="bg-[#202020] h-[60px] hidden md:block">
+        <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">
+          Copyright © 2024 Sebastian Wang
+        </div>
+      </div>
     </>
   );
 }

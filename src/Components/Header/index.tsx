@@ -60,6 +60,7 @@ const Logo: React.FC<LogoProps> = ({ color = "#4A4A4A", scrolled }) => {
       </p>
     
       {!scrolled && (
+        <div className="hidden md:block">
         <TextSwap
           strings={[
             "Service Designer",
@@ -71,6 +72,7 @@ const Logo: React.FC<LogoProps> = ({ color = "#4A4A4A", scrolled }) => {
           animationDuration="5s"
           interval={3000}
         />
+        </div>
       )}
       
     </div>
