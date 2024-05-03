@@ -8,11 +8,12 @@ import img_ovewview_04 from "../../assets/img/Project_EPQ Learning Journey/Proje
 import img_ovewview_05 from "../../assets/img/Project_EPQ Learning Journey/Project Process Overview/3-2.jpg";
 import img_ovewview_06 from "../../assets/img/Project_EPQ Learning Journey/Project Process Overview/4.jpg";
 import HoverImage from "../../Components/Component/HoverImage";
+import img_bg_cover from "../../assets/img/Project_EPQ Learning Journey/cover.jpg";
 
 export default function OverviewSection(): ReactElement {
   return (
     <div id="overview">
-      <div className="container mx-auto mt-12 w-[1100px]">
+      <div className="container mx-auto mt-12 hidden md:block md:w-[1100px]">
         <p className="font-bold text-[40px] text-[#DD663C]">
           EPQ Learning Journey
         </p>
@@ -20,7 +21,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <div className="grid grid-cols-2 gap-8 mt-6">
-          <div className='flex flex-col'>
+          <div className="flex flex-col">
             <p className="text-content font-light">
               This collaborative project with Open Book at Goldsmiths University
               seeks to address the learning hurdles faced by individuals with
@@ -40,27 +41,25 @@ export default function OverviewSection(): ReactElement {
               </span>
             </p>
             <div>
-            <div className="flex gap-2 text-content font-light flex-wrap mt-8">
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
-                Inclusive Design
+              <div className="flex gap-2 text-content font-light flex-wrap mt-8">
+                <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+                  Inclusive Design
+                </div>
+                <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+                  Participatory Design
+                </div>
+                <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
+                  Social Design
+                </div>
               </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
-                Participatory Design
-              </div>
-              <div className="border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300">
-                Social Design
-              </div>
+              <p className="text-[14px] font-light mt-10">
+                * Participants have consented to the use of photos.
+              </p>
             </div>
-            <p className="text-[14px] font-light mt-10">
-              * Participants have consented to the use of photos.
-            </p>
-          </div>
           </div>
           <div className="flex flex-col ">
             <img src={img_outcome} alt="OutcomeImage" />
           </div>
-
-       
         </div>
 
         <div className="text-center mt-12">
@@ -69,8 +68,8 @@ export default function OverviewSection(): ReactElement {
           </p>
         </div>
       </div>
-      <div className="w-full relative mt-6">
-        <img src={img_ovewview_bg} alt='overviewBgImg' />
+      <div className="w-full relative mt-6 hidden md:block">
+        <img src={img_ovewview_bg} alt="overviewBgImg" />
         <HoverImage
           width="9.5%"
           height="24%"
@@ -134,6 +133,37 @@ export default function OverviewSection(): ReactElement {
           hoverTop="10%"
           imageUrl={img_ovewview_06}
         />
+      </div>
+      <div
+        id="project_info"
+        className="block md:hidden container mx-auto bg-[#F3EEEE] pb-24"
+      >
+        <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold pt-24">
+          Research Question
+        </p>
+        <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
+          &nbsp;
+        </div>
+        <p className="text-[16px] mt-4">
+          How might universities offer motivating sessions for individuals with
+          addiction and former offenders to complete A-level qualifications and
+          reintegrate into the workforce smoothly?
+        </p>
+        <img
+          src={img_bg_cover}
+          alt="outcome"
+          className="w-full mt-4 aspect-[309/203] object-cover"
+        />
+
+        <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold mt-12">
+          Outcome
+        </p>
+        <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
+          &nbsp;
+        </div>
+        <p className="text-[16px] mt-4">
+          An A-level Curriculum,<br /> A Learning Journal Folder
+        </p>
       </div>
     </div>
   );

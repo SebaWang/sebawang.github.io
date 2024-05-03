@@ -11,8 +11,8 @@ import EvaluationSection from "./EvaluationSection";
 import ReflectionSection from "./ReflectionSection";
 import SideNav from "../../Components/Component/SideNav";
 
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export default function ProjectFinancePage(): ReactElement {
   useEffect(() => {
@@ -24,8 +24,8 @@ export default function ProjectFinancePage(): ReactElement {
     "Design Deliver": "design_deliver",
     "Research & Challenges": "process_challenges",
     "Design & Challenges": "design_challenges",
-    "Evaluation": "evaluation",
-    "Reflection": "reflection",
+    Evaluation: "evaluation",
+    Reflection: "reflection",
   };
   return (
     <>
@@ -34,7 +34,7 @@ export default function ProjectFinancePage(): ReactElement {
       <LandingSection />
       <DetailSection />
       <OverviewSection />
-      <div id='content_section'>
+      <div id="content_section">
         <BackgroundSection />
         <DesignSection />
         <ResearchSection />
@@ -42,9 +42,11 @@ export default function ProjectFinancePage(): ReactElement {
         <EvaluationSection />
         <ReflectionSection />
       </div>
-      <div className='bg-[#202020] h-[60px]'>
-                <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">Copyright © 2024 Sebastian Wang</div>
-            </div>
+      <div className="bg-[#202020] h-[60px] hidden md:block">
+        <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">
+          Copyright © 2024 Sebastian Wang
+        </div>
+      </div>
     </>
   );
 }

@@ -11,11 +11,12 @@ import img_journey from "../../assets/img/Project_EPQ Learning Journey/Design De
 import img_journal_01 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/page1.png";
 import img_journal_02 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/page2.png";
 import img_journal_03 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/page3.png";
-import img_design_01 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/p1.jpg"
-import img_design_02 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/p2.jpg"
-import img_design_03 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/f1.jpg"
-import img_design_04 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/f2.jpg"
+import img_design_01 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/p1.jpg";
+import img_design_02 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/p2.jpg";
+import img_design_03 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/f1.jpg";
+import img_design_04 from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/f2.jpg";
 import ModalImage from "../../Components/Component/ModalImage";
+import img_combine from "../../assets/img/Project_EPQ Learning Journey/Design Deliver/combine.png"
 
 export default function DesignSection(): ReactElement {
   const [currentImg, setCurrentImg] = useState("01");
@@ -51,13 +52,14 @@ export default function DesignSection(): ReactElement {
 
   return (
     <div id="design_deliver">
-      <div className="container mx-auto mt-16 w-[1100px] pb-16">
+      <div className="container mx-auto mt-16 md:w-[1100px] md:pb-16">
         <div className="text-center mt-12">
-          <p className="text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+          <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
             [ &nbsp; DESIGN DELIVER &nbsp; ]
           </p>
         </div>
-        <p className="text-content font-light mt-12 mb-6">
+        <img src={img_combine} className="w-full block md:hidden mt-8" />
+        <p className="text-[14px] md:text-content font-light mt-12 mb-6">
           The revamped EPQ learning journey features a design-led teaching
           structure, which can be divided into pre-curriculum and formal
           curriculum stages, alongside a crafted physical learning journal. This
@@ -67,19 +69,18 @@ export default function DesignSection(): ReactElement {
             organise their knowledge throughout the learning journey
           </span>{" "}
           and
-          <span className="font-bold">
-            {" "}
-            integrate progress and evidence
-          </span>{" "}
-          to enhance project presentations and reflections.
+          <span className="font-bold"> integrate progress and evidence</span> to
+          enhance project presentations and reflections.
         </p>
-        <ModalImageFree imgURL={img_service_blueprint} />
 
-        <p className="text-content font-bold my-8">
+        <div className="hidden md:block">
+          <ModalImageFree imgURL={img_service_blueprint} />
+        </div>
+        <p className="text-content font-bold my-8 hidden md:block">
           A Glimpse of the Learning Journal{" "}
         </p>
 
-        <div className="flex gap-2 text-content font-light flex-wrap">
+        <div className="flex gap-2 text-content font-light flex-wrap hidden md:block">
           <div
             className={`border-[1px] p-1 px-4 rounded-full cursor-pointer duration-300 hover:scale-[1.03] ${
               currentImg === "01"
@@ -112,36 +113,37 @@ export default function DesignSection(): ReactElement {
           </div>
         </div>
 
-        <div className="relative">{renderContent()}</div>
+        <div className="relative hidden md:block">{renderContent()}</div>
 
-        <p className="text-content font-bold mt-12 mb-4">
-          New EPQ Learning Journey
-        </p>
-        <ModalImageFree imgURL={img_journey} />
+        <div className="hidden md:block">
+          <p className="text-content font-bold mt-12 mb-4">
+            New EPQ Learning Journey
+          </p>
+          <ModalImageFree imgURL={img_journey} />
 
-        <p className="text-content font-bold mt-12 mb-4">Pre Curriculum</p>
+          <p className="text-content font-bold mt-12 mb-4">Pre Curriculum</p>
 
-        <p className="text-content font-light ">
-          Before delving into an EPQ project, learners must first discover their
-          true passion and topic of interest to avoid feelings of anxiety and
-          uncertainty. The pre-curriculum stage acts as a buffer, offering
-          various visualisation materials and gamification sessions to{" "}
-          <span className="font-bold">
-          identify their enthusiasm and goals.
-          </span>
-        </p>
+          <p className="text-content font-light ">
+            Before delving into an EPQ project, learners must first discover
+            their true passion and topic of interest to avoid feelings of
+            anxiety and uncertainty. The pre-curriculum stage acts as a buffer,
+            offering various visualisation materials and gamification sessions
+            to{" "}
+            <span className="font-bold">
+              identify their enthusiasm and goals.
+            </span>
+          </p>
 
-        <div className='grid grid-cols-2 gap-4 mt-4'>
-          <ModalImage imgURL={img_design_01} />
-          <ModalImage imgURL={img_design_02} />
-        </div>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <ModalImage imgURL={img_design_01} />
+            <ModalImage imgURL={img_design_02} />
+          </div>
 
-
-        
-        <p className="text-content font-bold mt-12 mb-4">Formal Curriculum</p>
-        <div className='grid grid-cols-2 gap-4 mt-4'>
-          <ModalImage imgURL={img_design_03} />
-          <ModalImage imgURL={img_design_04} />
+          <p className="text-content font-bold mt-12 mb-4">Formal Curriculum</p>
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <ModalImage imgURL={img_design_03} />
+            <ModalImage imgURL={img_design_04} />
+          </div>
         </div>
       </div>
     </div>

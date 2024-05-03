@@ -16,6 +16,17 @@ export default function LandingSection(): ReactElement {
           </p>
         </div>
       </div>
+      <div className="h-[40svh] bg-[#1E1E1E] text-center px-4  block md:hidden">
+        <div>
+          <h1 className="text-white text-[45px] font-bold pt-[20%]">A+ In Finance</h1>
+          <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
+            Financial Inclusion Journey for ADHD
+          </p>
+        </div>
+        <p className="text-[#DD663C] font-light text-[13px] mt-12">
+          Service Design | UI / UX | Operational Strategy
+        </p>
+      </div>
     </>
   );
 }

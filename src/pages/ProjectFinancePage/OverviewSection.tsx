@@ -172,7 +172,7 @@ export default function OverviewSection(): ReactElement {
           />
         </div>
       </div>
-      <div className="block md:hidden container mx-auto bg-[#F3EEEE] pb-24">
+      <div id='project_info' className="block md:hidden container mx-auto bg-[#F3EEEE] pb-24">
         <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold pt-24">Research Question</p>
         <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
           &nbsp;

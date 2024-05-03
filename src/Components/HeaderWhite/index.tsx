@@ -85,7 +85,12 @@ const Links: React.FC<LogoProps> = ({ color = "white", scrolled }) => {
   return (
     <div className="flex items-center gap-6">
       {LINKS.map((l) => (
-        <NavLink key={l.text} href={l.href} FlyoutContent={l.component} scrolled={scrolled}>
+        <NavLink
+          key={l.text}
+          href={l.href}
+          FlyoutContent={l.component}
+          scrolled={scrolled}
+        >
           {l.text}
         </NavLink>
       ))}
@@ -196,7 +201,7 @@ const MobileMenuLink: React.FC<MobileMenuLinkProps> = ({
             e.stopPropagation();
             setMenuOpen(false);
           }}
-          href="#"
+          href={href}
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
         >
           <span>{children}</span>
@@ -243,16 +248,46 @@ const MobileMenu = () => {
               </button>
             </div>
             <div className="h-screen overflow-y-scroll bg-neutral-100 p-6">
-              {LINKS.map((l) => (
-                <MobileMenuLink
-                  key={l.text}
-                  href={l.href}
-                  FoldContent={l.component}
-                  setMenuOpen={setOpen}
-                >
-                  {l.text}
-                </MobileMenuLink>
-              ))}
+              <MobileMenuLink
+                key={"PROJECT INTRO"}
+                href={"#project_info"}
+                FoldContent={undefined}
+                setMenuOpen={setOpen}
+              >
+                {"PROJECT INTRO"}
+              </MobileMenuLink>
+              <MobileMenuLink
+                key={"BACKGROUND"}
+                href={"#background"}
+                FoldContent={undefined}
+                setMenuOpen={setOpen}
+              >
+                {"BACKGROUND"}
+              </MobileMenuLink>
+              <MobileMenuLink
+                key={"DESIGN DELIVER"}
+                href={"#design_deliver"}
+                FoldContent={undefined}
+                setMenuOpen={setOpen}
+              >
+                {"DESIGN DELIVER"}
+              </MobileMenuLink>
+              <MobileMenuLink
+                key={"EVALUATION"}
+                href={"#evaluation"}
+                FoldContent={undefined}
+                setMenuOpen={setOpen}
+              >
+                {"EVALUATION"}
+              </MobileMenuLink>
+              <MobileMenuLink
+                key={"REFLECTION"}
+                href={"#reflection"}
+                FoldContent={undefined}
+                setMenuOpen={setOpen}
+              >
+                {"REFLECTION"}
+              </MobileMenuLink>
             </div>
           </motion.nav>
         )}
