@@ -78,7 +78,7 @@ export default function DesignSection(): ReactElement {
         </p>
         <img src={img_monster} alt='outcome' className="w-full block md:hidden mt-4" />
 
-        <div className="grid grid-cols-3 gap-6 hidden md:block">
+        <div className="grid grid-cols-3 gap-6 hidden md:grid">
           <div className="col-span-2 relative">
             <img src={img_outcome2} alt="outcome2" />
             {renderContent()}
@@ -133,7 +133,7 @@ export default function DesignSection(): ReactElement {
         </div>
         <p className="font-bold text-content hidden md:block">Using Scenario Storyboard</p>
         <ScenarioBoard className="w-full scale-[1.04] hidden md:block" />
-        <div className="grid grid-cols-4 gap-3 mt-4 hidden md:block">
+        <div className="grid grid-cols-4 gap-3 mt-4 hidden md:grid">
           <p className="text-[14px] font-light">
             The user feel low dopamine, being bored and powerless.
           </p>

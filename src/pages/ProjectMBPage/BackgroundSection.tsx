@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import img_background_history from "../../assets/img/img_project_mob_background.png";
-import { ReactComponent as BGQuote } from "../../assets/img/img_project_mob_quote.svg";
+import { ReactComponent as BGQuote } from "../../assets/img/quote_mb.svg";
 export default function BackgroundSection(): ReactElement {
   return (
     <div className="container mx-auto pt-16 md:pt-24 md:w-[1100px]  font-light" id='background'>
@@ -12,18 +12,8 @@ export default function BackgroundSection(): ReactElement {
       <p className="text-[20px] md:text-[24px] font-bold mt-16 md:mt-24">
         Environmental policy discussions require more resonance.
       </p>
-      <div className="mt-12 relative hidden md:block">
-        <BGQuote className="absolute inset-0 z-0 -top-10 scale-110" />
-        <div className="z-10 relative text-[20px] !font-serif pt-4 px-6">
-          "In fact, discussions regarding environmental policies are only about
-          1/10th as heated as those concerning tax policies."
-          <p className="text-right font-bold !font-serif px-6 mt-2">
-            {" "}
-            - Researcher in the Government Digital Service
-          </p>
-        </div>
-      </div>
-      <p className="mt-12 text-content">
+        <BGQuote className="w-full hidden md:block" />
+      <p className="mt-4 text-content">
         In discussions with the Government Digital Service (GDS), I considered
         whether the public's lack of interest in environmental policy was due to
         the need for more resonance. This makes it challenging for the

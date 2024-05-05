@@ -80,7 +80,7 @@ export default function DesignSection(): ReactElement {
           A Glimpse of the Learning Journal{" "}
         </p>
 
-        <div className="flex gap-2 text-content font-light flex-wrap hidden md:block">
+        <div className="flex gap-2 text-content font-light flex-wrap hidden md:flex">
           <div
             className={`border-[1px] p-1 px-4 rounded-full cursor-pointer duration-300 hover:scale-[1.03] ${
               currentImg === "01"

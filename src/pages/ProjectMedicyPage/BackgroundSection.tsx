@@ -23,7 +23,7 @@ export default function BackgroundSection(): ReactElement {
         <p className="text-[24px] font-bold mt-8 hidden md:block">
           The journey of NFT trading and evaluating is convoluted.
         </p>
-        <p className="text-[20px] font-bold mt-8">
+        <p className="text-[20px] font-bold mt-8 block md:hidden">
           The Challenge of Career Development and Lack of Confidence in Learning
         </p>
         <div className="mt-6 grid md:grid-cols-5 gap-4">
