@@ -25,9 +25,9 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden h-[60svh]  bg-cover bg-center block md:hidden"
         style={{ backgroundImage: `url(${img_bg_coverm})` }}
       ></div>
-      <div className="h-[40svh] bg-[#1E1E1E] text-center px-4  block md:hidden">
+      <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">
         <div>
-          <h1 className="text-white text-[45px] font-bold pt-[20%] leading-[48px]">
+          <h1 className="text-white text-[45px] font-bold  leading-[48px]">
             UTech
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">

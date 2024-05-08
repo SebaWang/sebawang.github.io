@@ -18,9 +18,9 @@ export default function LandingSection(): ReactElement {
           </p>
         </div>
       </div>
-      <div className="h-[40svh] bg-[#1E1E1E] text-center px-4  block md:hidden">
+      <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">
         <div>
-          <h1 className="text-white text-[45px] font-bold leading-[45px] pt-[20%]">
+          <h1 className="text-white text-[45px] font-bold leading-[45px] ">
             Ministry of Biodiversity
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">

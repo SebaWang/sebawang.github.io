@@ -11,7 +11,7 @@ export default function BackgroundSection(): ReactElement {
       <div className="container mx-auto mt-16 md:w-[1100px]">
         <div className="text-center mt-12">
           <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
-            [ &nbsp; BACKGROUND & PROBLEM &nbsp; ]
+            [  BACKGROUND & PROBLEM  ]
           </p>
         </div>
         <p className="text-[20px] md:text-[24px] font-bold mt-8">
