@@ -20,7 +20,7 @@ export default function LandingSection(): ReactElement {
         <div>
           <h1 className="text-white text-[45px] font-bold">A+ In Finance</h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
-            Financial Inclusion Journey for ADHD
+            ADHD Financial Learning Journey & Inclusion Design
           </p>
         </div>
         <p className="text-[#DD663C] font-light text-[13px] mt-12">

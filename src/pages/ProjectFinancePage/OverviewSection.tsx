@@ -184,7 +184,7 @@ export default function OverviewSection(): ReactElement {
         <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
           &nbsp;
         </div>
-        <p className="text-[16px] mt-4">A Google Chrome Extension,ADHD Financial Learning Journey Map,Service Blueprint and System Map for ADHD Financial Course</p>
+        <p className="text-[16px] mt-4">A Google Chrome Extension,<p>ADHD Financial Learning Journey Map,</p> Blueprint and System Map for ADHD Financial Course</p>
       </div>
     </>
   );
