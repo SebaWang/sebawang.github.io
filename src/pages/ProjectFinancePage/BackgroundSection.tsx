@@ -60,7 +60,7 @@ export default function BackgroundSection(): ReactElement {
               alternative dopamine activities without a decade of trial?
             </span>
           </p>
-          <ModalImageFree imgURL={img_cof} description="ADHD Financial Learning Journey: Insights gathered from interviewing 14 individuals with ADHD across different age groups and financial coaches." />
+          <ModalImageFree maxWidthPercent={65} imgURL={img_cof} description="ADHD Financial Learning Journey: Insights gathered from interviewing 14 individuals with ADHD across different age groups and financial coaches." />
         </div>
       </div>
     </div>
