@@ -17,14 +17,13 @@ export default function Footer() {
           <nav>
             <h6 className="footer-title">ORGANIZATION</h6> 
             <a className="  font-bold">Collaborators</a>
-            <a className=" ">The Neurodivisity Charity</a>
-            <a className=" ">The Brain Charity</a>
+            <a className=" ">ADHD Charities</a>
           </nav>
           <nav>
             <h6 className="footer-title">OUTCOMES</h6> 
             <a className=" ">A Google Chrome Extension,</a>
             <a className=" ">ADHD Financial Learning Journey Map,</a>
-            <a className=" ">Service Blueprint and System Map for ADHDy</a>
+            <a className=" ">Service Blueprint and System Map for ADHD</a>
             <a className=" ">Financial Course</a>
           </nav>
         </footer>

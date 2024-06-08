@@ -25,10 +25,10 @@ export default function DetailSection(): ReactElement {
                     Service Design
                     </p>
                     <p className="text-content ">
-                    Future Scenarios Design
+                    Speculative Storytelling
                     </p>
                     <p className="text-content ">
-                    Policy Communication
+                    Participants Engagement
                     </p>
                 </nav>
                 <nav className='text-black'>
@@ -58,7 +58,7 @@ export default function DetailSection(): ReactElement {
                     public and communicate 
                     </p>
                     <p className="text-content ">
-                    environmental policies ?
+                    environmental policies?
                     </p>
                 </nav>
                 <nav className='text-black'>
@@ -66,17 +66,11 @@ export default function DetailSection(): ReactElement {
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8">
-                    Artifacts of future scenarios,
+                    <p className="max-w-[300px] text-content mt-8">
+                    An Interactive Exhibition that Attracts 60+ Designers and Researchers in GDS,
                     </p>
-                    <p className="text-content ">
-                    A Stakeholder Action Chart,
-                    </p>
-                    <p className="text-content ">
-                    A Future Policy Communication 
-                    </p>
-                    <p className="text-content ">
-                    Strategy Report
+                    <p className="max-w-[300px] text-content mt-2">
+                    A Future Policy Communication Strategy Report for Citizens and Farmers Engagement
                     </p>
                 </nav>
             </footer>

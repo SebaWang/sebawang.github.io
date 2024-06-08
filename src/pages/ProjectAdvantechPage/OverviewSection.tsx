@@ -13,21 +13,13 @@ export default function OverviewSection(): ReactElement {
         <div className="grid grid-cols-2 gap-8 mt-6">
           <div className="flex flex-col ">
             <p className="text-content font-light">
-              Amidst the global pandemic, remote healthcare has emerged as a
-              transformative factor in the medical industry's evolution. Yet,
-              the lack of seamless integration between hardware and software has
-              slowed down the development of the telemedicine industry. As a
-              service designer at Advantech's telemedical IoT team,
+During the global pandemic, I served as a service designer at Advantech's telemedical IoT team, collaborating with 20 medical experts to advance remote healthcare. 
               <span className="font-bold">
                 {" "}
-                I collaborated with 20 medical experts, developing innovative
-                service solutions for dermatology, ophthalmology,
-                otolaryngology, and ICU.
+                By mapping stakeholder power structures, analyzing communication strategies, and addressing benefit conflicts, I facilitated effective cross-disciplinary collaboration among executives, front-line medical staff, doctors, and patients.
               </span>
-              Our efforts culminated in the deployment of telemedicine services
-              to
-              <span className="font-bold"> 1,300 isolation </span> wards across
-              Taiwan, propelling the advancement of remote healthcare.
+              {" "}
+              This project developed innovative solutions for dermatology, ophthalmology, otolaryngology, and ICU services, ultimately deploying telemedicine services to 1,300 isolation wards across Taiwan. This innovation reduced health risks, improved patient management, and optimized hospital workflows, significantly enhancing the quality of patient care.
             </p>
             <div>
               <div className="flex gap-2 text-content font-light flex-wrap mt-8">

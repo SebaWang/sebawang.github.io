@@ -28,22 +28,11 @@ export default function OverviewSection(): ReactElement {
         <div className="grid grid-cols-2 gap-4 pb-24">
           <div>
             <p className="mt-6 text-content font-light">
-              The Ministry of Biodiversity operates as a fictional government
-              department, stimulating and inspiring robust discussions
-              surrounding policies concerning nature and agriculture. Its goal
-              is to assist the Government Digital Service (GDS) in{" "}
+            The Ministry of Biodiversity is a speculative design project that imagines a fictional government department, sparking vivid and insightful discussions about nature and agriculture policies with citizens and farmers. This initiative aims to aid the Government Digital Service (GDS) in{" "}
               <span className="font-bold">
-                effectively communicating environmental policies and gathering
-                feedback for future policy development.
+              effectively communicating environmental policies and gathering feedback for future policy development.
               </span>{" "}
-              Employing an agile development approach, this speculative design
-              project created numerous diegetic prototypes that physically
-              represented the touchpoints of future services, paving the way for
-              a net-zero London. The project engaged with over 30 individuals
-              through these fictional policies, sparking lively discussions
-              about the merits and drawbacks of these "future" service
-              touchpoints and "current" environmental policies.
-            </p>
+              Through the agile development of various diegetic prototypes, the project brought to life tangible representations of future service touchpoints, allowing for real-world testing of communication and storytelling methods. Engaging with over 30 individuals through these fictional policies, the project ignited passionate discussions of current and future policies and helped develop an engaging communication strategy to influence meaningful policy advancements.            </p>
             <div className="gap-4 mt-6 text-content">
               <button
                 className="mr-4 mb-3 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:text-white hover:bg-[#DD663C] duration-300"
@@ -232,7 +221,7 @@ export default function OverviewSection(): ReactElement {
         </div>
         <p className="text-[16px] mt-4">
           How might the government effectively engage the general public and
-          communicate environmental policies ?
+          communicate environmental policies?
         </p>
         <img src={img_process_12} alt="outcome" className="w-full aspect-[309/214] object-cover mt-8"  />
 

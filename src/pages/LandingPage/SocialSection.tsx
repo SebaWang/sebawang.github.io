@@ -140,7 +140,7 @@ export default function SocialSection() {
                 title="Ministry of Biodiversity"
                 subTitle="Strategy & Speculative Design for Policy with GDS"
                 concept="Agricultural Policy Communication"
-                content="How might the government effectively engage the general public and communicate environmental policies ?"
+                content="How might the government effectively engage the general public and communicate environmental policies?"
               />
             </Link>
             <Link to="/project/epq">

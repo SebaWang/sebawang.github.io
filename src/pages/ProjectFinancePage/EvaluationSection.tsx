@@ -51,7 +51,7 @@ export default function EvaluationSection(): ReactElement {
             awareness within <span className="font-bold">1 years.</span>
           </p>
           <p className="text-content text-left md:hidden block">
-            The Brain Charity launched new financial management courses,{" "}
+            The ADHD charities launched new financial management courses,{" "}
             <span className="font-bold">attracting over 30 participants</span>{" "}
             and aimed to help young adults develop alternative dopamine
             activities within 1 years.

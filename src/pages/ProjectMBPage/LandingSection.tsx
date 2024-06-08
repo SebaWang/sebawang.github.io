@@ -28,7 +28,7 @@ export default function LandingSection(): ReactElement {
           </p>
         </div>
         <p className="text-[#DD663C] font-light text-[13px] mt-12">
-          Service Design | Future Design<br /> Policy Communications
+          Service Design | Speculative Storytelling<br /> Policy Communications
         </p>
       </div>
     </>

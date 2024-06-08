@@ -105,7 +105,7 @@ export default function ReflectionSection(): ReactElement {
               title="Ministry of Biodiversity"
               subTitle="Strategy & Speculative Design for Policy with GDS"
               concept="Agricultural Policy Communication"
-              content="How might the government effectively engage the general public and communicate environmental policies ?"
+              content="How might the government effectively engage the general public and communicate environmental policies?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

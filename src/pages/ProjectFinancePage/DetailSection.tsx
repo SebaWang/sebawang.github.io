@@ -25,10 +25,10 @@ export default function DetailSection(): ReactElement {
                     Service Design
                     </p>
                     <p className="text-content ">
-                    UI / UX
+                    Marketing Strategy
                     </p>
                     <p className="text-content ">
-                    Operational Strategy
+                    UI / UX Design
                     </p>
                 </nav>
                 <nav className='text-black'>
@@ -39,11 +39,8 @@ export default function DetailSection(): ReactElement {
                     <p className="text-content mt-8 font-semibold">
                     Collaborators
                     </p>
-                    <p className="text-content ">
-                    The Neurodivisity Charity
-                    </p>
-                    <p className="text-content ">
-                    The Brain Charity
+                    <p className="text-content max-w-[200px]">
+                    ADHD Charities in London & Liverpool
                     </p>
                 </nav>
                 <nav className='text-black'>
@@ -69,17 +66,11 @@ export default function DetailSection(): ReactElement {
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8">
-                    A Google Chrome Extension,
+                    <p className="max-w-[300px] text-content mt-8">
+                    A Chrome Extension for Dopamine Activities Practice and Intervention,
                     </p>
-                    <p className="text-content ">
-                    ADHD Financial Learning Journey Map,
-                    </p>
-                    <p className="text-content ">
-                    Service Blueprint and System Map for ADHD
-                    </p>
-                    <p className="text-content ">
-                    Financial Course
+                    <p className="max-w-[300px] text-content mt-2">
+                    A Physical Financial Learning Course which Attracts 150+ ADHD people
                     </p>
                 </nav>
             </footer>

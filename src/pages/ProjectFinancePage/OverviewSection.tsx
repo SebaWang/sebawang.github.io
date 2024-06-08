@@ -25,25 +25,15 @@ export default function OverviewSection(): ReactElement {
                 &nbsp;
               </div>
               <p className="text-content font-light mt-8 mb-8">
-                A+ in Finance focuses on designing{" "}
+                A+ in Finance focuses on designin financial inclusion strategies.{" "}
+                The project {" "}
                 <span className="font-bold">
-                  financial inclusion strategies{" "}
-                </span>
-                for ADHD. Through research and design involving 14 people with
-                ADHD across various age groups, a common financial learning
-                journey emerged. It was observed that those with longer
-                diagnoses exhibit proficient financial capability, attributed to
-                their grasps of activities that boost dopamine levels.
-                Conversely, young adults with ADHD may take a decade to identify
-                and practice such activities, often resorting to impulsive
-                behaviors like shopping or substance use.{" "}
-                <span className="font-bold">
-                  How might young adults with ADHD manage symptoms and curb
-                  impulsive shopping behavior without years of learning?
-                </span>{" "}
-                This project developed a Google Chrome Extension and ADHD
-                Financial Learning Courses to provide practical guidance, which
-                currently support over 150 individuals.
+                built strong relationship with 14 individuals with ADHD across different age groups, creating a psychologically safe environment and encouraging participants to discuss sensitive financial topics in the workshops.{" "}
+                </span>It often takes young adults with ADHD up to a decade to identify and practice healthy dopamine-boosting activities beyond shopping or substance use. {" "}
+                
+                How can young adults with ADHD manage their symptoms and control impulsive shopping without years of trial and error?
+                
+                This project developed a digital Chrome Extension and a physical ADHD Financial Learning Courses to support them explore and practice their dopaminine management to stablize their financial condition, which currently support 150+ individuals.
               </p>
               <div className="flex gap-2 text-content font-light flex-wrap">
                 <div
