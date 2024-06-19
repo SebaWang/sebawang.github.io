@@ -39,14 +39,14 @@ export default function EvaluationSection(): ReactElement {
             </p>
             <p className="text-content font-light text-left hidden md:block">
               Inspired by the nature recovery policy and its newspaper coverage,
-              DEFRA researchers explore novel approaches to interact with rural
+              policy researchers can explore novel approaches to interact with rural
               farmers. They aim to foster casual yet engaging discussions on
               fallow land and subsidy methods, envisioning a strategy to
               revitalize soil fertility and restore ecological balance.
             </p>
             <p className="text-content text-left md:hidden block">
               Inspired by the nature recovery policy and its newspaper coverage,
-              DEFRA researchers can explore novel approaches to interact with
+              policy researchers can explore novel approaches to interact with
               rural farmers.
             </p>
           </div>

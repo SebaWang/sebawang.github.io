@@ -14,10 +14,9 @@ export default function BackgroundSection(): ReactElement {
       </p>
         <BGQuote className="w-full hidden md:block" />
       <p className="mt-4 text-content">
-        In discussions with the Government Digital Service (GDS), I considered
+        In discussions with the Government Digital Service (GDS), my teammates and I considered
         whether the public's lack of interest in environmental policy was due to
-        the need for more resonance. This makes it challenging for the
-        Department for Environment, Food & Rural Affairs (DEFRA) and the GDS to
+        the need for more resonance. This makes it challenging for the GDS to
         gather public opinions for future policy strategies. As the government
         prioritizes nature conservation and future environmental development, a
         crucial question arises:{" "}
