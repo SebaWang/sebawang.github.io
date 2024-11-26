@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.558b9a1e.css",
-    "main.js": "/static/js/main.484f4a19.js",
+    "main.css": "/static/css/main.5d4d449f.css",
+    "main.js": "/static/js/main.ac7f0870.js",
     "static/media/img_landing_about_04.jpg": "/static/media/img_landing_about_04.8d3ffc161126a98ae1f4.jpg",
     "static/media/img_landing_project_02.jpg": "/static/media/img_landing_project_02.baa5582648ffee50b580.jpg",
     "static/media/img_life_03.jpg": "/static/media/img_life_03.98aa2e691ccb3ffd40c3.jpg",
@@ -187,11 +187,11 @@
     "static/media/img_project_finance_designT_03.svg": "/static/media/img_project_finance_designT_03.9ce78ec8ebc1e50a5ecc2ba34c35d58b.svg",
     "index.html": "/index.html",
     "static/media/icon_scrollUp.svg": "/static/media/icon_scrollUp.a372f10ced5968144faaa9c14c9dddf1.svg",
-    "main.558b9a1e.css.map": "/static/css/main.558b9a1e.css.map",
-    "main.484f4a19.js.map": "/static/js/main.484f4a19.js.map"
+    "main.5d4d449f.css.map": "/static/css/main.5d4d449f.css.map",
+    "main.ac7f0870.js.map": "/static/js/main.ac7f0870.js.map"
   },
   "entrypoints": [
-    "static/css/main.558b9a1e.css",
-    "static/js/main.484f4a19.js"
+    "static/css/main.5d4d449f.css",
+    "static/js/main.ac7f0870.js"
   ]
 }
