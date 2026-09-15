@@ -8,7 +8,9 @@ import img_project_04 from "../../assets/img/img_project_cover_04.png";
 import img_project_05 from "../../assets/img/img_project_cover_06.jpg";
 import img_project_06 from "../../assets/img/img_project_cover_05.png";
 import { Link } from "react-router-dom";
+import useProjectLock from "../../Components/Component/useProjectLock";
 export default function SocialSection() {
+  const { isLocked, openLock, lockOverlay, passwordModal } = useProjectLock();
   return (
     <>
       <div className="bg-[#e8e8e8]  hidden md:block">
@@ -152,39 +154,79 @@ export default function SocialSection() {
                 content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
               />
             </Link>
-            <Link to="/project/medicy">
-              <ProjectPreviewCard
-                imgURL={img_project_04}
-                title="MEDICY: NFT News Fantasy"
-                subTitle="Strategy & Service Design for NFT Trading"
-                concept="NFT Development Strategy"
-                content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
-              />
-            </Link>
-            <Link to="/project/advantech">
-              <ProjectPreviewCard
-                imgURL={img_project_05}
-                title="Integrated Tele-health Solution"
-                subTitle="IoT Telemedicine Service Design"
-                concept="Remote Medical Diagnosis Service"
-                content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
-              />
-            </Link>
-            <Link to="/project/utech">
-              <ProjectPreviewCard
-                imgURL={img_project_06}
-                title="UTech"
-                subTitle="Universal Design for Urine Analysis Toilet"
-                concept="Operation Process for All-Age"
-                content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
-              />
-            </Link>
+            {isLocked("medicy") ? (
+              <div className="relative cursor-pointer" onClick={() => openLock("medicy")}>
+                <ProjectPreviewCard
+                  imgURL={img_project_04}
+                  title="MEDICY: NFT News Fantasy"
+                  subTitle="Strategy & Service Design for NFT Trading"
+                  concept="NFT Development Strategy"
+                  content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
+                />
+                {lockOverlay}
+              </div>
+            ) : (
+              <Link to="/project/medicy">
+                <ProjectPreviewCard
+                  imgURL={img_project_04}
+                  title="MEDICY: NFT News Fantasy"
+                  subTitle="Strategy & Service Design for NFT Trading"
+                  concept="NFT Development Strategy"
+                  content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
+                />
+              </Link>
+            )}
+            {isLocked("advantech") ? (
+              <div className="relative cursor-pointer" onClick={() => openLock("advantech")}>
+                <ProjectPreviewCard
+                  imgURL={img_project_05}
+                  title="Integrated Tele-health Solution"
+                  subTitle="IoT Telemedicine Service Design"
+                  concept="Remote Medical Diagnosis Service"
+                  content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
+                />
+                {lockOverlay}
+              </div>
+            ) : (
+              <Link to="/project/advantech">
+                <ProjectPreviewCard
+                  imgURL={img_project_05}
+                  title="Integrated Tele-health Solution"
+                  subTitle="IoT Telemedicine Service Design"
+                  concept="Remote Medical Diagnosis Service"
+                  content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
+                />
+              </Link>
+            )}
+            {isLocked("utech") ? (
+              <div className="relative cursor-pointer" onClick={() => openLock("utech")}>
+                <ProjectPreviewCard
+                  imgURL={img_project_06}
+                  title="UTech"
+                  subTitle="Universal Design for Urine Analysis Toilet"
+                  concept="Operation Process for All-Age"
+                  content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
+                />
+                {lockOverlay}
+              </div>
+            ) : (
+              <Link to="/project/utech">
+                <ProjectPreviewCard
+                  imgURL={img_project_06}
+                  title="UTech"
+                  subTitle="Universal Design for Urine Analysis Toilet"
+                  concept="Operation Process for All-Age"
+                  content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
+                />
+              </Link>
+            )}
             <div className="text-center border-[1px] border-[#575757] text-[12px] p-6">
             For a better reading experience and details about the research and design process, please visit my website using a laptop or larger screen. Thank you!
             </div>
           </div>
         </div>
       </div>
+      {passwordModal}
     </>
   );
 }

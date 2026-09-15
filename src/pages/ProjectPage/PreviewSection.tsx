@@ -1,41 +1,52 @@
-import { ReactElement, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { ReactElement } from "react";
+import { Link } from "react-router-dom";
 import ProjectPreviewCard from "./ProjectPreviewCard";
+import useProjectLock from "../../Components/Component/useProjectLock";
 import img_project_01 from "../../assets/img/img_landing_project_01.jpeg";
 import img_project_02 from "../../assets/img/img_landing_project_02.jpg";
 import img_project_03 from "../../assets/img/img_project_cover_03.jpg";
 import img_project_04 from "../../assets/img/img_project_cover_04.png";
 import img_project_05 from "../../assets/img/img_project_cover_06.jpg";
 import img_project_06 from "../../assets/img/img_project_cover_05.png";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import img_project_placeholder from "../../assets/img/img_project_cover_placeholder.svg";
 
 export default function PreviewSection(): ReactElement {
-  const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
-  const [passwordInput, setPasswordInput] = useState("");
-  const [lockedProjects, setLockedProjects] = useState(["medicy", "advantech", "utech"]);
-  const [selectedProject, setSelectedProject] = useState("");
-  const navigate = useNavigate();
+  const { isLocked, openLock, lockOverlay, passwordModal } = useProjectLock();
 
-  const correctPassword = "2024";
-
-  const handleLockedProjectClick = (projectId: string) => {
-    setSelectedProject(projectId);
-    setPasswordModalOpen(true);
-  };
-
-  const handlePasswordSubmit = () => {
-    if (passwordInput === correctPassword) {
-      setPasswordModalOpen(false);
-      setLockedProjects((prev) => prev.filter((proj) => proj !== selectedProject));
-      navigate(`/project/${selectedProject}`);
-    } else {
-      alert("Incorrect password. Please try again.");
-    }
-  };
+  // Placeholder entries for upcoming projects: same card and hover effects, but not linked
+  const placeholderProjects = [
+    {
+      id: "new-01",
+      imgURL: img_project_placeholder,
+      title: "New Project 01",
+      subTitle: "Subtitle to be added",
+      concept: "Concept to be added",
+      content: "Project description to be added.",
+      placeholder: true,
+    },
+    {
+      id: "new-02",
+      imgURL: img_project_placeholder,
+      title: "New Project 02",
+      subTitle: "Subtitle to be added",
+      concept: "Concept to be added",
+      content: "Project description to be added.",
+      placeholder: true,
+    },
+    {
+      id: "new-03",
+      imgURL: img_project_placeholder,
+      title: "New Project 03",
+      subTitle: "Subtitle to be added",
+      concept: "Concept to be added",
+      content: "Project description to be added.",
+      placeholder: true,
+    },
+  ];
 
   // Array of project data
   const projects = [
+    ...placeholderProjects,
     {
       id: "finance",
       imgURL: img_project_02,
@@ -103,14 +114,22 @@ export default function PreviewSection(): ReactElement {
         </div>
         <div className="grid grid-cols-3 gap-12 mt-20 pb-32">
           {projects.map((project) => {
-            const isLocked = lockedProjects.includes(project.id);
-
             return (
               <div key={project.id}>
-                {isLocked ? (
+                {"placeholder" in project && project.placeholder ? (
+                  <div>
+                    <ProjectPreviewCard
+                      imgURL={project.imgURL}
+                      title={project.title}
+                      subTitle={project.subTitle}
+                      concept={project.concept}
+                      content={project.content}
+                    />
+                  </div>
+                ) : isLocked(project.id) ? (
                   <div
                     className="relative cursor-pointer"
-                    onClick={() => handleLockedProjectClick(project.id)}
+                    onClick={() => openLock(project.id)}
                   >
                     <ProjectPreviewCard
                       imgURL={project.imgURL}
@@ -119,10 +138,7 @@ export default function PreviewSection(): ReactElement {
                       concept={project.concept}
                       content={project.content}
                     />
-                    {/* Overlay with lock icon */}
-                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                      <FontAwesomeIcon icon={faLock} className="text-white text-3xl" />
-                    </div>
+                    {lockOverlay}
                   </div>
                 ) : (
                   <Link to={`/project/${project.id}`}>
@@ -141,33 +157,7 @@ export default function PreviewSection(): ReactElement {
         </div>
       </div>
 
-      {/* Password Modal */}
-      {isPasswordModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-          <div className="bg-white p-6 rounded shadow-lg text-center">
-            <h3 className="mb-4 text-xl font-semibold">Enter Password</h3>
-            <input
-              type="password"
-              placeholder="Password"
-              className="border p-2 rounded w-full mb-4"
-              value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
-            />
-            <button
-              className="bg-[#EA5514] text-white px-4 py-2 rounded"
-              onClick={handlePasswordSubmit}
-            >
-              Submit
-            </button>
-            <button
-              className="ml-2 text-gray-600 underline"
-              onClick={() => setPasswordModalOpen(false)}
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )}
+      {passwordModal}
     </div>
   );
 }
