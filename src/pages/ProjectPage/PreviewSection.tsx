@@ -46,6 +46,16 @@ export default function PreviewSection(): ReactElement {
       placeholder: true,
     },
     {
+      id: "nhs-jobs",
+      imgURL: img_project_placeholder,
+      title: "NHS Jobs Journey Improvement",
+      subTitle: "Online and Offline Service Design",
+      concept: "Agile Delivery and GDS Assessment",
+      content:
+        "How might NHS Jobs make applying and recruiting simpler across online and offline touchpoints, with improvements tested against GDS service assessment?",
+      placeholder: true,
+    },
+    {
       id: "staff-services",
       imgURL: img_project_placeholder,
       title: "Design with GDS Standards",
