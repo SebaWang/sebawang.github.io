@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 import ProjectPreviewCard from "./ProjectPreviewCard";
-import useProjectLock from "../../Components/Component/useProjectLock";
+import useProjectLock, { lockedCardClass } from "../../Components/Component/useProjectLock";
 import img_project_01 from "../../assets/img/img_landing_project_01.jpeg";
 import img_project_02 from "../../assets/img/img_landing_project_02.jpg";
 import img_project_03 from "../../assets/img/img_project_cover_03.jpg";
@@ -128,7 +128,7 @@ export default function PreviewSection(): ReactElement {
                   </div>
                 ) : isLocked(project.id) ? (
                   <div
-                    className="relative cursor-pointer"
+                    className={lockedCardClass}
                     onClick={() => openLock(project.id)}
                   >
                     <ProjectPreviewCard

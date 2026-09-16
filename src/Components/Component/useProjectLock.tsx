@@ -6,6 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CORRECT_PASSWORD = "2024";
 const DEFAULT_LOCKED = ["medicy", "advantech", "utech"];
 
+// Wrapper for a locked card: the overlay sits on top of the card, so the hover
+// lift has to live here instead of on the card itself
+export const lockedCardClass =
+  "relative cursor-pointer rounded-md hover:scale-[1.05] hover:shadow-2xl duration-300";
+
 // Shared password gate for locked projects: used by the /project page and the mobile list on the landing page
 export default function useProjectLock() {
   const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
@@ -32,7 +37,7 @@ export default function useProjectLock() {
   };
 
   const lockOverlay: ReactElement = (
-    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div className="absolute inset-0 rounded-md bg-black bg-opacity-50 flex items-center justify-center">
       <FontAwesomeIcon icon={faLock} className="text-white text-3xl" />
     </div>
   );

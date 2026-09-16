@@ -8,7 +8,7 @@ import img_project_04 from "../../assets/img/img_project_cover_04.png";
 import img_project_05 from "../../assets/img/img_project_cover_06.jpg";
 import img_project_06 from "../../assets/img/img_project_cover_05.png";
 import { Link } from "react-router-dom";
-import useProjectLock from "../../Components/Component/useProjectLock";
+import useProjectLock, { lockedCardClass } from "../../Components/Component/useProjectLock";
 export default function SocialSection() {
   const { isLocked, openLock, lockOverlay, passwordModal } = useProjectLock();
   return (
@@ -155,7 +155,7 @@ export default function SocialSection() {
               />
             </Link>
             {isLocked("medicy") ? (
-              <div className="relative cursor-pointer" onClick={() => openLock("medicy")}>
+              <div className={lockedCardClass} onClick={() => openLock("medicy")}>
                 <ProjectPreviewCard
                   imgURL={img_project_04}
                   title="MEDICY: NFT News Fantasy"
@@ -177,7 +177,7 @@ export default function SocialSection() {
               </Link>
             )}
             {isLocked("advantech") ? (
-              <div className="relative cursor-pointer" onClick={() => openLock("advantech")}>
+              <div className={lockedCardClass} onClick={() => openLock("advantech")}>
                 <ProjectPreviewCard
                   imgURL={img_project_05}
                   title="Integrated Tele-health Solution"
@@ -199,7 +199,7 @@ export default function SocialSection() {
               </Link>
             )}
             {isLocked("utech") ? (
-              <div className="relative cursor-pointer" onClick={() => openLock("utech")}>
+              <div className={lockedCardClass} onClick={() => openLock("utech")}>
                 <ProjectPreviewCard
                   imgURL={img_project_06}
                   title="UTech"
