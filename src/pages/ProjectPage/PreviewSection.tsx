@@ -16,30 +16,33 @@ export default function PreviewSection(): ReactElement {
   // Placeholder entries for upcoming projects: same card and hover effects, but not linked
   const placeholderProjects = [
     {
-      id: "new-01",
+      id: "ev-maintenance",
       imgURL: img_project_placeholder,
-      title: "New Project 01",
-      subTitle: "Subtitle to be added",
-      concept: "Concept to be added",
-      content: "Project description to be added.",
+      title: "EV VIP Maintenance Service",
+      subTitle: "As-is Journey Mapping and Future Service Blueprint",
+      concept: "Online and Offline Service Design",
+      content:
+        "How might a dealership deliver a VIP-level EV maintenance experience across online and offline touchpoints, with backstage operations that can actually support it?",
       placeholder: true,
     },
     {
-      id: "new-02",
+      id: "futures-forums",
       imgURL: img_project_placeholder,
-      title: "New Project 02",
-      subTitle: "Subtitle to be added",
-      concept: "Concept to be added",
-      content: "Project description to be added.",
+      title: "Foresight Forum and Workshops",
+      subTitle: "Participatory Research with Govs and Corporates",
+      concept: "Futures-led Strategy and Service Design",
+      content:
+        "How might governments and industries rehearse long-term futures together, so that scenarios reshape organisational strategy and the services behind it?",
       placeholder: true,
     },
     {
-      id: "new-03",
+      id: "staff-services",
       imgURL: img_project_placeholder,
-      title: "New Project 03",
-      subTitle: "Subtitle to be added",
-      concept: "Concept to be added",
-      content: "Project description to be added.",
+      title: "Service Design with GDS Standards",
+      subTitle: "Staff-facing Service Assessment and Improvement",
+      concept: "Agile Delivery and GDS Beta and Live Assessment",
+      content:
+        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
       placeholder: true,
     },
   ];
@@ -117,7 +120,7 @@ export default function PreviewSection(): ReactElement {
             return (
               <div key={project.id}>
                 {"placeholder" in project && project.placeholder ? (
-                  <div>
+                  <div className="h-full">
                     <ProjectPreviewCard
                       imgURL={project.imgURL}
                       title={project.title}
@@ -141,7 +144,7 @@ export default function PreviewSection(): ReactElement {
                     {lockOverlay}
                   </div>
                 ) : (
-                  <Link to={`/project/${project.id}`}>
+                  <Link to={`/project/${project.id}`} className="block h-full">
                     <ProjectPreviewCard
                       imgURL={project.imgURL}
                       title={project.title}

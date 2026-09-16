@@ -9,7 +9,7 @@ const DEFAULT_LOCKED = ["medicy", "advantech", "utech"];
 // Wrapper for a locked card: the overlay sits on top of the card, so the hover
 // lift has to live here instead of on the card itself
 export const lockedCardClass =
-  "relative cursor-pointer rounded-md hover:scale-[1.05] hover:shadow-2xl duration-300";
+  "relative h-full cursor-pointer rounded-md hover:scale-[1.05] hover:shadow-2xl duration-300";
 
 // Shared password gate for locked projects: used by the /project page and the mobile list on the landing page
 export default function useProjectLock() {
