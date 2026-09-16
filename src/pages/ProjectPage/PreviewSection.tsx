@@ -40,7 +40,7 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_placeholder,
       title: "Design with GDS Standards",
       subTitle: "Staff-facing Service Assessment and Improvement",
-      concept: "Agile Delivery and GDS Beta and Live Assessment",
+      concept: "Agile Delivery and GDS Beta/Live Assessments",
       content:
         "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
       placeholder: true,
