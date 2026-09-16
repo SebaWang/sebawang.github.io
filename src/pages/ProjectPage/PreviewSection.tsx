@@ -45,6 +45,16 @@ export default function PreviewSection(): ReactElement {
         "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
       placeholder: true,
     },
+    {
+      id: "robotics-analysis",
+      imgURL: img_project_placeholder,
+      title: "30-year Robotics Trends",
+      subTitle: "LLM Training for News Review",
+      concept: "Quant Topic Modelling and Qual Discourse Analysis",
+      content:
+        "How might three decades of robotics news reveal the competing assumptions about autonomy, labour and care that shape how societies imagine robots?",
+      placeholder: true,
+    },
   ];
 
   // Array of project data
