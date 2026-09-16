@@ -36,16 +36,6 @@ export default function PreviewSection(): ReactElement {
       placeholder: true,
     },
     {
-      id: "staff-services",
-      imgURL: img_project_placeholder,
-      title: "Design with GDS Standards",
-      subTitle: "Staff-facing Service Assessment and Improvement",
-      concept: "Agile Delivery and GDS Beta/Live Assessments",
-      content:
-        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
-      placeholder: true,
-    },
-    {
       id: "robotics-analysis",
       imgURL: img_project_placeholder,
       title: "30-year Robotics Trends",
@@ -53,6 +43,16 @@ export default function PreviewSection(): ReactElement {
       concept: "Quant Topic Modelling and Qual Discourse Analysis",
       content:
         "How might three decades of robotics news reveal the competing assumptions about autonomy, labour and care that shape how societies imagine robots?",
+      placeholder: true,
+    },
+    {
+      id: "staff-services",
+      imgURL: img_project_placeholder,
+      title: "Design with GDS Standards",
+      subTitle: "Staff-facing Service Assessment and Improvement",
+      concept: "Agile Delivery and GDS Beta/Live Assessments",
+      content:
+        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
       placeholder: true,
     },
   ];
