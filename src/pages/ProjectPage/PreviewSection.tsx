@@ -38,7 +38,7 @@ export default function PreviewSection(): ReactElement {
     {
       id: "staff-services",
       imgURL: img_project_placeholder,
-      title: "Service Design with GDS Standards",
+      title: "Design with GDS Standards",
       subTitle: "Staff-facing Service Assessment and Improvement",
       concept: "Agile Delivery and GDS Beta and Live Assessment",
       content:
