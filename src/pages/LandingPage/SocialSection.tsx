@@ -154,6 +154,15 @@ export default function SocialSection() {
                 content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
               />
             </Link>
+            <Link to="/project/advantech">
+              <ProjectPreviewCard
+                imgURL={img_project_05}
+                title="Integrated Tele-health Solution"
+                subTitle="IoT Telemedicine Service Design"
+                concept="Remote Medical Diagnosis Service"
+                content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
+              />
+            </Link>
             {isLocked("medicy") ? (
               <div className={lockedCardClass} onClick={() => openLock("medicy")}>
                 <ProjectPreviewCard
@@ -173,28 +182,6 @@ export default function SocialSection() {
                   subTitle="Strategy & Service Design for NFT Trading"
                   concept="NFT Development Strategy"
                   content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
-                />
-              </Link>
-            )}
-            {isLocked("advantech") ? (
-              <div className={lockedCardClass} onClick={() => openLock("advantech")}>
-                <ProjectPreviewCard
-                  imgURL={img_project_05}
-                  title="Integrated Tele-health Solution"
-                  subTitle="IoT Telemedicine Service Design"
-                  concept="Remote Medical Diagnosis Service"
-                  content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
-                />
-                {lockOverlay}
-              </div>
-            ) : (
-              <Link to="/project/advantech">
-                <ProjectPreviewCard
-                  imgURL={img_project_05}
-                  title="Integrated Tele-health Solution"
-                  subTitle="IoT Telemedicine Service Design"
-                  concept="Remote Medical Diagnosis Service"
-                  content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
                 />
               </Link>
             )}

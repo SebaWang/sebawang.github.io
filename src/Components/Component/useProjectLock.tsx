@@ -4,7 +4,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CORRECT_PASSWORD = "2024";
-const DEFAULT_LOCKED = ["medicy", "advantech", "utech"];
+const DEFAULT_LOCKED = ["medicy", "utech"];
 
 // Wrapper for a locked card: the overlay sits on top of the card, so the hover
 // lift has to live here instead of on the card itself

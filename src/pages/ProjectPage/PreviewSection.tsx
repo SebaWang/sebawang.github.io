@@ -88,15 +88,6 @@ export default function PreviewSection(): ReactElement {
         "How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?",
     },
     {
-      id: "medicy",
-      imgURL: img_project_04,
-      title: "MEDICY: NFT News Fantasy",
-      subTitle: "Strategy & Service Design for NFT Trading",
-      concept: "NFT Development Strategy",
-      content:
-        "How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?",
-    },
-    {
       id: "advantech",
       imgURL: img_project_05,
       title: "Integrated Tele-health Solution",
@@ -104,6 +95,15 @@ export default function PreviewSection(): ReactElement {
       concept: "Remote Medical Diagnosis Service",
       content:
         "How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?",
+    },
+    {
+      id: "medicy",
+      imgURL: img_project_04,
+      title: "MEDICY: NFT News Fantasy",
+      subTitle: "Strategy & Service Design for NFT Trading",
+      concept: "NFT Development Strategy",
+      content:
+        "How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?",
     },
     {
       id: "utech",
