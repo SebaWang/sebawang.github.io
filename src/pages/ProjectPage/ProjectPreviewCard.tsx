@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as Bubble } from "../../assets/img/img_deco_bubble.svg";
 
 interface ProjectCardProps {
   imgURL: string;
@@ -6,24 +7,37 @@ interface ProjectCardProps {
   content: string;
 }
 
-// Title above the image, question always visible below it — no hover reveal.
+// Original card proportions restored: full-bleed image, dotted Bubble
+// decoration in the white footer. Title now sits on the image itself,
+// on a permanent shadow scrim (not a hover reveal); the question moved
+// into the footer at a smaller size, in place of subTitle/concept.
 const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
   imgURL,
   title,
   content,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col cursor-pointer bg-white rounded-md shadow overflow-hidden hover:scale-[1.05] hover:shadow-2xl duration-300">
-      <div className="px-6 py-5 text-center shrink-0">
-        <p className="font-bold text-[20px] leading-snug">{title}</p>
+    <div className="w-full h-full flex flex-col cursor-pointer card bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300">
+      <div className="max-h-80 overflow-hidden relative rounded-t-md shrink-0">
+        <img
+          className="w-full object-cover aspect-[396/297]"
+          src={imgURL}
+          alt={title}
+        />
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-4 px-4">
+          <p
+            className="text-white text-center font-bold text-[18px] leading-snug"
+            style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+          >
+            {title}
+          </p>
+        </div>
       </div>
-      <img
-        className="w-full object-cover aspect-[396/297] shrink-0"
-        src={imgURL}
-        alt={title}
-      />
-      <div className="flex-1 px-6 py-5 bg-[#F4F4F4]">
-        <p className="text-left font-light text-content">{content}</p>
+      <div className="flex-1 flex flex-col justify-start px-6 py-4 relative overflow-hidden">
+        <Bubble className="absolute bottom-2 left-1 opacity-60" />
+        <p className="font-light text-[13px] leading-[20px] text-left z-10">
+          {content}
+        </p>
       </div>
     </div>
   );
