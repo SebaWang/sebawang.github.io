@@ -102,7 +102,7 @@ export default function ReflectionSection(): ReactElement {
           <Link to="/project/mob">
             <ProjectPreviewCard
               imgURL={img_project_01}
-              title="Ministry of Biodiversity"
+              title="Workshops & Strategy Design for Future Policy with GDS"
               content="How might the government effectively engage the general public and communicate environmental policies?"
             />
           </Link>

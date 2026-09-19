@@ -24,10 +24,10 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
           src={imgURL}
           alt={title}
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-4 px-4">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent pt-12 pb-4 px-4">
           <p
             className="text-white text-center font-bold text-[18px] leading-snug"
-            style={{ textShadow: "0 2px 6px rgba(0,0,0,0.6)" }}
+            style={{ textShadow: "0 2px 5px rgba(0,0,0,0.45)" }}
           >
             {title}
           </p>

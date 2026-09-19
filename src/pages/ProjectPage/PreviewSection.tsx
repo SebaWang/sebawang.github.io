@@ -70,7 +70,7 @@ export default function PreviewSection(): ReactElement {
     {
       id: "mob",
       imgURL: img_project_01,
-      title: "Ministry of Biodiversity",
+      title: "Workshops & Strategy Design for Future Policy with GDS",
       content:
         "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
     },

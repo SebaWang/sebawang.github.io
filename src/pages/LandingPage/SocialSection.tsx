@@ -137,7 +137,7 @@ export default function SocialSection() {
             <Link to="/project/mob">
               <ProjectPreviewCard
                 imgURL={img_project_01}
-                title="Ministry of Biodiversity"
+                title="Workshops & Strategy Design for Future Policy with GDS"
                 content="How can future storytelling give the public and farmers a voice in future environmental policy discussion?"
               />
             </Link>

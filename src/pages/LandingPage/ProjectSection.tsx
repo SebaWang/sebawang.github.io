@@ -48,7 +48,7 @@ export default function ProjectSection() {
               <Link to="/project/mob">
                 <ProjectCard
                   imgURL={img_project_01}
-                  title="Ministry of Biodiversity"
+                  title="Workshops & Strategy Design for Future Policy with GDS"
                   subTitle="Strategy & Speculative Design for Policy with GDS"
                   concept="Agricultural Policy Communication"
                   type="Speculative Design, Participatory Design, Sustainable Design"
