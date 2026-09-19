@@ -5,19 +5,23 @@ interface ProjectCardProps {
   imgURL: string;
   title: string;
   content: string;
+  highlights?: string[];
 }
 
 // Original card proportions restored: full-bleed image, dotted Bubble
-// decoration in the white footer. Title now sits on the image itself,
-// on a permanent shadow scrim (not a hover reveal); the question moved
-// into the footer at a smaller size, in place of subTitle/concept.
+// decoration in the white footer. Title sits on the image itself, on a
+// permanent shadow scrim; the question sits in the footer. When
+// `highlights` is provided, hovering the card reveals them over the
+// image (like the original hover-reveal mask) alongside the card's
+// existing hover lift and shadow.
 const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
   imgURL,
   title,
   content,
+  highlights,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col cursor-pointer card bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300">
+    <div className="w-full h-full flex flex-col cursor-pointer card group bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300">
       <div className="max-h-80 overflow-hidden relative rounded-t-md shrink-0">
         <img
           className="w-full object-cover aspect-[396/297]"
@@ -32,6 +36,15 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
             {title}
           </p>
         </div>
+        {highlights && highlights.length > 0 && (
+          <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center px-6">
+            <ul className="text-white font-light text-[13px] leading-[20px] list-disc pl-4 space-y-2">
+              {highlights.map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
       <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
         <Bubble className="absolute bottom-2 left-1 opacity-60" />
