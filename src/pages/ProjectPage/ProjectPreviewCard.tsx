@@ -26,7 +26,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
         />
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#292929]/90 via-[#292929]/10 to-transparent pt-12 pb-4 px-4">
           <p
-            className="text-white text-center font-bold text-[18px] leading-snug"
+            className="text-white text-center font-bold text-[20px] leading-snug"
             style={{ textShadow: "0 2px 10px rgba(0,0,0,0.7)" }}
           >
             {title}
