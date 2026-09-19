@@ -81,8 +81,6 @@ export default function ReflectionSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_03}
               title="EPQ Learning Journey"
-              subTitle="Social Design for Non-traditional Education"
-              concept="Social Action for A-level Qualifications"
               content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
             />
           </Link>

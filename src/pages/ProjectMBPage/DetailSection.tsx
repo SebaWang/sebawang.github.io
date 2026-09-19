@@ -49,16 +49,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-8">
-                    How might the government 
-                    </p>
-                    <p className="text-content ">
-                    effectively engage the general 
-                    </p>
-                    <p className="text-content ">
-                    public and communicate 
-                    </p>
-                    <p className="text-content ">
-                    environmental policies?
+                    How can future storytelling give the public and farmers a voice in future environmental policy discussion?
                     </p>
                 </nav>
                 <nav className='text-black'>

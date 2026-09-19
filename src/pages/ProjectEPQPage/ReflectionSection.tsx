@@ -57,8 +57,6 @@ export default function ReflectionSection(): ReactElement {
               <ProjectPreviewCard
                 imgURL={img_project_04}
                 title="MEDICY: NFT News Fantasy"
-                subTitle="Strategy & Service Design for NFT Trading"
-                concept="NFT Development Strategy"
                 content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
               />
             </Link>

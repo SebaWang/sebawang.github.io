@@ -52,7 +52,7 @@ export default function ProjectSection() {
                   subTitle="Strategy & Speculative Design for Policy with GDS"
                   concept="Agricultural Policy Communication"
                   type="Speculative Design, Participatory Design, Sustainable Design"
-                  content="How might the government effectively engage the general public and communicate environmental policies?"
+                  content="How can future storytelling give the public and farmers a voice in future environmental policy discussion?"
                 />
               </Link>
             </div>

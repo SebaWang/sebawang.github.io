@@ -131,8 +131,6 @@ export default function SocialSection() {
               <ProjectPreviewCard
                 imgURL={img_project_02}
                 title="A+ In Finance"
-                subTitle="Inclusive Design for ADHD Financial Management"
-                concept="Financial Inclusion"
                 content="How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without years of learning?"
               />
             </Link>
@@ -140,17 +138,13 @@ export default function SocialSection() {
               <ProjectPreviewCard
                 imgURL={img_project_01}
                 title="Ministry of Biodiversity"
-                subTitle="Strategy & Speculative Design for Policy with GDS"
-                concept="Agricultural Policy Communication"
-                content="How might the government effectively engage the general public and communicate environmental policies?"
+                content="How can future storytelling give the public and farmers a voice in future environmental policy discussion?"
               />
             </Link>
             <Link to="/project/epq">
               <ProjectPreviewCard
                 imgURL={img_project_03}
                 title="EPQ Learning Journey"
-                subTitle="Social Design for Non-traditional Education"
-                concept="Social Action for A-level Qualifications"
                 content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
               />
             </Link>
@@ -158,8 +152,6 @@ export default function SocialSection() {
               <ProjectPreviewCard
                 imgURL={img_project_05}
                 title="Integrated Tele-health Solution"
-                subTitle="IoT Telemedicine Service Design"
-                concept="Remote Medical Diagnosis Service"
                 content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
               />
             </Link>
@@ -168,8 +160,6 @@ export default function SocialSection() {
                 <ProjectPreviewCard
                   imgURL={img_project_04}
                   title="MEDICY: NFT News Fantasy"
-                  subTitle="Strategy & Service Design for NFT Trading"
-                  concept="NFT Development Strategy"
                   content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
                 />
                 {lockOverlay}
@@ -179,8 +169,6 @@ export default function SocialSection() {
                 <ProjectPreviewCard
                   imgURL={img_project_04}
                   title="MEDICY: NFT News Fantasy"
-                  subTitle="Strategy & Service Design for NFT Trading"
-                  concept="NFT Development Strategy"
                   content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
                 />
               </Link>
@@ -190,8 +178,6 @@ export default function SocialSection() {
                 <ProjectPreviewCard
                   imgURL={img_project_06}
                   title="UTech"
-                  subTitle="Universal Design for Urine Analysis Toilet"
-                  concept="Operation Process for All-Age"
                   content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
                 />
                 {lockOverlay}
@@ -201,8 +187,6 @@ export default function SocialSection() {
                 <ProjectPreviewCard
                   imgURL={img_project_06}
                   title="UTech"
-                  subTitle="Universal Design for Urine Analysis Toilet"
-                  concept="Operation Process for All-Age"
                   content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
                 />
               </Link>

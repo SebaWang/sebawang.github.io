@@ -220,8 +220,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <p className="text-[16px] mt-4">
-          How might the government effectively engage the general public and
-          communicate environmental policies?
+          How can future storytelling give the public and farmers a voice in future environmental policy discussion?
         </p>
         <img src={img_process_12} alt="outcome" className="w-full aspect-[309/214] object-cover mt-8"  />
 

@@ -97,8 +97,6 @@ export default function EvaluationSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_01}
               title="A+ In Finance"
-              subTitle="Inclusive Design for ADHD Financial Management"
-              concept="Financial Inclusion"
               content="How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without years of learning?"
             />
           </Link>

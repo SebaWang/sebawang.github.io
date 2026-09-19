@@ -66,8 +66,6 @@ export default function ReflectionSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_06}
               title="UTech"
-              subTitle="Universal Design for Urine Analysis Toilet"
-              concept="Operation Process for All-Age"
               content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
             />
           </Link>

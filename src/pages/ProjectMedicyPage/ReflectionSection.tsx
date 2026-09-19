@@ -57,8 +57,6 @@ export default function ReflectionSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_05}
               title="Integrated Tele-health Solution"
-              subTitle="IoT Telemedicine Service Design"
-              concept="Remote Medical Diagnosis Service"
               content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
             />
           </Link>

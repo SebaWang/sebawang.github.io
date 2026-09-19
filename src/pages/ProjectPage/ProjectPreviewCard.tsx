@@ -1,46 +1,31 @@
-import React, { useState } from "react";
-import {ReactComponent as Bubble} from "../../assets/img/img_deco_bubble.svg"
+import React from "react";
 
 interface ProjectCardProps {
   imgURL: string;
   title: string;
-  subTitle: string;
-  concept: string;
   content: string;
 }
 
+// Title above the image, question always visible below it — no hover reveal.
 const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
   imgURL,
   title,
-  subTitle,
-  concept,
   content,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <>
-      <div
-        className="w-full h-full flex flex-col cursor-pointer card bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div className="max-h-80 overflow-hidden relative rounded-t-md shrink-0">
-          <img className="w-full object-cover aspect-[396/297]" src={imgURL} alt="Project" />
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 mask duration-300">
-            <p className="text-white text-center px-16 font-light text-content">{content}</p>
-          </div>
-        </div>
-        <div
-          className={`flex-1 flex flex-col justify-start px-6 py-4 text-center transform transition-all duration-50 relative overflow-hidden`}
-        >
-          <Bubble className="absolute bottom-2 left-1 opacity-60" />
-          <div className="font-bold text-md mb-1 text-[20px] z-10">{title}</div>
-          <p className="font-light text-[14px] mb-1 z-10">{subTitle}</p>
-          <p className="font-light text-[#6F6F6F] text-[12px] z-10">{concept}</p>
-        </div>
+    <div className="w-full h-full flex flex-col cursor-pointer bg-white rounded-md shadow overflow-hidden hover:scale-[1.05] hover:shadow-2xl duration-300">
+      <div className="px-6 py-5 text-center shrink-0">
+        <p className="font-bold text-[20px] leading-snug">{title}</p>
       </div>
-    </>
+      <img
+        className="w-full object-cover aspect-[396/297] shrink-0"
+        src={imgURL}
+        alt={title}
+      />
+      <div className="flex-1 px-6 py-5 bg-[#F4F4F4]">
+        <p className="text-left font-light text-content">{content}</p>
+      </div>
+    </div>
   );
 };
 
