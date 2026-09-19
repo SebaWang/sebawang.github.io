@@ -39,13 +39,13 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
         <Bubble className="absolute bottom-2 left-1 opacity-60" />
-        <p className="font-light text-[15px] leading-[22px] text-left z-10">
+        <p className="font-light text-[17px] leading-[24px] text-left z-10">
           {content}
         </p>
       </div>
       {highlights && highlights.length > 0 && (
         <div className="absolute inset-0 rounded-md overflow-hidden bg-black/75 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center px-6 z-20">
-          <ul className="text-white font-light text-[18px] leading-[27px] list-disc pl-4 space-y-2 text-left">
+          <ul className="text-white font-light text-[18px] leading-[27px] list-disc pl-4 space-y-4 text-left">
             {highlights.map((line, i) => (
               <li key={i}>{line}</li>
             ))}
