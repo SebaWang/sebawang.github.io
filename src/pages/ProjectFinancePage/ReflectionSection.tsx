@@ -87,7 +87,7 @@ export default function ReflectionSection(): ReactElement {
         <div className="mx-auto text-center mt-4 pb-16  hidden md:block">
           <Link to="/project">
             <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
-              Back To Projects
+              Back To Case Studies
             </button>
           </Link>
         </div>

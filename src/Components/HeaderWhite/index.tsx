@@ -312,7 +312,7 @@ const LINKS = [
     component: undefined,
   },
   {
-    text: "Projects",
+    text: "Case Studies",
     href: "/project",
     component: undefined,
   },

@@ -121,7 +121,7 @@ export default function SocialSection() {
       <div className="bg-[#e8e8e8] block md:hidden" id='projectSection'>
         <div className="container mx-auto pt-24">
           <p className="tracking-widest text-[#EA5514] text-subtitle">
-            PROJECTS
+            CASE STUDIES
           </p>
           <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
             &nbsp;

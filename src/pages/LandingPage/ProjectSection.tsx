@@ -13,7 +13,7 @@ export default function ProjectSection() {
           <div className="grid md:grid-cols-2 gap-x-24">
             <div className="text-left">
               <p className="tracking-widest text-[#EA5514] text-subtitle">
-                PROJECTS
+                CASE STUDIES
               </p>
               <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
                 &nbsp;

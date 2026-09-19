@@ -64,7 +64,7 @@ export default function ReflectionSection(): ReactElement {
             <img src={img_crown} />
             <Link to="/project">
               <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-12 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
-                Back To Projects
+                Back To Case Studies
               </button>
             </Link>
           </div>

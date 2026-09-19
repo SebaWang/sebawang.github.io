@@ -237,12 +237,12 @@ const MobileMenu = () => {
                   {"ABOUT"}
                 </MobileMenuLink>
                 <MobileMenuLink
-                  key={"PROJECTS"}
+                  key={"CASE STUDIES"}
                   href={"#projectSection"}
                   FoldContent={undefined}
                   setMenuOpen={setOpen}
                 >
-                  {"PROJECTS"}
+                  {"CASE STUDIES"}
                 </MobileMenuLink>
                 <MobileMenuLink
                   key={"CONTACT"}
@@ -274,7 +274,7 @@ const LINKS = [
     component: undefined,
   },
   {
-    text: "Projects",
+    text: "Case Studies",
     href: "/project",
     component: undefined,
   },
