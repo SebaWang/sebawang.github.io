@@ -44,8 +44,8 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
         </p>
       </div>
       {highlights && highlights.length > 0 && (
-        <div className="absolute inset-0 rounded-md overflow-hidden bg-black/55 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center px-6 z-20">
-          <ul className="text-white font-light text-[19px] leading-[28px] list-disc pl-4 space-y-2 text-left">
+        <div className="absolute inset-0 rounded-md overflow-hidden bg-black/75 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center px-6 z-20">
+          <ul className="text-white font-light text-[18px] leading-[27px] list-disc pl-4 space-y-2 text-left">
             {highlights.map((line, i) => (
               <li key={i}>{line}</li>
             ))}
