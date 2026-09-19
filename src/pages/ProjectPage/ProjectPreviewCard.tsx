@@ -27,7 +27,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#292929]/90 via-[#292929]/10 to-transparent pt-12 pb-4 px-4">
           <p
             className="text-white text-center font-bold text-[18px] leading-snug"
-            style={{ textShadow: "0 2px 5px rgba(0,0,0,0.7)" }}
+            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.7)" }}
           >
             {title}
           </p>
@@ -35,7 +35,7 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
         <Bubble className="absolute bottom-2 left-1 opacity-60" />
-        <p className="font-light text-[13px] leading-[20px] text-left z-10">
+        <p className="font-light text-[15px] leading-[22px] text-left z-10">
           {content}
         </p>
       </div>
