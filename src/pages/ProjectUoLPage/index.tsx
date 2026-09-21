@@ -6,7 +6,6 @@ import ChallengeSection from "./ChallengeSection";
 import WhatIDidSection from "./WhatIDidSection";
 import ResultsEvaluationSection from "./ResultsEvaluationSection";
 import WhatILearntSection from "./WhatILearntSection";
-import ReflectionSection from "./ReflectionSection";
 import SideNav from "../../Components/Component/SideNav";
 
 import React, { useEffect } from "react";
@@ -38,7 +37,6 @@ export default function ProjectUoLPage(): ReactElement {
         <WhatIDidSection />
         <ResultsEvaluationSection />
         <WhatILearntSection />
-        <ReflectionSection />
       </div>
       <div className="bg-[#202020] h-[60px] hidden md:block">
         <div className="flex justify-center text-[12px] mx-auto h-[60px] items-center text-white font-light tracking-[2px] inter">
