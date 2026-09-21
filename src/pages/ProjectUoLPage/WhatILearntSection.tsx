@@ -9,32 +9,32 @@ import ContactMobile from "../../Components/Component/ContactMobile";
 export default function WhatILearntSection(): ReactElement {
   return (
     <>
-      <div className="bg-[#FFFAF8]" id="what_i_learnt">
+      <div className="bg-[#2B140A]" id="what_i_learnt">
         <div className="container mx-auto mt-12 md:w-[1100px] pb-12 md:pb-24">
           <div className="text-center pt-12 mb-8">
-            <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
+            <p className="text-[16px] md:text-[20px] font-light text-[#C98F6E] tracking-[5px]">
               [ &nbsp; WHAT I LEARNT &nbsp; ]
             </p>
           </div>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-12">
+          <p className="text-[20px] md:text-[24px] font-bold mt-12 text-white">
             Reflection heading to be added.
           </p>
-          <p className="text-content md:font-light mt-4">
+          <p className="text-content md:font-light mt-4 text-[#D7B7A6]">
             Reflection text to be added.
           </p>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-8">
+          <p className="text-[20px] md:text-[24px] font-bold mt-8 text-white">
             Reflection heading to be added.
           </p>
-          <p className="text-content md:font-light mt-4">
+          <p className="text-content md:font-light mt-4 text-[#D7B7A6]">
             Reflection text to be added.
           </p>
         </div>
 
         <div className="mx-auto text-center mt-4 pb-16 hidden md:block">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
+            <button className="mt-12 border-[1px] border-[#FF7A45] text-[#FF7A45] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#FF7A45] hover:text-white duration-300">
               Back To Works
             </button>
           </Link>
