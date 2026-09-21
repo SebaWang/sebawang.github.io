@@ -89,6 +89,11 @@ export default function PreviewSection(): ReactElement {
       title: "Learning Journey Design with Sensitive Groups",
       content:
         "How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
+      highlights: [
+        "Co-developed an Extended Project Qualification course for learners with addiction, mental health challenges, or criminal justice backgrounds.",
+        "Used participatory design to increase non-design stakeholders' ownership and confidence in mapping their as-is journeys and future expectations.",
+        "Delivered a full A-level curriculum and a learning journal toolkit, giving learners a credentialed route back into education and work.",
+      ],
     },
     {
       id: "advantech",
