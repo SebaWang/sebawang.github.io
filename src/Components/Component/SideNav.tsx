@@ -158,7 +158,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
       // a negative top margin shrinks the effective viewport there, so
       // the nav is treated as "past" it, and reappears, a bit sooner
       // than when its bottom edge actually clears the real viewport top.
-      { threshold: 0, rootMargin: "-2000px 0px 0px 0px" }
+      { threshold: 0, rootMargin: "-200px 0px 0px 0px" }
     );
     observer.observe(target);
     return () => observer.unobserve(target);
