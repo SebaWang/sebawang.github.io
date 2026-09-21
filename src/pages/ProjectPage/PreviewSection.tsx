@@ -73,8 +73,8 @@ export default function PreviewSection(): ReactElement {
       content:
         "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
       highlights: [
-        "Used foresight to build future services and artefacts that invite discussion.",
-        "Offered an alternative engagement format for complex public policy research, lowering the barrier to understanding regulation.",
+        "Used foresight to build future services and artefacts that invite non-design-background discussion.",
+        "Offered GDS an alternative engagement format case study for complex public policy research, lowering the barrier to understanding regulation.",
         "Empowered citizens and farmers to take part in early-stage policy and standards discussions.",
       ],
     },
