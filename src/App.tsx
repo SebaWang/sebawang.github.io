@@ -8,6 +8,7 @@ import ProjectEPQPage from "./pages/ProjectEPQPage"
 import ProjectMedicyPage from "./pages/ProjectMedicyPage"
 import ProjectAdvantechPage from "./pages/ProjectAdvantechPage"
 import ProjectUTechPage from "./pages/ProjectUTechPage"
+import ProjectUoLPage from "./pages/ProjectUoLPage"
 import ContactPage from "./pages/ContactPage";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/project/medicy" element={<ProjectMedicyPage />} />
         <Route path="/project/advantech" element={<ProjectAdvantechPage />} />
         <Route path="/project/utech" element={<ProjectUTechPage />} />
+        <Route path="/project/UoL" element={<ProjectUoLPage />} />
       </Routes>
   );
 }

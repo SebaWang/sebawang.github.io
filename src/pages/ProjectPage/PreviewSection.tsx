@@ -47,19 +47,18 @@ export default function PreviewSection(): ReactElement {
         "How might NHS Jobs make applying and recruiting simpler across online and offline touchpoints, with improvements tested against GDS service assessment?",
       placeholder: true,
     },
-    {
-      id: "staff-services",
-      imgURL: img_project_placeholder,
-      title: "Design with GDS Standards",
-      content:
-        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
-      placeholder: true,
-    },
   ];
 
   // Array of project data
   const projects = [
     ...placeholderProjects,
+    {
+      id: "UoL",
+      imgURL: img_project_placeholder,
+      title: "Design with GDS Standards",
+      content:
+        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
+    },
     {
       id: "finance",
       imgURL: img_project_02,
