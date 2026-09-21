@@ -5,9 +5,9 @@ export default function LandingSection(): ReactElement {
   return (
     <>
       <div
+        id="hero_cover"
         className="w-full relative overflow-hidden  h-[60svh]   md:h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
-        id="overview"
       >
         <div className="w-full  bottom-0 text-center pb-[5%] hidden md:block absolute">
           <p className="text-[64px] font-black text-white">

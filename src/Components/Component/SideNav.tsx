@@ -113,11 +113,20 @@ const SideNav: React.FC<Props> = ({ sections }) => {
   }, [sections]);
 
   // Auto-detect light vs dark background behind the nav's current position.
+  // Forced light-on-dark over the cover/hero: it's a background-image, not
+  // a CSS background-color, so there is nothing for the luminance probe to
+  // read there and it would otherwise fall through to the page's own
+  // (usually light) background.
   useEffect(() => {
     let ticking = false;
     const detect = () => {
       const { x, y } = probePoint();
       const el = document.elementFromPoint(x, y);
+      if (el && el.closest("#hero_cover")) {
+        setIsDarkBg(true);
+        ticking = false;
+        return;
+      }
       const luminance = readBackgroundLuminance(el);
       if (luminance !== null) setIsDarkBg(luminance < 0.5);
       ticking = false;
@@ -145,7 +154,11 @@ const SideNav: React.FC<Props> = ({ sections }) => {
 
     const observer = new IntersectionObserver(
       (entries) => setIsOverVisual(entries[0].isIntersecting),
-      { threshold: 0.15 }
+      // Scrolling down, the collage exits via the viewport's top edge —
+      // a negative top margin shrinks the effective viewport there, so
+      // the nav is treated as "past" it, and reappears, a bit sooner
+      // than when its bottom edge actually clears the real viewport top.
+      { threshold: 0, rootMargin: "-220px 0px 0px 0px" }
     );
     observer.observe(target);
     return () => observer.unobserve(target);
