@@ -62,9 +62,9 @@ export default function PreviewSection(): ReactElement {
     {
       id: "finance",
       imgURL: img_project_02,
-      title: "A+ In Finance",
+      title: "Co-designed Service for ADHD Financial Inclusion",
       content:
-        "How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without years of learning?",
+        "How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?",
     },
     {
       id: "mob",
@@ -81,9 +81,9 @@ export default function PreviewSection(): ReactElement {
     {
       id: "epq",
       imgURL: img_project_03,
-      title: "EPQ Learning Journey",
+      title: "Learning Journey Design with Sensitive Groups",
       content:
-        "How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?",
+        "How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
     },
     {
       id: "advantech",

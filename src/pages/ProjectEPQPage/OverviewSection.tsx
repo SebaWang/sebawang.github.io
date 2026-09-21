@@ -145,9 +145,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <p className="text-[16px] mt-4">
-          How might universities offer motivating sessions for individuals with
-          addiction and former offenders to complete A-level qualifications and
-          reintegrate into the workforce smoothly?
+          How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?
         </p>
         <img
           src={img_bg_cover}

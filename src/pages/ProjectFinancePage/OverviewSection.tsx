@@ -167,7 +167,7 @@ export default function OverviewSection(): ReactElement {
         <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
           &nbsp;
         </div>
-        <p className="text-[16px] mt-4">How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without a decade of learning?</p>
+        <p className="text-[16px] mt-4">How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?</p>
         <img src={img_outcome} alt='outcome' className="w-full" />
         
         <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold mt-12">Outcome</p>

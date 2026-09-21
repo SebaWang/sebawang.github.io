@@ -49,19 +49,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-8">
-                    How might universities offer motivating 
-                    </p>
-                    <p className="text-content ">
-                    sessions for individuals with addiction
-                    </p>
-                    <p className="text-content ">
-                    and former offenders to complete A-
-                    </p>
-                    <p className="text-content ">
-                    level qualifications and reintegrate into
-                    </p>
-                    <p className="text-content "> 
-                    the workforce smoothly?
+                    How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?
                     </p>
                 </nav>
                 <nav className='text-black'>

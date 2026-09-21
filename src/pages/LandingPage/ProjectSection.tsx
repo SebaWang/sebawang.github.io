@@ -33,11 +33,11 @@ export default function ProjectSection() {
               <Link to="/project/finance">
                 <ProjectCard
                   imgURL={img_project_02}
-                  title="A+ In Finance"
+                  title="Co-designed Service for ADHD Financial Inclusion"
                   subTitle="Inclusive Design for ADHD Financial Management"
                   concept="Financial Inclusion"
                   type="Inclusive Design, Co-design, Research through Design"
-                  content="How might young adults with ADHD manage symptoms and curb impulsive shopping behavior without years of learning?"
+                  content="How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
                 />
               </Link>
             </div>

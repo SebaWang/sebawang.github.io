@@ -80,8 +80,8 @@ export default function ReflectionSection(): ReactElement {
           <Link to="/project/epq">
             <ProjectPreviewCard
               imgURL={img_project_03}
-              title="EPQ Learning Journey"
-              content="How might universities offer motivating sessions for individuals with addiction and former offenders to complete A-level qualifications and reintegrate into the workforce smoothly?"
+              title="Learning Journey Design with Sensitive Groups"
+              content="How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

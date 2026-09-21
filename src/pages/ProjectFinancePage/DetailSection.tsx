@@ -49,16 +49,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-8">
-                    How might young adults with 
-                    </p>
-                    <p className="text-content ">
-                    ADHD manage symptoms and 
-                    </p>
-                    <p className="text-content ">
-                    curb impulsive shopping behavior
-                    </p>
-                    <p className="text-content ">
-                    without a decade of learning?
+                    How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?
                     </p>
                 </nav>
                 <nav className='text-black'>
