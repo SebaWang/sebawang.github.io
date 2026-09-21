@@ -65,6 +65,7 @@ export default function PreviewSection(): ReactElement {
       title: "Co-designed Service for ADHD Financial Inclusion",
       content:
         "How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?",
+      tags: ["Inclusive Service Design"],
       highlights: [
         "Built a digital tool and a physical learning course, co-designed with 14 individuals with ADHD across different age groups.",
         "Developed an inclusive design guidebook for financial service design and research, going beyond accessibility to encourage greater empathy.",
@@ -77,7 +78,7 @@ export default function PreviewSection(): ReactElement {
       title: "Workshops & Strategy Design for Future Policy with GDS",
       content:
         "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
-      tags: ["Design with Gov", "Future Services"],
+      tags: ["Service Design with Gov"],
       highlights: [
         "Used foresight to build future services and artefacts that invite discussion with non-design audiences.",
         "Offered GDS an alternative engagement format, used as a case study for complex public policy research, lowering the barrier to understanding regulation.",
@@ -90,6 +91,7 @@ export default function PreviewSection(): ReactElement {
       title: "Learning Journey Design with Sensitive Groups",
       content:
         "How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
+      tags: ["Social Service Design"],
       highlights: [
         "Co-developed an Extended Project Qualification course for learners with addiction, mental health challenges, or criminal justice backgrounds.",
         "Used participatory design to increase non-design stakeholders' ownership and confidence in mapping their as-is journeys and future expectations.",
