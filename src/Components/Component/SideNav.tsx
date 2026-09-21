@@ -113,20 +113,27 @@ const SideNav: React.FC<Props> = ({ sections }) => {
   }, [sections]);
 
   // Auto-detect light vs dark background behind the nav's current position.
-  // Forced light-on-dark over the cover/hero: it's a background-image, not
-  // a CSS background-color, so there is nothing for the luminance probe to
-  // read there and it would otherwise fall through to the page's own
-  // (usually light) background.
+  // Over the cover/hero, always force light-on-dark — checked directly
+  // against the hero's own bounding rect, not elementFromPoint, because on
+  // wide screens the hit-test probe point sits close enough to the nav's
+  // own box that it can land on the nav itself instead of the hero behind
+  // it. This check runs first and overrides whatever the luminance probe
+  // below would otherwise compute.
   useEffect(() => {
     let ticking = false;
     const detect = () => {
-      const { x, y } = probePoint();
-      const el = document.elementFromPoint(x, y);
-      if (el && el.closest("#hero_cover")) {
-        setIsDarkBg(true);
-        ticking = false;
-        return;
+      const { y } = probePoint();
+      const hero = document.getElementById("hero_cover");
+      if (hero) {
+        const rect = hero.getBoundingClientRect();
+        if (rect.top <= y && rect.bottom >= y) {
+          setIsDarkBg(true);
+          ticking = false;
+          return;
+        }
       }
+      const { x } = probePoint();
+      const el = document.elementFromPoint(x, y);
       const luminance = readBackgroundLuminance(el);
       if (luminance !== null) setIsDarkBg(luminance < 0.5);
       ticking = false;
@@ -158,7 +165,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
       // a negative top margin shrinks the effective viewport there, so
       // the nav is treated as "past" it, and reappears, a bit sooner
       // than when its bottom edge actually clears the real viewport top.
-      { threshold: 0, rootMargin: "-200px 0px 0px 0px" }
+      { threshold: 0, rootMargin: "-300px 0px 0px 0px" }
     );
     observer.observe(target);
     return () => observer.unobserve(target);
