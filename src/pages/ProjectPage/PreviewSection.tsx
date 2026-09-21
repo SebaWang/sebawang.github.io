@@ -113,7 +113,7 @@ export default function PreviewSection(): ReactElement {
     <div className="bg-[#D9D9D9]">
       <div className="container mx-auto pt-48 text-center">
         <p className="tracking-[6px] text-[#EA5514] text-[24px] font-semibold">
-          CASE STUDIES
+          WORKS
         </p>
         <div className="w-[22px] border-b-[6px] border-[#EA5514] h-[12px] mx-auto mt-2">
           &nbsp;

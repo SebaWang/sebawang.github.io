@@ -29,7 +29,7 @@ export default function HeroSection() {
                         <p className='text-black mb-3 text-3xl font-bold'>Smooth Services For The Next Era.</p>
                     </div>
                     <div className='col-span-2 text-right flex flex-col-reverse mb-24 gap-4 font-light'>
-                        <Link to='/project'><div><button className='border border-[#595757] py-2 text-[#595757] w-[180px] duration-300 hover:text-white hover:bg-[#BEB7B1] hover:border-[#BEA195]'>View Case Studies</button></div></Link>
+                        <Link to='/project'><div><button className='border border-[#595757] py-2 text-[#595757] w-[180px] duration-300 hover:text-white hover:bg-[#BEB7B1] hover:border-[#BEA195]'>View Works</button></div></Link>
                        <Link to='/contact'><div><button className='bg-[#EC714A] py-2 text-white w-[180px] border-[1px] border-[#EC714A] duration-300 hover:bg-[#E34F10]'>Contact Me</button></div></Link>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ export default function HeroSection() {
         <p className="mt-12 text-white text-[15px]">A Strategy Weaver Who Spins</p>
         <p className=" text-white font-bold text-[15px]">Smooth Services For The Next Era.</p>
         <a href='#aboutSection'><p className="mt-16 text-[#FF6731] font-semibold text-[16px] tracking-[4px]">ABOUT</p></a>
-        <a href='#projectSection'><p className="mt-6 text-[#FF6731] font-semibold text-[16px] tracking-[4px] mb-24">CASE STUDIES</p></a>
+        <a href='#projectSection'><p className="mt-6 text-[#FF6731] font-semibold text-[16px] tracking-[4px] mb-24">WORKS</p></a>
        </div>
       </div>
         </>
