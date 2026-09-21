@@ -138,7 +138,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
             </button>
           ))}
           <div
-            className="rounded-full flex flex-col items-center justify-center shadow-md w-[40px] h-[40px] mt-4 bg-white duration-300 hover:scale-[1.1] cursor-pointer"
+            className="rounded-full flex flex-col items-center justify-center shadow-md w-[40px] h-[40px] mt-4 bg-white/30 backdrop-blur-md border border-white/50 duration-300 hover:scale-[1.1] hover:bg-white/50 cursor-pointer"
             onClick={scrollToTop}
           >
             <ScrollUp />
