@@ -5,19 +5,21 @@ interface ProjectCardProps {
   imgURL: string;
   title: string;
   content: string;
+  tags?: string[];
   highlights?: string[];
 }
 
 // Original card proportions restored: full-bleed image, dotted Bubble
 // decoration in the white footer. Title sits on the image itself, on a
-// permanent shadow scrim; the question sits in the footer. When
-// `highlights` is provided, hovering the card reveals them over the
-// whole card — image and white footer both blurred behind a dark
+// permanent shadow scrim; optional `tags` sit as pill chips above the
+// question. When `highlights` is provided, hovering the card reveals them
+// over the whole card — image and white footer both blurred behind a dark
 // overlay — alongside the card's existing hover lift and shadow.
 const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
   imgURL,
   title,
   content,
+  tags,
   highlights,
 }) => {
   return (
@@ -39,6 +41,18 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
         <Bubble className="absolute bottom-2 left-1 opacity-60" />
+        {tags && tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-3 z-10">
+            {tags.map((tag, i) => (
+              <span
+                key={i}
+                className="border border-[#DD663C] text-[#DD663C] text-[12px] font-light px-3 py-1 rounded-full"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
         <p className="font-light text-[17px] leading-[24px] text-left z-10">
           {content}
         </p>
