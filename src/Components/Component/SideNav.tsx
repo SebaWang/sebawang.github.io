@@ -158,7 +158,7 @@ const SideNav: React.FC<Props> = ({ sections }) => {
       // a negative top margin shrinks the effective viewport there, so
       // the nav is treated as "past" it, and reappears, a bit sooner
       // than when its bottom edge actually clears the real viewport top.
-      { threshold: 0, rootMargin: "-220px 0px 0px 0px" }
+      { threshold: 0, rootMargin: "-2000px 0px 0px 0px" }
     );
     observer.observe(target);
     return () => observer.unobserve(target);
@@ -169,7 +169,9 @@ const SideNav: React.FC<Props> = ({ sections }) => {
     visible: { opacity: 1},
   };
 
-  const textColor = isDarkBg ? "text-[#E5E5E5]" : "text-[#5A5A5A]";
+  // Pure white + a shadow on dark backgrounds: a near-white #E5E5E5 with no
+  // shadow still reads as muddy against a busy, bright photo like the hero.
+  const textColor = isDarkBg ? "text-white" : "text-[#5A5A5A]";
   const activeBorderColor = isDarkBg ? "border-l-white" : "border-l-[#5A5A5A]";
 
   return (
@@ -179,7 +181,10 @@ const SideNav: React.FC<Props> = ({ sections }) => {
           className={`fixed right-[1%] bottom-[30%] flex flex-col ${textColor} font-light w-[250px] z-50 py-4 pl-10 bg-opacity-70 rounded-md transform-gpu transition-transform duration-1000 hidden ${
             isVisible ? "md:flex" : "hidden"
           }`}
-          style={{ fontSize: "90%"}}
+          style={{
+            fontSize: "90%",
+            textShadow: isDarkBg ? "0 1px 5px rgba(0,0,0,0.85)" : "none",
+          }}
           initial="hidden"
           animate="visible"
           exit="hidden"
