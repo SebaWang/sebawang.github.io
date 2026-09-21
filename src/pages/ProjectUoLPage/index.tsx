@@ -1,47 +1,43 @@
 import Header from "../../Components/HeaderWhite";
 import { ReactElement } from "react";
 import LandingSection from "./LandingSection";
-import DetailSection from "./DetailSection";
-import OverviewSection from "./OverviewSection";
-import BackgroundSection from "./BackgroundSection";
-import DesignSection from "./DesignSection";
-import ResearchSection from "./ResearchSection";
-import DesignProcessSection from "./DesignProcessSection";
-import EvaluationSection from "./EvaluationSection";
+import AtAGlanceSection from "./AtAGlanceSection";
+import ChallengeSection from "./ChallengeSection";
+import WhatIDidSection from "./WhatIDidSection";
+import ResultsEvaluationSection from "./ResultsEvaluationSection";
+import WhatILearntSection from "./WhatILearntSection";
 import ReflectionSection from "./ReflectionSection";
 import SideNav from "../../Components/Component/SideNav";
 
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 
-// Blank copy of ProjectFinancePage's architecture (same section order and
-// SideNav anchors) for the Design with GDS Standards case study.
+// Leaner Nesta-style narrative architecture: At a glance, Challenge,
+// What I did, Results & Evaluation, What I learnt — used for this page
+// only, distinct from the fuller ProjectFinancePage architecture.
 export default function ProjectUoLPage(): ReactElement {
   useEffect(() => {
     // 傳送頁面檢視
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   const sections = {
-    "Background & Problem": "background",
-    "Design Deliver": "design_deliver",
-    "Research & Challenges": "process_challenges",
-    "Design & Challenges": "design_challenges",
-    Evaluation: "evaluation",
-    Reflection: "reflection",
+    "At A Glance": "at_a_glance",
+    Challenge: "challenge",
+    "What I Did": "what_i_did",
+    "Results & Evaluation": "results_evaluation",
+    "What I Learnt": "what_i_learnt",
   };
   return (
     <>
       <SideNav sections={sections} />
       <Header />
       <LandingSection />
-      <DetailSection />
-      <OverviewSection />
       <div id="content_section">
-        <BackgroundSection />
-        <DesignSection />
-        <ResearchSection />
-        <DesignProcessSection />
-        <EvaluationSection />
+        <AtAGlanceSection />
+        <ChallengeSection />
+        <WhatIDidSection />
+        <ResultsEvaluationSection />
+        <WhatILearntSection />
         <ReflectionSection />
       </div>
       <div className="bg-[#202020] h-[60px] hidden md:block">
