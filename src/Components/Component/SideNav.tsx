@@ -12,7 +12,8 @@ interface Props {
 
 const SideNav: React.FC<Props> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState<string>("");
-  const [isVisible, setIsVisible] = useState(false);
+  // Shown from the top of the page, not gated on scrolling into #content_section.
+  const [isVisible] = useState(true);
   const [positionY, setPositionY] = useState(0);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
@@ -30,45 +31,26 @@ const SideNav: React.FC<Props> = ({ sections }) => {
   };
 
   useEffect(() => {
-    const targetSection = document.getElementById("content_section");
-
     const handleScroll2 = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (timer) clearTimeout(timer);
 
       if (scrollTop > lastScrollTop) {
-        setPositionY(-60); 
+        setPositionY(-60);
       } else {
-        setPositionY(60); 
+        setPositionY(60);
       }
       const newTimer = setTimeout(() => {
         setPositionY(0);
-      }, 50); 
+      }, 50);
 
       setTimer(newTimer);
-      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); 
+      setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
     };
 
     window.addEventListener('scroll', handleScroll2);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-          setIsVisible(entries[0].isIntersecting);
-        
-      },
-      {
-        threshold: 0.05,
-      }
-    );
-
-    if (targetSection) {
-      observer.observe(targetSection);
-    }
-
     return () => {
-      if (targetSection) {
-        observer.unobserve(targetSection);
-      }
       window.removeEventListener('scroll', handleScroll2);
       if (timer) clearTimeout(timer);
     };
