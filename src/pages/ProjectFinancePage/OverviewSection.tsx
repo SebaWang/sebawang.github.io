@@ -70,7 +70,7 @@ export default function OverviewSection(): ReactElement {
             </p>
           </div>
         </div>
-        <div className="w-full relative mt-6">
+        <div id="process_overview_visual" className="w-full relative mt-6">
           <img src={img_ovewview_bg} />
           <HoverImage
             width="10.5%"

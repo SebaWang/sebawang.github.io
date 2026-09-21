@@ -75,7 +75,7 @@ export default function OverviewSection(): ReactElement {
         </div>
       </div>
 
-      <div className="relative w-full mt-12 hidden md:block">
+      <div id="process_overview_visual" className="relative w-full mt-12 hidden md:block">
         <img src={img_process_bg} />
         <HoverImage
           width="8%"
