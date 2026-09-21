@@ -77,7 +77,7 @@ export default function PreviewSection(): ReactElement {
       title: "Workshops & Strategy Design for Future Policy with GDS",
       content:
         "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
-      tags: ["Design with Gov", "Design Futures"],
+      tags: ["Design with Gov", "Future Services"],
       highlights: [
         "Used foresight to build future services and artefacts that invite discussion with non-design audiences.",
         "Offered GDS an alternative engagement format, used as a case study for complex public policy research, lowering the barrier to understanding regulation.",
