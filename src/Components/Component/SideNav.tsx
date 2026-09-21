@@ -10,26 +10,13 @@ interface Props {
   sections: SectionDict;
 }
 
-// Sampled just left of the nav's own bounding box, so the probe never
-// hits the nav itself while reading whatever section sits behind it.
-const probePoint = () => ({
-  x: Math.max(window.innerWidth - 280, 0),
-  y: Math.round(window.innerHeight * 0.6),
-});
+// Sections known to be dark, forcing the nav's light-on-dark scheme
+// whenever it's positioned over one of them. No background-colour probing —
+// hero_cover is a background-image (nothing for a colour read to find
+// anyway), and this is simpler and more reliable than auto-detection.
+const DARK_SECTION_IDS = ["hero_cover", "what_i_learnt"];
 
-const readBackgroundLuminance = (el: Element | null): number | null => {
-  let node: HTMLElement | null = el as HTMLElement | null;
-  while (node) {
-    const bg = getComputedStyle(node).backgroundColor;
-    const match = bg.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-    if (match && !(bg === "rgba(0, 0, 0, 0)" || bg === "transparent")) {
-      const [, r, g, b] = match.map(Number);
-      return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-    }
-    node = node.parentElement;
-  }
-  return null;
-};
+const navProbeY = () => Math.round(window.innerHeight * 0.6);
 
 const SideNav: React.FC<Props> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -112,30 +99,22 @@ const SideNav: React.FC<Props> = ({ sections }) => {
     };
   }, [sections]);
 
-  // Auto-detect light vs dark background behind the nav's current position.
-  // Over the cover/hero, always force light-on-dark — checked directly
-  // against the hero's own bounding rect, not elementFromPoint, because on
-  // wide screens the hit-test probe point sits close enough to the nav's
-  // own box that it can land on the nav itself instead of the hero behind
-  // it. This check runs first and overrides whatever the luminance probe
-  // below would otherwise compute.
+  // Light-on-dark whenever the nav's y-position falls inside a known dark
+  // section's own bounding rect; dark-on-light (the default) everywhere
+  // else. Checked directly against each section's rect, not by reading
+  // rendered colours, so it can't be thrown off by background-image
+  // sections or by hit-testing landing on the nav's own (transparent) box.
   useEffect(() => {
     let ticking = false;
     const detect = () => {
-      const { y } = probePoint();
-      const hero = document.getElementById("hero_cover");
-      if (hero) {
-        const rect = hero.getBoundingClientRect();
-        if (rect.top <= y && rect.bottom >= y) {
-          setIsDarkBg(true);
-          ticking = false;
-          return;
-        }
-      }
-      const { x } = probePoint();
-      const el = document.elementFromPoint(x, y);
-      const luminance = readBackgroundLuminance(el);
-      if (luminance !== null) setIsDarkBg(luminance < 0.5);
+      const y = navProbeY();
+      const overDark = DARK_SECTION_IDS.some((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.top <= y && rect.bottom >= y;
+      });
+      setIsDarkBg(overDark);
       ticking = false;
     };
     const onScroll = () => {
