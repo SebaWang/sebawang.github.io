@@ -65,6 +65,11 @@ export default function PreviewSection(): ReactElement {
       title: "Co-designed Service for ADHD Financial Inclusion",
       content:
         "How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?",
+      highlights: [
+        "Built a digital tool and a physical learning course, co-designed with 14 individuals with ADHD across different age groups.",
+        "Developed an inclusive design guidebook for financial service design and research, going beyond accessibility to encourage greater empathy.",
+        "Inspired a partner charity to launch new financial management courses, with 250+ students.",
+      ],
     },
     {
       id: "mob",
