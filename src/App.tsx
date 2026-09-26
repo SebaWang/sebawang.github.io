@@ -10,6 +10,7 @@ import ProjectAdvantechPage from "./pages/ProjectAdvantechPage"
 import ProjectUTechPage from "./pages/ProjectUTechPage"
 import ProjectUoLPage from "./pages/ProjectUoLPage"
 import WritingPage from "./pages/WritingPage"
+import ArticlePage from "./pages/WritingPage/ArticlePage"
 import ContactPage from "./pages/ContactPage";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/project/utech" element={<ProjectUTechPage />} />
         <Route path="/project/UoL" element={<ProjectUoLPage />} />
         <Route path="/writing" element={<WritingPage />} />
+        <Route path="/writing/:id" element={<ArticlePage />} />
       </Routes>
   );
 }

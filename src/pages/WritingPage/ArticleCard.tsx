@@ -1,32 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as Bubble } from "../../assets/img/img_deco_bubble.svg";
 
 interface ArticleCardProps {
+  id: string;
   imgURL: string;
   title: string;
   excerpt: string;
-  url: string;
   date?: string;
 }
 
 // Same visual language as ProjectPreviewCard (title on a shadow-scrimmed
-// image, dotted Bubble decoration in the white footer) but the whole card
-// is an external link that opens the Medium article in a new tab, not an
-// internal route — so it reads as a different kind of card at a glance.
+// image, dotted Bubble decoration in the white footer) but links to this
+// site's own /writing/:id page, not out to Medium — reads and behaves like
+// the rest of the site's internal case pages.
 const ArticleCard: React.FC<ArticleCardProps> = ({
+  id,
   imgURL,
   title,
   excerpt,
-  url,
   date,
 }) => {
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      className="block h-full w-full"
-    >
+    <Link to={`/writing/${id}`} className="block h-full w-full">
       <div className="relative w-full h-full flex flex-col cursor-pointer bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300">
         <div className="max-h-80 overflow-hidden relative rounded-t-md shrink-0">
           <img
@@ -47,7 +43,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           <Bubble className="absolute bottom-2 left-1 opacity-60" />
           {date && (
             <p className="text-[#DD663C] text-[14px] font-light text-left mb-3 z-10">
-              {date} · Medium
+              {date}
             </p>
           )}
           <p className="font-light text-[17px] leading-[24px] text-left z-10">
@@ -55,7 +51,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
