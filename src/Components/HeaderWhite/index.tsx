@@ -317,6 +317,11 @@ const LINKS = [
     component: undefined,
   },
   {
+    text: "Writing",
+    href: "/writing",
+    component: undefined,
+  },
+  {
     text: "Contact",
     href: "/contact",
     component: undefined,
