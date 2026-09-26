@@ -10,9 +10,9 @@ interface ArticleCardProps {
   tags?: string[];
 }
 
-// Horizontal row: title/date/tags on the left, a small cover thumbnail on
-// the right — one article per row, not a grid of tall cards like the case
-// study cards, so Writing reads as a distinct list at a glance.
+// Horizontal row: title/date/tags on the left, a cover thumbnail filling
+// the full height of the row on the right (object-cover crops to fit
+// without stretching, so the image's own proportions are kept).
 const ArticleCard: React.FC<ArticleCardProps> = ({
   id,
   imgURL,
@@ -23,8 +23,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 }) => {
   return (
     <Link to={`/writing/${id}`} className="block w-full">
-      <div className="w-full flex items-center justify-between gap-6 bg-white rounded-md shadow px-6 py-5 md:px-8 md:py-6 cursor-pointer hover:scale-[1.02] hover:shadow-xl duration-300">
-        <div className="text-left flex-1 min-w-0">
+      <div className="w-full flex items-stretch justify-between bg-white rounded-md shadow overflow-hidden cursor-pointer hover:scale-[1.02] hover:shadow-xl duration-300">
+        <div className="text-left flex-1 min-w-0 px-6 py-5 md:px-8 md:py-6 flex flex-col justify-center">
           {date && (
             <p className="text-[#DD663C] text-[13px] font-light mb-1">
               {date}
@@ -45,7 +45,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         <img
           src={imgURL}
           alt={title}
-          className="w-[100px] h-[75px] md:w-[160px] md:h-[120px] object-cover rounded-md shrink-0"
+          className="w-[120px] md:w-[240px] h-auto object-cover shrink-0"
         />
       </div>
     </Link>
