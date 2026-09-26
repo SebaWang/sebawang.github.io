@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SwiperBlogCard from "../../Components/Component/SwiperCard";
-import { faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as DecoBubble } from "../../assets/img/img_deco_bubble_gray.svg";
+import { Link } from "react-router-dom";
 
 export default function BlogSection() {
   return (
@@ -18,10 +19,10 @@ export default function BlogSection() {
             <div className="col-span-5">
               <p className="text-xs flex items-center">
                 <FontAwesomeIcon
-                  icon={faMedium}
+                  icon={faPenNib}
                   className="mr-1 text-content"
                 />
-                BLOG
+                WRITING
               </p>
               <p className="text-subtitle font-bold mt-2">
                 PRACTICE AND WRITE ABOUT DESIGN IN MY LIFE.
@@ -33,11 +34,11 @@ export default function BlogSection() {
                 innovations. Thus, I practice, write, and share how I implement
                 design in my life.
               </p>
-              <a href="https://medium.com/@SBSTN_WANG" target="_blank">
+              <Link to="/writing">
                 <button className=" mt-6 border-[1px] border-[#DD663C] p-1 px-4 rounded-full text-[#DD663C] hover:bg-[#DD663C] hover:text-white duration-300">
-                  READ ON MEDIUM
+                  GO FOR A READ
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="col-span-7">
               <SwiperBlogCard />

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import img_blog_01 from "../../../assets/img/blog01.png";
 import img_blog_02 from "../../../assets/img/blog02.png";
 import img_blog_03 from "../../../assets/img/blog03.png";
@@ -123,25 +124,25 @@ export default function SwiperBlogCard() {
         <FontAwesomeIcon icon={faChevronRight} />
         </div>
         <div className="swiperr s1 !bg-transparent">
-          <a href='https://medium.com/@SBSTN_WANG/what-financial-vulnerability-is-bd48d90b6ad6' target="_blank" rel="noreferrer" >
+          <Link to='/writing/financial-vulnerability'>
           <div className="relative rounded-t-md">
             <img className="w-full object-cover" src={img_blog_02} alt='blog02' />
           </div>
-          </a>
+          </Link>
         </div>
         <div className="swiperr s2 !bg-transparent">
-          <a href='https://medium.com/design-bootcamp/inclusive-design-de-label-blur-the-boundary-cc2b06253644' target="_blank" rel="noreferrer">
+          <Link to='/writing/inclusive-design'>
           <div className="relative rounded-t-md">
             <img className="w-full object-cover" src={img_blog_01} alt='blog01' />
           </div>
-          </a>
+          </Link>
         </div>
         <div className="swiperr s3 !bg-transparent">
-          <a href='https://medium.com/design-bootcamp/research-through-design-the-spirit-of-iteration-7af98ee546b7' target="_blank" rel="noreferrer">
+          <Link to='/writing/research-through-design'>
           <div className="relative rounded-t-md">
             <img className="w-full object-cover" src={img_blog_03} alt='blog03' />
           </div>
-          </a>
+          </Link>
         </div>
       </div>
     </>
