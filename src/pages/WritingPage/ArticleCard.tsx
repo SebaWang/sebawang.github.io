@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as Bubble } from "../../assets/img/img_deco_bubble.svg";
 
 interface ArticleCardProps {
   id: string;
@@ -8,48 +7,46 @@ interface ArticleCardProps {
   title: string;
   excerpt: string;
   date?: string;
+  tags?: string[];
 }
 
-// Same visual language as ProjectPreviewCard (title on a shadow-scrimmed
-// image, dotted Bubble decoration in the white footer) but links to this
-// site's own /writing/:id page, not out to Medium — reads and behaves like
-// the rest of the site's internal case pages.
+// Horizontal row: title/date/tags on the left, a small cover thumbnail on
+// the right — one article per row, not a grid of tall cards like the case
+// study cards, so Writing reads as a distinct list at a glance.
 const ArticleCard: React.FC<ArticleCardProps> = ({
   id,
   imgURL,
   title,
   excerpt,
   date,
+  tags,
 }) => {
   return (
-    <Link to={`/writing/${id}`} className="block h-full w-full">
-      <div className="relative w-full h-full flex flex-col cursor-pointer bg-white rounded-md shadow hover:scale-[1.05] hover:shadow-2xl duration-300">
-        <div className="max-h-80 overflow-hidden relative rounded-t-md shrink-0">
-          <img
-            className="w-full object-cover aspect-[396/297]"
-            src={imgURL}
-            alt={title}
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#292929]/90 via-[#292929]/10 to-transparent pt-36 pb-4 px-4">
-            <p
-              className="text-white text-center font-bold text-[20px] leading-snug"
-              style={{ textShadow: "0 2px 10px rgba(0,0,0,0.7)" }}
-            >
-              {title}
-            </p>
-          </div>
-        </div>
-        <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
-          <Bubble className="absolute bottom-2 left-1 opacity-60" />
+    <Link to={`/writing/${id}`} className="block w-full">
+      <div className="w-full flex items-center justify-between gap-6 bg-white rounded-md shadow px-6 py-5 md:px-8 md:py-6 cursor-pointer hover:scale-[1.02] hover:shadow-xl duration-300">
+        <div className="text-left flex-1 min-w-0">
           {date && (
-            <p className="text-[#DD663C] text-[14px] font-light text-left mb-3 z-10">
+            <p className="text-[#DD663C] text-[13px] font-light mb-1">
               {date}
             </p>
           )}
-          <p className="font-light text-[17px] leading-[24px] text-left z-10">
+          <p className="font-bold text-[18px] md:text-[22px] leading-snug">
+            {title}
+          </p>
+          <p className="font-light text-[14px] md:text-[15px] text-[#6F6F6F] mt-1 hidden md:block">
             {excerpt}
           </p>
+          {tags && tags.length > 0 && (
+            <p className="text-[12px] font-light text-[#929292] mt-2">
+              {tags.join(" · ")}
+            </p>
+          )}
         </div>
+        <img
+          src={imgURL}
+          alt={title}
+          className="w-[100px] h-[75px] md:w-[160px] md:h-[120px] object-cover rounded-md shrink-0"
+        />
       </div>
     </Link>
   );

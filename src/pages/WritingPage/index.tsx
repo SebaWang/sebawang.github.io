@@ -26,17 +26,17 @@ export default function WritingPage(): ReactElement {
         <p className="text-content font-light text-[#6F6F6F] max-w-[600px] mx-auto mt-6">
           Practice and writing about design in my life.
         </p>
-        <div className="grid grid-cols-3 gap-12 mt-20 pb-32">
+        <div className="flex flex-col gap-6 mt-20 pb-32 max-w-[900px] mx-auto">
           {articles.map((article) => (
-            <div key={article.id} className="h-full">
-              <ArticleCard
-                id={article.id}
-                imgURL={article.imgURL}
-                title={article.title}
-                excerpt={article.excerpt}
-                date={article.date}
-              />
-            </div>
+            <ArticleCard
+              key={article.id}
+              id={article.id}
+              imgURL={article.imgURL}
+              title={article.title}
+              excerpt={article.excerpt}
+              date={article.date}
+              tags={article.tags}
+            />
           ))}
         </div>
       </div>
