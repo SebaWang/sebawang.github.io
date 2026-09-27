@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import img_blog_01 from "../../../assets/img/blog01.png";
-import img_blog_02 from "../../../assets/img/blog02.png";
-import img_blog_03 from "../../../assets/img/blog03.png";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { articles } from "../../../pages/WritingPage/articles";
+import img_blog_01_clean from "../../../assets/img/img_landing_blog_01.webp";
+import img_blog_02_clean from "../../../assets/img/img_landing_blog_02.webp";
 
 interface HandleTouchDirParams {
   container: string;
@@ -72,7 +72,6 @@ swiperOrderList.forEach((swiper, i) => {
 });
 
 function leftCb(): void {
-  console.log("left");
   const s = swiperOrderList.shift();
   if (!s) return;
   swiperOrderList.push(s);
@@ -86,7 +85,6 @@ function leftCb(): void {
 }
 
 function rightCb(): void {
-  console.log("right");
   const s = swiperOrderList.pop();
   if (!s) return;
   swiperOrderList.unshift(s);
@@ -98,6 +96,27 @@ function rightCb(): void {
     swiper.classList.add(swiperClassList[i]);
   });
 }
+
+// Preview of three of the site's own /writing articles, in the order the
+// stack rotates through them. blog01/02/03.png (the article's own imgURL)
+// are pre-designed share-card graphics with the title baked into the
+// image itself, so they'd duplicate the title text rendered below — here
+// we swap in the plain illustration where one exists.
+// Initial layout after the mount-time rightCb(): [left, front, right] —
+// the second id is the one shown up front.
+const previewIds = [
+  "financial-vulnerability",
+  "scenario-planning-ai",
+  "research-through-design",
+];
+const cleanImageOverrides: Record<string, string> = {
+  "financial-vulnerability": img_blog_01_clean, // Wall Street chase illustration
+  "research-through-design": img_blog_02_clean, // lightbulb crowd illustration
+};
+const previewArticles = previewIds
+  .map((id) => articles.find((a) => a.id === id))
+  .filter((a): a is (typeof articles)[number] => !!a)
+  .map((a) => ({ ...a, previewImgURL: cleanImageOverrides[a.id] ?? a.imgURL }));
 
 export default function SwiperBlogCard() {
   useEffect(() => {
@@ -123,27 +142,27 @@ export default function SwiperBlogCard() {
         <div className="absolute right-0 top-1/2 text-white text-3xl cursor-pointer" onClick={rightCb}>
         <FontAwesomeIcon icon={faChevronRight} />
         </div>
-        <div className="swiperr s1 !bg-transparent">
-          <Link to='/writing/financial-vulnerability'>
-          <div className="relative rounded-t-md">
-            <img className="w-full object-cover" src={img_blog_02} alt='blog02' />
+        {previewArticles.map((article, i) => (
+          <div key={article.id} className={`swiperr s${i + 1} !bg-transparent`}>
+            <Link to={`/writing/${article.id}`}>
+              <div className="w-full h-full flex flex-col bg-white rounded-md shadow-lg overflow-hidden text-left">
+                <img
+                  className="w-full flex-1 min-h-0 object-cover"
+                  src={article.previewImgURL}
+                  alt={article.title}
+                />
+                <div className="shrink-0 px-4 py-3">
+                  <p className="text-[#DD663C] text-[11px] font-light">
+                    {article.date}
+                  </p>
+                  <p className="text-black font-bold text-[14px] leading-snug mt-1">
+                    {article.title}
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
-          </Link>
-        </div>
-        <div className="swiperr s2 !bg-transparent">
-          <Link to='/writing/inclusive-design'>
-          <div className="relative rounded-t-md">
-            <img className="w-full object-cover" src={img_blog_01} alt='blog01' />
-          </div>
-          </Link>
-        </div>
-        <div className="swiperr s3 !bg-transparent">
-          <Link to='/writing/research-through-design'>
-          <div className="relative rounded-t-md">
-            <img className="w-full object-cover" src={img_blog_03} alt='blog03' />
-          </div>
-          </Link>
-        </div>
+        ))}
       </div>
     </>
   );

@@ -13,7 +13,7 @@ function Block({ block }: { block: ArticleBlock }): ReactElement | null {
       );
     case "quote":
       return (
-        <blockquote className="border-l-[3px] border-[#DD663C] pl-4 italic text-[#6F6F6F] my-6">
+        <blockquote className="border-l-[3px] border-[#DD663C] pl-4 italic text-[#333333] my-6">
           {block.text}
         </blockquote>
       );
@@ -42,7 +42,7 @@ export default function ArticlePage(): ReactElement {
 
   if (!article) {
     return (
-      <div className="bg-[#D9D9D9] min-h-screen">
+      <div className="bg-[#F5F5F5] min-h-screen">
         <Header />
         <div className="container mx-auto pt-48 pb-32 text-center">
           <p className="text-content">Article not found.</p>
@@ -55,7 +55,7 @@ export default function ArticlePage(): ReactElement {
   }
 
   return (
-    <div className="bg-[#D9D9D9]">
+    <div className="bg-[#F5F5F5]">
       <Header />
       <div className="container mx-auto pt-32 md:pt-48 md:w-[760px] pb-16">
         <div className="flex flex-wrap gap-2 mb-4">
@@ -68,13 +68,13 @@ export default function ArticlePage(): ReactElement {
             </span>
           ))}
         </div>
-        <p className="text-[32px] md:text-[40px] font-bold text-[#EA5514] leading-tight">
+        <p className="text-[32px] md:text-[40px] font-bold text-[#333333] leading-tight">
           {article.title}
         </p>
-        <p className="text-[18px] md:text-[20px] font-light text-[#6F6F6F] mt-2">
+        <p className="text-[18px] md:text-[20px] font-light text-[#333333] mt-2">
           {article.subtitle}
         </p>
-        <p className="text-[14px] text-[#929292] mt-4">
+        <p className="text-[14px] text-[#333333] mt-4">
           {article.date} · {article.readTime}
         </p>
         <img
@@ -82,16 +82,16 @@ export default function ArticlePage(): ReactElement {
           alt={article.title}
           className="w-full aspect-[396/297] object-cover rounded-md mt-8"
         />
-        <div className="text-content font-light mt-4">
+        <div className="text-content text-[#333333] font-light mt-4">
           {article.content.map((block, i) => (
             <Block key={i} block={block} />
           ))}
         </div>
 
         {article.references && article.references.length > 0 && (
-          <div className="mt-10 pt-6 border-t border-[#CFCFCF]">
-            <p className="font-bold text-[18px] mb-3">References</p>
-            <ul className="text-[13px] font-light text-[#6F6F6F] space-y-2">
+          <div className="mt-10 pt-6 border-t border-[#E0E0E0]">
+            <p className="font-bold text-[18px] text-[#333333] mb-3">References</p>
+            <ul className="text-[13px] font-light text-[#333333] space-y-2">
               {article.references.map((ref, i) => (
                 <li key={i}>{ref}</li>
               ))}

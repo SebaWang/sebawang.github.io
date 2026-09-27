@@ -23,9 +23,6 @@ export default function WritingPage(): ReactElement {
         <div className="w-[22px] border-b-[6px] border-[#EA5514] h-[12px] mx-auto mt-2">
           &nbsp;
         </div>
-        <p className="text-content font-light text-[#6F6F6F] max-w-[600px] mx-auto mt-6">
-          Practice and writing about design in my life.
-        </p>
         <div className="flex flex-col gap-6 mt-20 pb-32 max-w-[900px] mx-auto">
           {articles.map((article) => (
             <ArticleCard
