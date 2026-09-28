@@ -28,7 +28,7 @@ const steps = [
 export default function WhatIDidSection(): ReactElement {
   return (
     <div id="what_i_did">
-      <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
         <ChapterHeader number="03" title="What I Did" />
 
         <div className="space-y-10">

@@ -26,8 +26,8 @@ const shifts = [
 export default function ImplicationsSection(): ReactElement {
   return (
     <div id="strategic_implications">
-      <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
-        <ChapterHeader number="05" title="Strategic Implications" />
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
+        <ChapterHeader number="05" title="Strategic Impacts &amp; Implications" />
 
         <p className="text-content font-light">
           The team's outputs include a literature and controversy analysis,

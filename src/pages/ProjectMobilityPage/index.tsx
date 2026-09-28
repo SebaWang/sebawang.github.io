@@ -26,7 +26,7 @@ export default function ProjectMobilityPage(): ReactElement {
     "Strategic Challenge": "strategic_challenge",
     "What I Did": "what_i_did",
     "Future Scenarios": "future_scenarios",
-    "Strategic Implications": "strategic_implications",
+    "Strategic Impacts": "strategic_implications",
     Reflection: "reflection",
   };
   return (

@@ -28,7 +28,7 @@ const leadershipQuestions = [
 export default function ChallengeSection(): ReactElement {
   return (
     <div className="bg-[#F8F8F8]" id="strategic_challenge">
-      <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
         <ChapterHeader number="02" title="Strategic Challenge" />
 
         <div className="flex flex-col md:flex-row md:items-start gap-8">
@@ -39,7 +39,7 @@ export default function ChallengeSection(): ReactElement {
             consequences rest on firmer ground.
           </p>
           {/* Sits beside the chapter title on desktop, as in the mock-up */}
-          <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto md:-mt-24">
+          <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto md:-mt-[84px]">
             <PhotoSlot label="Photo" aspect="4/3" className="rounded-md" />
           </div>
         </div>

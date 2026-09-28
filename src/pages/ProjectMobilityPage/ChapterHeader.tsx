@@ -16,7 +16,7 @@ export default function ChapterHeader({
   note,
 }: Props): ReactElement {
   return (
-    <div className="pt-20 md:pt-28 mb-10 md:mb-12">
+    <div className="pt-14 md:pt-16 mb-9">
       <div className="flex items-center gap-4">
         <p className="text-[#EA5514] text-[15px] md:text-[16px] font-bold tracking-[4px]">
           {number}

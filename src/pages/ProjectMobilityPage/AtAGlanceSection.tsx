@@ -4,7 +4,7 @@ import ChapterHeader from "./ChapterHeader";
 export default function AtAGlanceSection(): ReactElement {
   return (
     <div id="at_a_glance">
-      <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
         <ChapterHeader number="01" title="At a Glance" />
 
         <div className="bg-[#F8F8F8] px-6 md:px-8 py-7">
@@ -44,7 +44,7 @@ export default function AtAGlanceSection(): ReactElement {
             </div>
             <ul className="list-disc pl-5 mt-4 space-y-1 text-content font-light font-['Open_Sans']">
               <li>Mixed-method Early Signal and Trend Analysis</li>
-              <li>Cross-sector Expert Engagement</li>
+              <li>Cross-sector Stakeholder Engagement</li>
               <li>Forum and Workshop Planning and Facilitation</li>
               <li>Scenario Comparison and Rapid Prototyping</li>
               <li>As-is and Future Service and Journey Mapping</li>

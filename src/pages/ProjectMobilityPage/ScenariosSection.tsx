@@ -36,12 +36,18 @@ const scenarios = [
 export default function ScenariosSection(): ReactElement {
   return (
     <div className="bg-[#F8F8F8]" id="future_scenarios">
-      <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
-        <ChapterHeader
-          number="04"
-          title="Future Scenarios"
-          note="Under further development"
-        />
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
+        <ChapterHeader number="04" title="Future Scenarios" />
+
+        <p className="text-content font-light mb-12">
+          The purpose of the scenarios is to help leadership confront
+          trade-offs, rather than passively receive insights. I first used
+          structured discussion to clarify the current situation and existing
+          assumptions, then used scenarios to show what might follow if those
+          assumptions broke down. The point is not the scenario narratives
+          themselves, but using the future as a stress test to see the risks in
+          existing strategies and explore new possibilities.
+        </p>
 
         <p className="text-[20px] md:text-[24px] font-bold">
           Three scenarios for large cities in 2050
@@ -70,37 +76,6 @@ export default function ScenariosSection(): ReactElement {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <PhotoSlot label="Forum or workshop photo" aspect="16/9" />
-          <PhotoSlot label="Development snapshot" aspect="16/9" />
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
-          <div>
-            <p className="tracking-[1px] text-[14px] font-bold">PURPOSE</p>
-            <div className="w-[16px] border-b-[4px] border-[#EA5514] h-[4px] mt-1">
-              &nbsp;
-            </div>
-            <p className="text-[18px] md:text-[20px] font-bold mt-4">
-              To help leadership confront trade-offs, rather than passively
-              receive insights.
-            </p>
-          </div>
-          <div>
-            <p className="tracking-[1px] text-[14px] font-bold">
-              DESIGN PRINCIPLES
-            </p>
-            <div className="w-[16px] border-b-[4px] border-[#EA5514] h-[4px] mt-1">
-              &nbsp;
-            </div>
-            <ul className="list-disc pl-5 mt-4 space-y-1 text-content font-light font-['Open_Sans']">
-              <li>Structured discussion before decisions.</li>
-              <li>Assumptions before opinions.</li>
-              <li>Futures are stress tests, not stories.</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
