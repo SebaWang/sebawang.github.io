@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import ChapterHeader from "./ChapterHeader";
+import PhotoSlot from "./PhotoSlot";
 
 const leadershipQuestions = [
   {
@@ -30,12 +31,18 @@ export default function ChallengeSection(): ReactElement {
       <div className="container mx-auto md:w-[1100px] pb-20 md:pb-28">
         <ChapterHeader number="02" title="Strategic Challenge" />
 
-        <p className="text-content font-light max-w-[760px]">
-          Foresight helps distinguish which assumptions the original strategy is
-          based on, and which uncertainties may change the expected results of
-          today's decisions, so that near-term choices with long-term
-          consequences rest on firmer ground.
-        </p>
+        <div className="flex flex-col md:flex-row md:items-start gap-8">
+          <p className="text-content font-light max-w-[760px] md:flex-1">
+            Foresight is not forecasting. It helps distinguish which
+            assumptions the original strategy is based on, and which uncertainties may change the expected results
+            of today's decisions, so that near-term choices with long-term
+            consequences rest on firmer ground.
+          </p>
+          {/* Sits beside the chapter title on desktop, as in the mock-up */}
+          <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto md:-mt-24">
+            <PhotoSlot label="Photo" aspect="4/3" className="rounded-md" />
+          </div>
+        </div>
 
         <p className="text-[20px] md:text-[24px] font-bold mt-12">
           Beyond the Technology Roadmap
