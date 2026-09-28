@@ -24,14 +24,6 @@ export default function PreviewSection(): ReactElement {
       placeholder: true,
     },
     {
-      id: "futures-forums",
-      imgURL: img_project_placeholder,
-      title: "Foresight Forum and Workshops",
-      content:
-        "How might governments and industries rehearse long-term futures together, so that scenarios reshape organisational strategy and the services behind it?",
-      placeholder: true,
-    },
-    {
       id: "robotics-analysis",
       imgURL: img_project_placeholder,
       title: "30-year Robotics Trends",
@@ -52,6 +44,19 @@ export default function PreviewSection(): ReactElement {
   // Array of project data
   const projects = [
     ...placeholderProjects,
+    {
+      id: "mobility",
+      imgURL: img_project_placeholder,
+      title: "Future Strategy and Service of Mobility",
+      content:
+        "How can an organisation keep creating value when mobility demand and the governing rules change in the post-AI era?",
+      tags: ["Foresight & Scenario Planning"],
+      highlights: [
+        "Developed three contrasting 2050 scenarios for large cities with a global automotive and mobility group.",
+        "Brought service design mapping into foresight to compare roles and value exchanges in 2026 and 2050.",
+        "Brought academic, policy, industry and practitioner perspectives together through a participatory futures forum.",
+      ],
+    },
     {
       id: "UoL",
       imgURL: img_project_placeholder,

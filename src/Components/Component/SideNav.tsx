@@ -18,6 +18,10 @@ const DARK_SECTION_IDS = ["hero_cover", "what_i_learnt"];
 
 const navProbeY = () => Math.round(window.innerHeight * 0.6);
 
+// Below this width the 250px side list would sit on top of the 1100px
+// content column, so the nav collapses into a bottom-right menu button.
+const WIDE_QUERY = "(min-width: 1680px)";
+
 const SideNav: React.FC<Props> = ({ sections }) => {
   const [activeSection, setActiveSection] = useState<string>("");
   // Shown from the top of the page, not gated on scrolling into #content_section.
@@ -29,6 +33,17 @@ const SideNav: React.FC<Props> = ({ sections }) => {
   const [positionY, setPositionY] = useState(0);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
+  const [isWide, setIsWide] = useState(
+    () => window.matchMedia(WIDE_QUERY).matches
+  );
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(WIDE_QUERY);
+    const onChange = () => setIsWide(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
 
   const handleScroll = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -159,6 +174,100 @@ const SideNav: React.FC<Props> = ({ sections }) => {
   // shadow still reads as muddy against a busy, bright photo like the hero.
   const textColor = isDarkBg ? "text-white" : "text-[#5A5A5A]";
   const activeBorderColor = isDarkBg ? "border-l-white" : "border-l-[#5A5A5A]";
+
+  const activeName =
+    Object.entries(sections).find(([, id]) => id === activeSection)?.[0] ??
+    "Contents";
+
+  if (!isWide) {
+    return (
+      <AnimatePresence>
+        {isVisible && !isOverVisual && (
+          <motion.div
+            className="fixed right-6 bottom-6 z-50 hidden md:flex flex-col items-end"
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={sidebarVariants}
+            transition={{ duration: 0.3 }}
+          >
+            {isMenuOpen && (
+              // Invisible backdrop: a click anywhere else closes the menu
+              <div
+                className="fixed inset-0 -z-10"
+                onClick={() => setIsMenuOpen(false)}
+              ></div>
+            )}
+            <AnimatePresence>
+              {isMenuOpen && (
+                <motion.div
+                  key="section-menu"
+                  className="mb-3 w-[240px] bg-white rounded-md shadow-xl py-2 text-[#5A5A5A] text-[14px]"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                >
+                {Object.entries(sections).map(([name, id]) => (
+                  <button
+                    key={id}
+                    className={`block w-full text-left px-5 py-2 duration-200 hover:bg-[#F5F5F5] ${
+                      activeSection === id
+                        ? "font-bold text-[#DD663C] border-l-[3px] border-l-[#DD663C]"
+                        : "font-light border-l-[3px] border-l-transparent"
+                    }`}
+                    onClick={() => {
+                      handleScroll(id);
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    {name}
+                  </button>
+                ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+            <div className="flex items-center gap-2">
+              <motion.button
+                layout
+                transition={{ layout: { duration: 0.25, ease: "easeOut" } }}
+                className="h-[40px] px-5 rounded-full bg-white/90 backdrop-blur-md shadow-md text-[13px] text-[#404040] flex items-center gap-2 hover:shadow-lg"
+                onClick={() => setIsMenuOpen((open) => !open)}
+                aria-expanded={isMenuOpen}
+              >
+                {/* Current chapter label cross-fades as the reader moves on */}
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={activeName}
+                    className="font-light"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    {activeName}
+                  </motion.span>
+                </AnimatePresence>
+                <span
+                  className={`text-[10px] duration-300 ${
+                    isMenuOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  ▲
+                </span>
+              </motion.button>
+              <div
+                className="rounded-full flex items-center justify-center shadow-md w-[40px] h-[40px] bg-white/90 backdrop-blur-md duration-300 hover:scale-[1.1] cursor-pointer text-black"
+                onClick={scrollToTop}
+              >
+                <ScrollUp />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    );
+  }
 
   return (
     <AnimatePresence>
