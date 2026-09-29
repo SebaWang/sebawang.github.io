@@ -40,7 +40,7 @@ export default function ChallengeSection(): ReactElement {
           </p>
           {/* Sits beside the chapter title on desktop, as in the mock-up */}
           <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto md:-mt-[84px]">
-            <PhotoSlot label="Photo" aspect="4/3" className="rounded-md" />
+            <PhotoSlot label="Photo 02 · Strategic Challenge" aspect="4/3" className="rounded-md" />
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function ChallengeSection(): ReactElement {
           </div>
         </div>
 
-        <div className="border border-[#6F6F6F] mt-12 px-6 md:px-12 py-8 md:py-10">
+        <div className="bg-[radial-gradient(ellipse_at_center,_#FFEDE3_0%,_rgba(255,237,227,0)_80%)] border border-[#DD663C] mt-12 px-6 md:px-12 py-8 md:py-10">
           <p className="tracking-[1px] text-[14px] font-bold text-[#DD663C]">
             PRIMARY FORESIGHT QUESTION
           </p>

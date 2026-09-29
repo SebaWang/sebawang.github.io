@@ -14,87 +14,86 @@ export default function ReflectionSection(): ReactElement {
         <div className="container mx-auto md:w-[1100px] pb-12 md:pb-24">
           <ChapterHeader number="06" title="Reflection" />
 
-          <p className="text-[20px] md:text-[22px] text-[#D2683A] font-light !font-serif max-w-[860px] leading-relaxed">
+          {/* Pull quote: decorative serif quote marks around the line */}
+          <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[860px] leading-[1.7]">
+            <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
+              &ldquo;
+            </span>
             The value of future scenarios lies not in how imaginative they are,
-            but in{" "}
-            <span className="font-bold !font-serif">
-              how well they help us question the assumptions behind the service
-              design decisions we make today.
+            but in how well they help question the assumptions behind the
+            service design decisions we make today.
+            <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
+              &rdquo;
             </span>
           </p>
 
           <p className="text-[20px] md:text-[24px] font-bold mt-16">
-            Foresight taught me to question the service before designing it.
+            Foresight for questioning the service before designing it.
           </p>
-          <p className="text-content md:font-light mt-4">
+          <div className="w-[22px] border-b-[5px] border-[#D9D9D9] h-[5px] mt-3">
+            &nbsp;
+          </div>
+          <p className="text-content md:font-light mt-6">
             This project changed how I understand the value of foresight. It is
             not about predicting which future is most likely. It is about
             identifying which assumptions about the future today's strategy
             depends on, and examining what would happen to existing products,
             services and business models if those assumptions stopped holding.
-          </p>
-          <p className="text-content md:font-light mt-4">
             In service design, I used to start from existing services:
             understanding user needs, pain points and system relationships,
             then looking for opportunities to improve them. Foresight pushed me
-            to ask one step further:
+            to review the service in reverse:
           </p>
-          <p className="text-content font-bold text-[#DD663C] mt-4 border-l-[3px] border-[#EA5514] pl-5">
-            If the needs, roles, infrastructure and even institutions this
-            service depends on were to change, would the service we are
-            improving today still have a reason to exist?
+          <p className="text-content font-bold mt-6">
+            If the needs, roles, infrastructure and institutions this service
+            depends on were to change, how might we design or improve the
+            service?
           </p>
-          <p className="text-content md:font-light mt-4">
-            So the value of foresight to service design is not simply a longer
-            time horizon.{" "}
-            <span className="font-bold">
-              It helps designers recognise which needs are genuinely enduring,
-              which are products of the current system, and which design
-              decisions might quietly carry today's assumptions into the
-              future.
-            </span>
+          <p className="text-content md:font-light mt-6">
+            So the value of foresight to service design is that it helps
+            designers recognise which needs are genuinely enduring, what
+            uncertainties the service is built on, which risks are worth
+            developing responses to, and who might be potential partners. All of
+            this informs the planning of a service design roadmap.
           </p>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-12">
+          {/* Three-dot divider between the two reflections */}
+          <div className="flex justify-center gap-2 mt-16" aria-hidden="true">
+            {[0, 1, 2].map((i) => (
+              <span key={i} className="w-[8px] h-[8px] rounded-full bg-[#D9D9D9]"></span>
+            ))}
+          </div>
+
+          <p className="text-[20px] md:text-[24px] font-bold mt-16">
             Service design helped make futures tangible.
           </p>
-          <p className="text-content md:font-light mt-4">
+          <div className="w-[22px] border-b-[5px] border-[#D9D9D9] h-[5px] mt-3">
+            &nbsp;
+          </div>
+          <p className="text-content md:font-light mt-6">
             I also found that service design can address foresight's tendency
-            to stay at the level of macro narrative. Shifts in climate,
-            governance, AI, energy or demographics are hard to turn directly
-            into organisational decisions. Through personas, journeys,
-            stakeholder mapping and value-creating systems, I could translate
-            macro conditions into more concrete questions:
+            to stay at the level of macro narrative. Scenario narratives built
+            from shifts in climate, governance, AI, energy or demographics are
+            hard to turn directly into organisational decisions. Service design
+            makes future scenarios more tangible: through personas, user
+            journey maps, stakeholder mapping and value-creating systems, it
+            grounds scenarios in people's daily lives, raising more concrete
+            questions:
           </p>
-          <p className="text-content font-bold text-[#DD663C] mt-4 border-l-[3px] border-[#EA5514] pl-5">
-            Who still needs to move? Who provides the service? Who controls the
-            critical resources? Who needs to work with whom? How is value
-            exchanged? And who might be left out?
+          <p className="text-content font-bold mt-6">
+            What will future services look like? Who provides them? What does
+            the end-to-end journey look like? Who might be left out?
           </p>
-          <p className="text-content md:font-light mt-4">
-            This turns a scenario from an interesting story about the future
-            into a tool for examining products, partnerships, operating models
-            and organisational roles.
+          <p className="text-content md:font-light mt-6">
+            This turns an interesting story about the future into a tool for
+            examining products, partnerships, operating models and
+            organisational roles. Therefore, the greatest value of service
+            design in foresight lies in translating macro uncertainty into
+            concrete future service relationships, which then help strategists
+            question current services:
           </p>
-          <p className="text-content md:font-light mt-4">
-            It also made me more aware that a future persona or future journey
-            is not enough on its own. It needs to rest on a clear world logic,
-            transition path and set of system conditions, or it can easily
-            slide into speculative fiction.{" "}
-            <span className="font-bold">
-              For me, the greatest value of service design in foresight is
-              translating macro uncertainty into concrete service
-              relationships, not simply adding characters to the future.
-            </span>
-          </p>
-          <p className="text-content md:font-light mt-4">
-            In the same way, I no longer see scenarios as the final output of
-            foresight. In this project, the strategically valuable part was
-            using different futures to expose assumptions, compare
-            dependencies and help the team decide:
-          </p>
-          <p className="text-[18px] md:text-[20px] font-bold text-[#DD663C] mt-6 text-center">
-            What should we change now, what should we prepare for, and what
+          <p className="text-content font-bold mt-6">
+            What should we change now? What should we prepare for? And what
             should remain flexible?
           </p>
         </div>

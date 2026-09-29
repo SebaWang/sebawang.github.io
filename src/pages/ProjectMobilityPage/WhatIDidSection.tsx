@@ -41,7 +41,7 @@ export default function WhatIDidSection(): ReactElement {
                   which sits below the top of its 36px line box */}
               <div className="w-full md:w-[180px] md:shrink-0 md:mt-2">
                 <PhotoSlot
-                  label={`Photo ${step.number}`}
+                  label={`Photo ${String(Number(step.number) + 2).padStart(2, "0")} · Step ${step.number}`}
                   aspect="4/3"
                   className="rounded-md"
                 />

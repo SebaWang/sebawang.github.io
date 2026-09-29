@@ -53,9 +53,12 @@ export default function ScenariosSection(): ReactElement {
           Three scenarios for large cities in 2050
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
-          {scenarios.map((s) => (
+          {scenarios.map((s, i) => (
             <div key={s.name} className="flex flex-col">
-              <PhotoSlot label={`${s.name} scenario image`} aspect="4/3" />
+              <PhotoSlot
+                label={`Photo ${String(i + 7).padStart(2, "0")} · ${s.name}`}
+                aspect="4/3"
+              />
               <p className="text-[22px] font-bold mt-5">{s.name}</p>
               <p className="text-[#DD663C] text-content font-semibold">
                 {s.subtitle}

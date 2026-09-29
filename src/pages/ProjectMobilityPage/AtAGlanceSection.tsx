@@ -14,8 +14,9 @@ export default function AtAGlanceSection(): ReactElement {
           </div>
           <p className="text-content font-light mt-4">
             This foresight project was a collaboration with a global
-            automotive and mobility group. It began with their leadership's
-            reflection on the organisation's strategy:{" "}
+            automotive and mobility group and UK governmental departments. It
+            began with the mobility group leadership's reflection on the
+            organisation's strategy:{" "}
             <span className="font-bold">
               does our picture of future mobility come from how we imagine
               society and cities might change, or is it mainly shaped by the
@@ -27,12 +28,10 @@ export default function AtAGlanceSection(): ReactElement {
             and as climate, energy and geopolitics continue to shift.
           </p>
           <p className="text-content font-light mt-4">
-            The project focused on large metropolitan areas as its entry
-            point. Population, economic activity and infrastructure are highly
-            concentrated there, and mobility is closely tied to work, housing,
-            energy and public services. These interdependencies make the
-            metropolis a key setting for exploring how mobility needs, service
-            models and governance change together.
+            The project focused on large metropolitan areas as population,
+            economic activity and infrastructure are highly concentrated there.
+            These interdependencies make the metropolis a key setting for
+            exploring how future mobility might be affected.
           </p>
         </div>
 

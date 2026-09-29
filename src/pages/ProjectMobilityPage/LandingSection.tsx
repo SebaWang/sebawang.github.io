@@ -9,7 +9,7 @@ export default function LandingSection(): ReactElement {
       >
         <div className="absolute inset-8 md:inset-16 border-2 border-dashed border-[#3A3A3A] hidden md:block"></div>
         <p className="absolute bottom-10 right-10 md:bottom-20 md:right-20 text-[12px] tracking-[3px] text-[#6A6A6A] hidden md:block">
-          COVER PHOTO TO BE ADDED
+          PHOTO 01 · COVER
         </p>
         <div className="container mx-auto flex-col justify-center h-full flex justify-center flex-col hidden md:flex relative">
           <p className="text-[70px] font-bold text-white">
