@@ -30,7 +30,7 @@ export default function AtAGlanceSection(): ReactElement {
           <p className="text-content font-light mt-4">
             The project focused on large metropolitan areas as population,
             economic activity and infrastructure are highly concentrated there.
-            These interdependencies make the metropolis a key setting for
+            This concentration makes the metropolis a key setting for
             exploring how future mobility might be affected.
           </p>
         </div>
