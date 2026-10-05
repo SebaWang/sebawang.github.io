@@ -13,25 +13,20 @@ export default function AtAGlanceSection(): ReactElement {
             &nbsp;
           </div>
           <p className="text-content font-light mt-4">
-            This foresight project was a collaboration with a global
-            automotive and mobility group and UK governmental departments. It
-            began with the mobility group leadership's reflection on the
-            organisation's strategy:{" "}
-            <span className="font-bold">
-              does our picture of future mobility come from how we imagine
-              society and cities might change, or is it mainly shaped by the
-              technology pathways we already know?
-            </span>{" "}
-            The group wanted to extend its technology-led trend analysis and
-            explore the strategic turning points that might emerge in a
-            post-AI era, once AI is deeply embedded in society and industry,
-            and as climate, energy and geopolitics continue to shift.
+            This foresight project was a collaboration with an automotive and
+            mobility group and public-sector stakeholders. The project
+            extended conventional technology-led analysis by examining how
+            changes in society, institutions and infrastructure could reshape
+            mobility demand and service models in the post-AI era, once AI is
+            deeply embedded in society and industry, and as climate, energy
+            and geopolitics continue to shift.
           </p>
           <p className="text-content font-light mt-4">
-            The project focused on large metropolitan areas as population,
-            economic activity and infrastructure are highly concentrated there.
-            This concentration makes the metropolis a key setting for
-            exploring how future mobility might be affected.
+            The project used large metropolitan areas as the primary unit of
+            analysis because they concentrate population, infrastructure,
+            economic activity and governance. This makes the
+            metropolis a key setting for exploring how future mobility might
+            be affected.
           </p>
         </div>
 
@@ -42,6 +37,7 @@ export default function AtAGlanceSection(): ReactElement {
               &nbsp;
             </div>
             <ul className="list-disc pl-5 mt-4 space-y-1 text-content font-light font-['Open_Sans']">
+              <li>Strategic Framing and Formulation</li>
               <li>Mixed-method Early Signal and Trend Analysis</li>
               <li>Cross-sector Stakeholder Engagement</li>
               <li>Forum and Workshop Planning and Facilitation</li>

@@ -12,6 +12,18 @@ export default function DetailSection(): ReactElement {
           "radial-gradient(ellipse at center, rgba(20,20,20,0.35) 0%, rgba(20,20,20,0.7) 100%)",
       }}
     >
+      {/* Confidentiality note: sits just above the glass band, over the photo */}
+      <div className="absolute bottom-full inset-x-0 pb-3">
+        <div className="container mx-auto">
+          <p
+            className="text-[13px] font-light text-white/90 leading-snug"
+            style={{ textShadow: "0 1px 6px rgba(0,0,0,0.8)" }}
+          >
+            Selected project details have been anonymised or reframed for
+            confidentiality.
+          </p>
+        </div>
+      </div>
       <footer className="footer container mx-auto font-light text-white">
         <nav className="text-white">
           <p className="tracking-[1px] text-content font-bold">DATE</p>
@@ -29,9 +41,9 @@ export default function DetailSection(): ReactElement {
           <p className="text-content mt-4 md:whitespace-nowrap">
             External Foresight and Service Design Consultant
           </p>
-          <p className="text-content mt-3 max-w-[380px]">
-            Working closely with the central strategy and innovation team and
-            the executive leadership.
+          <p className="text-content mt-3 max-w-[460px]">
+            Working closely with the client's central strategy and innovation
+            team and the executive leadership.
           </p>
         </nav>
         <nav className="text-white">
@@ -40,7 +52,7 @@ export default function DetailSection(): ReactElement {
             &nbsp;
           </div>
           <p className="text-content mt-4 max-w-[220px]">
-            University of Oxford and corporate partners
+            University of Oxford
           </p>
         </nav>
         <nav className="text-white">

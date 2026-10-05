@@ -28,7 +28,7 @@ const steps = [
     bullets: [
       "Designed and facilitated the interactive discussion sessions for the 3-day forum.",
       "Contacted and invited representatives from energy, transport infrastructure, insurance, finance, aerospace, technology, government and urban planning.",
-      "Brought 60 stakeholders together for group discussion and debate, combining the perspectives of academia, policymakers, industry and practitioners.",
+      "Brought 60+ stakeholders together for group discussion and debate, combining the perspectives of academia, policymakers, industry and practitioners.",
     ],
   },
   {
@@ -37,8 +37,8 @@ const steps = [
     image: img_photo05,
     bullets: [
       "Introduced service design and design futures approaches, such as personas and user journey maps, to visualise future services.",
-      "Facilitated a 2-day workshop with the centre's research colleagues, and worked with 20 external stakeholders to develop three scenarios exploring the transition possibilities and boundary conditions that large cities might face by 2050.",
-      "Led 2 presentation sessions for 8 professors from the strategy and innovation department as an internal iteration.",
+      "Facilitated a 2-day workshop with the centre's research colleagues, and worked with 20+ external stakeholders to develop three scenarios exploring the transition possibilities and boundary conditions that large cities might face in the future.",
+      "Iterated the scenarios through internal critique sessions with senior academics and strategy researchers.",
     ],
   },
   {
@@ -70,13 +70,11 @@ export default function WhatIDidSection(): ReactElement {
             </span>
           </p>
           <p className="text-content font-light mt-3">
-            Many people in the room had never built a scenario, and some were
-            unsure what foresight was for. That moved the real problem away
-            from the method and towards access: how to get people
-            interested, try it, and then read and act on what came out.
-            Therefore, throughout the process I tried to use participatory and
-            interactive approaches to lower the barrier to discussion and draw
-            interest.
+            Some participants were new to scenario planning, which shifted the
+            challenge from applying the methods to making foresight
+            accessible, engaging and usable. Therefore, I used participatory
+            and interactive approaches to lower the barrier to discussion and
+            draw interest.
           </p>
         </div>
 

@@ -6,19 +6,19 @@ const shifts = [
     from: "Single-product optimisation",
     to: "Cross-scenario products and service iteration",
     detail:
-      "Examining how well vehicles, fleets and services fit under different demand and operating standards, and identifying the dependencies each system creates.",
+      "Examining how products and services might perform under different demand patterns and operating conditions.",
   },
   {
     from: "Standalone vehicle provider",
     to: "Cross-system partnership",
     detail:
-      "Exploring partnership roadmaps with cities, public transport, energy and digital service providers, prioritising data rights, the allocation of costs and benefits, and responsibility for services.",
+      "Developing partnership roadmaps with stakeholders beyond the vehicle or transport operator.",
   },
   {
     from: "Separate passenger and logistics services",
     to: "Hybrid mobility systems",
     detail:
-      "Examining the balance between moving people and moving goods, and how to integrate the information, dispatch and operations in land, sea and air service systems to ensure efficiency and security.",
+      "Exploring the balance between moving people and moving goods in land, sea and air service systems.",
   },
 ];
 
@@ -32,19 +32,18 @@ export default function ImplicationsSection(): ReactElement {
           The project's outputs include a 30-year literature and assumption
           analysis, three contrasting scenario narratives, and value
           relationship system maps that link today's as-is to future
-          stakeholder and service relationships. These outputs were presented
-          and debated in several of the client's internal senior strategy
-          meetings, and a partial external publication was used by relevant
-          government bodies as discussion material on public transport
-          governance.
+          stakeholder and service relationships. The work was used in senior
+          strategy discussions and informed wider conversations about future
+          mobility governance. Parts of the work also contributed to discussion
+          materials for relevant government bodies.
         </p>
         <p className="text-content font-light mt-4">
-          Within the centre, the approach became the process framework for the
-          other five workstreams.
+          Within the centre, this research process and its approaches also became
+          the fundamental framework for the other workstreams.
         </p>
 
         <p className="text-[20px] md:text-[24px] font-bold mt-9">
-          What changed in strategy
+          How the strategic conversation shifted
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           {shifts.map((s) => (

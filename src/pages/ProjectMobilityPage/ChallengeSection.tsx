@@ -104,7 +104,7 @@ export default function ChallengeSection(): ReactElement {
         </div>
 
         <p className="tracking-[1px] text-[14px] font-bold mt-12">
-          KEY QUESTIONS DEVELOPED WITH LEADERSHIP
+          KEY QUESTIONS FOR LEADERSHIP
         </p>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-8 mt-6">
           {leadershipQuestions.map((item, i) => (

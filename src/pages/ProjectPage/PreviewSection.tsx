@@ -42,9 +42,12 @@ export default function PreviewSection(): ReactElement {
     },
   ];
 
+  // Hidden for now; remove the id from this list to show a card again
+  const hiddenIds = ["ev-maintenance", "robotics-analysis"];
+
   // Array of project data
   const projects = [
-    ...placeholderProjects,
+    ...placeholderProjects.filter((p) => !hiddenIds.includes(p.id)),
     {
       id: "mobility",
       imgURL: img_mobility_card,
@@ -53,9 +56,9 @@ export default function PreviewSection(): ReactElement {
         "How can mobility services keep creating value when demand and governing rules change in the post-AI era?",
       tags: ["Foresight & Scenario Planning"],
       highlights: [
-        "Developed three contrasting 2050 scenarios for large cities with a global automotive and mobility group.",
-        "Brought service design mapping into foresight to compare roles and value exchanges in 2026 and 2050.",
-        "Brought academic, policy, industry and practitioner perspectives together through a participatory futures forum.",
+        "Applied scenario planning and design thinking to reframe mobility strategy and services beyond the technology roadmap.",
+        "Translated long-term uncertainty into scenarios that could be used to stress-test current decisions and expose trade-offs.",
+        "Used service design to translate macro trends and signals into tangible changes in stakeholder roles, service relationships and value creation.",
       ],
     },
     {
