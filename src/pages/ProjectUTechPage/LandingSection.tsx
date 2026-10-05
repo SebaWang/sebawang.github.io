@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import DetailSection from "./DetailSection";
 import img_bg_cover from "../../assets/img/Project_UTech/cover.png";
 import img_bg_coverm from "../../assets/img/Project_UTech/cover_m.jpg";
 
@@ -10,7 +11,7 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden hidden md:block   h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="container mx-auto flex flex-col justify-center  grid grid-cols-5 h-full">
+        <div className="container mx-auto md:pb-[300px] flex flex-col justify-center  grid grid-cols-5 h-full">
           <div className="col-span-4">&nbsp;</div>
           <div className="flex flex-col justify-center">
             <p className="text-[70px] font-bold text-white">UTech</p>
@@ -20,6 +21,7 @@ export default function LandingSection(): ReactElement {
             </p>
           </div>
         </div>
+        <DetailSection />
       </div>
 
       <div

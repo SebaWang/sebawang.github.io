@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import DetailSection from "./DetailSection";
 import img_bg_cover from "../../assets/img/Project_Medicy/4medicy_bg.png";
 import img_bg_screen from "../../assets/img/Project_Medicy/4medicy_screen.png";
 
@@ -10,7 +11,7 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden  h-[60svh]  md:h-[100vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="container mx-auto flex-col justify-center h-full  grid md:grid-cols-3 gap-12">
+        <div className="container mx-auto md:pb-[300px] flex-col justify-center h-full  grid md:grid-cols-3 gap-12">
           <div className="col-span-2 flex flex-col justify-center">
             <img src={img_bg_screen} alt='bgscreen' />
           </div>
@@ -23,6 +24,7 @@ export default function LandingSection(): ReactElement {
             </p>
           </div>
         </div>
+        <DetailSection />
       </div>
       
       <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">

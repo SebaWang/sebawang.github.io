@@ -47,9 +47,9 @@ export default function PreviewSection(): ReactElement {
     {
       id: "mobility",
       imgURL: img_project_placeholder,
-      title: "Future Strategy and Service of Mobility",
+      title: "Future Mobility Service and Strategy Transformation",
       content:
-        "How can an organisation keep creating value when mobility demand and the governing rules change in the post-AI era?",
+        "How can mobility services keep creating value when demand and governing rules change in the post-AI era?",
       tags: ["Foresight & Scenario Planning"],
       highlights: [
         "Developed three contrasting 2050 scenarios for large cities with a global automotive and mobility group.",

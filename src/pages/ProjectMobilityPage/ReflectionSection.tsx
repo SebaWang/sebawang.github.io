@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import ChapterHeader from "./ChapterHeader";
+import img_photo11 from "../../assets/img/img_project_mobility_photo11.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -14,20 +15,33 @@ export default function ReflectionSection(): ReactElement {
         <div className="container mx-auto md:w-[1100px] pb-12 md:pb-24">
           <ChapterHeader number="06" title="Reflection" />
 
-          {/* Pull quote: decorative serif quote marks around the line */}
-          <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[860px] leading-[1.7]">
-            <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
-              &ldquo;
-            </span>
-            The value of future scenarios lies not in how imaginative they are,
-            but in how well they help question the assumptions behind the
-            service design decisions we make today.
-            <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
-              &rdquo;
-            </span>
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:-mt-4">
+            {/* Pull quote: decorative serif quote marks around the line */}
+            <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[760px] md:flex-1 leading-[1.7]">
+              <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
+                &ldquo;
+              </span>
+              The value of future scenarios lies not in how imaginative they are,
+              but in how well they help question the assumptions behind the
+              service design decisions we make today.
+              <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
+                &rdquo;
+              </span>
+            </p>
+            {/* Vertically centred with the pull quote. Low-res file only;
+                right-click and drag disabled */}
+            <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto">
+              <img
+                src={img_photo11}
+                alt="Mapping session with research colleagues"
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()}
+                className="w-full aspect-[4/3] object-cover rounded-md select-none"
+              />
+            </div>
+          </div>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-16">
+          <p className="text-[20px] md:text-[24px] font-bold mt-10">
             Foresight for questioning the service before designing it.
           </p>
           <div className="w-[22px] border-b-[5px] border-[#D9D9D9] h-[5px] mt-3">

@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import DetailSection from "./DetailSection";
 
 export default function LandingSection(): ReactElement {
   return (
@@ -11,20 +12,21 @@ export default function LandingSection(): ReactElement {
         <p className="absolute bottom-10 right-10 md:bottom-20 md:right-20 text-[12px] tracking-[3px] text-[#6A6A6A] hidden md:block">
           PHOTO 01 · COVER
         </p>
-        <div className="container mx-auto flex-col justify-center h-full flex justify-center flex-col hidden md:flex relative">
+        <div className="container mx-auto flex-col justify-center h-full flex justify-center flex-col hidden md:flex relative md:pb-[280px]">
           <p className="text-[70px] font-bold text-white">
-            Future Strategy and Service of Mobility
+            Future Mobility Service and Strategy Transformation
           </p>
           <p className="text-[26px] font-semibold text-white">
             Reframing the Metropolitan Mobility Service
             <br /> Strategy in a Post-AI Era
           </p>
         </div>
+        <DetailSection />
       </div>
       <div className="bg-[#1E1E1E] text-center px-4 block md:hidden py-24">
         <div>
           <h1 className="text-white text-[45px] font-bold">
-            Future Strategy and Service of Mobility
+            Future Mobility Service and Strategy Transformation
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
             Reframing the Metropolitan Mobility Service Strategy in a Post-AI

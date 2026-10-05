@@ -37,7 +37,12 @@ export default function ScenariosSection(): ReactElement {
   return (
     <div className="bg-[#F8F8F8]" id="future_scenarios">
       <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
-        <ChapterHeader number="04" title="Future Scenarios" />
+        {/* TBD: Seb is still rewriting this chapter; remove the red flag when done */}
+        <ChapterHeader
+          number="04"
+          title="Future Scenarios (TBD)"
+          titleColor="red"
+        />
 
         <p className="text-content font-light mb-12">
           The purpose of the scenarios is to help leadership confront

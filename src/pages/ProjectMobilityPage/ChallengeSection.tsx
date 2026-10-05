@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import ChapterHeader from "./ChapterHeader";
-import PhotoSlot from "./PhotoSlot";
+import img_photo02 from "../../assets/img/img_project_mobility_photo02.jpg";
 
 const leadershipQuestions = [
   {
@@ -40,7 +40,14 @@ export default function ChallengeSection(): ReactElement {
           </p>
           {/* Sits beside the chapter title on desktop, as in the mock-up */}
           <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto md:-mt-[84px]">
-            <PhotoSlot label="Photo 02 · Strategic Challenge" aspect="4/3" className="rounded-md" />
+            {/* Low-res file only; right-click and drag disabled */}
+            <img
+              src={img_photo02}
+              alt="Presenting at a value-creating system workshop"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+              className="w-full aspect-[4/3] object-cover rounded-md select-none"
+            />
           </div>
         </div>
 
@@ -91,8 +98,8 @@ export default function ChallengeSection(): ReactElement {
             PRIMARY FORESIGHT QUESTION
           </p>
           <p className="font-bold text-[#6F6F6F] text-[20px] md:text-[26px] mt-3 leading-snug">
-            How can an organisation keep creating value when mobility demand
-            and the governing rules change in the post-AI era?
+            How can mobility services keep creating value when demand and
+            governing rules change in the post-AI era?
           </p>
         </div>
 

@@ -2,38 +2,46 @@ import { ReactElement } from "react";
 
 export default function DetailSection(): ReactElement {
     return (
-        <div className="bg-[#e8e8e8] pt-24 pb-24 hidden md:block">
+        // Frosted glass band across the bottom of the cover: radial gradient
+        // from a more transparent centre to a less transparent edge
+        <div
+            className="hidden md:block absolute inset-x-0 bottom-0 z-10 py-8 backdrop-blur-md border-t border-[#2A2A2A]"
+            style={{
+                background:
+                    "radial-gradient(ellipse at center, rgba(20,20,20,0.35) 0%, rgba(20,20,20,0.7) 100%)",
+            }}
+        >
             <footer className="footer container mx-auto font-light">
-                <nav className='text-black'>
+                <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">DATE</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8 ">
+                    <p className="text-content mt-4 ">
                         2023
                     </p>
                     <p className="text-content ">
                     3-Month Team Project
                     </p>
                 </nav>
-                <nav className='text-black'>
+                <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">ROLE</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8 ">
+                    <p className="text-content mt-4 ">
                     Service Design
                     </p>
                     <p className="text-content ">
                     Workshops Design
                     </p>
                 </nav>
-                <nav className='text-black'>
+                <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">ORGANIZATION</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8 font-semibold">
+                    <p className="text-content mt-4 font-semibold">
                     Collaborators
                     </p>
                     <p className="text-content ">
@@ -43,21 +51,21 @@ export default function DetailSection(): ReactElement {
                     (Goldsmiths University)
                     </p>
                 </nav>
-                <nav className='text-black'>
+                <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">HOW MIGHT WE</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8">
+                    <p className="text-content mt-4">
                     How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?
                     </p>
                 </nav>
-                <nav className='text-black'>
+                <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">OUTCOMES</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-8">
+                    <p className="text-content mt-4">
                     An A-level Curriculum,
                     </p>
                     <p className="text-content ">

@@ -1,7 +1,6 @@
 import Header from "../../Components/HeaderWhite";
 import { ReactElement } from "react";
 import LandingSection from "./LandingSection";
-import DetailSection from "./DetailSection";
 import SideNav from "../../Components/Component/SideNav";
 import OverviewSection from "./OverviewSection";
 import BackgroundSection from "./BackgroundSection";
@@ -28,7 +27,6 @@ export default function ProjectFinancePage(): ReactElement {
       <SideNav sections={sections} />
       <Header />
       <LandingSection />
-      <DetailSection />
       <OverviewSection />
       <div id="content_section">
         <BackgroundSection />

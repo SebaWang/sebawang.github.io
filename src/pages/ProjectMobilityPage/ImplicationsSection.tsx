@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import ChapterHeader from "./ChapterHeader";
-import PhotoSlot from "./PhotoSlot";
 
 const shifts = [
   {
@@ -33,11 +32,18 @@ export default function ImplicationsSection(): ReactElement {
           The project's outputs include a 30-year literature and assumption
           analysis, three contrasting scenario narratives, and value
           relationship system maps that link today's as-is to future
-          stakeholder and service relationships. Together they provide a basis
-          for examining assumptions and discussing strategic choices.
+          stakeholder and service relationships. These outputs were presented
+          and debated in several of the client's internal senior strategy
+          meetings, and a partial external publication was used by relevant
+          government bodies as discussion material on public transport
+          governance.
+        </p>
+        <p className="text-content font-light mt-4">
+          Within the centre, the approach became the process framework for the
+          other five workstreams.
         </p>
 
-        <p className="text-[20px] md:text-[24px] font-bold mt-12">
+        <p className="text-[20px] md:text-[24px] font-bold mt-9">
           What changed in strategy
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
@@ -56,11 +62,6 @@ export default function ImplicationsSection(): ReactElement {
             </div>
           ))}
         </div>
-
-        <p className="text-content font-bold mt-12 mb-4">
-          Presenting with stakeholders
-        </p>
-        <PhotoSlot label="Photo 10 · Presenting with stakeholders" aspect="16/7" />
       </div>
     </div>
   );

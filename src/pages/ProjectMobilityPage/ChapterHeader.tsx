@@ -4,6 +4,7 @@ interface Props {
   number: string;
   title: string;
   note?: string;
+  titleColor?: string;
 }
 
 // Numbered chapter opener: orange number and project name either side of
@@ -14,6 +15,7 @@ export default function ChapterHeader({
   number,
   title,
   note,
+  titleColor = "#2B2B2B",
 }: Props): ReactElement {
   return (
     <div className="pt-14 md:pt-16 mb-9">
@@ -26,7 +28,10 @@ export default function ChapterHeader({
           Futures of Mobility
         </p>
       </div>
-      <p className="text-[32px] md:text-[44px] font-bold text-[#2B2B2B] mt-4 leading-tight">
+      <p
+        className="text-[32px] md:text-[44px] font-bold mt-4 leading-tight"
+        style={{ color: titleColor }}
+      >
         {title}
       </p>
       {note && (

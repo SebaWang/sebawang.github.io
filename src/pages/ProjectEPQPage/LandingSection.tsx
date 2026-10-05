@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import DetailSection from "./DetailSection";
 import img_bg_cover from "../../assets/img/Project_EPQ Learning Journey/cover.jpg";
 import img_bg_mobile from "../../assets/img/Project_EPQ Learning Journey/outcome.jpg"
 
@@ -10,7 +11,7 @@ export default function LandingSection(): ReactElement {
         className="w-full relative overflow-hidden  h-[60svh] md:h-[100vh] bg-cover bg-center hidden md:block "
         style={{ backgroundImage: `url(${img_bg_cover})` }}
       >
-        <div className="hidden md:flex container mx-auto flex-col justify-center h-full flex text-center">
+        <div className="hidden md:flex container mx-auto md:pb-[300px] flex-col justify-center h-full flex text-center">
           <p className="text-[70px] font-bold text-white">
             EPQ Learning Journey
           </p>
@@ -18,6 +19,7 @@ export default function LandingSection(): ReactElement {
             Social Design for Non-traditional Education
           </p>
         </div>
+        <DetailSection />
       </div>
       <div className="block md:hidden  h-[60svh] w-full bg-cover bg-center"  style={{ backgroundImage: `url(${img_bg_mobile})` }}></div>
       <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">

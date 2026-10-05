@@ -1,7 +1,6 @@
 import Header from "../../Components/HeaderWhite";
 import { ReactElement } from "react";
 import LandingSection from "./LandingSection";
-import DetailSection from "./DetailSection";
 import AtAGlanceSection from "./AtAGlanceSection";
 import ChallengeSection from "./ChallengeSection";
 import WhatIDidSection from "./WhatIDidSection";
@@ -34,7 +33,6 @@ export default function ProjectMobilityPage(): ReactElement {
       <SideNav sections={sections} />
       <Header />
       <LandingSection />
-      <DetailSection />
       <div id="content_section">
         <AtAGlanceSection />
         <ChallengeSection />
