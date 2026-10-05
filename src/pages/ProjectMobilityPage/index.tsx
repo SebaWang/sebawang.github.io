@@ -29,7 +29,9 @@ export default function ProjectMobilityPage(): ReactElement {
     Reflection: "reflection",
   };
   return (
-    <>
+    // Body text (.text-content) is 1px larger than the site default (16px),
+    // on this page only
+    <div className="[&_.text-content]:text-[17px] [&_.text-content]:leading-[29.5px]">
       <SideNav sections={sections} />
       <Header />
       <LandingSection />
@@ -46,6 +48,6 @@ export default function ProjectMobilityPage(): ReactElement {
           Copyright © 2026 Sebastian Wang
         </div>
       </div>
-    </>
+    </div>
   );
 }

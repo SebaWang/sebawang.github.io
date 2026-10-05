@@ -8,6 +8,7 @@ import img_project_03 from "../../assets/img/img_project_cover_03.jpg";
 import img_project_04 from "../../assets/img/img_project_cover_04.png";
 import img_project_05 from "../../assets/img/img_project_cover_06.jpg";
 import img_project_06 from "../../assets/img/img_project_cover_05.png";
+import img_mobility_card from "../../assets/img/img_project_mobility_card.jpg";
 import img_project_placeholder from "../../assets/img/img_project_cover_placeholder.svg";
 
 export default function PreviewSection(): ReactElement {
@@ -46,7 +47,7 @@ export default function PreviewSection(): ReactElement {
     ...placeholderProjects,
     {
       id: "mobility",
-      imgURL: img_project_placeholder,
+      imgURL: img_mobility_card,
       title: "Future Mobility Service and Strategy Transformation",
       content:
         "How can mobility services keep creating value when demand and governing rules change in the post-AI era?",

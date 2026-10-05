@@ -17,7 +17,7 @@ const steps = [
     image: img_photo03,
     bullets: [
       "Mapped the structural drivers (e.g. regulation, infrastructure, trust, labour and climate) and the disagreements around them.",
-      "Reviewed 10,765 academic articles from 1993 to 2024, with publications surging to 7,022 between 2019 and 2024 alone.",
+      "Reviewed 10,765 academic articles from 1993 to 2024.",
       "Trained an LLM with a doctoral researcher colleague to identify the assumptions behind these trends: which are taken for granted (the ghost scenarios), and which stand in opposition to one another.",
     ],
   },
@@ -57,6 +57,28 @@ export default function WhatIDidSection(): ReactElement {
     <div id="what_i_did">
       <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
         <ChapterHeader number="03" title="What I Did" />
+
+        {/* Challenge: foresight was unfamiliar to most participants */}
+        <div className="-mt-4 mb-8">
+          <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[860px] leading-[1.7]">
+            <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
+              &ldquo;
+            </span>
+            A scenario that nobody reads cannot question assumptions.
+            <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
+              &rdquo;
+            </span>
+          </p>
+          <p className="text-content font-light mt-3">
+            Many people in the room had never built a scenario, and some were
+            unsure what foresight was for. That moved the real problem away
+            from the method and towards access: how to get people
+            interested, try it, and then read and act on what came out.
+            Therefore, throughout the process I tried to use participatory and
+            interactive approaches to lower the barrier to discussion and draw
+            interest.
+          </p>
+        </div>
 
         <div className="space-y-10">
           {steps.map((step) => (
