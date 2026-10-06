@@ -64,7 +64,7 @@ export default function PreviewSection(): ReactElement {
     {
       id: "UoL",
       imgURL: img_project_placeholder,
-      title: "Design with GDS Standards",
+      title: "Design Evaluation Using GDS Service Standard",
       content:
         "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
     },
@@ -84,7 +84,7 @@ export default function PreviewSection(): ReactElement {
     {
       id: "mob",
       imgURL: img_project_01,
-      title: "Workshops & Strategy Design for Future Policy with GDS",
+      title: "Workshops & Strategy Design for Future Environmental Policy",
       content:
         "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
       tags: ["Service Design with Gov"],

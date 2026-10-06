@@ -11,9 +11,9 @@ import SideNav from "../../Components/Component/SideNav";
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 
-// Leaner Nesta-style narrative architecture: At a glance, Challenge,
-// What I did, Results & Evaluation, What I learnt — used for this page
-// only, distinct from the fuller ProjectFinancePage architecture.
+// Same format as the Oxford mobility page (glass info band on the cover,
+// numbered chapters, PhotoSlot boxes for photos still to be chosen); the
+// copy is still to be written.
 export default function ProjectUoLPage(): ReactElement {
   useEffect(() => {
     // 傳送頁面檢視
@@ -23,11 +23,13 @@ export default function ProjectUoLPage(): ReactElement {
     "At A Glance": "at_a_glance",
     Challenge: "challenge",
     "What I Did": "what_i_did",
-    "Results & Evaluation": "results_evaluation",
+    "Results & Impact": "results_evaluation",
     "What I Learnt": "what_i_learnt",
   };
   return (
-    <>
+    // Body text (.text-content) is 1px larger than the site default (16px),
+    // as on the mobility page
+    <div className="[&_.text-content]:text-[17px] [&_.text-content]:leading-[29.5px]">
       <SideNav sections={sections} />
       <Header />
       <LandingSection />
@@ -43,6 +45,6 @@ export default function ProjectUoLPage(): ReactElement {
           Copyright © 2026 Sebastian Wang
         </div>
       </div>
-    </>
+    </div>
   );
 }

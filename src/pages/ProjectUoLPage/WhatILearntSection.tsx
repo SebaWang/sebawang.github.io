@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+import ChapterHeader from "./ChapterHeader";
+import PhotoSlot from "./PhotoSlot";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -9,32 +11,62 @@ import ContactMobile from "../../Components/Component/ContactMobile";
 export default function WhatILearntSection(): ReactElement {
   return (
     <>
-      <div className="bg-[#2B140A]" id="what_i_learnt">
-        <div className="container mx-auto mt-12 md:w-[1100px] pb-12 md:pb-24">
-          <div className="text-center pt-12 mb-8">
-            <p className="text-[16px] md:text-[20px] font-light text-[#C98F6E] tracking-[5px]">
-              [ &nbsp; WHAT I LEARNT &nbsp; ]
+      <div className="bg-[#FFFAF8]" id="what_i_learnt">
+        <div className="container mx-auto md:w-[1100px] pb-12 md:pb-24">
+          <ChapterHeader number="05" title="What I Learnt" />
+
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:-mt-4">
+            {/* Pull quote: decorative serif quote marks around the line */}
+            <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[760px] md:flex-1 leading-[1.7]">
+              <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
+                &ldquo;
+              </span>
+              Pull quote to be added.
+              <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
+                &rdquo;
+              </span>
             </p>
+            {/* Vertically centred with the pull quote. Low-res file only;
+                right-click and drag disabled */}
+            <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto">
+              <PhotoSlot label="Photo 11" aspect="4/3" className="rounded-md" />
+            </div>
           </div>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-12 text-white">
+          <p className="text-[20px] md:text-[24px] font-bold mt-10">
             Reflection heading to be added.
           </p>
-          <p className="text-content md:font-light mt-4 text-[#D7B7A6]">
+          <div className="w-[22px] border-b-[5px] border-[#D9D9D9] h-[5px] mt-3">
+            &nbsp;
+          </div>
+          <p className="text-content md:font-light mt-6">
             Reflection text to be added.
           </p>
+          <p className="text-content font-bold mt-6">
+            Key question or takeaway to be added.
+          </p>
 
-          <p className="text-[20px] md:text-[24px] font-bold mt-8 text-white">
+          {/* Three-dot divider between the two reflections */}
+          <div className="flex justify-center gap-2 mt-16" aria-hidden="true">
+            {[0, 1, 2].map((i) => (
+              <span key={i} className="w-[8px] h-[8px] rounded-full bg-[#D9D9D9]"></span>
+            ))}
+          </div>
+
+          <p className="text-[20px] md:text-[24px] font-bold mt-16">
             Reflection heading to be added.
           </p>
-          <p className="text-content md:font-light mt-4 text-[#D7B7A6]">
+          <div className="w-[22px] border-b-[5px] border-[#D9D9D9] h-[5px] mt-3">
+            &nbsp;
+          </div>
+          <p className="text-content md:font-light mt-6">
             Reflection text to be added.
           </p>
         </div>
 
         <div className="mx-auto text-center mt-4 pb-16 hidden md:block">
           <Link to="/project">
-            <button className="mt-12 border-[1px] border-[#FF7A45] text-[#FF7A45] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#FF7A45] hover:text-white duration-300">
+            <button className="mt-4 border-[1px] border-[#DD663C] text-[#DD663C] py-2 px-16 rounded-md text-content font-semibold hover:bg-[#DD663C] hover:text-white duration-300">
               Back To Works
             </button>
           </Link>

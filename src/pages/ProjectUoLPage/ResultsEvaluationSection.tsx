@@ -1,47 +1,36 @@
 import { ReactElement } from "react";
-import { ReactComponent as Star } from "../../assets/img/icon_star.svg";
-import { ReactComponent as Bulb } from "../../assets/img/icon_bulb.svg";
-import { ReactComponent as Paper } from "../../assets/img/icon_paper.svg";
+import ChapterHeader from "./ChapterHeader";
+import PhotoSlot from "./PhotoSlot";
 
 export default function ResultsEvaluationSection(): ReactElement {
   return (
-    <div
-      className="container mx-auto mt-12 md:w-[1100px] pb-12"
-      id="results_evaluation"
-    >
-      <div className="text-center pt-12 mb-8">
-        <p className="text-[16px] md:text-[20px] font-light text-[#6F6F6F] tracking-[5px]">
-          [ &nbsp; RESULTS & EVALUATION &nbsp; ]
-        </p>
-      </div>
+    <div className="bg-[#F8F8F8]" id="results_evaluation">
+      <div className="container mx-auto md:w-[1100px] pb-14 md:pb-16">
+        <ChapterHeader number="04" title="Results & Impact" />
 
-      <div className="grid md:grid-cols-3 gap-12 mt-4">
-        <div className="flex flex-col gap-4">
-          <Star className="h-[102px] mx-auto md:mx-[0]" />
-          <p className="md:text-content font-bold text-center md:text-left text-[20px]">
-            Result heading to be added
-          </p>
-          <p className="text-content font-light text-left">
-            Result text to be added.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4">
-          <Bulb className="h-[102px] mx-auto md:mx-[0]" />
-          <p className="md:text-content font-bold text-center md:text-left text-[20px]">
-            Result heading to be added
-          </p>
-          <p className="text-content font-light text-left">
-            Result text to be added.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4">
-          <Paper className="h-[102px] mx-auto md:mx-[0]" />
-          <p className="md:text-content font-bold text-center md:text-left text-[20px]">
-            Result heading to be added
-          </p>
-          <p className="text-content font-light text-left">
-            Result text to be added.
-          </p>
+        <p className="text-content font-light mb-12">
+          Results introduction to be added: what was delivered, and how it was
+          evaluated against the GDS service standards.
+        </p>
+
+        <p className="text-[20px] md:text-[24px] font-bold">
+          Results heading to be added
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+          {[1, 2, 3].map((n) => (
+            <div key={n} className="flex flex-col">
+              <PhotoSlot
+                label={`Photo ${String(n + 6).padStart(2, "0")} · Result ${n}`}
+                aspect="4/3"
+              />
+              <p className="text-[20px] font-bold mt-5">
+                Result heading to be added
+              </p>
+              <p className="mt-4 text-content font-light">
+                Result text to be added.
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
