@@ -29,7 +29,7 @@ export default function WhatILearntSection(): ReactElement {
             {/* Vertically centred with the pull quote. Low-res file only;
                 right-click and drag disabled */}
             <div className="w-full md:w-[240px] md:shrink-0 md:ml-auto">
-              <PhotoSlot label="Photo 11" aspect="4/3" className="rounded-md" />
+              <PhotoSlot label="Photo 16" aspect="4/3" className="rounded-md" />
             </div>
           </div>
 

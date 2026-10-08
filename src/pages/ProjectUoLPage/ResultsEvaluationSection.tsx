@@ -20,7 +20,7 @@ export default function ResultsEvaluationSection(): ReactElement {
           {[1, 2, 3].map((n) => (
             <div key={n} className="flex flex-col">
               <PhotoSlot
-                label={`Photo ${String(n + 6).padStart(2, "0")} · Result ${n}`}
+                label={`Photo ${12 + n} · Result ${n}`}
                 aspect="4/3"
               />
               <p className="text-[20px] font-bold mt-5">
