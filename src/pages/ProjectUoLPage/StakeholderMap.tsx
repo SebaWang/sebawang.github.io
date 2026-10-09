@@ -86,7 +86,7 @@ const stakeholders: Stakeholder[] = [
     lines: ["Research Staff"],
     segments: band([2, 3], 375, 420),
     labelR: 397,
-    fill: "#FDF2EB",
+    fill: "#FEF5EF",
   },
 ];
 

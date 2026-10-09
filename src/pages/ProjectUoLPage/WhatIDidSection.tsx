@@ -2,6 +2,27 @@ import React, { ReactElement, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ChapterHeader from "./ChapterHeader";
 import PhotoSlot from "./PhotoSlot";
+import img_photo01 from "../../assets/img/img_uol_photo01.jpg";
+import img_photo02 from "../../assets/img/img_uol_photo02.jpg";
+import img_photo04 from "../../assets/img/img_uol_photo04.jpg";
+import img_photo05 from "../../assets/img/img_uol_photo05.jpg";
+
+// Page-wide photo numbers shown in each phase
+const photoNumbers = [
+  [1, 2],
+  [4, 5, 6],
+  [], // Pilot: no photos
+  [], // Endline: no photos
+];
+
+// Photos placed so far, by page-wide photo number. Low-res files only, with
+// faces and third-party names blurred.
+const photos: Record<number, { src: string; alt: string }> = {
+  1: { src: img_photo01, alt: "Workstream improvement ideas on sticky notes" },
+  2: { src: img_photo02, alt: "Research Islands mapping on a whiteboard" },
+  4: { src: img_photo04, alt: "Compiling resources in the research staff system" },
+  5: { src: img_photo05, alt: "Pre-recruitment journey mapping notes" },
+};
 
 // Phase colours are traditional Japanese colours: 藍 ai, 千歳緑
 // chitose-midori, 山吹茶 yamabuki-cha, 江戸紫 edo-murasaki
@@ -254,18 +275,42 @@ export default function WhatIDidSection(): ReactElement {
                 </div>
               )}
 
-              {/* Process photos for this phase, numbered across the page:
-                  Baseline 01–03, Design 04–06, Pilot 07–09, Endline 10–12 */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                {[0, 1, 2].map((l) => (
+              {/* Process photos for this phase, numbered across the page.
+                  Baseline has two (Photo 03 was dropped), so its photos run
+                  wider in two columns; the other phases have three. */}
+              {photoNumbers[active].length > 0 && (
+              <div
+                className={`grid grid-cols-1 mt-6 ${
+                  photoNumbers[active].length === 2
+                    ? "md:grid-cols-2 gap-4 md:max-w-[820px]"
+                    : "md:grid-cols-3 gap-4"
+                }`}
+              >
+                {photoNumbers[active].map((n, l) => {
+                  // Two-up photos are wider, so give them more height
+                  const photoH =
+                    photoNumbers[active].length === 2 ? "h-[240px]" : "h-[180px]";
+                  const photo = photos[n];
+                  return photo ? (
+                    <img
+                      key={l}
+                      src={photo.src}
+                      alt={photo.alt}
+                      draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
+                      className={`w-full ${photoH} object-cover rounded-md select-none`}
+                    />
+                  ) : (
                   <PhotoSlot
                     key={l}
-                    label={`Photo ${String(active * 3 + l + 1).padStart(2, "0")} · ${phase.name}`}
+                    label={`Photo ${String(n).padStart(2, "0")} · ${phase.name}`}
                     aspect="auto"
-                    className="rounded-md h-[180px]"
+                    className={`rounded-md ${photoH}`}
                   />
-                ))}
+                  );
+                })}
               </div>
+              )}
 
               {/* "How did I …" box, one per phase */}
               <div
