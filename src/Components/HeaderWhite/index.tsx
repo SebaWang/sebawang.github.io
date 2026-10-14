@@ -317,8 +317,8 @@ const LINKS = [
     component: undefined,
   },
   {
-    text: "Writing",
-    href: "/writing",
+    text: "Articles",
+    href: "/articles",
     component: undefined,
   },
   {

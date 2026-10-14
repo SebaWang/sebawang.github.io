@@ -19,10 +19,10 @@ export default function ProjectSection() {
                 &nbsp;
               </div>
             </div>
-            <div className="text-[#6F6F6F] text-content font-light">
+            <div className="text-[#6F6F6F] text-[18px] leading-[30px] font-light">
               <p>
                 I am passionate about these projects, helping services progress
-                to the next level while prioritizing accessibility and
+                to the next level while prioritising accessibility and
                 inclusivity.
               </p>
             </div>

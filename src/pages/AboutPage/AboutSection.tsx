@@ -24,7 +24,7 @@ export default function AboutSection() {
               <p className="text-subtitle font-bold mt-2">
                 MY WORK-LIFE BALANCE
               </p>
-              <p className="font-light mt-2 text-content">
+              <p className="font-light mt-2 text-[18px] leading-[30px]">
                 When I'm not at my computer, you'll find me hitting the pavement
                 for London Marathon training, flying the drone in the mountains,
                 experimenting in the kitchen, diving into business and

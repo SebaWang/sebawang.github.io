@@ -20,12 +20,11 @@ export default function AvatarSection() {
             </p>
             <p className="mt-6 text-[25px]  text-black">
               A London-based service designer working across foresight,
-              evaluation and service integration to help organisations reframe
-              strategy and deliver smoother service journeys.
+              evaluation and end-to-end service improvement.
             </p>
-            <p className="mt-4 text-[16px] font-light text-[#6F6F6F] mb-10">
+            <p className="mt-4 text-[18px] font-light text-[#6F6F6F] mb-10">
               A firm believer that telling a compelling story is as essential as
-              conducting thorough design research. Specializing in harnessing
+              conducting thorough design research. Specialising in harnessing
               the spirit of service design to drive innovation within
               regulations and foster cohesive cross-disciplinary collaboration
               and visionary leadership.

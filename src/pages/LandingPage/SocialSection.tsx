@@ -107,7 +107,7 @@ export default function SocialSection() {
               <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
                 &nbsp;
               </div>
-              <div className="mt-12 tracking-wide font-light text-content">
+              <div className="mt-12 tracking-wide font-light text-[18px] leading-[30px]">
                 <p>
                   It's a great pleasure to collaborate with diverse individuals
                   on my design journey. Here are some testimonials from

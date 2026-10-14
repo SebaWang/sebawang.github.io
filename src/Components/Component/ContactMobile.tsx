@@ -62,7 +62,7 @@ import {
   
         <div className="bg-[#202020] h-[200px] md:h-[60px]">
           <div className="flex justify-center text-[12px] mx-auto h-[200px] md:h-[60px] items-center text-white font-light tracking-[2px] inter">
-            Copyright © 2024 Sebastian Wang
+            Copyright © 2026 Sebastian Wang
           </div>
         </div>
       </div>

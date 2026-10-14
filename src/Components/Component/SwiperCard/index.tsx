@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { articles } from "../../../pages/WritingPage/articles";
-import img_blog_01_clean from "../../../assets/img/img_landing_blog_01.webp";
-import img_blog_02_clean from "../../../assets/img/img_landing_blog_02.webp";
 
 interface HandleTouchDirParams {
   container: string;
@@ -97,7 +95,7 @@ function rightCb(): void {
   });
 }
 
-// Preview of three of the site's own /writing articles, in the order the
+// Preview of three of the site's own /articles pages, in the order the
 // stack rotates through them. blog01/02/03.png (the article's own imgURL)
 // are pre-designed share-card graphics with the title baked into the
 // image itself, so they'd duplicate the title text rendered below — here
@@ -105,18 +103,22 @@ function rightCb(): void {
 // Initial layout after the mount-time rightCb(): [left, front, right] —
 // the second id is the one shown up front.
 const previewIds = [
-  "financial-vulnerability",
+  "inclusive-design",
   "scenario-planning-ai",
   "research-through-design",
 ];
 const cleanImageOverrides: Record<string, string> = {
-  "financial-vulnerability": img_blog_01_clean, // Wall Street chase illustration
-  "research-through-design": img_blog_02_clean, // lightbulb crowd illustration
 };
 const previewArticles = previewIds
   .map((id) => articles.find((a) => a.id === id))
   .filter((a): a is (typeof articles)[number] => !!a)
-  .map((a) => ({ ...a, previewImgURL: cleanImageOverrides[a.id] ?? a.imgURL }));
+  // Same thumbnail as the article's list card when it has one (a diagram,
+  // shown whole), otherwise the cover photo
+  .map((a) => ({
+    ...a,
+    previewImgURL: cleanImageOverrides[a.id] ?? a.cardImgURL ?? a.imgURL,
+    previewContain: !cleanImageOverrides[a.id] && !!a.cardImgURL,
+  }));
 
 export default function SwiperBlogCard() {
   useEffect(() => {
@@ -144,20 +146,24 @@ export default function SwiperBlogCard() {
         </div>
         {previewArticles.map((article, i) => (
           <div key={article.id} className={`swiperr s${i + 1} !bg-transparent`}>
-            <Link to={`/writing/${article.id}`}>
+            <Link to={`/articles/${article.id}`}>
               <div className="w-full h-full flex flex-col bg-white rounded-md shadow-lg overflow-hidden text-left">
                 <img
-                  className="w-full flex-1 min-h-0 object-cover"
+                  className={`w-full flex-1 min-h-0 ${
+                    article.previewContain ? "object-contain bg-white p-4" : "object-cover"
+                  }`}
                   src={article.previewImgURL}
                   alt={article.title}
                 />
                 <div className="shrink-0 px-4 py-3">
-                  <p className="text-[#DD663C] text-[11px] font-light">
-                    {article.date}
-                  </p>
-                  <p className="text-black font-bold text-[14px] leading-snug mt-1">
+                  <p className="text-black font-bold text-[14px] leading-snug">
                     {article.title}
                   </p>
+                  {article.tags.length > 0 && (
+                    <p className="text-[11px] font-light text-[#DD663C] mt-1">
+                      {article.tags.join(" · ")}
+                    </p>
+                  )}
                 </div>
               </div>
             </Link>

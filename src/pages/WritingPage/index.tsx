@@ -18,7 +18,7 @@ export default function WritingPage(): ReactElement {
       <Header />
       <div className="container mx-auto pt-48 text-center">
         <p className="tracking-[6px] text-[#EA5514] text-[24px] font-semibold">
-          WRITING
+          ARTICLES
         </p>
         <div className="w-[22px] border-b-[6px] border-[#EA5514] h-[12px] mx-auto mt-2">
           &nbsp;
@@ -28,10 +28,11 @@ export default function WritingPage(): ReactElement {
             <ArticleCard
               key={article.id}
               id={article.id}
-              imgURL={article.imgURL}
+              imgURL={article.cardImgURL ?? article.imgURL}
+              imgFit={article.cardImgURL ? "contain" : "cover"}
+              imgPosition={article.cardImgPosition}
               title={article.title}
               excerpt={article.excerpt}
-              date={article.date}
               tags={article.tags}
             />
           ))}

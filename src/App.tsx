@@ -30,6 +30,9 @@ function App() {
         <Route path="/project/utech" element={<ProjectUTechPage />} />
         <Route path="/project/UoL" element={<ProjectUoLPage />} />
         <Route path="/project/mobility" element={<ProjectMobilityPage />} />
+        <Route path="/articles" element={<WritingPage />} />
+        <Route path="/articles/:id" element={<ArticlePage />} />
+        {/* Old /writing links keep working */}
         <Route path="/writing" element={<WritingPage />} />
         <Route path="/writing/:id" element={<ArticlePage />} />
       </Routes>

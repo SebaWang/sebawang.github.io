@@ -23,7 +23,7 @@ export default function AboutSection() {
               <div className="w-[10px] border-b-[4px] border-[#EA5514] h-[16px]">
                 &nbsp;
               </div>
-              <div className="mt-12 tracking-wide font-light text-content">
+              <div className="mt-12 tracking-wide font-light text-[18px] leading-[30px]">
                 <p>
                   Hi, I&rsquo;m a service designer with 5 years&rsquo;
                   experience. I use research to shape strategy and make both
