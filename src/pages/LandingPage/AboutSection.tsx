@@ -25,16 +25,12 @@ export default function AboutSection() {
               </div>
               <div className="mt-12 tracking-wide font-light text-content">
                 <p>
-                  Hello! I am a diverse and dynamic{" "}
-                  <span className="font-bold">Service Designer</span> with 5
-                  years of experience in the technology sector, proficient in
-                  leveraging service design research tools to generate
-                  insightful strategies and optimize online and offline service
-                  journeys. I reckon service design is akin to weaving,{" "}
-                  <span className="font-bold">
-                    deftly interlacing cross-disciplinary stakeholders and
-                    touchpoints to create captivating connections.
-                  </span>
+                  Hi, I&rsquo;m a service designer with 5 years&rsquo;
+                  experience. I use research to shape strategy and make both
+                  physical and digital services work better. To me, service
+                  design is a bit like weaving: bringing people and touchpoints
+                  from different worlds together and creating meaningful
+                  connections.
                 </p>
               </div>
 
@@ -50,8 +46,7 @@ export default function AboutSection() {
                 
               </div>
               <p className="mt-4 text-[#929292] text-md  hidden md:block">
-                Storyteller | Inclusive Designer | Innovation Strategist |
-                Fintech Enthusiast
+                Storyteller | Inclusive Designer | Innovation Strategist
               </p>
               <div className="mt-16  hidden md:block">
                 <Link to="/about">

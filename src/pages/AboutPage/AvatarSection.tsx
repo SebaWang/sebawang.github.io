@@ -1,4 +1,4 @@
-import img_avatar from "../../assets/img/img_about_avatar.png";
+import img_avatar from "../../assets/img/img_about_avatar_2026.jpg";
 import ButtonDownload from "../../Components/Component/ButtonDownload";
 import ButtonNext from "../../Components/Component/ButtonNext";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ export default function AvatarSection() {
   return (
     <>
       <div className="bg-[#e8e8e8]">
-        <div className="container mx-auto pt-48 grid grid-cols-5">
+        <div className="container mx-auto pt-48 pb-[72px] grid grid-cols-5">
           <div className="col-span-2">
             <img
               src={img_avatar}
@@ -19,8 +19,9 @@ export default function AvatarSection() {
               Sebastian Wang
             </p>
             <p className="mt-6 text-[25px]  text-black">
-              A London-based UX and service designer specialising in inclusive and human-centric design and
-              communication.
+              A London-based service designer working across foresight,
+              evaluation and service integration to help organisations reframe
+              strategy and deliver smoother service journeys.
             </p>
             <p className="mt-4 text-[16px] font-light text-[#6F6F6F] mb-10">
               A firm believer that telling a compelling story is as essential as

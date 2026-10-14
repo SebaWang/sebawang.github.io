@@ -1,7 +1,6 @@
 import {
   faLinkedin,
   faMedium,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -61,9 +60,8 @@ export default function ContactSection() {
             &nbsp;
           </div>
           <p className="text-left max-w-[569px] mx-auto font-light text-[#D9D9D9] mt-5 text-[16px] md:text-[18px] mb-4">
-            For inquiries or opportunities, feel free to reach out to me! I'm
-            always open to connecting with fellow professionals and discussing
-            design.{" "}
+            Whether it&rsquo;s a role, a project or an idea about services
+            and foresight, I&rsquo;d love to hear from you.{" "}
             <span className="font-bold">
               Let's spin impactful services together!
             </span>
@@ -100,18 +98,6 @@ export default function ContactSection() {
               <div className="border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
                 <FontAwesomeIcon
                   icon={faMedium}
-                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                />
-              </div>
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.instagram.com/haoooo2playhard/"
-            >
-              <div className="border-[2px] rounded-full p-[24px] cursor-pointer relative text-white text-[24px] hover:border-[4px] hover:-m-[2px]">
-                <FontAwesomeIcon
-                  icon={faInstagram}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
                 />
               </div>

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SwiperBlogCard from "../../Components/Component/SwiperCard";
-import { faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import { ReactComponent as DecoBubble } from "../../assets/img/img_deco_bubble_gray.svg";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default function BlogSection() {
             <div className="col-span-5">
               <p className="text-xs flex items-center">
                 <FontAwesomeIcon
-                  icon={faPenNib}
+                  icon={faMedium}
                   className="mr-1 text-content"
                 />
                 WRITING

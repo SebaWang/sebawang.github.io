@@ -5,7 +5,6 @@ import SwiperLife from "../../Components/Component/SwiperLife";
 import {
   faLinkedin,
   faMedium,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function AboutSection() {
@@ -62,18 +61,6 @@ export default function AboutSection() {
                 <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
                   <FontAwesomeIcon
                     icon={faMedium}
-                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                  />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/haoooo2playhard/"
-              >
-                <div className="border-[2px] border-black rounded-full p-[24px] cursor-pointer relative text-[24px] hover:border-[4px] hover:-m-[2px] hover:border-[#DD663C] hover:text-[#DD663C]">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
                     className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
                   />
                 </div>
