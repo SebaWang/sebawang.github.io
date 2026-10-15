@@ -21,7 +21,7 @@ export default function LandingSection(): ReactElement {
             Ministry of Biodiversity
           </p>
           <p className="text-white text-[26px]">
-            Speculative Design for Future Agriculture Policy with GDS
+            Strategy Design for Future Agriculture Policy with GDS
           </p>
         </div>
         <DetailSection />

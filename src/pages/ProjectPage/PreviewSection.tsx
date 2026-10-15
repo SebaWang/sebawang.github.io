@@ -37,7 +37,8 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_placeholder,
       title: "NHS Jobs Journey Improvement",
       content:
-        "How might NHS Jobs make applying and recruiting simpler across online and offline touchpoints, with improvements tested against GDS service assessment?",
+        "How might we make the NHS Jobs journey simpler and more inclusive for both candidates and NHS employers?",
+      tags: ["Service Design & GDS Compliance"],
       placeholder: true,
     },
   ];
@@ -48,6 +49,14 @@ export default function PreviewSection(): ReactElement {
   // Array of project data
   const projects = [
     ...placeholderProjects.filter((p) => !hiddenIds.includes(p.id)),
+    {
+      id: "UoL",
+      imgURL: img_project_placeholder,
+      title: "Services Evaluation Using GDS Service Standard",
+      content:
+        "How might a university improve and evaluate recruitment and training services against the GDS Service Standard?",
+      tags: ["Service Design & Evaluation"],
+    },
     {
       id: "mobility",
       imgURL: img_mobility_card,
@@ -60,14 +69,6 @@ export default function PreviewSection(): ReactElement {
         "Translated long-term uncertainty into scenarios that could be used to stress-test current decisions and expose trade-offs.",
         "Used service design to translate macro trends and signals into tangible changes in stakeholder roles, service relationships and value creation.",
       ],
-    },
-    {
-      id: "UoL",
-      imgURL: img_project_placeholder,
-      title: "Design Evaluation Using GDS Service Standard",
-      content:
-        "How might a university improve and evaluate recruitment and training services against the GDS Service Standard?",
-      tags: ["Service Design & Evaluation"],
     },
     {
       id: "finance",
@@ -103,7 +104,7 @@ export default function PreviewSection(): ReactElement {
         "How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
       tags: ["Social Service Design"],
       highlights: [
-        "Co-developed an Extended Project Qualification course for learners with addiction, mental health challenges, or criminal justice backgrounds.",
+        "Developed an Extended Project Qualification course for learners with addiction, mental health challenges, or criminal justice backgrounds.",
         "Used participatory design to increase non-design stakeholders' ownership and confidence in mapping their as-is journeys and future expectations.",
         "Delivered a full A-level curriculum and a learning journal toolkit, giving learners a credentialed route back into education and work.",
       ],
@@ -168,6 +169,7 @@ export default function PreviewSection(): ReactElement {
                       imgURL={project.imgURL}
                       title={project.title}
                       content={project.content}
+                      tags={"tags" in project ? project.tags : undefined}
                     />
                   </div>
                 ) : isLocked(project.id) ? (

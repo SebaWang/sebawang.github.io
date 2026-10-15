@@ -20,7 +20,7 @@ export default function LandingSection(): ReactElement {
           style={{ textShadow: "0 1px 3px rgba(0,0,0,0.7), 0 4px 22px rgba(0,0,0,0.65)" }}
         >
           <p className="text-[70px] font-bold text-white">
-            Design Evaluation Using GDS Service Standard
+            Services Evaluation Using GDS Service Standard
           </p>
           <p className="text-[26px] font-semibold text-white">
             Subtitle to be added
@@ -31,7 +31,7 @@ export default function LandingSection(): ReactElement {
       <div className="bg-[#1E1E1E] text-center px-4 block md:hidden py-24">
         <div>
           <h1 className="text-white text-[45px] font-bold">
-            Design Evaluation Using GDS Service Standard
+            Services Evaluation Using GDS Service Standard
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
             Subtitle to be added

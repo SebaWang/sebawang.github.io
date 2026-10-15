@@ -60,11 +60,12 @@ export default function WhatIDidSection(): ReactElement {
 
         {/* Challenge: foresight was unfamiliar to most participants */}
         <div className="-mt-4 mb-8">
-          <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif max-w-[860px] leading-[1.7]">
+          <p className="text-[22px] md:text-[26px] text-[#D2683A] font-light !font-serif leading-[1.7]">
             <span className="text-[40px] leading-none !font-serif align-top mr-1" aria-hidden="true">
               &ldquo;
             </span>
-            A scenario that nobody reads cannot question assumptions.
+            A scenario that nobody reads cannot question assumptions and inspire
+            people.
             <span className="text-[40px] leading-none !font-serif align-bottom ml-2" aria-hidden="true">
               &rdquo;
             </span>
@@ -160,19 +161,25 @@ export default function WhatIDidSection(): ReactElement {
           ))}
         </div>
         {/* Second row: photo D (still to come) and photo E */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <PhotoSlot
-            label="Photo D · to be added"
-            aspect="auto"
-            className="rounded-md h-[240px]"
-          />
-          <img
-            src={img_photo10e}
-            alt="Scenario analysis board in Miro"
-            draggable={false}
-            onContextMenu={(e) => e.preventDefault()}
-            className="w-full h-[240px] object-cover rounded-md select-none"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <div>
+            <p className="text-content font-bold mb-4">Role Play Activity</p>
+            <PhotoSlot
+              label="Photo D · to be added"
+              aspect="auto"
+              className="rounded-md h-[240px]"
+            />
+          </div>
+          <div>
+            <p className="text-content font-bold mb-4">Process Snapshot</p>
+            <img
+              src={img_photo10e}
+              alt="Scenario analysis board in Miro"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+              className="w-full h-[240px] object-cover rounded-md select-none"
+            />
+          </div>
         </div>
       </div>
     </div>
