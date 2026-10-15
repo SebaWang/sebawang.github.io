@@ -14,7 +14,7 @@ export default function LandingSection(): ReactElement {
         <div className="container mx-auto md:pb-[300px] flex flex-col justify-center  grid grid-cols-5 h-full">
           <div className="col-span-4">&nbsp;</div>
           <div className="flex flex-col justify-center">
-            <p className="text-[70px] font-bold text-white">UTech</p>
+            <p className="text-[70px] font-bold text-white">Hospital Urine Testing Solution</p>
             <p className="text-[26px] font-semibold text-white">
               Universal Design for <br />
               Urine Analysis Toilet
@@ -31,7 +31,7 @@ export default function LandingSection(): ReactElement {
       <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">
         <div>
           <h1 className="text-white text-[45px] font-bold  leading-[48px]">
-            UTech
+            Hospital Urine Testing Solution
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
             Universal Design for <br />

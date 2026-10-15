@@ -12,7 +12,7 @@ export default function DetailSection(): ReactElement {
           "radial-gradient(ellipse at center, rgba(20,20,20,0.35) 0%, rgba(20,20,20,0.7) 100%)",
       }}
     >
-      <footer className="footer container mx-auto font-light text-white">
+      <footer className="footer !flex justify-between container mx-auto font-light text-white">
         <nav className="text-white">
           <p className="tracking-[1px] text-content font-bold">DATE</p>
           <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
@@ -46,9 +46,7 @@ export default function DetailSection(): ReactElement {
             &nbsp;
           </div>
           <p className="text-content mt-4 max-w-[310px]">
-            How might a university improve recruitment and training services
-            for its research staff, and evaluate them against GDS service
-            standards?
+            How might a university improve and evaluate recruitment and training services against the GDS Service Standard?
           </p>
         </nav>
       </footer>

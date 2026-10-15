@@ -98,8 +98,8 @@ export default function ChallengeSection(): ReactElement {
             PRIMARY FORESIGHT QUESTION
           </p>
           <p className="font-bold text-[#6F6F6F] text-[20px] md:text-[26px] mt-3 leading-snug">
-            How can mobility services keep creating value when demand and
-            governing rules change in the post-AI era?
+            How might mobility services keep creating value when demand,
+            infrastructure, and governing rules change in the post-AI era?
           </p>
         </div>
 

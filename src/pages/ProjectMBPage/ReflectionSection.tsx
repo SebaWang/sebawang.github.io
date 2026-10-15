@@ -81,7 +81,7 @@ export default function ReflectionSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_03}
               title="Learning Journey Design with Sensitive Groups"
-              content="How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?"
+              content="How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

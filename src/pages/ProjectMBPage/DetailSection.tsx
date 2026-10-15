@@ -57,7 +57,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-4">
-                    How can future storytelling give the public and farmers a voice in future environmental policy discussion?
+                    How might future storytelling give the public and farmers a voice in future environmental policy discussion?
                     </p>
                 </nav>
                 <nav className='text-white'>

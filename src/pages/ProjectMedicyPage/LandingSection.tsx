@@ -17,7 +17,7 @@ export default function LandingSection(): ReactElement {
           </div>
           <div className='flex flex-col justify-center md:flex hidden'>
             <p className="text-[70px] font-bold text-white">
-              MEDICY: NFT News Fantasy
+              MEDICY: NFT News Platform
             </p>
             <p className="text-[26px] font-semibold text-white">
               Strategy & Service Design for NFT Evaluating and Trading
@@ -30,7 +30,7 @@ export default function LandingSection(): ReactElement {
       <div className="py-24 bg-[#1E1E1E] text-center px-4  block md:hidden">
         <div>
           <h1 className="text-white text-[45px] font-bold leading-[45px] ">
-          MEDICY: NFT News Fantasy
+          MEDICY: NFT News Platform
           </h1>
           <p className="text-[#A0A0A0] text-[14px] font-semibold mt-4">
           Strategy Design for NFT Evaluating & Trading

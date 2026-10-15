@@ -57,7 +57,7 @@ export default function ReflectionSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_05}
               title="Integrated Tele-health Solution"
-              content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
+              content="How might we integrate telemedical devices and software into isolation inpatient and remote outpatient services?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CORRECT_PASSWORD = "2024";
+const CORRECT_PASSWORD = "2022";
 const DEFAULT_LOCKED = ["medicy", "utech"];
 
 // Wrapper for a locked card: the overlay sits on top of the card, so the hover
 // lift has to live here instead of on the card itself
 export const lockedCardClass =
-  "relative h-full cursor-pointer rounded-md hover:scale-[1.05] hover:shadow-2xl duration-300";
+  "group/lock relative h-full cursor-pointer rounded-md hover:scale-[1.05] hover:shadow-2xl duration-300";
 
 // Shared password gate for locked projects: used by the /project page and the mobile list on the landing page
 export default function useProjectLock() {
@@ -37,7 +37,9 @@ export default function useProjectLock() {
   };
 
   const lockOverlay: ReactElement = (
-    <div className="absolute inset-0 rounded-md bg-black bg-opacity-50 flex items-center justify-center">
+    // Fades out on hover so the card's highlights show through; clicking
+    // still opens the password prompt
+    <div className="absolute inset-0 rounded-md bg-black bg-opacity-30 flex items-center justify-center transition-opacity duration-300 group-hover/lock:opacity-0 pointer-events-none">
       <FontAwesomeIcon icon={faLock} className="text-white text-3xl" />
     </div>
   );

@@ -57,7 +57,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-4">
-                    How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?
+                    How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?
                     </p>
                 </nav>
                 <nav className='text-white'>

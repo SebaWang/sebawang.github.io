@@ -57,7 +57,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-4">
-                    How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?
+                    How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?
                     </p>
                 </nav>
                 <nav className='text-white'>

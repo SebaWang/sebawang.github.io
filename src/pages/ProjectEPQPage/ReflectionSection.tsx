@@ -56,8 +56,8 @@ export default function ReflectionSection(): ReactElement {
           <Link to="/project/medicy">
               <ProjectPreviewCard
                 imgURL={img_project_04}
-                title="MEDICY: NFT News Fantasy"
-                content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
+                title="MEDICY: NFT News Platform"
+                content="How might we bring fragmented NFT trading information and communities into a hub that signposts traders?"
               />
             </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

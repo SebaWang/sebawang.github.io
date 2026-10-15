@@ -3,13 +3,25 @@ import ChapterHeader from "./ChapterHeader";
 import PhotoSlot from "./PhotoSlot";
 
 const scenarios = [
-  { letter: "A", archetype:
-      "A fiscally exhausted metropolis within a state that remains capable.", name: "Platform-led infrastructure" },
-  { letter: "B", archetype:
-      "A city with strong governance capacity and high legitimacy.", name: "Commons-led infrastructure" },
-  { letter: "C", archetype:
-      "An exposed coastal and deltaic city, with warming approaching +3°C.", name: "Resource-constrained infrastructure" },
-];
+  {
+    letter: "A",
+    name: "Platform-led City",
+    tension:
+      "When governments outsource the systems daily life depends on to private operators, who governs how people move, and who gets left at the edges?",
+  },
+  {
+    letter: "B",
+    name: "Commons-governed Mobility",
+    tension:
+      "When automation reshapes work and physical travel becomes a choice, who decides how limited energy, space and care time are shared, and what should everyone be able to reach?",
+  },
+  {
+    letter: "C",
+    name: "Resource-stressed Environment",
+    tension:
+      "When climate change and chronic water stress turn supply and protection into power, who decides who can move, and how do forms of mobility and services change?",
+  },
+]
 
 export default function ScenariosSection(): ReactElement {
   return (
@@ -43,12 +55,13 @@ export default function ScenariosSection(): ReactElement {
                 label={`Photo ${String(i + 7).padStart(2, "0")} · Scenario ${s.letter}`}
                 aspect="4/3"
               />
-              <p className="text-[20px] font-bold mt-5">
-                Scenario {s.letter} — {s.name}
+              <p className="text-[12px] font-bold text-[#EA5514] tracking-[2px] mt-5">
+                SCENARIO {s.letter}
               </p>
+              <p className="text-[20px] font-bold mt-1">{s.name}</p>
               <p className="mt-4 text-content font-light">
-                <span className="font-bold">Archetype. </span>
-                {s.archetype}
+                <span className="font-bold">Tension. </span>
+                {s.tension}
               </p>
             </div>
           ))}

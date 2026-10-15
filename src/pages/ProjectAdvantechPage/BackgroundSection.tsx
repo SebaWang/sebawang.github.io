@@ -44,9 +44,7 @@ export default function BackgroundSection(): ReactElement {
           professionals to adopt these innovative tools. How can we bridge this
           gap?{" "}
           <span className="font-bold text-[#DD663C]">
-            How might Advantech seamlessly integrate the hardware and software,
-            enabling medical professionals to conduct more precise diagnoses and
-            enhance communication experiences?
+            How might we integrate telemedical devices and software into isolation inpatient and remote outpatient services?
           </span>{" "}
         </p>
       </div>

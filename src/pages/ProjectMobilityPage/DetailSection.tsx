@@ -24,7 +24,9 @@ export default function DetailSection(): ReactElement {
           </p>
         </div>
       </div>
-      <footer className="footer container mx-auto font-light text-white">
+      {/* Flex with space-between and content-width columns, so the gaps
+          between the four columns come out equal */}
+      <footer className="footer !flex justify-between container mx-auto font-light text-white">
         <nav className="text-white">
           <p className="tracking-[1px] text-content font-bold">DATE</p>
           <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
@@ -41,7 +43,7 @@ export default function DetailSection(): ReactElement {
           <p className="text-content mt-4 md:whitespace-nowrap">
             External Foresight and Service Design Consultant
           </p>
-          <p className="text-content mt-3 max-w-[460px]">
+          <p className="text-content mt-3 max-w-[400px]">
             Working closely with the client's central strategy and innovation
             team and the executive leadership.
           </p>
@@ -62,9 +64,9 @@ export default function DetailSection(): ReactElement {
           <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
             &nbsp;
           </div>
-          <p className="text-content mt-4 max-w-[310px]">
-            How can mobility services keep creating value when demand and
-            governing rules change in the post-AI era?
+          <p className="text-content mt-4 max-w-[325px]">
+            How might mobility services keep creating value when demand,
+            infrastructure, and governing rules change in the post-AI era?
           </p>
         </nav>
       </footer>

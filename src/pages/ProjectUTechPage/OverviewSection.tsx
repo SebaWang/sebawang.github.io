@@ -6,7 +6,7 @@ export default function OverviewSection(): ReactElement {
   return (
     <div id="overview">
       <div className="container mx-auto mt-12 md:w-[1100px]  hidden md:block">
-        <p className="font-bold text-[40px] text-[#DD663C]">UTech</p>
+        <p className="font-bold text-[40px] text-[#DD663C]">Hospital Urine Testing Solution</p>
         <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
           &nbsp;
         </div>
@@ -73,9 +73,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <p className="text-[16px] mt-4">
-          How might we design a clear and intuitive user journey, enabling
-          various users to operate the urine analysis toilet within 10 secs
-          toileting time?
+          How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?
         </p>
       <img src={img_outcome_m} alt='outcome' className="w-full aspect-[308/204] object-cover object-left mt-6" />
         <p className="tracking-widest text-[#EA5514] text-[16px] font-semibold mt-12">

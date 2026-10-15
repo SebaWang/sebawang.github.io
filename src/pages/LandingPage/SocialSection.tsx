@@ -131,36 +131,36 @@ export default function SocialSection() {
               <ProjectPreviewCard
                 imgURL={img_project_02}
                 title="Co-designed Service for ADHD Financial Inclusion"
-                content="How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
+                content="How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
               />
             </Link>
             <Link to="/project/mob">
               <ProjectPreviewCard
                 imgURL={img_project_01}
                 title="Workshops & Strategy Design for Future Environmental Policy"
-                content="How can future storytelling give the public and farmers a voice in future environmental policy discussion?"
+                content="How might future storytelling give the public and farmers a voice in future environmental policy discussion?"
               />
             </Link>
             <Link to="/project/epq">
               <ProjectPreviewCard
                 imgURL={img_project_03}
                 title="Learning Journey Design with Sensitive Groups"
-                content="How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?"
+                content="How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?"
               />
             </Link>
             <Link to="/project/advantech">
               <ProjectPreviewCard
                 imgURL={img_project_05}
                 title="Integrated Tele-health Solution"
-                content="How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?"
+                content="How might we integrate telemedical devices and software into isolation inpatient and remote outpatient services?"
               />
             </Link>
             {isLocked("medicy") ? (
               <div className={lockedCardClass} onClick={() => openLock("medicy")}>
                 <ProjectPreviewCard
                   imgURL={img_project_04}
-                  title="MEDICY: NFT News Fantasy"
-                  content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
+                  title="MEDICY: NFT News Platform"
+                  content="How might we bring fragmented NFT trading information and communities into a hub that signposts traders?"
                 />
                 {lockOverlay}
               </div>
@@ -168,8 +168,8 @@ export default function SocialSection() {
               <Link to="/project/medicy">
                 <ProjectPreviewCard
                   imgURL={img_project_04}
-                  title="MEDICY: NFT News Fantasy"
-                  content="How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?"
+                  title="MEDICY: NFT News Platform"
+                  content="How might we bring fragmented NFT trading information and communities into a hub that signposts traders?"
                 />
               </Link>
             )}
@@ -177,8 +177,8 @@ export default function SocialSection() {
               <div className={lockedCardClass} onClick={() => openLock("utech")}>
                 <ProjectPreviewCard
                   imgURL={img_project_06}
-                  title="UTech"
-                  content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
+                  title="Hospital Urine Testing Solution"
+                  content="How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?"
                 />
                 {lockOverlay}
               </div>
@@ -186,8 +186,8 @@ export default function SocialSection() {
               <Link to="/project/utech">
                 <ProjectPreviewCard
                   imgURL={img_project_06}
-                  title="UTech"
-                  content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
+                  title="Hospital Urine Testing Solution"
+                  content="How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?"
                 />
               </Link>
             )}

@@ -56,20 +56,8 @@ export default function DetailSection(): ReactElement {
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-4">
-                    How might we seamlessly integrate the 
-                    </p>
-                    <p className="text-content ">
-                    telemedical hardware and software to 
-                    </p>
-                    <p className="text-content ">
-                    enable medical professionals to conduct 
-                    </p>
-                    <p className="text-content ">
-                    more precise diagnoses and enhance 
-                    </p>
-                    <p className="text-content ">
-                    communication experiences?
+                    <p className="text-content mt-4 max-w-[300px]">
+                    How might we integrate telemedical devices and software into isolation inpatient and remote outpatient services?
                     </p>
                 </nav>
                 <nav className='text-white'>

@@ -36,9 +36,7 @@ export default function BackgroundSection(): ReactElement {
           like using the toilet. Hence, the primary challenge of this innovative
           urine analysis toilet revolves around the question:{" "}
           <span className="font-bold text-[#DD663C]">
-            How might we design a clear and intuitive user journey, enabling
-            various users to operate the urine analysis toilet within a
-            10-second toileting time?
+            How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?
           </span>{" "}
         </p>
         <div className=" hidden md:block">

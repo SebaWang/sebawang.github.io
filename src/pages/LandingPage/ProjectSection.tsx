@@ -37,7 +37,7 @@ export default function ProjectSection() {
                   subTitle="Inclusive Design for ADHD Financial Management"
                   concept="Financial Inclusion"
                   type="Inclusive Design, Co-design, Research through Design"
-                  content="How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
+                  content="How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
                 />
               </Link>
             </div>
@@ -52,7 +52,7 @@ export default function ProjectSection() {
                   subTitle="Strategy & Speculative Design for Policy with GDS"
                   concept="Agricultural Policy Communication"
                   type="Speculative Design, Participatory Design, Sustainable Design"
-                  content="How can future storytelling give the public and farmers a voice in future environmental policy discussion?"
+                  content="How might future storytelling give the public and farmers a voice in future environmental policy discussion?"
                 />
               </Link>
             </div>

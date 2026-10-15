@@ -11,7 +11,7 @@ export default function OverviewSection(): ReactElement {
     <div id="overview">
       <div className="container mx-auto mt-12 hidden md:block md:w-[1100px]">
         <p className="font-bold text-[40px] text-[#DD663C]">
-          MEDICY: NFT News Fantasy
+          MEDICY: NFT News Platform
         </p>
         <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px] mt-4">
           &nbsp;
@@ -120,9 +120,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <p className="text-[16px] mt-4">
-          How might NFT traders simplify the process of evaluating the values of
-          NFTs without navigating multiple platforms and piecing together
-          fragmented information?
+          How might we bring fragmented NFT trading information and communities into a hub that signposts traders?
         </p>
         <img src={img_outcome} alt="outcome" className="w-full  mt-8" />
 

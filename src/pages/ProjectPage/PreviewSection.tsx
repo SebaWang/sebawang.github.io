@@ -53,7 +53,7 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_mobility_card,
       title: "Future Mobility Service and Strategy Transformation",
       content:
-        "How can mobility services keep creating value when demand and governing rules change in the post-AI era?",
+        "How might mobility services keep creating value when demand, infrastructure, and governing rules change in the post-AI era?",
       tags: ["Foresight & Scenario Planning"],
       highlights: [
         "Applied scenario planning and design thinking to reframe mobility strategy and services beyond the technology roadmap.",
@@ -66,14 +66,15 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_placeholder,
       title: "Design Evaluation Using GDS Service Standard",
       content:
-        "How might a university improve recruitment and training services for its research staff, and evaluate them against GDS service standards?",
+        "How might a university improve and evaluate recruitment and training services against the GDS Service Standard?",
+      tags: ["Service Design & Evaluation"],
     },
     {
       id: "finance",
       imgURL: img_project_02,
       title: "Co-designed Service for ADHD Financial Inclusion",
       content:
-        "How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?",
+        "How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?",
       tags: ["Inclusive Service Design"],
       highlights: [
         "Built a digital tool and a physical learning course, co-designed with 14 individuals with ADHD across different age groups.",
@@ -86,7 +87,7 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_01,
       title: "Workshops & Strategy Design for Future Environmental Policy",
       content:
-        "How can future storytelling give the public and farmers a voice in future environmental policy discussion?",
+        "How might future storytelling give the public and farmers a voice in future environmental policy discussion?",
       tags: ["Service Design with Gov"],
       highlights: [
         "Used foresight to build future services and artefacts that invite discussion with non-design audiences.",
@@ -99,7 +100,7 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_03,
       title: "Learning Journey Design with Sensitive Groups",
       content:
-        "How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
+        "How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?",
       tags: ["Social Service Design"],
       highlights: [
         "Co-developed an Extended Project Qualification course for learners with addiction, mental health challenges, or criminal justice backgrounds.",
@@ -112,21 +113,39 @@ export default function PreviewSection(): ReactElement {
       imgURL: img_project_05,
       title: "Integrated Tele-health Solution",
       content:
-        "How might we seamlessly integrate the telemedical hardware and software to enable medical professionals to conduct more precise diagnoses and enhance communication experiences?",
+        "How might we integrate telemedical devices and software into isolation inpatient and remote outpatient services?",
+      tags: ["Medical IoT Service Design"],
+      highlights: [
+        "Worked with 20 medical experts to integrate telemedical hardware and software across dermatology, ophthalmology, otolaryngology and ICU services.",
+        "Mapped stakeholder power and conflicting benefits to align executives, front-line staff, doctors and patients.",
+        "Deployed to 6 hospitals and 300+ isolation wards across Taiwan in 2021.",
+      ],
     },
     {
       id: "medicy",
       imgURL: img_project_04,
-      title: "MEDICY: NFT News Fantasy",
+      title: "MEDICY: NFT News Platform",
       content:
-        "How might NFT traders simplify the process of NFT values evaluation without navigating multiple platforms and piecing together fragmented information?",
+        "How might we bring fragmented NFT trading information and communities into a hub that signposts traders?",
+      tags: ["Web3 UX Design"],
+      highlights: [
+        "Shaped the Gen 2 roadmap for a leading Asian NFT project, with Medicy as its news and forum platform.",
+        "Consolidated fragmented trading information into one trader-friendly platform to simplify NFT value evaluation.",
+        "Attracted 20+ investors across Hong Kong, Singapore and Taiwan, with a 21% rise in quarterly transaction volume.",
+      ],
     },
     {
       id: "utech",
       imgURL: img_project_06,
-      title: "UTech",
+      title: "Hospital Urine Testing Solution",
       content:
-        "How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?",
+        "How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?",
+      tags: ["Medical Service Design"],
+      highlights: [
+        "Developed an innovative urine testing journey with physical and digital touchpoints, together with medical professionals.",
+        "Designed a health management app for reviewing urine analysis results, rolled out with 3 teaching hospitals.",
+        "Increased early detection of urinary tract infections and kidney stones by 16%.",
+      ],
     },
   ];
 
@@ -160,6 +179,10 @@ export default function PreviewSection(): ReactElement {
                       imgURL={project.imgURL}
                       title={project.title}
                       content={project.content}
+                      tags={"tags" in project ? project.tags : undefined}
+                      highlights={
+                        "highlights" in project ? project.highlights : undefined
+                      }
                     />
                     {lockOverlay}
                   </div>

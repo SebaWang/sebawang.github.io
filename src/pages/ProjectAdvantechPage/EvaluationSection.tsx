@@ -23,14 +23,12 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-content font-light text-left hidden md:block">
             As of November 2021, the integrated telemedicine service solution
             has been adopted by 6 hospitals across Taiwan, encompassing a total
-            of <span className="font-bold"> 1,300 isolation wards, </span>
-            representing approximately <span className="font-bold">40% </span>
-            nationwide.
+            of <span className="font-bold"> 300+ isolation wards.</span>
           </p>
           <p className="text-content text-left md:hidden block">
             As of November 2021, the integrated telemedicine service solution
             has been adopted by 6 hospitals across Taiwan, encompassing a total
-            of 1,300 isolation wards, representing approximately 40% nationwide.
+            of 300+ isolation wards.
           </p>
         </div>
         <div className="flex flex-col gap-4">

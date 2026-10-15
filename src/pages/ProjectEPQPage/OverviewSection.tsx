@@ -145,7 +145,7 @@ export default function OverviewSection(): ReactElement {
           &nbsp;
         </div>
         <p className="text-[16px] mt-4">
-          How can a participatory format provide greater trust and the confidence to shape an alternative learning journey?
+          How might a participatory format provide greater trust and the confidence to shape an alternative learning journey?
         </p>
         <img
           src={img_bg_cover}

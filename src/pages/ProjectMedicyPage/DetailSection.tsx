@@ -53,17 +53,8 @@ export default function DetailSection(): ReactElement {
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>
-                    <p className="text-content mt-4">
-                    How might NFT traders simplify the 
-                    </p>
-                    <p className="text-content ">
-                    process of evaluating the values of NFTs 
-                    </p>
-                    <p className="text-content ">
-                    without navigating multiple platforms and
-                    </p>
-                    <p className="text-content ">
-                    piecing together fragmented information?
+                    <p className="text-content mt-4 max-w-[300px]">
+                    How might we bring fragmented NFT trading information and communities into a hub that signposts traders?
                     </p>
                 </nav>
                 <nav className='text-white'>

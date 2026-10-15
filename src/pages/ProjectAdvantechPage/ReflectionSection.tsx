@@ -65,8 +65,8 @@ export default function ReflectionSection(): ReactElement {
           <Link to="/project/utech">
             <ProjectPreviewCard
               imgURL={img_project_06}
-              title="UTech"
-              content="How might we design a clear and intuitive user journey, enabling various users to operate the urine analysis toilet within 10 secs toileting time?"
+              title="Hospital Urine Testing Solution"
+              content="How might we integrate urine testing into routine toilet use in hospitals to facilitate early detection and diagnosis?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

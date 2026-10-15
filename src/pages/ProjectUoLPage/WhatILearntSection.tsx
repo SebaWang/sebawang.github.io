@@ -83,7 +83,7 @@ export default function WhatILearntSection(): ReactElement {
             <ProjectPreviewCard
               imgURL={img_project_02}
               title="Co-designed Service for ADHD Financial Inclusion"
-              content="How can an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
+              content="How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
             />
           </Link>
           <div className="text-center border-[1px] border-[#575757] text-[12px] p-6 mt-12">

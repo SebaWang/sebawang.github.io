@@ -24,8 +24,8 @@ export default function EvaluationSection(): ReactElement {
             Following the execution of learning workshops and the implementation
             of the Medicy website, RPF achieved significant milestones on the
             Gen 2 roadmap. The project garnered attention from{" "}
-            <span className="font-bold"> over 50 investors</span> across Hong
-            Kong, Singapore, Japan, and Taiwan,{" "}
+            <span className="font-bold"> 20+ investors</span> across Hong
+            Kong, Singapore, and Taiwan,{" "}
             <span className="font-bold">
               {" "}
               resulting in a notable 21% increase in transaction volume for the
@@ -35,7 +35,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-content text-left md:hidden block">
             Following the execution of learning workshops and the implementation
             of the Medicy website, RPF achieved significant milestones on the
-            Gen 2 roadmap. The project garnered attention from over 50 investors
+            Gen 2 roadmap. The project garnered attention from 20+ investors
             across Hong Kong, Singapore, and Taiwan, resulting in a notable 21%
             increase in transaction volume for the quarter.
           </p>
