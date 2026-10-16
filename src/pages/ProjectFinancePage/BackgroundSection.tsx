@@ -20,7 +20,7 @@ export default function BackgroundSection(): ReactElement {
         <Quote className="w-full scale-[1.1] hidden md:block" />
         <p className="text-content font-light mt-4 md:mt-1">
           ADHD (Attention Deficit Hyperactivity Disorder) is a condition
-          characterized by a mix of contradictory traits. People with ADHD may
+          characterised by a mix of contradictory traits. People with ADHD may
           frequently experience shifts between concentration and distraction.
           Some people reckon that these behaviours are associated with
           distinctive dopamine activity in their brains, which also make them
@@ -56,7 +56,7 @@ export default function BackgroundSection(): ReactElement {
             However, when dopamine levels drop, they may struggle to locate
             scattered notes, resorting to online shopping or substances instead.{" "}
             <span className="font-bold text-[#DD663C]">
-              How might young adults with ADHD explore and practice their
+              How might young adults with ADHD explore and practise their
               alternative dopamine activities without a decade of trial?
             </span>
           </p>

@@ -42,7 +42,7 @@ export default function EvaluationSection(): ReactElement {
               policy researchers can explore novel approaches to interact with rural
               farmers. They aim to foster casual yet engaging discussions on
               fallow land and subsidy methods, envisioning a strategy to
-              revitalize soil fertility and restore ecological balance.
+              revitalise soil fertility and restore ecological balance.
             </p>
             <p className="text-content text-left md:hidden block">
               Inspired by the nature recovery policy and its newspaper coverage,

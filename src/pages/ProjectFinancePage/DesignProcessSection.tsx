@@ -24,8 +24,8 @@ export default function DesignProcessSection(): ReactElement {
           Nothing about ADHD without ADHD.
         </p>
         <p className="font-light text-content mt-6">
-          I prioritize designing "with" people with ADHD rather than designing
-          "for" them. I recognized these individuals as integral partners in the
+          I prioritise designing "with" people with ADHD rather than designing
+          "for" them. I recognised these individuals as integral partners in the
           development of services and avoiding making decisions on their behalf.
           With this inclusive mindset, I can ensure that the designed services
           are refined and aligned with the lifestyles and habits of young adults

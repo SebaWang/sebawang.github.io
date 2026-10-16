@@ -58,7 +58,7 @@ export default function DesignSection(): ReactElement {
         <img src={img_m02} className="block md:hidden w-full mt-4" alt="m02" />
 
         <p className="text-content font-light mt-12 mb-6">
-          Recognizing the varying consultation frequencies and service
+          Recognising the varying consultation frequencies and service
           procedures across medical specialties, I recommended to my team that
           we divide the service solutions into two distinct categories:
           outpatient and inpatient. Tailored to similar scenarios and functional
@@ -110,7 +110,7 @@ export default function DesignSection(): ReactElement {
             >
               <div className="flex flex-col justify-center gap-2 font-light text-content mx-auto w-fit py-4">
                 <p>・ Different Divisions Operation UI</p>
-                <p>・ Digitalized Medical Education Materials</p>
+                <p>・ Digitalised Medical Education Materials</p>
               </div>
             </div>
           </div>
@@ -167,11 +167,11 @@ export default function DesignSection(): ReactElement {
             Service
           </p>
           <p className="text-content font-light mb-4">
-            The marketing specialist and I categorized customers and implemented
+            The marketing specialist and I categorised customers and implemented
             targeted promotion strategies to drive service adoption. Given the
             different medical divisions and hospital operation strategies, I
             developed an e-commerce website showcasing modular medical-cart
-            products, empowering hospital executives to customize their
+            products, empowering hospital executives to customise their
             telemedical solutions.
           </p>
           <ModalImageFree imgURL={img_page_03} />

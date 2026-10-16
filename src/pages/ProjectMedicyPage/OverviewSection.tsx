@@ -95,7 +95,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="29.5%"
           hoverTop="10%"
           imageUrl={img_ovewview_02}
-          description="Customer Behavior Analysis & Overall Strategy Formulation"
+          description="Customer Behaviour Analysis & Overall Strategy Formulation"
         />
         <HoverImage
           width="17%"

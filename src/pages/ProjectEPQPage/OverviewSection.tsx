@@ -110,7 +110,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="45%"
           hoverTop="10%"
           imageUrl={img_ovewview_04}
-          description="Utilizing the learning journal to identify their interests and EPQ project topics."
+          description="Utilising the learning journal to identify their interests and EPQ project topics."
         />
         <HoverImage
           width="11%"

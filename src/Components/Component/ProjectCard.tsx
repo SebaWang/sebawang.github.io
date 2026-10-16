@@ -19,22 +19,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgURL, title, subTitle, conc
          onMouseLeave={() => setIsHovered(false)}>
       <div className="max-h-80 overflow-hidden relative rounded-t-xl">
         <img className="w-full object-cover" src={imgURL} alt="Project" />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40 flex justify-center items-center opacity-0 mask duration-300">
-          <p className="text-white text-center px-16 font-light">{content}</p>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 mask duration-300">
+          <p className="text-white text-center px-16 font-light text-[20px] leading-[30px]">{content}</p>
         </div>
       </div>
-      <div className={`flex flex-col justify-center px-6 py-4 text-center transform transition-all duration-500 ${isHovered ? '' : ''}`}>
+      <div className={`h-[80px] flex flex-col justify-center px-6 py-4 text-center transform transition-all duration-500 ${isHovered ? '' : ''}`}>
         {isHovered ? (
           <div className="backface-hidden">
           <div className="font-bold text-md">{title}</div>
-            <p className="text-[#EA5514] text-sm">{type}</p>
-            <p className="text-gray-300 text-xs">&nbsp;</p>
+            <p className="text-[#DD663C] text-sm">{subTitle}</p>
           </div>
         ) : (
           <React.Fragment>
             <div className="font-bold text-md">{title}</div>
-            <p className="text-gray-500 text-sm">{subTitle}</p>
-            <p className="text-gray-300 text-xs">{concept}</p>
+            {/* Single short tag, orange, matching the Works page cards */}
+            <p className="text-[#DD663C] text-sm">{subTitle}</p>
+            {concept && <p className="text-gray-300 text-xs">{concept}</p>}
           </React.Fragment>
         )}
       </div>

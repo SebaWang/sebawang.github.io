@@ -86,7 +86,7 @@ export default function OverviewSection(): ReactElement {
           hoverLeft="24%"
           hoverTop="40%"
           imageUrl={img_process_01}
-          description="Utilizing simple materials to swiftly generate future artifacts for interaction."
+          description="Utilising simple materials to swiftly generate future artifacts for interaction."
         />
         <HoverImage
           width="8%"

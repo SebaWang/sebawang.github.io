@@ -3,6 +3,7 @@ import ChapterHeader from "./ChapterHeader";
 import img_photo10a from "../../assets/img/img_project_mobility_photo10a.jpg";
 import img_photo10b from "../../assets/img/img_project_mobility_photo10b.jpg";
 import img_photo10c from "../../assets/img/img_project_mobility_photo10c.jpg";
+import img_photo10d from "../../assets/img/img_project_mobility_photo10d.jpg";
 import img_photo10e from "../../assets/img/img_project_mobility_photo10e.jpg";
 import PhotoSlot from "./PhotoSlot";
 import img_photo03 from "../../assets/img/img_project_mobility_photo03.jpg";
@@ -164,10 +165,12 @@ export default function WhatIDidSection(): ReactElement {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
           <div>
             <p className="text-content font-bold mb-4">Role Play Activity</p>
-            <PhotoSlot
-              label="Photo D · to be added"
-              aspect="auto"
-              className="rounded-md h-[240px]"
+            <img
+              src={img_photo10d}
+              alt="Role play cards: who, when and future situations"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+              className="w-full h-[240px] object-cover rounded-md select-none"
             />
           </div>
           <div>

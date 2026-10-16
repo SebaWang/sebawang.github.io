@@ -25,15 +25,15 @@ export default function OverviewSection(): ReactElement {
                 &nbsp;
               </div>
               <p className="text-content font-light mt-8 mb-8">
-                A+ in Finance focuses on designin financial inclusion strategies.{" "}
+                A+ in Finance focuses on designing financial inclusion strategies.{" "}
                 The project {" "}
                 <span className="font-bold">
                 built strong relationship with 14 individuals with ADHD across different age groups, creating a psychologically safe environment and encouraging participants to discuss sensitive financial topics in the workshops.{" "}
-                </span>It often takes young adults with ADHD up to a decade to identify and practice healthy dopamine-boosting activities beyond shopping or substance use. {" "}
+                </span>It often takes young adults with ADHD up to a decade to identify and practise healthy dopamine-boosting activities beyond shopping or substance use. {" "}
                 
                 How can young adults with ADHD manage their symptoms and control impulsive shopping without years of trial and error?
                 
-                This project developed a digital Chrome Extension and a physical ADHD Financial Learning Courses to support them explore and practice their dopaminine management to stablize their financial condition, which currently support 150+ individuals.
+                This project developed a digital Chrome Extension and a physical ADHD Financial Learning Courses to support them explore and practise their dopamine management to stabilise their financial condition, which currently support 150+ individuals.
               </p>
               <div className="flex gap-2 text-content font-light flex-wrap">
                 <div

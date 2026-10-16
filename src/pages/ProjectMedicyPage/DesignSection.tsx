@@ -29,7 +29,7 @@ export default function DesignSection(): ReactElement {
         <p className="text-content font-light mt-4 mb-6">
           Medicy serves as a hub for traders to access NFT information for value
           assessment and interaction. The platform offers a comprehensive view
-          of the latest project news, categorized by different NFT project
+          of the latest project news, categorised by different NFT project
           types, enabling traders to grasp the current landscape quickly.
           Additionally, Medicy features a dedicated forum where traders can
           engage in discussions about the projects. RPF NFT holders can enjoy

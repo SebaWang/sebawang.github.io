@@ -71,7 +71,7 @@ export default function DesignSection(): ReactElement {
             {" "}
             This tool streamlines the exploration and adoption of alternative
             dopamine-boosting activities by identifying online shopping checkout
-            behaviors and offering a suite of personalized features.
+            behaviours and offering a suite of personalised features.
           </span>{" "}
           Moreover, it is integrated into the ADHD charity’s
           ADHD Financial Learning Course.
@@ -91,7 +91,7 @@ export default function DesignSection(): ReactElement {
               <div className="flex gap-2 items-center">
                 <ComputerReminderT className="w-[80px] p-2" />
                 <p className="text-content font-bold text-[#DD663C]">
-                  Personalized
+                  Personalised
                   <br />
                   Reminder
                 </p>

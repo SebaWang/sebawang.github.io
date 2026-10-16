@@ -58,10 +58,8 @@ export default function ContactPage(): ReactElement {
             <div className="flex flex-col justify-center">
               <p className="text-[24px] text-[#DD663C] font-bold">Contact Me</p>
               <p className="text-[18px] font-light tracking-wide mt-8">
-                Thank you for visiting my website. Whether you're seeking a
-                seasoned service designer, have comments, or simply want to say
-                hello, I'd be delighted to hear from you.
-                Feel free to reach out to me!
+                Whether it&rsquo;s a role, a project or an idea about services
+                and foresight, I&rsquo;d love to hear from you.
               </p>
               <div className="flex gap-8 justify-start mt-10 ">
                 <a

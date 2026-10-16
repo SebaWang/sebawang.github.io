@@ -43,7 +43,7 @@ export default function DesignSection(): ReactElement {
         In our journey of crafting future scenarios, my team and I developed
         various artifacts to engage people,{" "}
         <span className="font-bold">
-          symbolizing the touchpoints of future services.
+          symbolising the touchpoints of future services.
         </span>{" "}
         By immersing participants in these artifacts, we gained insights into
         which narratives and policies resonated best with them: The Ministry of
@@ -52,7 +52,7 @@ export default function DesignSection(): ReactElement {
       <div className="grid grid-cols-3 gap-4 mt-4 hidden md:grid">
         <ModalImage
           imgURL={img_design_01}
-          description="Utilizing simple materials to swiftly generate future artifacts for interaction."
+          description="Utilising simple materials to swiftly generate future artifacts for interaction."
         />
         <ModalImage
           imgURL={img_design_02}
@@ -60,7 +60,7 @@ export default function DesignSection(): ReactElement {
         />
         <ModalImage
           imgURL={img_design_03}
-          description="Utilizing present-day elements (e.g., Instagram) to bridge connections with future scenarios."
+          description="Utilising present-day elements (e.g., Instagram) to bridge connections with future scenarios."
         />
         <ModalImage
           imgURL={img_design_04}

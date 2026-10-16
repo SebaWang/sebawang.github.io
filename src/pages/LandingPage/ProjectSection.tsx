@@ -1,11 +1,14 @@
 import ProjectCard from "../../Components/Component/ProjectCard";
-import img_project_01 from "../../assets/img/img_landing_project_01.jpeg";
+import img_mobility_card from "../../assets/img/img_project_mobility_card.jpg";
 import img_project_02 from "../../assets/img/img_landing_project_02.jpg";
 import { ReactComponent as DecoBubble } from "../../assets/img/img_deco_bubble_social.svg";
 import ButtonNext from "../../Components/Component/ButtonNext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useProjectLock from "../../Components/Component/useProjectLock";
 
 export default function ProjectSection() {
+  const { isLocked, openLock, passwordModal } = useProjectLock();
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-[#e8e8e8]  hidden md:block">
@@ -30,29 +33,37 @@ export default function ProjectSection() {
               <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-24">
                 <DecoBubble />
               </div>
-              <Link to="/project/finance">
+              {/* Password-protected: clicking opens the password prompt */}
+              <div
+                className="relative cursor-pointer"
+                onClick={() =>
+                  isLocked("mobility")
+                    ? openLock("mobility")
+                    : navigate("/project/mobility")
+                }
+              >
                 <ProjectCard
-                  imgURL={img_project_02}
-                  title="Co-designed Service for ADHD Financial Inclusion"
-                  subTitle="Inclusive Design for ADHD Financial Management"
-                  concept="Financial Inclusion"
-                  type="Inclusive Design, Co-design, Research through Design"
-                  content="How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
+                  imgURL={img_mobility_card}
+                  title="Future Mobility Service and Strategy Transformation"
+                  subTitle="Foresight & Scenario Planning"
+                  concept=""
+                  type="Foresight, Scenario Planning, Service Design"
+                  content="How might mobility services keep creating value when demand, infrastructure, and governing rules change in the post-AI era?"
                 />
-              </Link>
+              </div>
             </div>
             <div className="mt-12 relative">
               <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-24">
                 <DecoBubble />
               </div>
-              <Link to="/project/mob">
+              <Link to="/project/finance">
                 <ProjectCard
-                  imgURL={img_project_01}
-                  title="Workshops & Strategy Design for Future Environmental Policy"
-                  subTitle="Strategy & Speculative Design for Policy with GDS"
-                  concept="Agricultural Policy Communication"
-                  type="Speculative Design, Participatory Design, Sustainable Design"
-                  content="How might future storytelling give the public and farmers a voice in future environmental policy discussion?"
+                  imgURL={img_project_02}
+                  title="Co-designed Service for ADHD Financial Inclusion"
+                  subTitle="Inclusive Service Design"
+                  concept=""
+                  type="Inclusive Design, Co-design, Research through Design"
+                  content="How might an evidence-based toolkit and course empower young ADHD adults to enhance financial management?"
                 />
               </Link>
             </div>
@@ -64,6 +75,7 @@ export default function ProjectSection() {
           </div>
         </div>
       </div>
+      {passwordModal}
     </>
   );
 }

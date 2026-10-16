@@ -56,6 +56,8 @@ export default function PreviewSection(): ReactElement {
       content:
         "How might a university improve and evaluate recruitment and training services against the GDS Service Standard?",
       tags: ["Service Design & Evaluation"],
+      // Not linked yet: shown like the placeholder cards until the page is ready
+      placeholder: true,
     },
     {
       id: "mobility",

@@ -35,7 +35,7 @@ export default function ChallengeSection(): ReactElement {
             or sudden technological advancements to address food crises. To
             tackle this challenge,{" "}
             <span className="font-bold">
-              I led my team to utilize Causal Layered Analysis to systematically
+              I led my team to utilise Causal Layered Analysis to systematically
               develop the Ministry of Biodiversity's worldview,
             </span>{" "}
             ensuring coherence and engagement in the storytelling process.

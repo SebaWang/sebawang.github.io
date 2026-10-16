@@ -4,7 +4,7 @@ import img_logo_camden from '../../assets/img/img_logo_camden.png'
 import img_logo_gds from '../../assets/img/img_logo_gds.png'
 import img_logo_itic from '../../assets/img/img_logo_itic.png'
 import img_logo_mega from '../../assets/img/img_logo_megabank.png'
-import img_logo_taishin from '../../assets/img/img_logo_taishinbank.png'
+import img_logo_nhs from '../../assets/img/img_logo_nhs.svg'
 import img_logo_sciencegallery from '../../assets/img/img_logo_sciencegallery.png'
 import SwiperCard from "../../Components/Component/Swiper";
 import ButtonNext from "../../Components/Component/ButtonNext";
@@ -35,14 +35,14 @@ export default function AboutSection() {
               </div>
 
               <div className="md:hidden block mt-12 mb-24 grid grid-cols-4 gap-8 ">
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.megabank.com.tw/en-us/english/index/about-mega/history'  target="_blank" rel="noreferrer"><img src={img_logo_mega} className='h-[60px]' /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.taishinbank.com.tw/TSB/en/index.html'  target="_blank" rel="noreferrer"><img src={img_logo_taishin} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.youtube.com/watch?v=8PE_UwfUsUc'  target="_blank" rel="noreferrer"><img src={img_logo_advantech} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://itic.com.tw/'  target="_blank" rel="noreferrer"><img src={img_logo_itic} /></a></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.nhs.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_nhs} className='w-[80px]' alt='NHS' /></a></div>
                     <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.gov.uk/government/organisations/government-digital-service'  target="_blank" rel="noreferrer"><img src={img_logo_gds} /></a></div>
                     <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.camden.gov.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_camden} /></a></div>
                     <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://london.sciencegallery.com/'  target="_blank" rel="noreferrer"><img src={img_logo_sciencegallery} /></a></div>
                     <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.thebraincharity.org.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_braincharity} /></a></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.megabank.com.tw/en-us/english/index/about-mega/history'  target="_blank" rel="noreferrer"><img src={img_logo_mega} className='h-[60px]' /></a></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.youtube.com/watch?v=8PE_UwfUsUc'  target="_blank" rel="noreferrer"><img src={img_logo_advantech} /></a></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://itic.com.tw/'  target="_blank" rel="noreferrer"><img src={img_logo_itic} /></a></div>
                 
               </div>
               <p className="mt-4 text-[#929292] text-md  hidden md:block">

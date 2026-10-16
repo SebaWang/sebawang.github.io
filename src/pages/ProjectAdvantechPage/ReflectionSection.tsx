@@ -34,7 +34,7 @@ export default function ReflectionSection(): ReactElement {
             <p className="text-content font-light">
               Genuine innovation requires the integration of design thinking and
               business management knowledge. Throughout my year-long project,
-              I've come to realize that designers must not only focus on
+              I've come to realise that designers must not only focus on
               end-users but also adopt a managerial perspective. This involves
               understanding how innovations impact users, the company, and the
               industry as a whole. As such, I play the role of not only a

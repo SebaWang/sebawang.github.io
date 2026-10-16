@@ -18,7 +18,7 @@ export default function DesignProcessSection(): ReactElement {
         </div>
 
         <p className="font-bold text-[24px]">
-          Utilizing visual storytelling is essential in cross-disciplinary team
+          Utilising visual storytelling is essential in cross-disciplinary team
           collaboration.
         </p>
         <p className="mt-6 font-light text-content border-l-[2px] border-[#333333] pl-4">

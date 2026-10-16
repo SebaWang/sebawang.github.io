@@ -39,9 +39,9 @@ export default function ResearchSection(): ReactElement {
           case studies and gamification during interactions.
         </p>
         <div className="grid grid-cols-3 gap-4 mt-6">
-          <ModalImage imgURL={img_research_01} description="Utilizing videos and captivating materials to introduce the project and demonstrate my commitment to research ethics with ADHD groups." />
+          <ModalImage imgURL={img_research_01} description="Utilising videos and captivating materials to introduce the project and demonstrate my commitment to research ethics with ADHD groups." />
           <ModalImage imgURL={img_research_02} description="Implementing gamification to encourage greater participant involvement in the workshops." />
-          <ModalImage imgURL={img_research_03} description="Avoiding sensitive terms: I regularly consult with experts to ensure language sensitivity and avoid stigmatizing individuals with ADHD." />
+          <ModalImage imgURL={img_research_03} description="Avoiding sensitive terms: I regularly consult with experts to ensure language sensitivity and avoid stigmatising individuals with ADHD." />
         </div>
         <p className="font-bold text-[24px] mt-12">
           Using case studies instead of personas helps maintain the complexity
@@ -49,7 +49,7 @@ export default function ResearchSection(): ReactElement {
         </p>
         <p className="font-light text-content mt-6">
           The intricacy of ADHD lies in the diversity of symptoms and their
-          different personalized strategies.{" "}
+          different personalised strategies.{" "}
           <span className="font-bold">
             Condensing them into representative characters through personas
             might risk oversimplifying the complex array of ADHD.

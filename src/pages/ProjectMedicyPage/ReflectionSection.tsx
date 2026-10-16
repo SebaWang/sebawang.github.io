@@ -21,11 +21,11 @@ export default function ReflectionSection(): ReactElement {
         </p>
         <p className="text-content font-light mt-4">
           In the rapidly evolving services of Web3 and NFTs, there remain
-          abundant opportunities for exploration and optimization. While the NFT
+          abundant opportunities for exploration and optimisation. While the NFT
           market is undeniably competitive, I believe sustained success hinges
           not on leveraging celebrity endorsements or artist collaborations.
           Instead, a robust NFT project service is essential for fostering
-          enduring relationships with followers and maximizing the benefits of
+          enduring relationships with followers and maximising the benefits of
           NFT ownership.{" "}
           <span className="font-bold">
             {" "}

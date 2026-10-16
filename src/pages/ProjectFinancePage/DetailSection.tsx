@@ -40,7 +40,7 @@ export default function DetailSection(): ReactElement {
                     </p>
                 </nav>
                 <nav className='text-white'>
-                    <p className="tracking-[4px] text-content font-bold">ORGANIZATION</p>
+                    <p className="tracking-[4px] text-content font-bold">ORGANISATION</p>
                     <div className="w-[19px] border-b-[6px] border-[#EA5514] h-[6px]">
                         &nbsp;
                     </div>

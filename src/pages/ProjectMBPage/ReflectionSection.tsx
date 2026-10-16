@@ -29,16 +29,16 @@ export default function ReflectionSection(): ReactElement {
           <p className="text-content mt-4 font-light">
             I believe speculative design can make designers and stakeholders
             "anti-fragile." It involves exploring the potential future
-            trajectories of societies and organizations, allowing us{" "}
+            trajectories of societies and organisations, allowing us{" "}
             <span className="font-bold">
               to identify vulnerabilities and risks within services, and foster
               overall system evolution and adaptability through ongoing
               examination and refinement
             </span>{" "}
             . Just as GDS and DEFRA found inspiration in this project,
-            recognizing deficiencies in current government policy communication
+            recognising deficiencies in current government policy communication
             and initiating plans for innovative approaches to engage with the
-            public, they can also utilize these future scenarios to proactively
+            public, they can also utilise these future scenarios to proactively
             devise strategies - establishing systems to address potential
             challenges before they arise. This adaptability helps mitigate the
             scale of impacts and may lead to unexpected advantages.s

@@ -48,7 +48,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-content font-light text-left hidden md:block">
             Regarding the Medicy website, the current beta version has received
             numerous positive feedback from traders. Users appreciate the
-            visualized and simplified access to trading information. In terms of
+            visualised and simplified access to trading information. In terms of
             the forum system, I believe it needs to expand its user base to
             enhance interaction and discussion popularity, reaching its full
             potential.
@@ -56,7 +56,7 @@ export default function EvaluationSection(): ReactElement {
           <p className="text-content text-left md:hidden block">
             Regarding the Medicy website, the current beta version has received
             numerous positive feedback from traders. Users appreciate the
-            visualized and simplified access to trading information.
+            visualised and simplified access to trading information.
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ During the global pandemic, I served as a service designer at Advantech's teleme
                 By mapping stakeholder power structures, analyzing communication strategies, and addressing benefit conflicts, I facilitated effective cross-disciplinary collaboration among executives, front-line medical staff, doctors, and patients.
               </span>
               {" "}
-              This project developed innovative solutions for dermatology, ophthalmology, otolaryngology, and ICU services, ultimately deploying telemedicine services to 300+ isolation wards across Taiwan. This innovation reduced health risks, improved patient management, and optimized hospital workflows, significantly enhancing the quality of patient care.
+              This project developed innovative solutions for dermatology, ophthalmology, otolaryngology, and ICU services, ultimately deploying telemedicine services to 300+ isolation wards across Taiwan. This innovation reduced health risks, improved patient management, and optimised hospital workflows, significantly enhancing the quality of patient care.
             </p>
             <div>
               <div className="flex gap-2 text-content font-light flex-wrap mt-8">

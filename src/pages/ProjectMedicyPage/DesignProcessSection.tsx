@@ -21,25 +21,25 @@ export default function DesignProcessSection(): ReactElement {
         <p className="font-light text-content mt-6">
           I employed various service design tools and methods, including{" "}
           <span className="font-bold">
-            customer behavior analysis, workshops, and journey maps,
+            customer behaviour analysis, workshops, and journey maps,
           </span>{" "}
           to develop the project roadmap. This approach ensured that the roadmap
           was not only practical but also resonated well with our followers,
-          garnering their support. Additionally, I strategized short-term and
+          garnering their support. Additionally, I strategised short-term and
           medium-term plans to ensure that Gen2 received the necessary attention
           and investment throughout the project duration.
         </p>
 
 
         <p className="font-bold text-content mt-12 mb-1">
-        Customer Behavior Analysis & Overall Strategy Formulation
+        Customer Behaviour Analysis & Overall Strategy Formulation
         </p>
         <ModalImageFree imgURL={img_behavior} />
 
         
 
         <p className="font-bold text-content mt-12 mb-4">
-        Customer Behavior Analysis & Overall Strategy Formulation
+        Customer Behaviour Analysis & Overall Strategy Formulation
         </p>
         <div className='grid grid-cols-2 gap-4'>
             <ModalImage imgURL={img_02} aspectRatio="512/277" />

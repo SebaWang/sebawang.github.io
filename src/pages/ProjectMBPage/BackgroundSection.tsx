@@ -18,7 +18,7 @@ export default function BackgroundSection(): ReactElement {
         whether the public's lack of interest in environmental policy was due to
         the need for more resonance. This makes it challenging for the GDS to
         gather public opinions for future policy strategies. As the government
-        prioritizes nature conservation and future environmental development, a
+        prioritises nature conservation and future environmental development, a
         crucial question arises:{" "}
         <span className="text-[#DD663C] font-bold">
           How might the government effectively engage and communicate
@@ -31,7 +31,7 @@ export default function BackgroundSection(): ReactElement {
       </p>
       <p className="mt-6 md:mt-2 text-content">
         In the quest to enhance public engagement and foster captivating
-        discussions on policy matters for GDS and DEFRA, my team recognized the
+        discussions on policy matters for GDS and DEFRA, my team recognised the
         potential of speculative design methodology. It could serve as an
         effective approach to engaging people and informing near-future
         strategies. Our journey began with two creative and powerful questions:{" "}

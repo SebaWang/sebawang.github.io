@@ -40,14 +40,14 @@ const ProjectPreviewCard: React.FC<ProjectCardProps> = ({
           </p>
         </div>
       </div>
-      <div className="flex-1 flex flex-col justify-center px-6 py-4 relative overflow-hidden">
+      <div className="flex-1 flex flex-col justify-start px-6 pt-5 pb-6 relative overflow-hidden">
         <Bubble className="absolute bottom-2 left-1 opacity-60" />
         {tags && tags.length > 0 && (
-          <p className="text-[#DD663C] text-[14px] font-light text-left mb-3 z-10">
+          <p className="text-[#DD663C] text-[14px] font-light text-left mb-2 z-10">
             {tags.join(" | ")}
           </p>
         )}
-        <p className="font-light text-[17px] leading-[24px] text-left z-10">
+        <p className="font-light text-[16px] leading-[24px] text-left z-10">
           {content}
         </p>
       </div>

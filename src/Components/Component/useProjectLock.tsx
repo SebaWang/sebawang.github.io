@@ -3,8 +3,22 @@ import { useNavigate } from "react-router-dom";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CORRECT_PASSWORD = "2022";
-const DEFAULT_LOCKED = ["medicy", "utech"];
+// Password per locked project
+const PASSWORDS: Record<string, string> = {
+  medicy: "2022",
+  utech: "2022",
+  mobility: "2026",
+};
+const DEFAULT_LOCKED = Object.keys(PASSWORDS);
+
+export function LockBadge(): ReactElement {
+  return (
+    <span className="absolute top-3 right-3 z-30 flex items-center gap-1.5 rounded-full bg-black/70 text-white text-[12px] font-semibold tracking-wide px-3 py-1 pointer-events-none transition-opacity duration-300 group-hover/lock:opacity-0">
+      <FontAwesomeIcon icon={faLock} className="text-[11px]" />
+      Password protected
+    </span>
+  );
+}
 
 // Wrapper for a locked card: the overlay sits on top of the card, so the hover
 // lift has to live here instead of on the card itself
@@ -27,8 +41,9 @@ export default function useProjectLock() {
   };
 
   const handlePasswordSubmit = () => {
-    if (passwordInput === CORRECT_PASSWORD) {
+    if (passwordInput === PASSWORDS[selectedProject]) {
       setPasswordModalOpen(false);
+      setPasswordInput("");
       setLockedProjects((prev) => prev.filter((proj) => proj !== selectedProject));
       navigate(`/project/${selectedProject}`);
     } else {
@@ -36,13 +51,10 @@ export default function useProjectLock() {
     }
   };
 
-  const lockOverlay: ReactElement = (
-    // Fades out on hover so the card's highlights show through; clicking
-    // still opens the password prompt
-    <div className="absolute inset-0 rounded-md bg-black bg-opacity-30 flex items-center justify-center transition-opacity duration-300 group-hover/lock:opacity-0 pointer-events-none">
-      <FontAwesomeIcon icon={faLock} className="text-white text-3xl" />
-    </div>
-  );
+  // Small badge in the top-right corner of a locked card; the card itself
+  // stays fully visible, and clicking it opens the password prompt. Hidden
+  // on hover, when the card's dark overlay takes over
+  const lockOverlay: ReactElement = <LockBadge />;
 
   const passwordModal: ReactElement | null = isPasswordModalOpen ? (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">

@@ -61,7 +61,7 @@ export default function BackgroundSection(): ReactElement {
         </div>
 
         <p className="text-content font-light md:mt-4 mb-12">
-          Given the decentralized nature of blockchain technology, which
+          Given the decentralised nature of blockchain technology, which
           promotes transparency and openness, the design question arises:{" "}
           <span className="font-bold text-[#DD663C]">
             How might we streamline the NFT evaluating process without the need
