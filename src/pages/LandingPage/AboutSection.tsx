@@ -35,14 +35,14 @@ export default function AboutSection() {
               </div>
 
               <div className="md:hidden block mt-12 mb-24 grid grid-cols-4 gap-8 ">
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.nhs.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_nhs} className='w-[80px]' alt='NHS' /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.gov.uk/government/organisations/government-digital-service'  target="_blank" rel="noreferrer"><img src={img_logo_gds} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.camden.gov.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_camden} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://london.sciencegallery.com/'  target="_blank" rel="noreferrer"><img src={img_logo_sciencegallery} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.thebraincharity.org.uk/'  target="_blank" rel="noreferrer"><img src={img_logo_braincharity} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.megabank.com.tw/en-us/english/index/about-mega/history'  target="_blank" rel="noreferrer"><img src={img_logo_mega} className='h-[60px]' /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://www.youtube.com/watch?v=8PE_UwfUsUc'  target="_blank" rel="noreferrer"><img src={img_logo_advantech} /></a></div>
-                    <div className='opacity-70 flex items-center justify-center duration-300'><a href='https://itic.com.tw/'  target="_blank" rel="noreferrer"><img src={img_logo_itic} /></a></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_nhs} className='w-[80px]' alt='NHS' /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_gds} /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_camden} /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_sciencegallery} /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_braincharity} /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_mega} className='h-[60px]' /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_advantech} /></div>
+                    <div className='opacity-70 flex items-center justify-center duration-300'><img src={img_logo_itic} /></div>
                 
               </div>
               <p className="mt-4 text-[#929292] text-md  hidden md:block">
