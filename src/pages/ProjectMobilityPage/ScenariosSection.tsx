@@ -5,6 +5,8 @@ import img_scenario_a from "../../assets/img/img_project_mobility_scenario_a.jpg
 import img_scenario_b from "../../assets/img/img_project_mobility_scenario_b.jpg";
 import img_scenario_c from "../../assets/img/img_project_mobility_scenario_c.jpg";
 
+const SHOW_TENSION = false;
+
 const scenarios: {
   letter: string;
   name: string;
@@ -76,10 +78,13 @@ export default function ScenariosSection(): ReactElement {
                 SCENARIO {s.letter}
               </p>
               <p className="text-[20px] font-bold mt-1">{s.name}</p>
-              <p className="mt-4 text-content font-light">
-                <span className="font-bold">Tension. </span>
-                {s.tension}
-              </p>
+              {/* Tension line hidden for now; text kept in the data above */}
+              {SHOW_TENSION && (
+                <p className="mt-4 text-content font-light">
+                  <span className="font-bold">Tension. </span>
+                  {s.tension}
+                </p>
+              )}
             </div>
           ))}
         </div>
