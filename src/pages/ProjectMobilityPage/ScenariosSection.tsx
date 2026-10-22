@@ -16,7 +16,7 @@ const scenarios: {
   {
     letter: "A",
     image: img_scenario_a,
-    name: "Platform-led City",
+    name: "Big Tech-led City",
     tension:
       "When governments outsource the systems daily life depends on to private operators, who governs how people move, and who gets left at the edges?",
   },
