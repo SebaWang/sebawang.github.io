@@ -18,7 +18,7 @@ export default function DetailSection(): ReactElement {
                         &nbsp;
                     </div>
                     <p className="text-content mt-4 ">
-                        2023
+                        2023 – 2024
                     </p>
                     <p className="text-content ">
                     5-Month Individual Project
