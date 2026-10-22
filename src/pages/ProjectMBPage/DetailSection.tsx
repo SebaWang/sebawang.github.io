@@ -20,9 +20,6 @@ export default function DetailSection(): ReactElement {
                     <p className="text-content mt-4 ">
                         2023 – 2024
                     </p>
-                    <p className="text-content ">
-                         6-Week Team Project
-                    </p>
                 </nav>
                 <nav className='text-white'>
                     <p className="tracking-[4px] text-content font-bold">ROLE</p>
