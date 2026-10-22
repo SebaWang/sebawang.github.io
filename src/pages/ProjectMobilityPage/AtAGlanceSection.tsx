@@ -57,7 +57,7 @@ export default function AtAGlanceSection(): ReactElement {
                 contrasting future worlds for large cities in 2050.
               </li>
               <li>
-                <span className="font-bold">System Understanding:</span>{" "}
+                <span className="font-bold">System Mapping:</span>{" "}
                 Stakeholders, service dependencies and value exchanges
                 compared between 2026 and 2050.
               </li>
