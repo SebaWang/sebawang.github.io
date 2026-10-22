@@ -6,10 +6,11 @@ const leadershipQuestions = [
   {
     q: "What assumptions need re-examining?",
     detail:
-      "What assumptions in the 2026 mobility consensus are most likely to fail by 2050? If the way people work, live and consume changes, which mobility needs could shrink, shift or emerge?",
+      "What assumptions in the 2026 mobility consensus are most likely to fail by 2050?\nIf the way people work, live and consume changes, which mobility needs could shrink, shift or emerge?",
   },
   {
     q: "Which strategic choices must be made now, and which should stay open?",
+    hidden: true, // hidden for now
     detail:
       "Which investments are worth starting early? Which commitments suit a phased approach? And what signals should trigger scaling up, adjusting or exiting?",
   },
@@ -20,6 +21,7 @@ const leadershipQuestions = [
   },
   {
     q: "Will current strategies hold across different futures?",
+    hidden: true, // hidden for now
     detail:
       "Which products, investments and partnership models keep their value, and which expose new risks or dependencies? What capabilities should we build to keep services running and change course as conditions shift?",
   },
@@ -104,13 +106,17 @@ export default function ChallengeSection(): ReactElement {
         </div>
 
         <p className="tracking-[1px] text-[14px] font-bold mt-12">
-          KEY QUESTIONS FOR LEADERSHIP
+          QUESTIONS FOR LEADERSHIP
         </p>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-8 mt-6">
-          {leadershipQuestions.map((item, i) => (
+          {leadershipQuestions
+            .filter((item) => !("hidden" in item && item.hidden))
+            .map((item, i) => (
             <div key={i} className="border-l-[3px] border-[#EA5514] pl-5">
               <p className="text-content font-bold">{item.q}</p>
-              <p className="text-content font-light mt-2">{item.detail}</p>
+              <p className="text-content font-light mt-2 whitespace-pre-line">
+                {item.detail}
+              </p>
             </div>
           ))}
         </div>

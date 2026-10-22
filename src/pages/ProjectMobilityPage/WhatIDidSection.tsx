@@ -73,8 +73,8 @@ export default function WhatIDidSection(): ReactElement {
           </p>
           <p className="text-content font-light mt-3">
             Some participants were new to scenario planning, which shifted the
-            challenge from applying the methods to making foresight
-            accessible, engaging and usable. Therefore, I used participatory
+            challenge from applying the methods to making the research process
+            accessible and engaging. Therefore, I used participatory
             and interactive approaches to lower the barrier to discussion and
             draw interest.
           </p>
